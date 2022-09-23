@@ -1,17 +1,16 @@
-# TÍTULO DO PROJETO
-
-`CURSO`
+# ENCONTRE AQUI 
+`ANALISE E DESENVOLVIMENTO DE SISTEMA `
 
 `DISCIPLINA`
 
-`SEMESTRE`
+`2 SEMESTRE`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
 - Paulo Silas Barbosa Bandeira
-- Nome completo do aluno 2
+- Camila Larissa Gonçalves
 - Nome completo do aluno 3
 - Nome completo do aluno 4
 
