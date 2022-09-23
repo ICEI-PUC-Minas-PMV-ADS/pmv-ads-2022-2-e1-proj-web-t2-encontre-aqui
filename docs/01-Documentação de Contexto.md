@@ -1,46 +1,24 @@
-# Introdução
+<h1>DOCUMENTAÇÃO DE CONTEXTO</h1>
+A digitalização de empresas e negócios próprios nunca foi tão necessária, às mudanças no comportamento do consumidor fazem com que companhias e pessoas autônomas do mundo todo busquem mecanismos na tecnologia para permanecerem atuais. Apesar de pequenos negócios acharem que é um bicho de sete cabeças adentrar nesse quesito não é bem assim.
+Segundo Raquel Dalastti, head de produtos da Locaweb “Para qualquer negócio, a digitalização é extremamente importante, ela tem o poder de levar até nos lugares mais remotos o nome de uma empresa, mesmo que a física esteja a quilômetros de distância, apesar de parecer ser algo bem complexo não é bem assim, a digitalização começa a partir de pequenos passos, como a implementação de redes sociais, domínios e um site próprio”.
+Existem muitos meios de divulgação do próprio negócio, mas ao mesmo tempo que há muitas possibilidades, surgem muitas dúvidas sobre o assunto e consequentemente frustrações, pois pequenos negócios preferem não ter trabalho com essa divulgação digital ou dizem não ter o tempo necessário para se dedicar nela e tem aqueles que não tem condições de arcar com o custo dessa divulgação ou que nem sabem que existe essa possibilidade ao dispor delas, por achar que o negócio delas não é adequado para estar ali no meio digital.
+A verdade é que com os passos certos e com a orientação do que fazer é possível sim, todos pequenos negócios ou serviços estarem presentes no meio digital de forma responsiva, dinâmica e concreta, e isso se adequa ao profissionalismo e compromisso de agências de marketing e desenvolvimento web para essa digitalização ser executada.
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+<h2>1.1. Problema</h2>
+Divulgação OFF, essa é a realidade de pequenos negócios em nossas localidades ou até mesmo onde passamos, seja para ir ao trabalho ou em lugares que estamos só de passagem, problema a qual afeta tanto a visibilidade do MEI, quanto do ME, seja lá qual for o tipo de negócio, fazendo com que seus rendimentos e faturamentos sejam menores ou até mesmo um atordoamento maior, a falência e o fechamento das portas e frustrações de não saber o que fazer.
 
-## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+<h2>1.2. Objetivos</h2>
+A real intenção é, não só mostrar para os MEI’s ou ME’s que tem passos para contornar essa divulgação OFF, mas pegar nas mãos deles, e conduzir em passos primordiais que são seguidos por negócios de grande escala e que podem sim, ser implementados em qualquer negócio que os MEI’s e ME’s desejarem. A visibilidade é mais que fundamental, é a porta de entrada para o alcance de mais futuros clientes e consequentemente lucros financeiros e o melhor, o valor que vão passar para as pessoas que eles trabalham em prol.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Entendendo melhor nossa proposta, acompanhe os objetivos específicos:
+Detalhar de maneira concisa e objetiva os seus meios de contatos, para que os clientes dos MEI’s e ME’s possam ter um contato mais abrangente;
+Transmitir uma ID visual plausível para que seus clientes encontrem os MEI’s e ME’s de maneira fácil;
+Passar confiança através de informações verídicas e atualizadas dos MEI’s e ME’s para seus clientes ter certeza de que estão contratando ou comprando de empresários responsáveis.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+<h2>1.3. Justificativa</h2>
+Mediante estudo feito pela DMR - Digital Marketing Readiness, realizado pela McKinsey em parceria com Associação Brasileira de Anunciantes (ABA), 80% das empresas (pequenos negócios) brasileiras não atingiram o nível básico de presença digital em relação às empresas ao redor do mundo, principalmente de cidades do interior que não tem acesso ou possuem limitações nas maneiras de divulgação pela “internet” fazendo que com isso diminua bastante a possibilidade de novos clientes para suas empresas e serviços.
+Uma das questões que leva essa falta de divulgação plausível é o déficit de conhecimento sobre as possíveis tecnologias que esses MEI’s e ME’s podem utilizar para engajar seus serviços e negócios, como um site compartilhado, destinado aos seus serviços e comércios descritos, para facilitar o relacionamento com seus clientes.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+<h2>1.4. Público-alvo</h2>
+Chegamos à conclusão que o nosso público-alvo é homens e mulheres a partir de 18 anos, que estão sempre buscando informações atualizadas e imediatas de serviços e produtos na internet próximos a suas residências para satisfazer suas necessidades diárias com precisão, gerando assim economia para essas pessoas e também para os comerciantes ou prestadores de serviços.
 
-## Objetivos
-
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
-
-## Justificativa
-
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
-
-## Público-Alvo
-
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
