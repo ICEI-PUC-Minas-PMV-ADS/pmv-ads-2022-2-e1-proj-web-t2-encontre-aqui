@@ -11,7 +11,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 - Paulo Silas Barbosa Bandeira
 - Camila Larissa Gonçalves
-- Nome completo do aluno 3
+- Renê Matias de Misquita
 - Nome completo do aluno 4
 
 ## Orientador
