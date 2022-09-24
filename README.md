@@ -3,20 +3,24 @@
 
 `DISCIPLINA`
 
-`2 SEMESTRE`
+`1 SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Sistema Web de busca de MEI's e ME's com funcionalidades otimizadas e objetivas. Será contemplado com possibilidades de buscar desde um serviço para residência até
+produtos para fazer desde um bolo até mesmo contruir uma casa com materiais disponiveis, com comodidade e otimizando os gastos tanto para o usuário quanto para os
+fornecedores de materia prima. Possibilitanto assim uma interação de MEI's e ME's que não estão ativos na internet seja por não ter tempo ou por não saberem manusear
+a internet e usar em seu favor.
 
 ## Integrantes
 
 - Paulo Silas Barbosa Bandeira
 - Camila Larissa Gonçalves
 - Renê Matias de Misquita
-- Nome completo do aluno 4
+- Marcos Paulo Garcia Silva
+- Pedro Ítalo Costa Vieira
 
 ## Orientador
 
-- Nome completo do professor 1
+- Joyce Christina De Paiva Carvalho
 
 ## Instruções de utilização
 
