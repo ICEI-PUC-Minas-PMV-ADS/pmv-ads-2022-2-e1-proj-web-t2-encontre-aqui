@@ -2,7 +2,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-#ESPECIFICAÇÃO DO PROJETO
+# ESPECIFICAÇÃO DO PROJETO
 
 <p>Visando melhor entendimento da proposta do projeto entrevistamos duas pessoas que sempre precisam de um serviço (mão de obra) ou necessitam de comprar algo (físico) no estabelecimento da sua cidade.</p>
 
@@ -10,9 +10,9 @@
 
 Acompanhe conosco o estudo realizado mediante nosso futuro usuário abaixo:
 
-![alt text](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/docs/img/Personas/Marcos-Nunes.png)
+![alt text](https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/docs/img/Personas/Marcos-Nunes.PNG?raw=true)
 
-![alt text](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/docs/img/Personas/Regiane-Rodrigues.png)
+![alt text](https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/docs/img/Personas/Regiane-Rodrigues.PNG?raw=true)
 
 > **Links Úteis**:
 >
