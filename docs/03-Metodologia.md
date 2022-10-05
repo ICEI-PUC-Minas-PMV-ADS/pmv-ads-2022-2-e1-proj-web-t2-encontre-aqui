@@ -26,7 +26,7 @@ Sendo assim a nossa equipe está distribuida da seguinte forma:</p>
 <ul>
   <li>Product Owner: Paulo Bandeira</li>
   <li>Scrum Master: Pedro Ítalo</li>
-  <li>Equipe desenvolvimento</li>
+  <li>Equipe de desenvolvimento</li>
  - Camila Larissa
  - Marcos Paulo
  - Renê Matias
