@@ -32,6 +32,8 @@ Sendo assim a nossa equipe está distribuida da seguinte forma:</p>
  - Renê Matias
  </ul>
  
+ #
+ 
  <p>Para organização e distribuição das tarefas do projeto, estamos utilizando o Projects do GitHub, estruturado com as seguintes listas:</p>
  <ul>
   <li>Backlog: ambiente onde colocamos todas as atividades a serem desenvolvidas no projeto que estamos trabalhando, sendo administrada por nosso Product Owner.</>
