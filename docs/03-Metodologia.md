@@ -7,7 +7,7 @@
 
 ## 3.1. Ambientes de trabalho
 
-<p>Para termos um controle simplificado e objetivo mediante nossos artefatos desenvolvidos, utilizamos plataformas que nos auxiliar nesse quesito, seja para hospedar nosso repositório e até mesmo nossa documentação e a gestão da equipe, segue abaixo onde encontrar cada um desses artefatos:</p>
+<p>Para termos controle simplificado e objetivo mediante nossos artefatos desenvolvidos, utilizamos plataformas que nos auxiliar nesse quesito, seja para hospedar nosso repositório e até mesmo nossa documentação e a gestão da equipe, segue abaixo onde encontrar cada um desses artefatos:</p>
 
 
 | AMBIENTE                          | PLATAFORMA        | LINK DE ACESSO |
