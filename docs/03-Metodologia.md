@@ -15,7 +15,7 @@
 | Repositório de código fonte       | GitHub            | [Git.Icei](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui)
 | Documentação de contexto          | GitHub            | [Doc.Contexto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/docs/01-Documenta%C3%A7%C3%A3o%20de%20Contexto.md)
 | Especificações do Projeto         | GitHub            | [Esp.Projeto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/docs/02-Especifica%C3%A7%C3%A3o%20do%20Projeto.md)
-| Projeto de Interface e Wireframes | Figma             | [Figma.UserFlow](https://www.figma.com/file/bVtZWbFrOazzYkKon3pfYU/User-Flow?node-id=0%3A1)-[Wireframes]
+| Projeto de Interface e Wireframes | Figma             | [UserFlow](https://www.figma.com/file/bVtZWbFrOazzYkKon3pfYU/User-Flow?node-id=0%3A1)-[Wireframes]
 | Gerenciamento de projetos         | GitHub - Projects | [Gerenc.Projetos](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/133/views/1)
 
 ## 3.2. Gerenciamento do Projeto
