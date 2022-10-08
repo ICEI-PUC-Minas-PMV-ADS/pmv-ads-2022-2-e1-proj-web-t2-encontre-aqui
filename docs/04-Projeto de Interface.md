@@ -12,7 +12,7 @@ Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada
 
 <br/>
 
-![UserFlow1](img/userflow/User-Flow1.png)
+![UserFlow1](img/userflow/User-Flow2.png)
 
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
@@ -36,6 +36,18 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 ![Wireframe Home](img/wireframes/Recuperar%20senha.png)
 
+![Wireframe Home](img/wireframes/Alterar%20Senha.png)
+
 ![Wireframe Home](img/wireframes/Usuario-empresa.png)
 
 ![Wireframe Home](img/wireframes/Usuario.png)
+
+![Wireframe Home](img/wireframes/Atualizar-Pagina.png)
+
+![Wireframe Home](img/wireframes/Usuario.png)
+
+![Wireframe Home](img/wireframes/Editar-Usuario-Empresa.png.png)
+
+![Wireframe Home](img/wireframes/Editar-Usuario.png.png)
+
+![Wireframe Home](img/wireframes/Page%20-%20Erro%20404.png)
