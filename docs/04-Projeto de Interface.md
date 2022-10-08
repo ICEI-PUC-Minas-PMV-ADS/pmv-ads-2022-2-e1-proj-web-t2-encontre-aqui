@@ -62,6 +62,10 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 <br/>
 
+![Wireframe](img/wireframes/Criar%20Pagina.png)
+
+<br/>
+
 ![Wireframe](img/wireframes/Atualizar-Pagina.png)
 
 <br/>
