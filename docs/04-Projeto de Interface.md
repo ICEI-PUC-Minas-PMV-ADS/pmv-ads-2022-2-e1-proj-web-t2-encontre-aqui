@@ -12,42 +12,70 @@ Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada
 
 <br/>
 
-![UserFlow1](img/userflow/User-Flow2.png)
+![UserFlow1](img/userflow/User-Flow2.png.png)
 
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
-> **Links Úteis**:
->
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+## Template Padrão
+
+![Wireframe Home](img/wireframes/Template-Home.png)
+
+<br/>
+
+![Wireframe Home](img/wireframes/Template-Outras-Paginas.png)
 
 ## Wireframes
 
 ![Wireframe Home](img/wireframes/Home.png)
 
-![Wireframe Home](img/wireframes/Pesquisa.png)
+<br/>
 
-![Wireframe Home](img/wireframes/Pagina%20visualiza%C3%A7%C3%A3o%20Produtos.png)
+![Wireframe Pesquisa](img/wireframes/Pesquisa.png)
 
-![Wireframe Home](img/wireframes/Login.png)
+<br/>
 
-![Wireframe Home](img/wireframes/Criar%20Conta.png)
+![Wireframe](img/wireframes/Pagina%20visualiza%C3%A7%C3%A3o%20Produtos.png)
 
-![Wireframe Home](img/wireframes/Recuperar%20senha.png)
+<br/>
 
-![Wireframe Home](img/wireframes/Alterar%20Senha.png)
+![Wireframe](img/wireframes/Login.png)
 
-![Wireframe Home](img/wireframes/Usuario-empresa.png)
+<br/>
 
-![Wireframe Home](img/wireframes/Usuario.png)
+![Wireframe](img/wireframes/Criar%20Conta.png)
 
-![Wireframe Home](img/wireframes/Atualizar-Pagina.png)
+<br/>
 
-![Wireframe Home](img/wireframes/Usuario.png)
+![Wireframe](img/wireframes/Recuperar%20senha.png)
 
-![Wireframe Home](img/wireframes/Editar-Usuario-Empresa.png.png)
+<br/>
 
-![Wireframe Home](img/wireframes/Editar-Usuario.png.png)
+![Wireframe](img/wireframes/Alterar%20Senha.png)
 
-![Wireframe Home](img/wireframes/Page%20-%20Erro%20404.png)
+<br/>
+
+![Wireframe](img/wireframes/Usuario-empresa.png)
+
+<br/>
+
+![Wireframe](img/wireframes/Usuario.png)
+
+<br/>
+
+![Wireframe](img/wireframes/Atualizar-Pagina.png)
+
+<br/>
+
+![Wireframe](img/wireframes/Usuario.png)
+
+<br/>
+
+![Wireframe](img/wireframes/Editar-Usuario-Empresa.png.png)
+
+<br/>
+
+![Wireframe](img/wireframes/Editar-Usuario.png.png)
+
+<br/>
+
+![Wireframe](img/wireframes/Page%20-%20Erro%20404.png)
