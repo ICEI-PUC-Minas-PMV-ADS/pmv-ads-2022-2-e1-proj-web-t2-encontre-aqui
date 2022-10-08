@@ -18,7 +18,7 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 ## Template Padrão
 
-![Wireframe Home](img/wireframes/Template-Home.png)
+![Wireframe Home](img/wireframes/Template-Home.png =250x250)
 
 <br/>
 
@@ -26,7 +26,7 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 ## Wireframes
 
-![Wireframe Home](img/wireframes/Home.png)
+![Wireframe Home](img/wireframes/Home.png | width=100)
 
 <br/>
 
