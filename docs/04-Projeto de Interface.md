@@ -1,12 +1,10 @@
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
-Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+A visão do que será desenvolvido para o futuro usuário é muito importante, pois é a partir dele que o sistema vai ganhando forma e sentido, para melhor compreensão da experiência do usuário o projeto de interface nos ajuda através dos processos User flor (fluxo do usuário) e Wireframes, um esqueleto ou protótipo interativo do que será desenvolvido nos próximos passos.
 
 ## User Flow
+
+
 
 ![UserFlow1](https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/docs/img/userflow/User-Flow1.png?raw=true)
 
