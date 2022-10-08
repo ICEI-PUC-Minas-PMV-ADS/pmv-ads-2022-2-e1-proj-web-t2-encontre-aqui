@@ -6,78 +6,200 @@ A visão do que será desenvolvido para o futuro usuário é muito importante, p
 
 
 
-![UserFlow1](https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/docs/img/userflow/User-Flow1.png?raw=true)
+<br/>
+
+<p align="center"> 
+  <img src="img/userflow/User-Flow1.png" width="800">
+</p>
+     
 
 <br/>
 
-![UserFlow2](https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/docs/img/userflow/User-Flow2.png?raw=true)
-
+<p align="center"> 
+  <img src="img/userflow/User-Flow2.png" width="800">
+</p>
+                                                          
+                                                    
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
 ## Template Padrão
 
-![Wireframe Home](img/wireframes/Template-Home.png)
 
+<p align="center"> 
+  <img src="img/wireframes/Template-Home.png" width="400">
+</p>
+      
+                                                    
 <br/>
 
-![Wireframe Home](img/wireframes/Template-Outras-Paginas.png)
+
+<p align="center"> 
+  <img src="img/wireframes/Template-Outras-Paginas.png" width="400">
+</p>
+      
 
 ## Wireframes
 
-![Wireframe Home](img/wireframes/Home.png)
+<br/>
+
+### Home Page.
 
 <br/>
 
-![Wireframe Pesquisa](img/wireframes/Pesquisa.png)
+<p align="center"> 
+  <img src="img/wireframes/Home.png" width="400">
+</p>
+
 
 <br/>
 
-![Wireframe](img/wireframes/Pagina%20visualiza%C3%A7%C3%A3o%20Produtos.png)
+### Página com Resultado de Pesquisa.
+
+<br/>
+ 
+<p align="center"> 
+  <img src="img/wireframes/Pesquisa.png" width="400">
+</p>
 
 <br/>
 
-![Wireframe](img/wireframes/Login.png)
+###  Página de Descrição de Produto ou Serviço. 
 
 <br/>
 
-![Wireframe](img/wireframes/Criar%20Conta.png)
+<p align="center"> 
+  <img src="img/wireframes/Pagina%20visualiza%C3%A7%C3%A3o%20Produtos.png" width="400">
+</p>
+
 
 <br/>
 
-![Wireframe](img/wireframes/Recuperar%20senha.png)
+  ### Página de Login.
 
 <br/>
 
-![Wireframe](img/wireframes/Alterar%20Senha.png)
+<p align="center"> 
+  <img src="img/wireframes/Login.png" width="400">
+</p>
+
 
 <br/>
 
-![Wireframe](img/wireframes/Usuario-empresa.png)
+  ###  Novo Usuário.
 
 <br/>
 
-![Wireframe](img/wireframes/Usuario.png)
+<p align="center"> 
+  <img src="img/wireframes/Criar%20Conta.png" width="400">
+</p>
+
 
 <br/>
 
-![Wireframe](img/wireframes/Criar%20Pagina.png)
+  ### Página de Criar Conta. 
 
 <br/>
 
-![Wireframe](img/wireframes/Atualizar-Pagina.png)
+<p align="center"> 
+  <img src="img/wireframes/Recuperar%20senha.png" width="400">
+</p>
+
 
 <br/>
 
-![Wireframe](img/wireframes/Usuario.png)
+  ### Alterar Senha.
 
 <br/>
 
-![Wireframe](img/wireframes/Editar-Usuario-Empresa.png)
+<p align="center"> 
+  <img src="img/wireframes/Alterar%20Senha.png" width="400">
+</p>
 
 <br/>
 
-![Wireframe](img/wireframes/Editar-Usuario.png)
+### Página de Perfil de Usuário Divulgador.
 
 <br/>
 
-![Wireframe](img/wireframes/Page%20-%20Erro%20404.png)
+<p align="center"> 
+  <img src="img/wireframes/Usuario-empresa.png" width="400">
+</p>
+
+<br/>
+
+### Página de Perfil de Usuário.
+
+<br/>
+
+<p align="center"> 
+  <img src="img/wireframes/Usuario.png" width="400">
+</p>
+
+<br/>
+
+
+### Usuário Adiciona Páginas Para Divulgação.
+
+<p align="center"> 
+  <img src="img/wireframes/Form Adicao de Paginas.png" width="400">
+</p>
+
+<br/>
+
+
+### Criar Página de Visualização de Produto ou Serviço.
+
+<br/>
+
+<p align="center"> 
+  <img src="img/wireframes/Criar%20Pagina.png" width="400">
+</p>
+
+<br/>
+
+### Atualizar Página de Visualização de Produto ou Serviço.
+
+<br/>
+
+<p align="center"> 
+  <img src="img/wireframes/Atualizar-Pagina.png" width="400">
+</p>
+
+<br/>
+
+### Editar Usuário Divulgador.
+
+<br/>
+
+<p align="center"> 
+  <img src="img/wireframes/Editar-Usuario-Empresa.png" width="400">
+</p>
+
+<br/>
+
+
+<br/>
+
+  ### Editar Usuário.
+
+<br/>
+
+<p align="center"> 
+  <img src="img/wireframes/Editar-Usuario.png" width="400">
+</p>
+
+<br/>
+
+
+<br/>
+
+  ### Página de Erro.
+
+<br/>
+
+<p align="center"> 
+  <img src="img/wireframes/Page%20-%20Erro%20404.png" width="400">
+</p>
+
+<br/>
+
