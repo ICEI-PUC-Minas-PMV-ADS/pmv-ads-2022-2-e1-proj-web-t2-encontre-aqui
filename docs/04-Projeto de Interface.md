@@ -8,17 +8,17 @@ Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada
 
 ## User Flow
 
-![UserFlow1](img/userflow/User-Flow1.png)
+![UserFlow1](https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/docs/img/userflow/User-Flow1.png?raw=true | width=100)
 
 <br/>
 
-![UserFlow1](img/userflow/User-Flow2.png.png)
+![UserFlow1](https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/docs/img/userflow/User-Flow2.png?raw=true)
 
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
 ## Template Padrão
 
-![Wireframe Home](img/wireframes/Template-Home.png =250x250)
+![Wireframe Home](img/wireframes/Template-Home.png)
 
 <br/>
 
@@ -26,7 +26,7 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 ## Wireframes
 
-![Wireframe Home](img/wireframes/Home.png | width=100)
+![Wireframe Home](img/wireframes/Home.png)
 
 <br/>
 
