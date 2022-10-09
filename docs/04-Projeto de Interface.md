@@ -11,7 +11,7 @@ Você pode encontrar uma versão interativa acessando <a href="https://www.figma
 <br/>
 
 <p align="center"> 
-  <img src="img/userflow/User-Flow1.png" width="800">
+  <img src="img/userflow/User-Flow3.png" width="800">
 </p>
 <h3 align="center">FIGURA 01</h3>
 
@@ -252,6 +252,26 @@ O usuário poderá divulgar serviços de terceiros através de sua página de pe
 
 <br/>
 
+### Usuário Adiciona Páginas Para Divulgação
+
+Na figura 14 abaixo, podemos contemplar a usabilidade de adicionar páginas para divulgação no sistema, veja a seguir a estrutura detalhada:
+
+<ul>
+  <li>Cabeçalho - Logo, Menu do sistema contendo barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - foto de perfil e status logado na conta.</li>
+  
+  <li>Conteúdo - Contempla os campos: foto/logo - nome da empresa/profissional - ramo/profissão - campos para criação de páginas descrevendo produtos/serviços - localização real da empresa - botão para publicar página.</li>
+  
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
+</ul>
+
+<p align="center"> 
+  <img src="img/wireframes/Form Adicao de Paginas.png" width="400">
+</p>
+
+<h3 align="center">FIGURA 14</h3>
+
+<br/>
+
 ### Página de Apresentação do Profissional ou Empresa
 
 <ul>
@@ -267,26 +287,6 @@ O usuário poderá divulgar serviços de terceiros através de sua página de pe
 
 <p align="center"> 
   <img src="img/wireframes/Pagina do Profissional.png" width="400">
-</p>
-
-<h3 align="center">FIGURA 14</h3>
-
-<br/>
-
-### Usuário Adiciona Páginas Para Divulgação
-
-Na figura 14 abaixo, podemos contemplar a usabilidade de adicionar páginas para divulgação no sistema, veja a seguir a estrutura detalhada:
-
-<ul>
-  <li>Cabeçalho - Logo, Menu do sistema contendo barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - foto de perfil e status logado na conta.</li>
-  
-  <li>Conteúdo - Contempla os campos: foto/logo - nome da empresa/profissional - ramo/profissão - campos para criação de páginas descrevendo produtos/serviços - localização real da empresa - botão para publicar página.</li>
-  
-  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
-</ul>
-
-<p align="center"> 
-  <img src="img/wireframes/Form Adicao de Paginas.png" width="400">
 </p>
 
 <h3 align="center">FIGURA 15</h3>
