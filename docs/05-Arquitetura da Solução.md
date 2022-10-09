@@ -98,6 +98,7 @@ Legenda 2° opção:
   <li>JAVASCRIPT</li>
   <li>API'S</li>
   <li>Hospedagem no GitHub pages</li>
+  <li>Editor de código-fonte: Visual Studio Code</li>
 </ul>
 
 Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
