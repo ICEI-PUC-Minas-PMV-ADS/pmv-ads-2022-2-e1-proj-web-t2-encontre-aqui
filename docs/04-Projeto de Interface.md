@@ -169,11 +169,13 @@ Cadastrando novo usuário, a figura 09 contempla a estrutura de cadastro de um n
 <br/>
 
 ### Página Recuperar Senha
+Essa página contempla a estrutura de recuperação de senha do usuário caso ele venha esquecer a mesma, veja abaixo a estrutura de arame na figura 10
 
 <p align="center"> 
   <img src="img/wireframes/Recuperar%20senha.png" width="400">
 </p>
 
+<h3 align="center">FIGURA 10</h3>
 
 <br/>
 
