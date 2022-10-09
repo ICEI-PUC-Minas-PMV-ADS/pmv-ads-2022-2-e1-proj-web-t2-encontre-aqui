@@ -75,6 +75,14 @@ Legenda 2° opção:
 
 <p>Na página 01 temos o menu com 3 possibilidades de direção para o usuário, na primeira é o botão "Para empresas", o usuário é direcionado para página 03, aqui o MEI ou ME se cadastra de acordo com suas preferências de empresa. Após o preenchimento dos dados na página 03 ele é direcionado para página 06 onde completa o cadastro com os dados de sua empresa. Após criar a conta é direcionado para a página 09 onde é possível publicar sua página contendo informações que interessa seu cliente. Nessa mesma página o usuário/MEI/ME tem possibilidade de adicionar páginas detalhadas sobre seu produto/serviço prestrado. Ao concluir essa etapa ele é redirecionado para página 10 onde vai preencher detalhadamente seus serviços/produtos. Na página 11 o usuário pode editar suas páginas, seu perfil e informações pessoais da sua empresa.</p>
 
+<h3> Possibilidade 02</h3>
+
+<p>O usuário é alguém que almeja buscar serviços/produtos, ao acessar a página 01 ele clica em cadastrar-se e é direcionado para página 03 criando sua conta de usuário comum, ao concluir seu cadastro o usuário é enviado para página 07 que contem sua foto, descrição sobre ele, último vez online, um lista com seus serviços/produtos favoritos, mesmo sendo um usuário comum ele pode divulgar serviços/produtos de terceiros ou de fabricação própria através do botão fazer divulgação. Após clicar no botão ele é redirecionado para a página 06 onde colocar as informações de empresa, logo após o preenchimento ele é redirecionado para página 09 onde faz a publicação da página simplicada, tendo opção de detalhar através da página 10 onde o usuário descreve um todo da empresa para ser encontrada por seus clientes. Assim como na primeira possibilidade o usuário comum pode editar suas páginas e informações desejadas.</p>
+
+<h3> Possibilidade 03</h3>
+
+<p>O usuário já fez o cadastro e acessa a página 01 e clica em entrar que é direcionado para página 02 onde faz o acesso ao sistema, caso venha esquecer a senha ele pode acionar "Esqueceu a senha" que será redirecionado para página 05 onde coloca seu e-mail e logo após o envio do e-mail e ele clicar no link no e-mail é redirecionado para página 04 onde faz uma nova senha de acesso, após concluir ele retorna para página 02 onde faz o acesso ao sistema. Tendo assim acesso a página 07 onde está suas informações pessoais seu favoritos e demais aspectos.</p>
+
 
 <p align="center"> 
   <img src="img/userflow/User-Flow2.png" width="800">
