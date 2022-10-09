@@ -1,14 +1,13 @@
 # ENCONTRE AQUI 
 `ANALISE E DESENVOLVIMENTO DE SISTEMA `
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de Aplicação Web Front-End - Turma 02`
 
-`1 SEMESTRE`
+`1 SEMESTRE de 2022 - EIXO 01`
 
 Sistema Web de busca de MEI's e ME's com funcionalidades otimizadas e objetivas. Será contemplado com possibilidades de buscar desde um serviço para residência até
-produtos para fazer desde um bolo até mesmo construir uma casa com materiais disponiveis, com comodidade e otimizando os gastos tanto para o usuário quanto para os
-fornecedores de materia prima. Possibilitanto assim uma interação de MEI's e ME's que não estão ativos na internet seja por não ter tempo ou por não saberem manusear
-a internet e usar em seu favor.
+produtos para fazer um bolo ou até mesmo construir uma casa com materiais disponíveis, com comodidade e otimizando os gastos tanto para o usuário quanto para os
+fornecedores de materia prima. Possibilitanto assim uma interação de MEI's e ME's com seus clientes e virse versa.
 
 ## Integrantes
 
