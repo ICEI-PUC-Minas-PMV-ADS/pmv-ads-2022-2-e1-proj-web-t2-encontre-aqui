@@ -214,7 +214,7 @@ Na figura 12, contemplamos a página de perfil de um usuário que divulga seja s
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - foto de perfil e status logado na conta.</li>
   
-  <li>Conteúdo - Contempla os campos: logo da empresa/serviço - descrição sobre o usuário divulgador, botão de edição de perfil, status de último acesso(dia/hora) - galeria de páginas alocadas no sistema - botão de página principal - botão para fazer uma divulgação - barra abaixo de favoritos seja um serviço ou empresa.</li>
+  <li>Conteúdo - Contempla os campos: logo da empresa/serviço - descrição sobre o usuário divulgador, botão de edição de perfil, status de último acesso(dia/hora) - galeria de páginas alocadas no sistema - botão de página principal - botão para fazer uma divulgação - lista de favoritos seja um serviço, produto ou empresa.</li>
   
   <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
 </ul>
@@ -231,12 +231,23 @@ Na figura 12, contemplamos a página de perfil de um usuário que divulga seja s
 <br/>
 
 ### Página de Perfil de Usuário.
+O usuário poderá divulgar serviços de terceiros através de sua página de perfil, desque o terceiro autorize juntamente com o time de suporte do sistema, acompanhe essa possibilidade e mais detalhes abaixo na figura 13:
+
+<ul>
+  <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - foto de perfil e status logado na conta.</li>
+  
+  <li>Conteúdo - Contempla os campos: foto do perfil - descrição sobre o usuário, botão de edição de perfil, status de último acesso(dia/hora) - botão para fazer uma divulgação de terceiros - lista de favoritos seja um serviço, produto ou empresa.</li>
+  
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
+</ul>
 
 <br/>
 
 <p align="center"> 
   <img src="img/wireframes/Usuario.png" width="400">
 </p>
+
+<h3 align="center">FIGURA 13</h3>
 
 <br/>
 
