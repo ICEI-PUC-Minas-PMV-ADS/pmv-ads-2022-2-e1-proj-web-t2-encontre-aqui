@@ -28,8 +28,6 @@ A solução implementada conta com os seguintes módulos:
 >
 > - [Whimsical](https://whimsical.com/)
 
-Inclua um diagrama da solução e descreva os módulos e as tecnologias que fazem parte da solução. Discorra sobre o diagrama.
-
 
 <h2><a href="https://www.figma.com/file/bVtZWbFrOazzYkKon3pfYU/User-Flow?node-id=0%3A1">ACESSAR USER FLOW.</a></h2>
 Legenda: 1° opção:
@@ -92,6 +90,15 @@ Legenda 2° opção:
 
 
 ## Tecnologias Utilizadas
+
+<p>As tecnologias nesse primeiro momento que iremos utilizar serão:</p>
+<ul>
+  <li>HTML
+  <li>CSS</li>
+  <li>JAVASCRIPT</li>
+  <li>API'S</li>
+  <li>Hospedagem no GitHub pages</li>
+</ul>
 
 Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
 
