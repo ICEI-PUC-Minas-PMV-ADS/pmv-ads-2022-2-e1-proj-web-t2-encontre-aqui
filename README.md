@@ -1,7 +1,7 @@
 # ENCONTRE AQUI 
 `ANALISE E DESENVOLVIMENTO DE SISTEMA `
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de Aplicação Web Front-End - Turma 02`
 
 `1 SEMESTRE`
 
