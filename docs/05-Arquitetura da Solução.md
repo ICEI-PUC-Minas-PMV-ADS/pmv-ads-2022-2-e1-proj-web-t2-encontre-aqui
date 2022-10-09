@@ -12,7 +12,7 @@ Exemplo:
 
 Os componentes que fazem parte da solução são apresentados na Figura 20.
 
-![Diagrama de Componentes](img/Internet.png)
+![Diagrama de Componentes](img/Web.png)
 <center>Figura 20 - Arquitetura da Solução</center>
 
 A solução implementada conta com os seguintes módulos:
