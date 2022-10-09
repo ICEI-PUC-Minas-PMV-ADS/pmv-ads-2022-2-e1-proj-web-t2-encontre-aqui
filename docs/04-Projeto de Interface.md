@@ -125,7 +125,7 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
   
-  <li>Conteúdo - Contempla o campo de e-mail e senha cadastrados - abaixo temos a opção de recuperar o login acessando "Esqueceu sua senha" e por fim temos o botão de entrar no sistema.</li>
+  <li>Conteúdo - Contempla o campo de e-mail e senha cadastrados - abaixo temos a opção de recuperar o login acessando "Esqueceu a senha" e por fim temos o botão de entrar no sistema.</li>
   
   <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
 </ul>
@@ -140,6 +140,15 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 <br/>
 
   ###  Novo Usuário.
+  
+<ul>
+  <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão para entrar no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
+  
+  <li>Conteúdo - Contempla os campos a seguir: nome, sobrenome, e-mail, senha, confirmar senha - abaixo temos a opção já tenho cadastro e o botão de cadastrar no sistema.</li>
+  
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
+</ul>
+
 
 <br/>
 
