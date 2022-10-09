@@ -122,6 +122,14 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 
   ### Página de Login.
 
+<ul>
+  <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
+  
+  <li>Conteúdo - Contempla o campo de e-mail e senha cadastrados - abaixo temos a opção de recuperar o login acessando "Esqueceu sua senha" e por fim temos o botão de entrar no sistema.</li>
+  
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
+</ul>
+
 <br/>
 
 <p align="center"> 
