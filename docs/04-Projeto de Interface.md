@@ -230,7 +230,7 @@ Na figura 12, contemplamos a página de perfil de um usuário que divulga seja s
 
 <br/>
 
-### Página de Perfil de Usuário.
+### Página de Perfil de Usuário
 O usuário poderá divulgar serviços de terceiros através de sua página de perfil, desde que o terceiro autorize a divulgação juntamente com o time de suporte do sistema, acompanhe essa possibilidade e mais detalhes abaixo na figura 13:
 
 <ul>
@@ -252,7 +252,7 @@ O usuário poderá divulgar serviços de terceiros através de sua página de pe
 <br/>
 
 
-### Usuário Adiciona Páginas Para Divulgação.
+### Usuário Adiciona Páginas Para Divulgação
 Na figura 14 abaixo, podemos contemplar a usabilidade de adicionar páginas para divulgação no sistema, veja a seguir a estrutura detalhada:
 
 <ul>
@@ -274,7 +274,7 @@ Na figura 14 abaixo, podemos contemplar a usabilidade de adicionar páginas para
 <br/>
 
 
-### Criar Página de Visualização de Produto ou Serviço.
+### Criar Página de Visualização de Produto ou Serviço
 Após clicar no ícone de criar página da figura 14 o usuário é direcionado para página detalhada da figura 15 estruturada da seguinte forma abaixo:
 
 <ul>
@@ -295,8 +295,8 @@ Após clicar no ícone de criar página da figura 14 o usuário é direcionado p
 
 <br/>
 
-### Atualizar Página de Visualização de Produto ou Serviço.
-A figura 16 representa a atualização de dados que o MEI ou ME desejar, veja que a estrutura se mantém a mesma da figura 15, mas ao final o botão é alterado para atualizar a página do produto ou serviço descrito, veja a descrição da estrutura:
+### Atualizar Página de Visualização de Produto ou Serviço
+A figura 16 representa a atualização de dados que o MEI ou ME desejar, veja que a estrutura se mantém a mesma da figura 15, mas ao final o botão é alterado para atualizar a página do produto ou serviço descrito, acompanhe a descrição da estrutura:
 
 <ul>
   <li>Cabeçalho - Logo e foto de capa - nome da empresa.</li>
@@ -316,13 +316,25 @@ A figura 16 representa a atualização de dados que o MEI ou ME desejar, veja qu
 
 <br/>
 
-### Editar Usuário Divulgador.
+### Editar Usuário Divulgador
+A figura 17 é onde o MEI ou ME pode editar seus dados, acompanhe abaixo a estrutura:
+
+<ul>
+  <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - foto de perfil e status logado na conta.</li>
+  
+  <li>Conteúdo - Contempla os campos: foto do perfil - razão social - CNPJ - inscrição estadual - logradouro - bairro - município - UF - CEP - telefone - e-mail e o botão para atualizar cadastro.</li>
+  
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
+</ul>
 
 <br/>
 
 <p align="center"> 
   <img src="img/wireframes/Editar-Usuario-Empresa.png" width="400">
 </p>
+
+<h3 align="center">FIGURA 17</h3>
+
 
 <br/>
 
