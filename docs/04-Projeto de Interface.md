@@ -275,12 +275,23 @@ Na figura 14 abaixo, podemos contemplar a usabilidade de adicionar páginas para
 
 
 ### Criar Página de Visualização de Produto ou Serviço.
+Após clicar no ícone de criar página da figura 14 o usuário é direcionado para página detalhada da figura 15 estruturada da seguinte forma abaixo:
+
+<ul>
+  <li>Cabeçalho - Logo e foto de capa - nome da empresa.</li>
+  
+  <li>Conteúdo - Contempla botões interativos personalizados de acordo com a necessidade da empresa, fotos de produtos, descrição da empresa em geral como preços de produtos, serviços, horário de atendimento, telefone para contato, links para redes sociais, endereço, contendo também uma barra de demais produtos e serviços disponíveis, e a localização através do maps - de acordo que o usuário vai preenchendo a página, tem uma linha de conclusão de cada etapa, gerando uma experiência de missão cumprida a cada etapa até chegar no botão criar página.</li>
+  
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
+</ul>
 
 <br/>
 
 <p align="center"> 
   <img src="img/wireframes/Criar%20Pagina.png" width="400">
 </p>
+
+<h3 align="center">FIGURA 15</h3>
 
 <br/>
 
