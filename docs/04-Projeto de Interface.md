@@ -197,6 +197,7 @@ Após o envio do e-mail de recuperação de senha o usuário clica no link no se
   
   <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
 </ul>
+
 <br/>
 
 <p align="center"> 
@@ -207,7 +208,17 @@ Após o envio do e-mail de recuperação de senha o usuário clica no link no se
 
 <br/>
 
-### Página de Perfil de Usuário Divulgador.
+### Página de Perfil de Usuário Divulgador
+Na figura 12, contemplamos a página de perfil de um usuário que divulga seja seu serviço ou produto, contendo os seguintes campos na estrutura abaixo:
+
+<ul>
+  <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - foto de perfil e status logado na conta.</li>
+  
+  <li>Conteúdo - Contempla os campos: descrição sobre o usuário, botão de edição de perfil, status de último acesso(dia/hora) - galeria de páginas alocadas no sistema - botão de página principal - botão para fazer uma divulgação - barra abaixo de favoritos seja um serviço ou empresa.</li>
+  
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
+</ul>
+
 
 <br/>
 
