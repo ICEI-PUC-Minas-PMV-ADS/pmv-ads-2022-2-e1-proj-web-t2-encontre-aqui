@@ -28,14 +28,14 @@ Legenda: 1° opção:
   <li>Página inicial: 01</li>
   <li>Página Resultado de pesquisas: 02</li>
   <li>Página de divulgação do profissional ou empresa: 03</li>
-  <li>Página de divulgação  de produto ou serviço: 04</li> 
+  <li>Página de divulgação de produto ou serviço: 04</li> 
 </ul>
 
 
 A imagem a seguir ilustra a 1° opção de acesso ao fluxo do usuário em nossa solução.
 Ao clicar na barra de pesquisa da página 01 o usuário será direcionado para a página 02 onde é exibido os resultados da sua pesquisa. 
 Logo após ele pode tanto clicar no botão visitar quanto clicar no ícone na imagem do serviço/empresa pesquisado no mapa que será direcionado para a página 03.
-Podendo também utilizar o carrossel na página 01 ao clicar no prestrador de serviço desejado será direcionado para a página 04 onde está as informações do prestrador de serviço, tendo a possibilidade de clicar no carrossel e sendo direcionado para a página 04. Abaido de cada página tem um rodapé contendo categorias abrangentes para que o usuário possa navegar de acordo com seu gosto e necessidade.
+Podendo também utilizar o carrossel na página 01 ao clicar no prestador de serviço desejado será direcionado para a página 04 onde está as informações do prestador de serviço, tendo a possibilidade de clicar no carrossel e sendo direcionado para a página 04. Abaido de cada página tem um rodapé contendo categorias abrangentes para que o usuário possa navegar de acordo com seu gosto e necessidade.
 
 <p align="center"> 
   <img src="img/userflow/User-Flow3.JPG" width="800">
@@ -65,11 +65,11 @@ Legenda 2° opção:
 
 <h3> Possibilidade 01</h3>
 
-<p>Na página 01 temos o menu com 3 possibilidades de direção para o usuário, na primeira é o botão "Para empresas", o usuário é direcionado para página 03, aqui o MEI ou ME se cadastra de acordo com suas preferências de empresa. Após o preenchimento dos dados na página 03 ele é direcionado para página 06 onde completa o cadastro com os dados de sua empresa. Após criar a conta é direcionado para a página 09 onde é possível publicar sua página contendo informações que interessa seu cliente. Nessa mesma página o usuário/MEI/ME tem possibilidade de adicionar páginas detalhadas sobre seu produto/serviço prestrado. Ao concluir essa etapa ele é redirecionado para página 10 onde vai preencher detalhadamente seus serviços/produtos. Na página 11 o usuário pode editar suas páginas, seu perfil e informações pessoais da sua empresa.</p>
+<p>Na página 01 temos o menu com 3 possibilidades de direção para o usuário, na primeira é o botão "Para empresas", o usuário é direcionado para página 03, aqui o MEI ou ME se cadastra de acordo com suas preferências de empresa. Após o preenchimento dos dados na página 03 ele é direcionado para página 06 onde completa o cadastro com os dados de sua empresa. Após criar a conta é direcionado para a página 09 onde é possível publicar sua página contendo informações que interessa seu cliente. Nessa mesma página o usuário/MEI/ME tem possibilidade de adicionar páginas detalhadas sobre seu produto/serviço prestado. Ao concluir essa etapa ele é redirecionado para página 10 onde vai preencher detalhadamente seus serviços/produtos. Na página 11 o usuário pode editar suas páginas, seu perfil e informações pessoais da sua empresa.</p>
 
 <h3> Possibilidade 02</h3>
 
-<p>O usuário é alguém que almeja buscar serviços/produtos, ao acessar a página 01 ele clica em cadastrar-se e é direcionado para página 03 criando sua conta de usuário comum, ao concluir seu cadastro o usuário é enviado para página 07 que contem sua foto, descrição sobre ele, último vez online, um lista com seus serviços/produtos favoritos, mesmo sendo um usuário comum ele pode divulgar serviços/produtos de terceiros ou de fabricação própria através do botão fazer divulgação. Após clicar no botão ele é redirecionado para a página 06 onde colocar as informações de empresa, logo após o preenchimento ele é redirecionado para página 09 onde faz a publicação da página simplicada, tendo opção de detalhar através da página 10 onde o usuário descreve um todo da empresa para ser encontrada por seus clientes. Assim como na primeira possibilidade o usuário comum pode editar suas páginas e informações desejadas.</p>
+<p>O usuário é alguém que almeja buscar serviços/produtos, ao acessar a página 01 ele clica em cadastrar-se e é direcionado para página 03 criando sua conta de usuário comum, ao concluir seu cadastro o usuário é enviado para página 07 que contem sua foto, descrição sobre ele, último vez online, um lista com seus serviços/produtos favoritos, mesmo sendo um usuário comum ele pode divulgar serviços/produtos de terceiros ou de fabricação própria através do botão fazer divulgação. Após clicar no botão ele é redirecionado para a página 06 onde colocar as informações de empresa, logo após o preenchimento ele é redirecionado para página 09 onde faz a publicação da página simplificada, tendo opção de detalhar através da página 10 onde o usuário descreve um todo da empresa para ser encontrada por seus clientes. Assim como na primeira possibilidade o usuário comum pode editar suas páginas e informações desejadas.</p>
 
 <h3> Possibilidade 03</h3>
 
