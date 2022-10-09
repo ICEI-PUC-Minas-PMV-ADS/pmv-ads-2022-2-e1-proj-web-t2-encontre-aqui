@@ -65,6 +65,8 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 <br/>
 
 ### Home Page
+É a página incial do sistema que contempla os seguintes campos abaixo:
+
 <ul>
   <li>Cabeçalho - Logo e Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema.
   <li>Conteúdo - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - Contempla também os serviços e empresas disponíveis na localização do usuário</li>
@@ -81,6 +83,7 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 <br/>
 
 ### Página com Resultado de Pesquisa
+A página abaixo está estruturada da seguinte forma:
 
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
@@ -101,7 +104,8 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 
 <br/>
 
-###  Página de Descrição de Produto ou Serviço. 
+###  Página de Descrição de Produto ou Serviço
+A página abaixo está estruturada da seguinte forma:
 
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
@@ -121,6 +125,7 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 <br/>
 
   ### Página de Login.
+A página abaixo está estruturada da seguinte forma:
 
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
@@ -139,7 +144,8 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 
 <br/>
 
-  ###  Novo Usuário.
+  ###  Novo Usuário
+A página abaixo está estruturada da seguinte forma:  
   
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão para entrar no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
@@ -159,7 +165,17 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 
 <br/>
 
-  ### Página de Criar Conta. 
+  ### Página de Criar Conta
+  
+A página abaixo está estruturada da seguinte forma:
+
+<ul>
+  <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão para entrar no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
+  
+  <li>Conteúdo - Contempla os campos a seguir: nome, sobrenome, e-mail, senha, confirmar senha - abaixo temos a opção já tenho cadastro e o botão de cadastrar no sistema.</li>
+  
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
+</ul>
 
 <br/>
 
