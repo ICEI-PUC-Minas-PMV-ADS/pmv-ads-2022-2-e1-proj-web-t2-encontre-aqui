@@ -20,10 +20,6 @@ A solução implementada conta com os seguintes módulos:
  - **Maps API** - plataforma que permite utilizar bing maps
  - **Hospedagem** - local na Internet onde as páginas são mantidas e acessadas pelo navegador. 
 
-> **Links Úteis**:
->
-> - [Whimsical](https://whimsical.com/)
-
 
 <h2><a href="https://www.figma.com/file/bVtZWbFrOazzYkKon3pfYU/User-Flow?node-id=0%3A1">ACESSAR USER FLOW.</a></h2>
 Legenda: 1° opção:
