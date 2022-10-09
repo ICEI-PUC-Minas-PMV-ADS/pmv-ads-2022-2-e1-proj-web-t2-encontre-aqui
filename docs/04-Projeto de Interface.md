@@ -70,7 +70,7 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 <ul>
   <li>Cabeçalho - Logo e Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema.</li>
   <li>Conteúdo - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - Contempla também os serviços e empresas disponíveis na localização do usuário</li>
-  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.
 </ul>
 
 <br/>
@@ -92,7 +92,7 @@ Na figura 06, o usuário vai encontrar com facilidade os serviços e empresas qu
   
   <li>Menu lateral - Possui um filtro onde o usuário pode filtrar sua pesquisa, detalhando de forma objetiva o que busca - Contempla também sugestões de serviços e empresas disponíveis em sua localização.</li>
   
-  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
 </ul>
 
 
@@ -133,7 +133,7 @@ A página de login contempla uma estrutura simples e objetiva para que o usuári
   
   <li>Conteúdo - Contempla o campo de e-mail e senha cadastrados - abaixo temos a opção de recuperar o login acessando "Esqueceu a senha" e por fim temos o botão de entrar no sistema.</li>
   
-  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
 </ul>
 
 <br/>
@@ -154,7 +154,7 @@ Cadastrando novo usuário, a figura 09 contempla a estrutura de cadastro de um n
   
   <li>Conteúdo - Contempla os campos a seguir: nome, sobrenome, e-mail, senha, confirmar senha - abaixo temos a opção já tenho cadastro e o botão de cadastrar no sistema.</li>
   
-  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
 </ul>
 
 <p align="center"> 
@@ -176,7 +176,7 @@ Essa página contempla a estrutura de recuperação de senha do usuário caso el
   
   <li>Conteúdo - Contempla os campos a seguir: descrição recuperar senha, informe seu e-mail para receber um link de recuperação de senha, e-mail - um botão para acionar o envio do e-mail de recuperação da senha - links para suporte - termos de uso e política de privacidade de dados do usuário.</li>
   
-  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
 </ul>
 
 <p align="center"> 
@@ -195,7 +195,7 @@ Após o envio do e-mail de recuperação de senha o usuário clica no link no se
   
   <li>Conteúdo - Contempla os campos a seguir: descrição Nova senha, inserir senha, confirmar senha - botão alterar senha.</li>
   
-  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
 </ul>
 
 <br/>
@@ -214,9 +214,9 @@ Na figura 12, contemplamos a página de perfil de um usuário que divulga seja s
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - foto de perfil e status logado na conta.</li>
   
-  <li>Conteúdo - Contempla os campos: descrição sobre o usuário, botão de edição de perfil, status de último acesso(dia/hora) - galeria de páginas alocadas no sistema - botão de página principal - botão para fazer uma divulgação - barra abaixo de favoritos seja um serviço ou empresa.</li>
+  <li>Conteúdo - Contempla os campos: logo da empresa/serviço - descrição sobre o usuário divulgador, botão de edição de perfil, status de último acesso(dia/hora) - galeria de páginas alocadas no sistema - botão de página principal - botão para fazer uma divulgação - barra abaixo de favoritos seja um serviço ou empresa.</li>
   
-  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
 </ul>
 
 
