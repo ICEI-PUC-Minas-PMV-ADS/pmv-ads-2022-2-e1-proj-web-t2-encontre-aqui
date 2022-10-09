@@ -169,7 +169,7 @@ Cadastrando novo usuário, a figura 09 contempla a estrutura de cadastro de um n
 <br/>
 
 ### Página Recuperar Senha
-Essa página contempla a estrutura de recuperação de senha do usuário caso ele venha esquecer a mesma, veja abaixo a estrutura de arame na figura 10
+Essa página contempla a estrutura de recuperação de senha do usuário caso ele venha esquecer a mesma, veja abaixo a estrutura de arame na figura 10:
 
 <ul>
   <li>Cabeçalho - Logo e Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema.</li>
@@ -188,12 +188,22 @@ Essa página contempla a estrutura de recuperação de senha do usuário caso el
 <br/>
 
   ### Alterar Senha.
+Após o envio do e-mail de recuperação de senha o usuário clica no link no seu e-mail e é enviado para página da figura 11, tendo a estrutura abaixo:
 
+<ul>
+  <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão para entrar no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
+  
+  <li>Conteúdo - Contempla os campos a seguir: descrição Nova senha, inserir senha, confirmar senha - botão alterar senha.</li>
+  
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
+</ul>
 <br/>
 
 <p align="center"> 
   <img src="img/wireframes/Alterar%20Senha.png" width="400">
 </p>
+
+<h3 align="center">FIGURA 11</h3>
 
 <br/>
 
