@@ -4,9 +4,7 @@
 
 ## Diagrama de componentes
 
-Diagrama que permite a modelagem física de um sistema, através da visão dos seus componentes e relacionamentos entre os mesmos.
-
-Exemplo: 
+Acompanhe abaixo o diagrama que permite a modelagem física de um sistema, através da visão dos seus componentes e relacionamentos entre os mesmos.
 
 Os componentes que fazem parte da solução são apresentados na Figura 20.
 
