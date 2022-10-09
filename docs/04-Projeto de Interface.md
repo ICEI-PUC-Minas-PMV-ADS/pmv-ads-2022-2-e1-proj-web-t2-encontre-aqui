@@ -146,7 +146,7 @@ A página de login contempla uma estrutura simples e objetiva para que o usuári
 
 <br/>
 
-  ###  Novo Usuário
+  ###  Página de Criar Conta
 Cadastrando novo usuário, a figura 09 contempla a estrutura de cadastro de um novo usuário, veja abaixo:  
   
 <ul>
@@ -157,9 +157,6 @@ Cadastrando novo usuário, a figura 09 contempla a estrutura de cadastro de um n
   <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
 </ul>
 
-
-<br/>
-
 <p align="center"> 
   <img src="img/wireframes/Criar%20Conta.png" width="400">
 </p>
@@ -168,18 +165,7 @@ Cadastrando novo usuário, a figura 09 contempla a estrutura de cadastro de um n
 
 <br/>
 
-  ### Página de Criar Conta
   
-A página abaixo está estruturada da seguinte forma:
-
-<ul>
-  <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão para entrar no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
-  
-  <li>Conteúdo - Contempla os campos a seguir: nome, sobrenome, e-mail, senha, confirmar senha - abaixo temos a opção já tenho cadastro e o botão de cadastrar no sistema.</li>
-  
-  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
-</ul>
-
 <br/>
 
 <p align="center"> 
