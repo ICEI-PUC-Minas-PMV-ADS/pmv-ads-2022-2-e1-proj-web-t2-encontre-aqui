@@ -31,7 +31,7 @@ A solução implementada conta com os seguintes módulos:
 Inclua um diagrama da solução e descreva os módulos e as tecnologias que fazem parte da solução. Discorra sobre o diagrama.
 
 
-<a href="https://www.figma.com/file/bVtZWbFrOazzYkKon3pfYU/User-Flow?node-id=0%3A1">Acesse ao User flow completo.</a>
+<h2><a href="https://www.figma.com/file/bVtZWbFrOazzYkKon3pfYU/User-Flow?node-id=0%3A1">Acesse ao User flow completo.</a></h2>
 Legenda: 1° opção:
 
 <ul>
