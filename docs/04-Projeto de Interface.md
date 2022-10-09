@@ -65,7 +65,7 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 <br/>
 
 ### Home Page
-É a página incial do sistema onde o usuário tem total autonomia de pesquisar seriços e empresas que almeja, veja na figura 05 que contempla os seguintes campos abaixo:
+É a página incial do sistema onde o usuário tem total autonomia de pesquisar serviços e empresas que almejar. Veja abaixo na figura 05 que contempla os seguintes campos:
 
 <ul>
   <li>Cabeçalho - Logo e Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema</li>
@@ -83,7 +83,7 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 <br/>
 
 ### Página com Resultado de Pesquisa
-A página abaixo está estruturada da seguinte forma:
+Na figura 06, o usuário vai encontrar com facilidade os serviços e empresas que desejar, além de mais informações, confira abaixo como está estruturada:
 
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
@@ -101,6 +101,7 @@ A página abaixo está estruturada da seguinte forma:
 <p align="center"> 
   <img src="img/wireframes/Pesquisa.png" width="400">
 </p>
+<h3 align="center">FIGURA 06</h3>
 
 <br/>
 
