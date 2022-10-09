@@ -43,7 +43,7 @@ Legenda: 1° opção:
 A imagem a seguir ilustra a 1° opção de acesso ao fluxo do usuário em nossa solução.
 Ao clicar na barra de pesquisa da página 01 o usuário será direcionado para a página 02 onde é exibido os resultados da sua pesquisa. 
 Logo após ele pode tanto clicar no botão visitar quanto clicar no ícone na imagem do serviço/empresa pesquisado no mapa que será direcionado para a página 03.
-Podendo também utilizar o carrossel na página 01 ao clicar no prestrador de serviço desejado será direcionado para a página 04 onde está as informações do prestrador de serviço, tendo a possibilidade de clicar no carrossel e sendo direcionado para a página 04.
+Podendo também utilizar o carrossel na página 01 ao clicar no prestrador de serviço desejado será direcionado para a página 04 onde está as informações do prestrador de serviço, tendo a possibilidade de clicar no carrossel e sendo direcionado para a página 04. Abaido de cada página tem um rodapé contendo categorias abrangentes para que o usuário possa navegar de acordo com seu gosto e necessidade.
 
 <p align="center"> 
   <img src="img/userflow/User-Flow3.JPG" width="800">
