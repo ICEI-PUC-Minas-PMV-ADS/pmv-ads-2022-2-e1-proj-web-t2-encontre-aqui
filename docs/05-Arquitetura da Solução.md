@@ -30,7 +30,12 @@ A solução implementada conta com os seguintes módulos:
 
 Inclua um diagrama da solução e descreva os módulos e as tecnologias que fazem parte da solução. Discorra sobre o diagrama.
 
-Legenda:  
+Legenda: 1° opção:
+
+Página inicial: 01
+Página Resultado de pesquisas: 02
+Página de divulgação do profissional ou empresa: 03
+Página de divulgação  de produto ou serviço: 04  
 
 
 
