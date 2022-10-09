@@ -226,6 +226,8 @@ Na figura 12, contemplamos a página de perfil de um usuário que divulga seja s
   <img src="img/wireframes/Usuario-empresa.png" width="400">
 </p>
 
+<h3 align="center">FIGURA 12</h3>
+
 <br/>
 
 ### Página de Perfil de Usuário.
