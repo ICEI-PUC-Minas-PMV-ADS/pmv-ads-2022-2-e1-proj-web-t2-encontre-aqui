@@ -106,14 +106,14 @@ Na figura 06, o usuário vai encontrar com facilidade os serviços e empresas qu
 <br/>
 
 ###  Página de Descrição de Produto ou Serviço
-A página abaixo está estruturada da seguinte forma:
+Acompanhando a figura 07 o usuário poderá visualizar a descrição do produto ou serviço pesquisado, veja abaixo como está estruturado:
 
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
   
   <li>Conteúdo - Contempla o nome da empresa, foto de capa e logo, possui botões interativos personalizados de acordo com a necessidade da empresa, fotos de produtos, descrição da empresa em geral como preços de produtos, serviços, horário de atendimento, telefone para contato, links para redes sociais, endereço, contendo também uma barra de demais produtos e serviços disponíveis, e por fim a localização através do maps.</li>
   
-  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
 </ul>
 
 <br/>
@@ -121,12 +121,12 @@ A página abaixo está estruturada da seguinte forma:
 <p align="center"> 
   <img src="img/wireframes/Pagina%20visualiza%C3%A7%C3%A3o%20Produtos.png" width="400">
 </p>
-
+<h3 align="center">FIGURA 07</h3>
 
 <br/>
 
   ### Página de Login.
-A página abaixo está estruturada da seguinte forma:
+A página de login contempla uma estrutura simples e objetiva para que o usuário tenha uma ótima experiência, acompanhe abaixo a estrutura na figura 08:
 
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
@@ -142,11 +142,12 @@ A página abaixo está estruturada da seguinte forma:
   <img src="img/wireframes/Login.png" width="400">
 </p>
 
+<h3 align="center">FIGURA 08</h3>
 
 <br/>
 
   ###  Novo Usuário
-A página abaixo está estruturada da seguinte forma:  
+Cadastrando novo usuário, a figura 09 contempla a estrutura de cadastro de um novo usuário, veja abaixo:  
   
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão para entrar no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
@@ -163,6 +164,7 @@ A página abaixo está estruturada da seguinte forma:
   <img src="img/wireframes/Criar%20Conta.png" width="400">
 </p>
 
+<h3 align="center">FIGURA 09</h3>
 
 <br/>
 
