@@ -21,7 +21,7 @@ A solução implementada conta com os seguintes módulos:
    - **Local Storage** - armazenamento mantido no Navegador, onde são implementados bancos de dados baseados em JSON. São eles: 
      - **Criação** - Criar usuário no sistema
      - **Login** - Fazer login no sistema
- - **Maps API** - plataforma que permite utilizar maps
+ - **Maps API** - plataforma que permite utilizar bing maps
  - **Hospedagem** - local na Internet onde as páginas são mantidas e acessadas pelo navegador. 
 
 > **Links Úteis**:
