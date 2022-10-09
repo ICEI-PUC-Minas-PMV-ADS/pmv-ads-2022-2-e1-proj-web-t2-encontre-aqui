@@ -168,6 +168,8 @@ Cadastrando novo usuário, a figura 09 contempla a estrutura de cadastro de um n
   
 <br/>
 
+### Página Recuperar Senha
+
 <p align="center"> 
   <img src="img/wireframes/Recuperar%20senha.png" width="400">
 </p>
