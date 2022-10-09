@@ -99,6 +99,7 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 
 ## Hospedagem
+A hospedagem do sistema será feita através do GitHub pages, onde utilizaremos nosso repositório que se encontra no próprio GitHub fazendo assim a vinculação do mesmo com o GitHub pages através de uma URL especifica.
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.
 
