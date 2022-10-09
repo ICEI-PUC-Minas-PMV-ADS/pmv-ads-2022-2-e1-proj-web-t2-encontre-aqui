@@ -49,28 +49,10 @@ Podendo também utilizar o carrossel na página 01 ao clicar no prestrador de se
   <img src="img/userflow/User-Flow3.JPG" width="800">
 </p>
 
-que o usuário entra na plataforma, ele é apresentado à tela inicial
-(Tela 1) onde ele é confrontado com as opões de editar seu perfil ou
-então visualizar sua galeria.
-
-Caso ele opte por seguir pelo primeiro caminho (Editar Perfil), ele é
-redirecionado para a tela de edição de perfil (Tela 2), onde pode
-atualizar seus dados cadastrais. Nessa tela, o usuário também pode
-escolher para editar sua foto de perfil. Ao selecionar essa opção, ele é
-redirecionado para a Tela 3, onde ele a imagem expandida do perfil do
-usuário é mostrado. Ao selecionar a opção para atualizar a imagem, uma
-nova janela abre pedindo para o usuário fazer o upload da nova foto.
-Assim que o processo termina um pop-up exibe o status para o usuário
-(Tela 4) e o usuário é redirecionado para a Tela 2.
-
-Caso o usuário opte seguir pelo segundo caminho (Visualizar Galeria) ele
-é redirecionado para a Tela 5 com todas as fotos que o usuário possui. O
-usuário pode clicar em um post qualquer para visualizar os detalhes do
-post (Tela 6). Nessa tela, ele pode então escolher editar o post, sendo
-redirecionado para a Tela 7. Ao editar as informações, o usuário pode
-escolher salvar ou deletar o post. Em ambos os casos o status é
-notificado para o usuário (Tela 8) e em seguida ele é redirecionado
-para a Tela 2.
+<p>A imagem a seguir ilustra a 2° opção de acesso ao fluxo do usuário em nossa solução.
+Na página 01 temos o menu com 3 possibilidades de direção para o usuário, na primeira é o botão "Para empresas", o usuário é direcionado para página 03, aqui o MEI ou ME se cadastra de acordo com suas preferências de empresa. Após o preenchimento dos dados na página 03 ele é direcionado para página 06 onde completa o cadastro com os dados de sua empresa. Após criar a conta é direcionado para a página 09 onde é possível publicar sua página contendo informações que interessa seu cliente. Nessa mesma página o usuário/MEI/ME tem possibilidade de adicionar páginas detalhadas sobre seu produto/serviço prestrado. Ao concluir essa etapa ele é redirecionado para página 10 onde vai preencher detalhadamente seus serviços/produtos. Na página 11 o usuário pode editar suas páginas, seu perfil e informações pessoais da sua empresa.
+Na segunda possibilidade o usuário é alguém que almeja buscar serviços/produtos, ao acessar a página 01 ele clica em cadastrar-se e é direcionado para página 03 criando sua conta de usuário comum, ao concluir seu cadastro o usuário é enviado para página 07 que contem sua foto, descrição sobre ele, último vez online, um lista com seus serviços/produtos favoritos, mesmo sendo um usuário comum ele pode divulgar serviços/produtos de terceiros ou de fabricação própria através do botão fazer divulgação. Após clicar no botão ele é redirecionado para a página 06 onde colocar as informações de empresa, logo após o preenchimento ele é redirecionado para página 09 onde faz a publicação da página simplicada, tendo opção de detalhar através da página 10 onde o usuário descreve um todo da empresa para ser encontrada por seus clientes. Assim como na primeira possibilidade o usuário comum pode editar suas páginas e informações desejadas.
+Já na terceira possibilidade o usuário já fez o cadastro e acessa a página 01 e clica em entrar que é direcionado para página 02 onde faz o acesso ao sistema, caso venha esquecer a senha ele pode acionar "Esqueceu a senha" que será redirecionado para página 05 onde coloca seu e-mail e logo após o envio do e-mail e ele clicar no link no e-mail é redirecionado para página 04 onde faz uma nova senha de acesso, após concluir ele retorna para página 02 onde faz o acesso ao sistema. Tendo assim acesso a página 07 onde está suas informações pessoais seu favoritos e demais aspectos.</p>
 
 
 <p align="center"> 
