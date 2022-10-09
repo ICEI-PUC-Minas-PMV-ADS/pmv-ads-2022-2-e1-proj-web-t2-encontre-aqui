@@ -68,7 +68,7 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 É a página incial do sistema onde o usuário tem total autonomia de pesquisar serviços e empresas que almejar. Veja abaixo na figura 05 que contempla os seguintes campos:
 
 <ul>
-  <li>Cabeçalho - Logo e Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema</li>
+  <li>Cabeçalho - Logo e Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema.</li>
   <li>Conteúdo - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - Contempla também os serviços e empresas disponíveis na localização do usuário</li>
   <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.
 </ul>
@@ -170,6 +170,14 @@ Cadastrando novo usuário, a figura 09 contempla a estrutura de cadastro de um n
 
 ### Página Recuperar Senha
 Essa página contempla a estrutura de recuperação de senha do usuário caso ele venha esquecer a mesma, veja abaixo a estrutura de arame na figura 10
+
+<ul>
+  <li>Cabeçalho - Logo e Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema.</li>
+  
+  <li>Conteúdo - Contempla os campos a seguir: descrição recuperar senha, informe seu e-mail para receber um link de recuperação de senha, e-mail - um botão para acionar o envio do e-mail de recuperação da senha - links para suporte - termos de uso e política de privacidade de dados do usuário.</li>
+  
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
+</ul>
 
 <p align="center"> 
   <img src="img/wireframes/Recuperar%20senha.png" width="400">
