@@ -30,7 +30,19 @@ A solução implementada conta com os seguintes módulos:
 
 Inclua um diagrama da solução e descreva os módulos e as tecnologias que fazem parte da solução. Discorra sobre o diagrama.
 
-A imagem a seguir ilustra a o fluxo do usuário em nossa solução. Assim
+Legenda:  
+
+
+
+A imagem a seguir ilustra a 1° opção de acesso ao fluxo do usuário em nossa solução.
+Ao clicar na barra de pesquisa da página 01 o usuário será direcionado para a página 02 onde é exibido os resultados da sua pesquisa. 
+Logo após ele pode tanto clicar no botão visitar quanto clicar no ícone na imagem do serviço/empresa pesquisado no mapa que será direcionado para a página 03.
+Podendo também utilizar o carrocel na página 01 ao clicar no prestrador de serviço desejado será direcionado para a página 04 onde está as informações do prestrador de serviço, tendo a possibilidade de clicar no carrocel e sendo direcionado para a página 04.
+
+<p align="center"> 
+  <img src="img/userflow/User-Flow1.png" width="800">
+</p>
+
 que o usuário entra na plataforma, ele é apresentado à tela inicial
 (Tela 1) onde ele é confrontado com as opões de editar seu perfil ou
 então visualizar sua galeria.
