@@ -3,18 +3,17 @@
 A visão do que será desenvolvido para o futuro usuário é muito importante, pois é a partir dele que o sistema vai ganhando forma e sentido, para melhor compreensão da experiência do usuário o projeto de interface nos ajuda através dos processos User flor (fluxo do usuário) e Wireframes, um esqueleto ou protótipo interativo do que será desenvolvido nos próximos passos.
 
 ## USER FLOW
+
 <p>Contemple abaixo nas figuras 01 e 02 o fluxo de nosso usuário, onde a navegação é simples e objetiva, facilitando todo o processo de desenvolvimento do sistema.
 Você pode encontrar uma versão interativa acessando <a href="https://www.figma.com/file/bVtZWbFrOazzYkKon3pfYU/User-Flow?node-id=0%3A1">Fluxo do usuário no figma.</a>
 </p>
 
-
 <br/>
 
 <p align="center"> 
-  <img src="img/userflow/User-Flow1.png" width="800">
+  <img src="img/userflow/User-Flow3.JPG" width="800">
 </p>
 <h3 align="center">FIGURA 01</h3>
-
 
 <br/>
 
@@ -22,18 +21,15 @@ Você pode encontrar uma versão interativa acessando <a href="https://www.figma
   <img src="img/userflow/User-Flow2.png" width="800">
 </p>
 <h3 align="center">FIGURA 02</h3>
-                                                    
 
 ## Template Padrão
 
 <p>O nosso template está dividido em duas páginas, o template da figura 03 e o template da figura 04 acompanhe o detalhamento abaixo delas:</p>
 
-
 <p align="center"> 
   <img src="img/wireframes/Template-Home.png" width="400">
 </p>
 <h3 align="center">FIGURA 03</h3>
-
 
 <p>Na figura 03 temos os seguintes espaços:</p>
 <ul>
@@ -43,7 +39,6 @@ Você pode encontrar uma versão interativa acessando <a href="https://www.figma
 </ul>
                                                     
 <br/>
-
 
 <p align="center"> 
   <img src="img/wireframes/Template-Outras-Paginas.png" width="400">
@@ -65,6 +60,7 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 <br/>
 
 ### Home Page
+
 É a página incial do sistema onde o usuário tem total autonomia de pesquisar serviços e empresas que almejar. Veja abaixo na figura 05 que contempla os seguintes campos:
 
 <ul>
@@ -83,6 +79,7 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 <br/>
 
 ### Página com Resultado de Pesquisa
+
 Na figura 06, o usuário vai encontrar com facilidade os serviços e empresas que desejar, além de mais informações, confira abaixo como está estruturada:
 
 <ul>
@@ -95,7 +92,6 @@ Na figura 06, o usuário vai encontrar com facilidade os serviços e empresas qu
   <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
 </ul>
 
-
 <br/>
  
 <p align="center"> 
@@ -105,7 +101,8 @@ Na figura 06, o usuário vai encontrar com facilidade os serviços e empresas qu
 
 <br/>
 
-###  Página de Descrição de Produto ou Serviço
+### Página de Descrição de Produto ou Serviço
+
 Acompanhando a figura 07 o usuário poderá visualizar a descrição do produto ou serviço pesquisado, veja abaixo como está estruturado:
 
 <ul>
@@ -125,7 +122,8 @@ Acompanhando a figura 07 o usuário poderá visualizar a descrição do produto 
 
 <br/>
 
-  ### Página de Login.
+### Página de Login.
+
 A página de login contempla uma estrutura simples e objetiva para que o usuário tenha uma ótima experiência, acompanhe abaixo a estrutura na figura 08:
 
 <ul>
@@ -146,9 +144,10 @@ A página de login contempla uma estrutura simples e objetiva para que o usuári
 
 <br/>
 
-  ###  Página de Criar Conta
-Cadastrando novo usuário, a figura 09 contempla a estrutura de cadastro de um novo usuário, veja abaixo:  
-  
+### Página de Criar Conta
+
+Cadastrando novo usuário, a figura 09 contempla a estrutura de cadastro de um novo usuário, veja abaixo:
+
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão para entrar no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
   
@@ -165,10 +164,10 @@ Cadastrando novo usuário, a figura 09 contempla a estrutura de cadastro de um n
 
 <br/>
 
-  
 <br/>
 
 ### Página Recuperar Senha
+
 Essa página contempla a estrutura de recuperação de senha do usuário caso ele venha esquecer a mesma, veja abaixo a estrutura de arame na figura 10:
 
 <ul>
@@ -187,7 +186,8 @@ Essa página contempla a estrutura de recuperação de senha do usuário caso el
 
 <br/>
 
-  ### Alterar Senha.
+### Alterar Senha.
+
 Após o envio do e-mail de recuperação de senha o usuário clica no link no seu e-mail e é enviado para página da figura 11, tendo a estrutura abaixo:
 
 <ul>
@@ -209,6 +209,7 @@ Após o envio do e-mail de recuperação de senha o usuário clica no link no se
 <br/>
 
 ### Página de Perfil de Usuário Divulgador
+
 Na figura 12, contemplamos a página de perfil de um usuário que divulga seja seu serviço ou produto, contendo os seguintes campos na estrutura abaixo:
 
 <ul>
@@ -218,7 +219,6 @@ Na figura 12, contemplamos a página de perfil de um usuário que divulga seja s
   
   <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
 </ul>
-
 
 <br/>
 
@@ -231,6 +231,7 @@ Na figura 12, contemplamos a página de perfil de um usuário que divulga seja s
 <br/>
 
 ### Página de Perfil de Usuário
+
 O usuário poderá divulgar serviços de terceiros através de sua página de perfil, desde que o terceiro autorize a divulgação juntamente com o time de suporte do sistema, acompanhe essa possibilidade e mais detalhes abaixo na figura 13:
 
 <ul>
@@ -251,8 +252,8 @@ O usuário poderá divulgar serviços de terceiros através de sua página de pe
 
 <br/>
 
-
 ### Usuário Adiciona Páginas Para Divulgação
+
 Na figura 14 abaixo, podemos contemplar a usabilidade de adicionar páginas para divulgação no sistema, veja a seguir a estrutura detalhada:
 
 <ul>
@@ -263,8 +264,6 @@ Na figura 14 abaixo, podemos contemplar a usabilidade de adicionar páginas para
   <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
 </ul>
 
-
-
 <p align="center"> 
   <img src="img/wireframes/Form Adicao de Paginas.png" width="400">
 </p>
@@ -273,8 +272,29 @@ Na figura 14 abaixo, podemos contemplar a usabilidade de adicionar páginas para
 
 <br/>
 
+### Página de Apresentação do Profissional ou Empresa
+
+<ul>
+  <li>Cabeçalho - Logo e foto de capa - nome da empresa.</li>
+  
+  <li>Conteúdo - Informações sobre o profissional ou empresa, como endereço, ramo de atuação, experiência.<br/> 
+  A página será pública, e os usuários poderão navegar entre as páginas criadas pelo profissional ou empresa, visualizando os serviços ou produtos disponíveis. <br/> 
+  A página conterá um mapa, demonstrando o lugar onde está empresa ou profissional pode atender.<br/>
+</li>
+  
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
+</ul>
+
+<p align="center"> 
+  <img src="img/wireframes/Pagina do Profissional.png" width="400">
+</p>
+
+<h3 align="center">FIGURA 15</h3>
+
+<br/>
 
 ### Criar Página de Visualização de Produto ou Serviço
+
 Após clicar no ícone de criar página da figura 14 o usuário é direcionado para página detalhada da figura 15 estruturada da seguinte forma abaixo:
 
 <ul>
@@ -291,11 +311,12 @@ Após clicar no ícone de criar página da figura 14 o usuário é direcionado p
   <img src="img/wireframes/Criar%20Pagina.png" width="400">
 </p>
 
-<h3 align="center">FIGURA 15</h3>
+<h3 align="center">FIGURA 16</h3>
 
 <br/>
 
 ### Atualizar Página de Visualização de Produto ou Serviço
+
 A figura 16 representa a atualização de dados que o MEI ou ME desejar, veja que a estrutura se mantém a mesma da figura 15, mas ao final o botão é alterado para atualizar a página do produto ou serviço descrito, acompanhe a descrição da estrutura:
 
 <ul>
@@ -312,11 +333,12 @@ A figura 16 representa a atualização de dados que o MEI ou ME desejar, veja qu
   <img src="img/wireframes/Atualizar-Pagina.png" width="400">
 </p>
 
-<h3 align="center">FIGURA 16</h3>
+<h3 align="center">FIGURA 17</h3>
 
 <br/>
 
 ### Editar Usuário Divulgador
+
 A figura 17 é onde o MEI ou ME pode editar seus dados, acompanhe abaixo a estrutura:
 
 <ul>
@@ -333,15 +355,14 @@ A figura 17 é onde o MEI ou ME pode editar seus dados, acompanhe abaixo a estru
   <img src="img/wireframes/Editar-Usuario-Empresa.png" width="400">
 </p>
 
-<h3 align="center">FIGURA 17</h3>
-
-
-<br/>
-
+<h3 align="center">FIGURA 18</h3>
 
 <br/>
 
-  ### Editar Usuário.
+<br/>
+
+### Editar Usuário.
+
 Já a figura 18 é contemplada na edição do usuário comum que está no sistema buscando serviços para contratar ou produtos para comprar, veja abaixo a estrutura e campos necessários para essa edição:
 
 <ul>
@@ -358,14 +379,14 @@ Já a figura 18 é contemplada na edição do usuário comum que está no sistem
   <img src="img/wireframes/Editar-Usuario.png" width="400">
 </p>
 
-<h3 align="center">FIGURA 18</h3>
+<h3 align="center">FIGURA 19</h3>
 
 <br/>
 
-
 <br/>
 
-  ### Página de Erro.
+### Página de Erro.
+
 A figura 19 é estabelecida quando o usuário pesquisa uma URL incorreta ou faz uma pesquisa que não leve a lugar algum, para que ele não fique sem resposta a página de erro é mostrada para que ele tenha um ponto de ação a partir dela, acompanhe a estrutura abaixo:
 
 <ul>
@@ -382,7 +403,6 @@ A figura 19 é estabelecida quando o usuário pesquisa uma URL incorreta ou faz 
   <img src="img/wireframes/Page%20-%20Erro%20404.png" width="400">
 </p>
 
-<h3 align="center">FIGURA 19</h3>
+<h3 align="center">FIGURA 20</h3>
 
 <br/>
-
