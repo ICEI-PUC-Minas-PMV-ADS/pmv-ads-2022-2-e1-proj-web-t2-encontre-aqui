@@ -32,11 +32,12 @@ Inclua um diagrama da solução e descreva os módulos e as tecnologias que faze
 
 Legenda: 1° opção:
 
-Página inicial: 01
-Página Resultado de pesquisas: 02
-Página de divulgação do profissional ou empresa: 03
-Página de divulgação  de produto ou serviço: 04  
-
+<ul>
+  <li>Página inicial: 01</li>
+  <li>Página Resultado de pesquisas: 02</li>
+  <li>Página de divulgação do profissional ou empresa: 03</li>
+  <li>Página de divulgação  de produto ou serviço: 04</li> 
+</ul>
 
 
 A imagem a seguir ilustra a 1° opção de acesso ao fluxo do usuário em nossa solução.
