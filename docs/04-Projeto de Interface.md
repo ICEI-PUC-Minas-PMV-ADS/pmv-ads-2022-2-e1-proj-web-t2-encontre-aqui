@@ -65,10 +65,10 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 <br/>
 
 ### Home Page
-É a página incial do sistema que contempla os seguintes campos abaixo:
+É a página incial do sistema onde o usuário tem total autonomia de pesquisar seriços e empresas que almeja, veja na figura 05 que contempla os seguintes campos abaixo:
 
 <ul>
-  <li>Cabeçalho - Logo e Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema.
+  <li>Cabeçalho - Logo e Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema</li>
   <li>Conteúdo - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - Contempla também os serviços e empresas disponíveis na localização do usuário</li>
   <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.
 </ul>
@@ -78,7 +78,7 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 <p align="center"> 
   <img src="img/wireframes/Home.png" width="400">
 </p>
-
+<h3 align="center">FIGURA 05</h3>
 
 <br/>
 
