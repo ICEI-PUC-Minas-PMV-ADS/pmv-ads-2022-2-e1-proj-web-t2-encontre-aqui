@@ -231,7 +231,7 @@ Na figura 12, contemplamos a página de perfil de um usuário que divulga seja s
 <br/>
 
 ### Página de Perfil de Usuário.
-O usuário poderá divulgar serviços de terceiros através de sua página de perfil, desque o terceiro autorize juntamente com o time de suporte do sistema, acompanhe essa possibilidade e mais detalhes abaixo na figura 13:
+O usuário poderá divulgar serviços de terceiros através de sua página de perfil, desde que o terceiro autorize a divulgação juntamente com o time de suporte do sistema, acompanhe essa possibilidade e mais detalhes abaixo na figura 13:
 
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - foto de perfil e status logado na conta.</li>
@@ -253,10 +253,23 @@ O usuário poderá divulgar serviços de terceiros através de sua página de pe
 
 
 ### Usuário Adiciona Páginas Para Divulgação.
+Na figura 14 abaixo, podemos contemplar a usabilidade de adicionar páginas para divulgação no sistema, veja a seguir a estrutura detalhada:
+
+<ul>
+  <li>Cabeçalho - Logo, Menu do sistema contendo barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - foto de perfil e status logado na conta.</li>
+  
+  <li>Conteúdo - Contempla os campos: foto/logo - nome da empresa/profissional - ramo/profissão - campos para criação de páginas descrevendo produtos/serviços - localização real da empresa - botão para publicar página.</li>
+  
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
+</ul>
+
+
 
 <p align="center"> 
   <img src="img/wireframes/Form Adicao de Paginas.png" width="400">
 </p>
+
+<h3 align="center">FIGURA 14</h3>
 
 <br/>
 
