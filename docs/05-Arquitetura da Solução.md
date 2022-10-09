@@ -54,7 +54,6 @@ escolher salvar ou deletar o post. Em ambos os casos o status é
 notificado para o usuário (Tela 8) e em seguida ele é redirecionado
 para a Tela 2.
 
-![User Flow](img/userflow/User-Flow2.png)
 
 <p align="center"> 
   <img src="img/userflow/User-Flow2.png" width="800">
