@@ -342,12 +342,23 @@ A figura 17 é onde o MEI ou ME pode editar seus dados, acompanhe abaixo a estru
 <br/>
 
   ### Editar Usuário.
+Já a figura 18 é contemplada na edição do usuário comum que está no sistema buscando serviços para contratar ou produtos para comprar, veja abaixo a estrutura e campos necessários para essa edição:
+
+<ul>
+  <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - foto de perfil e status logado na conta.</li>
+  
+  <li>Conteúdo - Contempla os campos: foto do perfil - nome - sobrenome - CPF - logradouro - bairro - município - UF - CEP - telefone - e-mail e o botão para atualizar cadastro.</li>
+  
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais preciso em suas buscas de acordo com o seu gosto.</li>
+</ul>
 
 <br/>
 
 <p align="center"> 
   <img src="img/wireframes/Editar-Usuario.png" width="400">
 </p>
+
+<h3 align="center">FIGURA 18</h3>
 
 <br/>
 
