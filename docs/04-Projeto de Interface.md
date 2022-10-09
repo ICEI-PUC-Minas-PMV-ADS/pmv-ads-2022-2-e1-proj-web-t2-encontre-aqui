@@ -67,7 +67,7 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 ### Home Page
 <ul>
   <li>Cabeçalho - Logo e Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema.
-  <li>Corpo - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - Contempla também os serviços e empresas disponíveis na localização do usuário</li>
+  <li>Conteúdo - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - Contempla também os serviços e empresas disponíveis na localização do usuário</li>
   <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.
 </ul>
 
@@ -85,11 +85,11 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
   
-  <li>Corpo - Contempla os serviços e empresas disponíveis na localização do usuário de acordo com a pesquisa que foi feita e um mini mapa de onde está localizado o serviço ou empresa pesquisado.</li>
+  <li>Conteúdo - Contempla os serviços e empresas disponíveis na localização do usuário de acordo com a pesquisa que foi feita e um mini mapa de onde está localizado o serviço ou empresa pesquisado.</li>
   
   <li>Menu lateral - Possui um filtro onde o usuário pode filtrar sua pesquisa, detalhando de forma objetiva o que busca - Contempla também sugestões de serviços e empresas disponíveis em sua localização.</li>
   
-  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
 </ul>
 
 
@@ -102,6 +102,14 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 <br/>
 
 ###  Página de Descrição de Produto ou Serviço. 
+
+<ul>
+  <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
+  
+  <li>Conteúdo - Contempla o nome da empresa, foto de capa e logo, possui botões interativos personalizados de acordo com a necessidade da empresa, fotos de produtos, descrição da empresa em geral como preços de produtos, serviços, horário de atendimento, telefone para contato, links para redes sociais, endereço, contendo também uma barra de demais produtos e serviços disponíveis, e por fim a localização através do maps.</li>
+  
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.</li>
+</ul>
 
 <br/>
 
