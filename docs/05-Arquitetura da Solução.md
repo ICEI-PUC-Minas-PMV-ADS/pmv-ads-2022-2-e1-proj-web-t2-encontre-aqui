@@ -69,8 +69,11 @@ Legenda 2° opção:
   <li>Pág de edição de página de Produto ou Serviço: 14</li>
   <li>Pág de divulgação de produto ou serviço: 15</li>
 </ul>
-<p>A imagem a seguir ilustra a 2° opção de acesso ao fluxo do usuário em nossa solução.
-Na página 01 temos o menu com 3 possibilidades de direção para o usuário, na primeira é o botão "Para empresas", o usuário é direcionado para página 03, aqui o MEI ou ME se cadastra de acordo com suas preferências de empresa. Após o preenchimento dos dados na página 03 ele é direcionado para página 06 onde completa o cadastro com os dados de sua empresa. Após criar a conta é direcionado para a página 09 onde é possível publicar sua página contendo informações que interessa seu cliente. Nessa mesma página o usuário/MEI/ME tem possibilidade de adicionar páginas detalhadas sobre seu produto/serviço prestrado. Ao concluir essa etapa ele é redirecionado para página 10 onde vai preencher detalhadamente seus serviços/produtos. Na página 11 o usuário pode editar suas páginas, seu perfil e informações pessoais da sua empresa.</p>
+<p>A imagem a seguir ilustra a 2° opção de acesso ao fluxo do usuário em nossa solução.</p>
+
+<h3> Possibilidade 01</h3>
+
+<p>Na página 01 temos o menu com 3 possibilidades de direção para o usuário, na primeira é o botão "Para empresas", o usuário é direcionado para página 03, aqui o MEI ou ME se cadastra de acordo com suas preferências de empresa. Após o preenchimento dos dados na página 03 ele é direcionado para página 06 onde completa o cadastro com os dados de sua empresa. Após criar a conta é direcionado para a página 09 onde é possível publicar sua página contendo informações que interessa seu cliente. Nessa mesma página o usuário/MEI/ME tem possibilidade de adicionar páginas detalhadas sobre seu produto/serviço prestrado. Ao concluir essa etapa ele é redirecionado para página 10 onde vai preencher detalhadamente seus serviços/produtos. Na página 11 o usuário pode editar suas páginas, seu perfil e informações pessoais da sua empresa.</p>
 
 
 <p align="center"> 
