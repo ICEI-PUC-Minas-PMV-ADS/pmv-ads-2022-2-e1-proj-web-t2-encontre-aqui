@@ -4,7 +4,7 @@ A visão do que será desenvolvido para o futuro usuário é muito importante, p
 
 ## USER FLOW
 <p>Contemple abaixo nas figuras 01 e 02 o fluxo de nosso usuário, onde a navegação é simples e objetiva, facilitando todo o processo de desenvolvimento do sistema.
-Você pode encontrar uma versão interativa acessando <a href="https://www.figma.com/file/bVtZWbFrOazzYkKon3pfYU/User-Flow?node-id=0%3A1">Fluxo do usuário figma</a>
+Você pode encontrar uma versão interativa acessando <a href="https://www.figma.com/file/bVtZWbFrOazzYkKon3pfYU/User-Flow?node-id=0%3A1">Fluxo do usuário no figma.</a>
 </p>
 
 
@@ -60,11 +60,15 @@ Você pode encontrar uma versão interativa acessando <a href="https://www.figma
 
 ## Wireframes
 
-Visando credibilidade e até mesmo uma percepção do projeto e a interação de nosso cliente os wireframes foi englobado no processo de criação de aplicações, onde através dele somos capazes de passar confiança no que estamos desenvolvendo, acompanhe abaixo o detalhamento da interface do projeto que estamos desenvolvendo.
+Visando credibilidade e até mesmo uma percepção do projeto e a interação de nosso cliente os wireframes foram englobados no processo de criação de aplicações, onde através dele somos capazes de passar confiança no que estamos desenvolvendo. Acompanhe abaixo o detalhamento da interface do projeto que estamos desenvolvendo:
 
 <br/>
 
-### Home Page.
+### Home Page
+<ul>
+  <li>Cabeçalho - Logo e Menu do sistema.
+  <li>Corpo - Barra de pesquisa de empresas, produtos, serviços e cidade que você gostaria de pesquisar algum dessas opções passadas - Contempla também os serviços e empresas disponíveis na localização do usuário</li>
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.
 
 <br/>
 
