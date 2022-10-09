@@ -3,23 +3,25 @@
 A visão do que será desenvolvido para o futuro usuário é muito importante, pois é a partir dele que o sistema vai ganhando forma e sentido, para melhor compreensão da experiência do usuário o projeto de interface nos ajuda através dos processos User flor (fluxo do usuário) e Wireframes, um esqueleto ou protótipo interativo do que será desenvolvido nos próximos passos.
 
 ## USER FLOW
-<p>Contemple abaixo nas figuras 01 e 02 o fluxo de nosso usuário, onde a navegação é simples e objetiva, facilitando todo o processo de desenvolvimento do sistema.</p> 
+<p>Contemple abaixo nas figuras 01 e 02 o fluxo de nosso usuário, onde a navegação é simples e objetiva, facilitando todo o processo de desenvolvimento do sistema.
+Você pode encontrar uma versão interativa acessando <a href="https://www.figma.com/file/bVtZWbFrOazzYkKon3pfYU/User-Flow?node-id=0%3A1">Fluxo do usuário figma</a>
+</p>
 
-<h3>FIGURA 01</h3>
+
 <br/>
 
 <p align="center"> 
   <img src="img/userflow/User-Flow1.png" width="800">
 </p>
+<h3 align="center">FIGURA 01</h3>
 
-<h3>FIGURA 02</h3>
 
 <br/>
 
 <p align="center"> 
   <img src="img/userflow/User-Flow2.png" width="800">
 </p>
-
+<h3 align="center">FIGURA 02</h3>
                                                     
 
 ## Template Padrão
@@ -57,6 +59,8 @@ A visão do que será desenvolvido para o futuro usuário é muito importante, p
 </ul>
 
 ## Wireframes
+
+Visando credibilidade e até mesmo uma percepção do projeto e a interação de nosso cliente os wireframes foi englobado no processo de criação de aplicações, onde através dele somos capazes de passar confiança no que estamos desenvolvendo, acompanhe abaixo o detalhamento da interface do projeto que estamos desenvolvendo.
 
 <br/>
 
