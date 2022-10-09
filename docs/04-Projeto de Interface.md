@@ -66,9 +66,10 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 
 ### Home Page
 <ul>
-  <li>Cabeçalho - Logo e Menu do sistema.
-  <li>Corpo - Barra de pesquisa de empresas, produtos, serviços e cidade que você gostaria de pesquisar algum dessas opções passadas - Contempla também os serviços e empresas disponíveis na localização do usuário</li>
+  <li>Cabeçalho - Logo e Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema.
+  <li>Corpo - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - Contempla também os serviços e empresas disponíveis na localização do usuário</li>
   <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.
+</ul>
 
 <br/>
 
@@ -79,7 +80,18 @@ Visando credibilidade e até mesmo uma percepção do projeto e a interação de
 
 <br/>
 
-### Página com Resultado de Pesquisa.
+### Página com Resultado de Pesquisa
+
+<ul>
+  <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - botão de cadastra-se e entrar no sistema - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas.</li>
+  
+  <li>Corpo - Contempla os serviços e empresas disponíveis na localização do usuário de acordo com a pesquisa que foi feita e um mini mapa de onde está localizado o serviço ou empresa pesquisado.</li>
+  
+  <li>Menu lateral - Possui um filtro onde o usuário pode filtrar sua pesquisa, detalhando de forma objetiva o que busca - Contempla também sugestões de serviços e empresas disponíveis em sua localização.</li>
+  
+  <li>Rodapé - Disponibiliza categorias para que o usuário possa ser mais precisos em suas buscas de acordo com o seu gosto.
+</ul>
+
 
 <br/>
  
