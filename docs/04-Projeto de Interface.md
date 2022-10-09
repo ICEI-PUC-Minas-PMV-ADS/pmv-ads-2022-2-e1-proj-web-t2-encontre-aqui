@@ -2,33 +2,43 @@
 
 A visão do que será desenvolvido para o futuro usuário é muito importante, pois é a partir dele que o sistema vai ganhando forma e sentido, para melhor compreensão da experiência do usuário o projeto de interface nos ajuda através dos processos User flor (fluxo do usuário) e Wireframes, um esqueleto ou protótipo interativo do que será desenvolvido nos próximos passos.
 
-## User Flow
+## USER FLOW
+<p>Contemple abaixo nas figuras 01 e 02 o fluxo de nosso usuário, onde a navegação é simples e objetiva, facilitando todo o processo de desenvolvimento do sistema.</p> 
 
-
-
+<h3>FIGURA 01</h3>
 <br/>
 
 <p align="center"> 
   <img src="img/userflow/User-Flow1.png" width="800">
 </p>
-     
+
+<h3>FIGURA 02</h3>
 
 <br/>
 
 <p align="center"> 
   <img src="img/userflow/User-Flow2.png" width="800">
 </p>
-                                                          
+
                                                     
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
 ## Template Padrão
+
+<p>O nosso template está dividido em duas páginas, o template da figura 03 e o template da figura 04 acompanhe o detalhamento abaixo delas:</p>
 
 
 <p align="center"> 
   <img src="img/wireframes/Template-Home.png" width="400">
 </p>
-      
+<h3 align="center">FIGURA 03</h3>
+
+
+<p>Na figura 03 temos os seguintes espaços:</p>
+<ul>
+  <li>Cabeçalho - MENU do sistema.
+  <li>Corpo - CONTEÚDO do sistema.
+  <li>Rodapé - FIM do sistema.
+</ul>
                                                     
 <br/>
 
@@ -36,7 +46,15 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 <p align="center"> 
   <img src="img/wireframes/Template-Outras-Paginas.png" width="400">
 </p>
-      
+<h3 align="center">FIGURA 04</h3>
+
+<p>Na figura 04 temos os seguintes espaços:</p>
+<ul>
+  <li>Cabeçalho - BARRA DE PESQUISA + MENU do sistema.
+  <li>Menu lateral - AUXILIA NA BUSCA do sistema.
+  <li>Corpo - CONTEÚDO do sistema.
+  <li>Rodapé - FIM do sistema.
+</ul>
 
 ## Wireframes
 
