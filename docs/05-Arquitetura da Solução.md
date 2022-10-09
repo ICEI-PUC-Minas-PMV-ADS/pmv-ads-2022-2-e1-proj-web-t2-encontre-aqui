@@ -56,6 +56,10 @@ para a Tela 2.
 
 ![User Flow](img/userflow/User-Flow2.png)
 
+<p align="center"> 
+  <img src="img/userflow/User-Flow2.png" width="800">
+</p>
+
 
 ## Tecnologias Utilizadas
 
