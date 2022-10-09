@@ -11,7 +11,7 @@ Você pode encontrar uma versão interativa acessando <a href="https://www.figma
 <br/>
 
 <p align="center"> 
-  <img src="img/userflow/User-Flow3.png" width="800">
+  <img src="img/userflow/User-Flow3.JPG" width="800">
 </p>
 <h3 align="center">FIGURA 01</h3>
 
