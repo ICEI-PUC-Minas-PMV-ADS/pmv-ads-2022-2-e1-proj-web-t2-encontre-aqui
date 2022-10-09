@@ -46,7 +46,7 @@ Logo após ele pode tanto clicar no botão visitar quanto clicar no ícone na im
 Podendo também utilizar o carrossel na página 01 ao clicar no prestrador de serviço desejado será direcionado para a página 04 onde está as informações do prestrador de serviço, tendo a possibilidade de clicar no carrossel e sendo direcionado para a página 04.
 
 <p align="center"> 
-  <img src="img/userflow/user-Flow03.jpg.JPG" width="800">
+  <img src="img/userflow/user-Flow3.jpg.JPG" width="800">
 </p>
 
 que o usuário entra na plataforma, ele é apresentado à tela inicial
