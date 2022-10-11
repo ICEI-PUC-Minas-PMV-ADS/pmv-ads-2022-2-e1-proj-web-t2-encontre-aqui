@@ -13,11 +13,11 @@ Acompanhe conosco o estudo realizado mediante nosso futuro usuário abaixo:
 </p>
 
 <p align="center">
-<img src="https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/docs/img/Personas/Marcos-Nunes.PNG?raw=true" >
+<img src="img/Personas/Marcos-Nunes.PNG" >
 </p>
 <br/>
 <p align="center">
-<img src="https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/docs/img/Personas/Regiane-Rodrigues.PNG?raw=true">
+<img src="img/Personas/Regiane-Rodrigues.PNG">
 </p>
 
 ## 2.2. Histórias de usuários
