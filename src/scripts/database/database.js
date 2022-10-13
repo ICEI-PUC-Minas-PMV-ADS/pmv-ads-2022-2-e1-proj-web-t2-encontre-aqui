@@ -32,7 +32,7 @@ Empresas = {
             cidade: ["Juiz de Fora", "Juiz", "Fora"],
             estado: ["Minas Gerais", "Minas",],
             logradouro: "Avenida João Pinheiro, 469",
-            logo: "./images/logos/logo1.png"
+            logo: "https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/images/logos/logo1.PNG?raw=true"
         },
         {
             id: 2,
@@ -43,7 +43,7 @@ Empresas = {
             cidade: ["Juiz de Fora", "Juiz", "Fora"],
             estado: ["Minas Gerais", "Minas",],
             logradouro: "Avenida João Pinheiro, 469",
-            logo: "./images/logos/logo2.png"
+            logo: "https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/images/logos/logo2.PNG?raw=true"
         },
 
         {
@@ -55,7 +55,7 @@ Empresas = {
             cidade: ["Juiz de Fora", "Juiz", "Fora"],
             estado: ["Minas Gerais", "Minas",],
             logradouro: "Avenida João Pinheiro, 469",
-            logo: "./images/logos/logo3.png"
+            logo: "https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/images/logos/logo3.PNG?raw=true"
         },
         {
             id: 4,
@@ -66,7 +66,7 @@ Empresas = {
             cidade: ["Juiz de Fora", "Juiz", "Fora"],
             estado: ["Minas Gerais", "Minas",],
             logradouro: "Avenida João Pinheiro, 469",
-            logo: "./images/logos/logo4.png"
+            logo: "https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/images/logos/logo4.PNG?raw=true"
         },
               
     ] //FIM PETS
