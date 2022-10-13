@@ -1,7 +1,7 @@
 var map, directionsManagers = [];
 
 function GetMap() {
-    var origem = new Microsoft.Maps.Location(-18.921990, -48.280477);
+    var origem = new Microsoft.Maps.Location(-21.765401, -43.348767);
     map = new Microsoft.Maps.Map('#places-in-maps', {
         credentials: 'Aj30kitBtzqfccLqDP_RXQYks09ie-CQ5gvx0dnWFyyQImim-GDuVIVUl0VUwjQr',
         center: origem,
@@ -10,13 +10,14 @@ function GetMap() {
 
     var pin = new Microsoft.Maps.Pushpin(origem, {
         icon: './images/lugar.PNG',
-        anchor: new Microsoft.Maps.Point(40, 100)
+        anchor: new Microsoft.Maps.Point(0, 0)
     });
 
     map.entities.push(pin);
+   
     
-    var rota1 = 'Avenida João Pinheiro, 469, Centro, Uberlândia - MG, 38400-126, Brasil';
-    var rota2 = 'Av Afonso Pena, 184, Centro, Uberlândia - MG, 38400-128';
+    var rota1 = 'Rua Santa Rita, 323, Centro, Juiz de Fora - MG, 36010-070, Brasil';
+    var rota2 = 'Avenida Barão do Rio Branco, 950, Centro, Juiz de Fora - MG, 36010-908, Brasil';
 
 
     //Load the directions module.
