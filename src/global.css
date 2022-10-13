@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    box-sizing: border-box;
+    color:#151414;
+}
+
+a{
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.1mm;
+}
+
+ul li{
+  list-style: none;  
+  font-size: 0.8rem;
+}
