@@ -203,17 +203,13 @@ section{
     }
 
     .body-container{
-        width: 75%;
+        width: 60%;
     }
     
-    .right-menu{
-        width: 0px;
-        display:none;
-    }
 }
 
 
-@media screen and (max-width:536px){
+@media screen and (max-width:804px){
     .card-container .card{
         
         display: flex;
@@ -230,10 +226,24 @@ section{
     .card-container .card .card-btn-actions span{
         position: relative;
         top:-180px;
+        margin:2px;
     }
 
     .card-container .card .card-btn-actions a{
         position: relative;
         top:-80px;
+        margin:2px;
     }
+}
+
+@media screen and (max-width:480px){
+    .right-menu{
+     
+        display:none;
+    }
+
+    .body-container{
+        width: 100%;
+    }
+    
 }
