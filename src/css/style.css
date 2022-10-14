@@ -28,7 +28,7 @@ section{
 }
 .card-container .card{
     display: flex;
-    width: 600px;
+    width: 90%;
     height: 120px;
     margin-top: 10px;
     background-color: #fff;
@@ -70,11 +70,29 @@ section{
 }
 
 .left-menu{
+    display: flex;
+    flex-direction: column;
     width:30%;
     height: 100%;
     padding-left: 20px;
     margin-top: 15px;
+
+    transition:  2s;
 }
+
+
+.left-menu-open{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    height: 100%;
+    padding-left: 20px;
+    margin-top: 15px;
+
+    transition:  2s;
+}
+
+
 
 .right-menu{
     width:60%;
@@ -152,8 +170,70 @@ section{
     
 }
 
-.left-menu .filter-area .filter{
+.filter{
     display: flex;
     gap:10px;
 }
 
+.open-menu{
+    display:none;
+    cursor: pointer;
+}
+
+/*----------------------------------------*/
+@media screen and (max-width:900px){
+
+    .open-menu{
+        display: inline;
+    }
+    
+    .left-menu{
+        padding:0;
+        margin: 0;
+        width: 0;
+        left: -10px;
+        flex-direction: column;
+        width: 0;
+        transition: 2s;
+    }
+
+    .left-menu .filter-area .filter{
+        display: none;
+       
+    }
+
+    .body-container{
+        width: 75%;
+    }
+    
+    .right-menu{
+        width: 0px;
+        display:none;
+    }
+}
+
+
+@media screen and (max-width:536px){
+    .card-container .card{
+        
+        display: flex;
+        flex-direction: column;
+        height: 220px;
+    }
+
+    .card-container .card .card-btn-actions{
+       display: flex;
+       flex-direction: column;
+       margin:10px;
+    }
+
+    .card-container .card .card-btn-actions span{
+        position: relative;
+        top:-180px;
+    }
+
+    .card-container .card .card-btn-actions a{
+        position: relative;
+        top:-80px;
+    }
+}
