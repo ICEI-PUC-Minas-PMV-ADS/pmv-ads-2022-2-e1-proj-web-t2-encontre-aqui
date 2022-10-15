@@ -65,17 +65,20 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 | RF-002 | O sistema deve permitir ao usuário pesquisar por empresas, produtos ou serviços cadastrados no sistema.                                                                    | ALTA       |
 | RF-003 | O sistema deverá filtrar as buscas por cidade                                                                                                                              | MÉDIA      |
 | RF-004 | O sistema deve permitir ao usuário filtrar o resultado de pesquisas por categoria, e por estado de funcionamento (aberto ou fechado), no horário em que a busca foi feita. | MÉDIA      |
-| RF-005 | O sistema deve permitir que o usuário se cadastre.                                                                                                                         | ALTA       |
-| RF-006 | O sistema deve permitir ao usuário fazer login.                                                                                                                            | ALTA       |
-| RF-007 | O sistema deve permitir ao usuário editar seus dados cadastrais.                                                                                                           | ALTA       |
-| RF-008 | O sistema deve permitir ao usuário criar uma nova senha, caso não saiba sua senha de login.                                                                                | BAIXA      |
-| RF-009 | O sistema deve permitir que o usuário/empresa cadastrado crie sua página na plataforma, para divulgação de sua empresa, produtos ou serviços.                              | ALTA       |
-| RF-010 | O sistema deve permitir a edição da página criada para a divulgação de produto ou serviço, pelo usuário/empresa que a criou                                                | MÉDIA      |
-| RF-011 | O sistema deve permitir ao usuário adicionar empresas, produtos ou serviços, em sua lista de favoritos, que está disponível em seu perfil.                                 | ALTA       |
-| RF-012 | O sistema deve permitir ao usuário remover empresas, produtos ou serviços da sua lista de favoritos, que está disponível em seu perfil.                                    | MÉDIA      |
-| RF-013 | O sistema deve permitir o upload de imagens JPEG/JPG, GIF, PNG, TIFF e SVG.                                                                                                | BAIXA      |
-| RF-014 | O sistema disponibilizará o endereço da página na web para o usuário.                                                                                                      | MÉDIA      |
-| RF-015 | O sistema disponibilizará na(s) página(s) do usuário, através da API de mapas do Microsoft Bing, um mapa informando sua localização comercial.                             | BAIXA      |
+| RF-005 | O sistema deve permitir o cadastro de cliente do tipo pessoa física, e cliente do tipo pessoa juridica.                                                                                                                         | ALTA       |
+|  RF-006 | O formulário de cadastro deverá conter os campos de entrada: NOME DE USUÁRIO, EMAIL e SENHA.                                                               | BAIXA       |
+|  RF-007| O sistema não deve permitir o cadastro de empresas por clientes menores de 18 anos. | BAIXA       |
+| RF-008 | O sistema deve permitir ao cliente fazer login.                                                                                                                            | ALTA       |
+| RF-009 | O sistema deve permitir ao cliente editar seus dados cadastrais.                                                                                                           | ALTA       |
+| RF-010 | O sistema deve permitir ao cliente criar uma nova senha, caso não saiba sua senha de login.                                                                                | BAIXA      |
+| RF-011 | O sistema deve permitir que pessoas juridicas previamente cadastradas, criem página(s) na plataforma, para divulgação de sua empresa, produto(s) ou serviço(s).                              | ALTA       |
+| RNF-012 | O formulário de criação de página deverá conter os campos de entrada para: NOME FANTASIA, RAZÃO SOCIAL, ENDEREÇO, TELEFONE, HORÁRIO DE FUNCIONAMENTO, DESCRIÇÃO DOS SERVIÇOS OFERECIDOS, UPLOAD DE IMAGEM PARA BANNER, UPLOAD DE IMAGEM PARA DESCRIÇÃO DE PRODUTO OU SERVIÇO e URL PARA REDES SOCIAIS. | ALTA       |
+| RF-013 | O sistema deve permitir a edição da página criada para a divulgação de produto ou serviço, pela pessoa juridica que a criou                                                | MÉDIA      |
+| RF-014 | O sistema deve permitir ao usuário adicionar empresas, produtos ou serviços, em sua lista de favoritos, que está disponível em seu perfil.                                 | ALTA       |
+| RF-015 | O sistema deve permitir a pessoa física e jurídica remover empresas, produtos ou serviços da sua lista de favoritos, que estará disponível em seu perfil.                                    | MÉDIA      |
+| RF-016 | O sistema deve permitir o upload de imagens JPEG/JPG, GIF, PNG, TIFF e SVG.                                                                                                | BAIXA      |
+| RF-0147 | O sistema disponibilizará o endereço da página na web para a empresa.                                                                                                      | MÉDIA      |
+| RF-018 | O sistema disponibilizará na(s) página(s) da pessoa jurídica, através da API de mapas do Microsoft Bing, um mapa informando sua localização comercial.                             | BAIXA      |
 
 ### 3.2 Requisitos não Funcionais
 
@@ -87,11 +90,7 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
 | RNF-001 | O site deverá ser responsivo permitindo a visualização em um celular de forma adequada.                                                                                                                                                                                                                | ALTA       |
 | RNF-002 | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).                                                                                                                                                                                          | ALTA       |
-| RNF-003 | Em páginas públicas do site, o site deve mostrar apenas informações públicas.                                                                                                                                                                                                                          | ALTA       |
-| RNF-004 | O sistema dará status de usuário-empresa ao usuário que divulgar sua empresa, produto ou serviço.                                                                                                                                                                                                      | ALTA       |
-| RNF-005 | O formulário de cadastro deverá conter os campos de entrada: NOME DE USUÁRIO, EMAIL e SENHA                                                                                                                                                                                                            | ALTA       |
-| RNF-006 | O formulário de criação de página deverá conter os campos de entrada para: NOME FANTASIA, RAZÃO SOCIAL, ENDEREÇO, TELEFONE, HORÁRIO DE FUNCIONAMENTO, DESCRIÇÃO DOS SERVIÇOS OFERECIDOS, UPLOAD DE IMAGEM PARA BANNER, UPLOAD DE IMAGEM PARA DESCRIÇÃO DE PRODUTO OU SERVIÇO e URL PARA REDES SOCIAIS. | ALTA       |
-
+| RNF-003 | O sistema dará status de cliente-empresa ao usuário que divulgar sua empresa, produto ou serviço.                                                                                                                                                                                                      | ALTA       |
 ### 3.3 Restrições
 
 <p>
@@ -101,6 +100,4 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 | ID      | Descrição do Requisito                                                                                        |
 | ------- | ------------------------------------------------------------------------------------------------------------- |
 | RNF-001 | O site deverá ser responsivo permitindo a visualização em um celular de forma adequada.                       |
-| RNF-002 | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). |
-| RNF-003 | O sistema não deve permitir o cadastro de empresas por usuários menores de 18 anos.                           |
 | RNF-004 | A implementação do sistema deverá ser feita até o dia 11/12/2022, não podendo extrapolar a data.              |
