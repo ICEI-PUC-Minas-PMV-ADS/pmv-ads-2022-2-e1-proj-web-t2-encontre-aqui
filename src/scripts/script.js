@@ -7,14 +7,14 @@ var left_menu_opened = false
 var w = window.innerWidth;
 var h = window.innerHeight;
 
-if(w < 900){
+
  window.addEventListener('resize', ()=>{
     w  =  window.innerWidth;
     if(w > 1000){
+      console.log("Passou " + w)
       right_menu.classList.replace("right-menu-reduced", "right-menu")
     }
  })
-}
 
 btn_burguer.addEventListener('click', (event)=>{
   if(left_menu_opened){  
@@ -22,10 +22,7 @@ btn_burguer.addEventListener('click', (event)=>{
     left_menu.classList.replace("left-menu-open","left-menu")
     right_menu.classList.replace("right-menu-reduced", "right-menu")
     left_menu_opened = false;
-    updateScreenSize();
-    console.log(btn_burguer.style.display === "none")
-    
-
+       
   }else{
    
     left_menu.classList.replace("left-menu","left-menu-open")
