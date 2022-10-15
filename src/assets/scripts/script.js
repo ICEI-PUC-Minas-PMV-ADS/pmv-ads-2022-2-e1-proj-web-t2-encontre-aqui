@@ -6,10 +6,15 @@ var left_menu_opened = false
 
 var w = window.innerWidth;
 
+
  window.addEventListener('resize', ()=>{
+  console.log(w)
     w  =  window.innerWidth;
     if(w > 1000){
       right_menu.classList.replace("right-menu-reduced", "right-menu")
+    }
+    if(w < 650){
+      left_menu.classList.replace("left-menu-open","left-menu")
     }
  })
 
