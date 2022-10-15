@@ -5,13 +5,10 @@ var right_menu = document.querySelector(".right-menu")
 var left_menu_opened = false
 
 var w = window.innerWidth;
-var h = window.innerHeight;
-
 
  window.addEventListener('resize', ()=>{
     w  =  window.innerWidth;
     if(w > 1000){
-      console.log("Passou " + w)
       right_menu.classList.replace("right-menu-reduced", "right-menu")
     }
  })

@@ -12,7 +12,9 @@ Categorias = [
 Produtos = {
     pets: [{
         id: 1,
-        nome: "Ração para cachorros"
+        nome: "Ração para cachorros",
+        descricao: "",
+        imagens:['','']
     },
     {
         id: 2,
@@ -72,3 +74,4 @@ Empresas = {
     ] //FIM PETS
 }; //FIM EMPRESAS
 
+console.log(Produtos.pets.empresas[0]);
