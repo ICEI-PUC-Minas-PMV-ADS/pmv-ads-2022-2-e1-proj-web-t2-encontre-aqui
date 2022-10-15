@@ -2,23 +2,29 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-<p>Visando melhor entendimento da proposta do projeto entrevistamos duas pessoas que sempre precisam de um serviço (mão de obra) ou necessitam de comprar algo (físico) no estabelecimento da sua cidade.</p>
+<p>Visando melhor entendimento da proposta do projeto entrevistamos duas pessoas que sempre precisa de um serviço ou necessita de comprar um produto no estabelecimento da sua cidade.</p>
 
 <hr/>
 
 ## 2.1. Personas
 
 <p>
-Acompanhe conosco o estudo realizado mediante nosso futuro usuário abaixo:
+Na figura 01 temos a descrição da persona que busca serviços para satisfazer suas necessidades residenciais. 
 </p>
 
 <p align="center">
 <img src="img/Personas/Marcos-Nunes.PNG" >
 </p>
+
+<h2 align="center"> FIGURA 01</h2>
 <br/>
+
+<p>Na figura 02 temos a descrição de uma persona que busca comércios locais para comparar preços de produtos que ela almeja adquirir e divulgar seu futuro negócio.</p>
 <p align="center">
 <img src="img/Personas/Regiane-Rodrigues.PNG">
 </p>
+
+<h2 align="center"> FIGURA 02</h2>
 
 ## 2.2. Histórias de usuários
 
