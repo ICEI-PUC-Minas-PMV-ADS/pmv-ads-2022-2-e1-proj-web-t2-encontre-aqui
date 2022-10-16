@@ -41,7 +41,14 @@ Sendo assim a nossa equipe está distribuida da seguinte forma:</p>
   <li>In Progress: é a relação de tarefas que estamos trabalhando atualmente.</li>
   <li>Done: os artefatos que são movidos para cá já foram validados juntamente com a equipe e está pronto para ser entregue para o cliente avaliar, não sendo mais necessário nenhum teste ou modificação.</li>
 
+<br/> 
 
+<p align="center"> 
+  <img src="img/backlog.PNG" width="800">
+</p>
+<h3 align="center">FIGURA 01</h3>
+
+<br/>
 
 ## Controle de Versão
 

@@ -1,0 +1,281 @@
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+
+body::-webkit-scrollbar { width: 10px; }
+
+body::-webkit-scrollbar-track {
+  background: var(--white);
+  border-left: 1px solid var(--cultured);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 80%);
+  border: 3px solid var(--white);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
+
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    
+    width: 90%;
+    background-color: #eee;
+    border-radius: 2px;
+
+    -webkit-box-shadow: 4px 4px 16px -8px rgba(26,25,26,1);
+    -moz-box-shadow: 4px 4px 16px -8px rgba(26,25,26,1);
+    box-shadow: 4px 4px 16px -12px rgba(26,25,26,1);
+
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    padding-left: 40px;
+}
+.card-container .card{
+    display: flex;
+    width: 90%;
+    height: 120px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.card-container .active{
+    box-shadow: 0 0 3px 1px rgb(182, 173, 173);
+}
+.card-container .card:hover{
+    box-shadow: 0 0 5px 2px #999;
+}
+
+.card-container .card img{
+    width: 110px;
+    height: 100px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.card-container .card .card-body{
+    padding:10px;
+}
+
+.card-container .card .card-body .product-name{
+    font-weight: 700;
+}
+
+.card-container .card .card-body .description{
+    font-size: 0.8rem;
+}
+
+.card-container .card .card-btn-actions{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin:10px;
+}
+
+.left-menu{
+    display: flex;
+    flex-direction: column;    
+    width:30%;
+    height: 100%;
+    padding-left: 20px;
+    margin-top: 15px;
+    background-color: #fff;
+    transition:  2s;
+}
+
+
+.left-menu-open{
+    display: flex;
+    flex-direction: column;    
+    background-color: #fff;
+    width:40%;
+    height: 100%;
+    padding-left: 20px;
+    margin-top: 15px;
+    
+    transition:  2s;
+}
+
+
+.right-menu{
+    width:60%;
+    height: 90vh;
+    margin-left: 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+
+    transition: 1s;
+}
+
+.right-menu-reduced{
+    width:0;
+    height: 90vh;
+    margin-left: 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+
+    transition: 1s;
+}
+
+
+
+.related-tags{
+    margin-top:10px;
+    margin-left: 10px;
+}
+
+.related-tags .tags{
+    display: flex;
+    margin:2px; 
+}
+
+.related-tags .tags a{
+   margin: 0 5px;
+   
+}
+
+.title{
+    color: var(--title-color);
+    font-weight: var(--title-weight);
+}
+
+.subtitle{
+    color: var(--subtitle-color);
+    font-weight: var(--subtitle-weight);
+}
+
+.toggle{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: #3689d7;
+    border-radius: 30px;
+    border: 2px solid #3689d7;
+    padding: 7px;
+}
+
+.toggle::after{
+    content: "";
+    position:absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    transition: all 0.5s;
+}
+
+.checkbox:checked+.toggle::after {
+    left: 14px;
+}
+
+.checkbox:checked+.toggle {
+    background-color: #cccccc;
+    border: 2px solid #cccccc;
+}
+
+.checkbox {
+    display: none;
+}
+
+.left-menu .filter-area{
+    
+}
+
+.filter{
+    display: flex;
+    gap:10px;
+}
+
+.open-menu{
+    display:none;
+    cursor: pointer;
+}
+
+/*----------------------------------------*/
+@media screen and (max-width:1000px){
+
+    .open-menu{
+        display: inline;
+    }
+    
+    .left-menu{
+        padding:0;
+        margin: 0;
+        width: 0;
+        left: -10px;
+        flex-direction: column;
+        width: 0;
+        transition: 2s;
+    }
+
+    .left-menu .filter-area .filter{
+        display: none;
+       
+    }
+
+    .body-container{
+        width: 60%;
+    }
+    
+}
+
+
+@media screen and (max-width:804px){
+    .card-container .card{
+        
+        display: flex;
+        flex-direction: column;
+        height: 220px;
+    }
+
+    .card-container .card .card-btn-actions{
+       display: flex;
+       flex-direction: column;
+       margin:10px;
+    }
+
+    .card-container .card .card-btn-actions span{
+        position: relative;
+        top:-180px;
+        margin:2px;
+    }
+
+    .card-container .card .card-btn-actions a{
+        position: relative;
+        top:-80px;
+        margin:2px;
+    }
+
+    
+}
+
+@media screen and (max-width:480px){
+    .right-menu{
+     
+        display:none;
+    }
+
+    .body-container{
+        width: 100%;
+    }
+    
+}
