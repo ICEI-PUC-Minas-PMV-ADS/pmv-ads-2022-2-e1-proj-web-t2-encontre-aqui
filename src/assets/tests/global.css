@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,600;1,800;1,900&display=swap');
 
 :root{
+  --font-color:#151414;
   --color-header:#1a1919;
   --color-footer: #1a1919;
 
@@ -10,10 +11,15 @@
   --subtitle-color: #616161;
   --subtitle-weight:600;
 
+  --btn-default: #ebf0f0;
+  --btn-default-hover:#d1dadf;
   --btn-primary: #b5cdde;
+  --btn-primary-hover:#90adc2;
 
   --color-success:#477e39;
   --color-danger:#b13d3d;
+
+  --btn-transition: 0.3s; 
 }
 
 *{
@@ -21,7 +27,7 @@
   margin:0;
   font-family: 'Poppins', Helvetica, sans-serif;
   box-sizing: border-box;
-  color:#151414;
+  color:var(--font-color);
 }
 
 
@@ -82,9 +88,56 @@
   margin-top: 50px;
 }
 
+.bd-0{
+  border:0;
+}
+
+.bd-03{
+  border:0.3px solid var(--font-color);
+}
+
+/*border-radius*/
+.brad-5{
+  border-radius: 5px;
+}
+
+.brad-10{
+  border-radius: 10px;
+}
+
+.brad-20{
+  border-radius: 20px;
+}
+/*-----------------------------Barra Lateral---------------------------------------------*/
+
+
+body::-webkit-scrollbar { width: 10px; }
+
+body::-webkit-scrollbar-track {
+  background: #cccccc;
+  border-left: 1px solid var(--cultured);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border: 3px solid #cccccc;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
+
+
+
 /*---------------------------------------------------------------------------*/
+.container{
+ 
+  width: 100%;
+  height: 70vh;
+}
 
 header{
+  display: flex;
+  justify-content: end;
   width: 100%;
   height: 10vh;
   background-color: var(--color-header) ;
@@ -93,7 +146,7 @@ header{
 
 footer{
   width: 100%;
-  height: 20vh;
+  height: 18vh;
   background-color: var(--color-footer);
   margin-top: 20px;
 }
@@ -114,17 +167,35 @@ ul li{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--btn-primary);
+  background-color: var(--btn-default);
   font-weight: var( --title-weight);
-  border-radius: 5px;
-  border:0;
   color: var(--title-color);
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+
+  transition: var(--btn-transition);
+}
+
+.btn:hover{
+  background-color: var(--btn-default-hover);
+  color:var(--font-color);
+}
+
+.btn-primary{
+  background-color: var(--btn-primary);
   width: 100px;
   height: 30px;
 }
 
-.btn-primary-round{
-  border-radius: 25px;
+.btn-primary:hover{
+  background-color: var(--btn-primary-hover);
+  color:var(--font-color);
+}
+
+
+.btn-danger{
+  background-color: var(--color-danger);
   width: 100px;
   height: 30px;
 }

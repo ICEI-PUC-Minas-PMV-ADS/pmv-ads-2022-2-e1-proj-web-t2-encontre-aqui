@@ -6,15 +6,10 @@
     font-weight: 700;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
 
 .card{
     width: 200px;
-    height: 350px;
+    height: 300px;
     box-shadow: 0 0 3px 0.7px #666;
 }
 
@@ -46,7 +41,14 @@ body{
 
 .botoes{
     width: 100%;
-    height: 250px;
+    height: 120px;
     padding:25px;
-    display:block;
+    display:flex;
+    gap: 10px
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap:10px;
 }
