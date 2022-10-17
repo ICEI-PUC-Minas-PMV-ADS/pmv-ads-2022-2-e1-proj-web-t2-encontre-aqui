@@ -58,7 +58,7 @@ Empresas = {
             cidade: "juiz de fora",
             estado: ["Minas Gerais", "Minas",],
             logradouro: "Avenida João Pinheiro, 469",
-            logo: "https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/assets/images/logos/logo1.PNG?raw=true"
+            imagens: ["./assets/images/logos/logo2.PNG"]
         },
         {
             id: 2,
@@ -68,7 +68,7 @@ Empresas = {
             cidade: "juiz de fora",
             estado: ["Minas Gerais", "Minas",],
             logradouro: "Avenida João Pinheiro, 469",
-            logo: "https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/assets/images/logos/logo2.PNG?raw=true"
+            imagens: ["./assets/images/logos/logo3.PNG"]
         },              
         {
             id: 3,
@@ -78,7 +78,7 @@ Empresas = {
             cidade: "belo horizonte",
             estado: ["Minas Gerais", "Minas",],
             logradouro: "Avenida João Pinheiro, 469",
-            logo: "https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/assets/images/logos/logo2.PNG?raw=true"
+            imagens: ["./assets/images/logos/logo1.PNG"]
         },           
     ], //FIM PETS
     moveis:[
@@ -90,7 +90,7 @@ Empresas = {
             cidade: "juiz de fora",
             estado: ["Minas Gerais", "Minas",],
             logradouro: "Avenida João Pinheiro, 469",
-            logo: "https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/assets/images/logos/logo3.PNG?raw=true"
+            imagens: ["./assets/images/logos/logo2.PNG"]
         },
         {
             id: 4,
@@ -100,7 +100,7 @@ Empresas = {
             cidade: "juiz de fora",
             estado: ["Minas Gerais", "Minas",],
             logradouro: "Avenida João Pinheiro, 469",
-            logo: "https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/assets/images/logos/logo4.PNG?raw=true"
+            imagens: ["./assets/images/logos/logo4.PNG"]
         },
     ]
 }; //FIM EMPRESAS

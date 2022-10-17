@@ -6,49 +6,80 @@ var urlObj = new URL(url)
 var search = urlObj.searchParams.get("search")
 var place = urlObj.searchParams.get("place")
 
+if(search === null){
+    search = 'petshop'
+    place ='juiz de fora'
+}
+
 foundObj = false
 var i = 0
+var j = 0
 var local = []
 
-Categorias.forEach(element => { 
+Categorias.forEach(categoria => { 
     if(foundObj == false)   
-    element.tags.forEach(tag => {          
+    searchPlace(categoria)
+    foundObj = false
+      
+});
+
+
+function searchPlace(categoria){
+    i=0
+    categoria.tags.forEach(tag => {    
+        local = categoria.empresas[i]         
         if(tag === search){   
-            local = element.empresas[i]   
-            local.forEach(empresa => {
-             console.log(empresa.cidade)       
            
-          //  if(empresa.cidade[0] === 'juiz de Fora'){
+            console.log(i)
+            local.forEach(empresa => {
+          //   console.log(empresa.cidade)               
+
                 if(empresa.cidade.includes(place.toLowerCase())){
                     console.log(empresa)
                     updateCard(empresa)
                    
                     foundObj = true
                     console.log(i)
+                    i++ 
                     return
                 }
             })
                 
-        }               
-        
+        } else{
+            
+            local.forEach(empresa =>{
+              
+                empresa.produtos.forEach(produto => {
+                    
+                    if(produto.descricao.includes(search)){
+                        if(empresa.cidade.includes(place)){
+                            console.log(produto.descricao)
+                            updateCard(produto)
+                            foundObj = true
+                            i++ 
+                            return
+                        }
+                    }
+               
+                    }) 
+                })
+                            
+                }    
+               
     })
-    foundObj = false
-    i++
-   
-});
-
+}
 
 /*  */
 
         function updateCard(empresa){
-                    empresa.produtos.forEach(produto =>{
+                   // empresa.produtos.forEach(produto =>{
                       
                         data += `<div class="card">
-                                        <img id="logo-empresa" src="${produto.imagens[0]}">
+                                        <img id="logo-empresa" src="${empresa.imagens[0]}">
 
                                         <div class="card-body">
-                                            <div class="product-name">${produto.nome.substr(0,30)}</div>
-                                            <div class="description">${empresa.nome} ${produto.descricao.substr(0,20)}</div>
+                                            <div class="product-name">${empresa.nome.substr(0,30)}</div>
+                                            <div class="description">${empresa.nome} ${empresa.descricao.substr(0,35)}</div>
                                             <div class="situation opened mt-10">Aberto</div>
                                         </div>
 
@@ -73,7 +104,7 @@ Categorias.forEach(element => {
                                             <a href="#" class="btn btn-primary">Visitar</a>
                                         </div>
                                     </div>`
-                    })
+                 //   })
          
 
             container.innerHTML += data;
