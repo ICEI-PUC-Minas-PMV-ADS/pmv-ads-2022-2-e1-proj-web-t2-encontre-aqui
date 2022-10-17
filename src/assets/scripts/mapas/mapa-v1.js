@@ -9,7 +9,7 @@ function GetMap() {
     });
 
     var pin = new Microsoft.Maps.Pushpin(origem, {
-        icon: './images/lugar.PNG',
+        icon: './assets/images/lugar.PNG',
         anchor: new Microsoft.Maps.Point(0, 0)
     });
 

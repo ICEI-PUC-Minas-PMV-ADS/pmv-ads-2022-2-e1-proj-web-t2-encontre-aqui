@@ -131,8 +131,6 @@ section{
     transition: 1s;
 }
 
-
-
 .related-tags{
     margin-top:10px;
     margin-left: 10px;
@@ -194,10 +192,6 @@ section{
 
 .checkbox {
     display: none;
-}
-
-.left-menu .filter-area{
-    
 }
 
 .filter{
@@ -265,7 +259,6 @@ section{
         margin:2px;
     }
 
-    
 }
 
 @media screen and (max-width:480px){
