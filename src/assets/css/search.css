@@ -59,7 +59,7 @@ section{
     box-shadow: 0 0 5px 2px #999;
 }
 
-.card-container .card img{
+.card-container .card #logo-empresa{
     width: 110px;
     height: 100px;
     padding: 10px;
@@ -86,6 +86,9 @@ section{
     margin:10px;
 }
 
+.card-container .card .card-btn-actions img{
+    width: 20px;
+}
 .left-menu{
     display: flex;
     flex-direction: column;    
@@ -244,12 +247,13 @@ section{
     .card-container .card .card-btn-actions{
        display: flex;
        flex-direction: column;
-       margin:10px;
+       position:relative;
+       top:-80px;
     }
 
-    .card-container .card .card-btn-actions span{
+    .card-container .card .card-btn-actions img{
         position: relative;
-        top:-180px;
+        top:-100px;
         margin:2px;
     }
 
