@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/Img/IconeSite.png" type="image/IconeSite">
-    <title>Home Page Encontre-aqui</title>
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="./assets/tests/global.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <title>Document</title>
 </head>
 
-<body>
+
+<body class="container-home">
+
     <header class="header-home-page">
         <nav class="nav-menu">
             <div class="logo"><img src="./assets/images/logo-site/logo2.png"></div>
@@ -38,45 +40,67 @@
         </nav>
     </header>
 
-    <main>
+
+    <main id="content">
         <section>
             <div>
-                <h1 class="title">Serviços</span></h1>
+                <h1 class="title mb-10">Serviços</span></h1>
             </div>
 
             <div class="card-container">
 
-                <div class="card">
-                    <img src="./assets/tests/img.jpg">
+                <a class="card" href="#">
+                    <img src="./assets/tests/1.jpg">
                     <div class="descricao">
                         <h3>Eletricista</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
-                </div>
+                </a>
 
-                <div class="card">
-                    <img src="./assets/tests/img.jpg">
+                <a class="card" href="#">
+                    <img src="./assets/tests/1.jpg">
+                    <div class="descricao">
+                        <h3>Eletricista</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <img src="./assets/tests/1.jpg">
+                    <div class="descricao">
+                        <h3>Eletricista</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <img src="./assets/tests/1.jpg">
+                    <div class="descricao">
+                        <h3>Eletricista</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <img src="./assets/tests/2.jfif">
                     <div class="descricao">
                         <h3>Pedreiro</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
-                </div>
+                </a>
 
-                <div class="card">
+                <a class="card" href="#">
                     <img src="./assets/tests/img.jpg">
                     <div class="descricao">
                         <h3>Mecânico</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
 
         <section>
             <div>
-                <h1>Prestadores de serviços</h1>
+                <h1 class="title mb-10">Prestadores de serviços</h1>
             </div>
-            <div class="container">
+            <div class="">
                 <button type="button" class="arrow-left control" aria-label="Previous image">◀</button>
                 <button type="button" class="arrow-right control" aria-label="Next image">▶</button>
                 <div class="galeria-profissionais">
@@ -103,95 +127,113 @@
 
         <section>
             <div>
-                <h1>Supermercado</h1>
+                <h1 class="title mb-10">Supermercado</h1>
             </div>
             <div class="card-container">
-                <div class="card">
-                    <img src="./assets/tests/img.jpg" alt="Supermercado Silva">
+                <a class="card-lg" href="#">
+                    <img src="./assets/tests/s.jpg" alt="Supermercado Silva">
                     <div class="descricao">
                         <h3>Supermercado Silva</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
-                </div>
+                </a>
 
-                <div class="card"><img src="./assets/tests/img.jpg" alt="Supermercado Python">
+                <a class="card" href="#">
+                    <img src="./assets/tests/img.jpg" alt="Supermercado Python">
                     <div class="descricao">
                         <h3>Supermercado Python</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
 
         <section>
             <div>
-                <h1>Lugares em Juiz de Fora</h1>
+                <h1 class="title mb-10">Lugares em Juiz de Fora</h1>
             </div>
             <div class="card-container">
 
-                <div class="card"><img src="./assets/tests/3.jfif">
+                <a class="card" href="#">
+                    <img src="./assets/tests/3.jfif">
                     <div class="descricao">
                         <h3>Brasador</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
-                </div>
+                </a>
 
-                <div class="card"><img src="./assets/tests/2.jfif">
+                <a class="card" href="#">
+                    <img src="./assets/tests/2.jfif">
                     <div class="descricao">
                         <h3>Procopão Bar</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
-                </div>
+                </a>
 
-                <div class="card"><img src="./assets/tests/1.jpg">
+
+                <a class="card" href="#">
+                    <img src="./assets/tests/1.jpg">
                     <div class="descricao">
                         <h3>Bar do Bigode e Xororó</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
-                </div>
+                </a>
             </div>
 
         </section>
     </main>
 
-    <footer>
-        <div>
+
+    <footer id="footer" class="mt-10">
+
+        <div class="footer-about">
+            <div class="logo"><img src="./assets/images/logo-site/logo2.png"></div>
+            <span>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Eveniet ipsam </span>
+        </div>
+
+        <div class="footer-categories-links color-w">
             <h1>Categorias</h1>
-            <ul>
-                <li>Barbearia</li>
-                <li>Petshop</li>
-                <li>Restaurante</li>
-            </ul>
+            <div class="categories">
+                <div>
+                    <ul>
+                        <li>Barbearia</li>
+                        <li>Petshop</li>
+                        <li>Restaurante</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Bebidas</li>
+                        <li>Construção</li>
+                        <li>Festas</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Vestuários</li>
+                        <li>Veículos</li>
+                        <li>Educação</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <ul>
-                <li>Bebidas</li>
-                <li>Construção</li>
-                <li>Festas</li>
-            </ul>
-        </div>
-
-        <div>
-            <ul>
-                <li>Vestuários</li>
-                <li>Veículos</li>
-                <li>Educação</li>
-            </ul>
-        </div>
-
-        <div>
+        <div class="footer-about-links">
             <h1>Sobre</h1>
-            <ul>
-                <li>Sobre o Encontre-aqui</li>
-                <li>Termos de Serviço</li>
-                <li>Política de privacidade</li>
-            </ul>
+            <div>
+                <ul>
+                    <li>Sobre o Encontre-aqui</li>
+                    <li>Termos de Serviço</li>
+                    <li>Política de privacidade</li>
+                </ul>
 
+            </div>
         </div>
     </footer>
 
+
 </body>
-<script src=""></script>
 
 </html>
