@@ -11,11 +11,11 @@ fornecedores de materia prima. Possibilitanto assim uma interação de MEI's e M
 
 ## Integrantes
 
-- Paulo Silas Barbosa Bandeira
 - Camila Larissa Gonçalves
-- Renê Matias de Misquita
 - Marcos Paulo Garcia Silva
+- Paulo Silas Barbosa Bandeira
 - Pedro Ítalo Costa Vieira
+- Renê Matias de Misquita
 
 ## Orientador
 
