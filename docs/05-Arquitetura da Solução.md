@@ -15,8 +15,9 @@ A solução implementada conta com os seguintes módulos:
 - **Navegador** - Interface básica do sistema  
   - **Páginas Web** - Conjunto de arquivos HTML, CSS, JavaScript e imagens que implementam as funcionalidades do sistema.
    - **Local Storage** - armazenamento mantido no Navegador, onde são implementados bancos de dados baseados em JSON. São eles: 
-     - **Criação** - Criar usuário no sistema
-     - **Login** - Fazer login no sistema
+     - **Usuário** - Dados de usuários cadastrados
+     - **Cadastro de produtos** - Dados de produtos
+     - **Empresa** - Dados de empresas cadastradas
  - **Maps API** - plataforma que permite utilizar bing maps
  - **Hospedagem** - local na Internet onde as páginas são mantidas e acessadas pelo navegador. 
 
