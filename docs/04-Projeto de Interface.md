@@ -1,6 +1,6 @@
 # Projeto de Interface
 
-A visão do que será desenvolvido para o futuro usuário é muito importante, pois é a partir dele que o sistema vai ganhando forma e sentido, para melhor compreensão da experiência do usuário o projeto de interface nos ajuda através dos processos User flor (fluxo do usuário) e Wireframes, um esqueleto ou protótipo interativo do que será desenvolvido nos próximos passos.
+A visão do que será desenvolvido para o futuro usuário é muito importante, pois é a partir dele que o sistema vai ganhando forma e sentido, para melhor compreensão da experiência do usuário o projeto de interface nos ajuda através dos processos User flow (fluxo do usuário) e Wireframes, um esqueleto ou protótipo interativo do que será desenvolvido nos próximos passos.
 
 ## USER FLOW
 
@@ -24,7 +24,7 @@ Você pode encontrar uma versão interativa acessando <a href="https://www.figma
 
 ## Template Padrão
 
-<p>O nosso template está dividido em duas páginas, o template da figura 03 e o template da figura 04 acompanhe o detalhamento abaixo delas:</p>
+<p>O meu template está dividido em duas páginas, o template da figura 03 e o template da figura 04 acompanhe o detalhamento abaixo delas:</p>
 
 <p align="center"> 
   <img src="img/wireframes/Template-Home.png" width="400">
