@@ -39,14 +39,14 @@ color: var(--white);
 }
 
 .card{
-    width: 30%;
+    width: 300px;
     height: 300px;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
   
   .card-lg{
-    width: 65%;
+    width: 650px;
     height: 300px;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -82,9 +82,11 @@ color: var(--white);
   
   .card-container{
     display: flex;
-    position: relative;
+    align-items: center;
+    width: 75vw;
+    margin: 0 auto;
     flex-wrap: wrap;
-    width: 70vw;
+    gap:30px;
     
     justify-content: space-between;
     

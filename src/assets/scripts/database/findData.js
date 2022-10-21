@@ -5,6 +5,10 @@ var url = window.location.href
 var urlObj = new URL(url)
 var search = urlObj.searchParams.get("search")
 var place = urlObj.searchParams.get("place")
+var tags = document.querySelector('.tags')
+
+var cardsPag
+var cardsData = []
 
 if(search === null){
     search = 'petshop'
@@ -13,58 +17,63 @@ if(search === null){
 
 foundObj = false
 var i = 0
-var j = 0
+
 var local = []
 
+
+startSearch();
+updateMap();
+
+
+
+function startSearch(){
 Categorias.forEach(categoria => { 
     if(foundObj == false)   
     searchPlace(categoria)
     foundObj = false
       
 });
-
+}
 
 function searchPlace(categoria){
     i=0
     categoria.tags.forEach(tag => {    
         local = categoria.empresas[i]         
-        if(tag === search){   
-           
-            console.log(i)
+        if(tag.toLowerCase().includes(search.toLowerCase())){   
+            updateTags(categoria)
             local.forEach(empresa => {
           //   console.log(empresa.cidade)               
 
-                if(empresa.cidade.includes(place.toLowerCase())){
-                    console.log(empresa)
-                    updateCard(empresa)
+                if(empresa.cidade.toLowerCase().includes(place.toLowerCase())){
                    
+                    updateCard(empresa)
+                    cardsData.push(empresa)
                     foundObj = true
-                    console.log(i)
+                  
                     i++ 
                     return
                 }
             })
                 
         } else{
-            
+            if(local != undefined)
             local.forEach(empresa =>{
-              
-                empresa.produtos.forEach(produto => {
-                    
-                    if(produto.descricao.includes(search)){
-                        if(empresa.cidade.includes(place)){
-                            console.log(produto.descricao)
+                if(empresa.cidade.toLowerCase().includes(place.toLowerCase())){
+                empresa.produtos.forEach(produto => {                    
+                    if(produto.descricao.toLowerCase().includes(search.toLowerCase())){                    
+                           
                             updateCard(produto)
+                            cardsData.push(empresa)
                             foundObj = true
                             i++ 
                             return
                         }
-                    }
-               
+                                   
                     }) 
+                }
                 })
-                            
-                }    
+                                       
+           }    
                
     })
 }
@@ -85,7 +94,7 @@ function searchPlace(categoria){
 
                                         <div class="card-btn-actions">
                                            <img src="./assets/images/icons/bookmark.svg">
-                                            <a href="#" class="btn btn-primary">Visitar</a>
+                                            <a href="produto.html?id=${empresa.id}" class="btn btn-primary">Visitar</a>
                                         </div>
                                     </div>`
                  //   })
@@ -93,4 +102,38 @@ function searchPlace(categoria){
 
             container.innerHTML += data;
             data = '';
+           
         }
+
+
+ function updateMap(){
+   
+    if(cardsData.length > 0){
+        
+        cardsPag = document.querySelectorAll('.card')
+        addEventListener('load',()=>{
+            GetMap(cardsData[0]) 
+            return
+        })               
+        cardsPag.forEach((cards, index) =>{      
+           
+            cards.addEventListener('mousedown', ()=>{
+               GetMap(cardsData[index])
+               return
+               
+            })
+         
+        })
+       
+    }
+       
+   
+  }
+
+function updateTags(categoria){
+    categoria.tags.forEach(tag => {
+        data += `<a href="#" class="btn btn-primary brad-25">${tag}</a>` 
+    })
+    tags.innerHTML += data;
+    data = ''
+}

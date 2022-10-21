@@ -27,7 +27,35 @@ Produtos = {
         imagens:['./assets/images/products/pets/02/1.webp','./assets/images/products/pets/02/2.webp'],
         preco: "55.98",
 
-    }
+    },
+    {
+        id: 3,
+        nome: "Anti pulgas e carrapatos Simparic",
+        descricao: `O Antipulgas Zoetis Simparic 5 mg para Cães 5,1 a 10 Kg (20 mg) é utilizado para o tratamento das infestações por pulgas e sarna sarcótica. Após a administração do Simparic, a sua atividade contra pulgas dura, pelo menos, 5 semanas`,
+        imagens:['./assets/images/products/pets/03/1.jpg']
+
+    },
+
+    {
+        id: 4,
+        nome: "Special para Cães Adultos Frango e Carne",
+        descricao: `Preparada com nobres ingredientes, a ração Golden Special para Cães Adultos Frango e Carne é o alimento ideal para manter o seu cão saudável. Além de render mais por quilograma, ela é livre de corantes e aromatizantes artificiais, proporcionando uma dieta mais balanceada.
+
+        A Ração Golden Special também ajuda a eliminar o odor das fezes, graças à sua fórmula que é rica em vitaminas e minerais. Isso faz com que a musculatura do animal sempre esteja fortalecida, o que consequentemente torna o cão mais ativo e menos propenso a doenças.
+        
+        Produzida pela Premier Pet – que é referência no mercado pet -, a Ração Golden Special possui um delicioso sabor de frango e carne. Esse blend de proteínas satisfaz amplamente o paladar dos cães.`,
+        imagens:['./assets/images/products/pets/01/2.webp','./assets/images/products/pets/02/2.webp'],
+        preco: "55.98",
+
+    },
+    {
+        id: 5,
+        nome: "Anti pulgas e carrapatos Simparic",
+        descricao: `O Antipulgas Zoetis Simparic 5 mg para Cães 5,1 a 10 Kg (20 mg) é utilizado para o tratamento das infestações por pulgas e sarna sarcótica.`,
+        imagens:['./assets/images/products/pets/03/1.jpg']
+
+    },
+
     ],
     moveis : [{
         id: 3,
@@ -53,33 +81,47 @@ Empresas = {
         {
             id: 1,
             produtos: [Produtos.petshops[0],Produtos.petshops[1]],
-            nome: "Pet Shop 1",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            nome: "Pet Shop Delivery",
+            descricao: "Pet Shop online e delivery de rações e outros produtos para cães e gatos. Entregues em até 2 horas de 9 as 21 de segunda a sexta e sábado até as 17.",
             cidade: "juiz de fora",
             estado: ["Minas Gerais", "Minas",],
-            logradouro: "Avenida João Pinheiro, 469",
-            imagens: ["./assets/images/logos/logo2.PNG"]
+            logradouro: "Rua Doutor Gil Horta, 15, São Mateus",
+            imagens: ["./assets/images/logos/logo3.PNG"],
+            cords:[-21.766975, -43.348074]
         },
         {
             id: 2,
-            produtos: [Produtos.petshops[1]],
-            nome: "Pet Shop 2",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            produtos: [Produtos.petshops[1], Produtos.petshops[4]],
+            nome: "Cão Carinho - Veterinária e Pet Shop",
+            descricao: "Contamos com uma especializada equipe de veterinários, tosadores e atendentes que fazem o sucesso da Cão Carinho.",
             cidade: "juiz de fora",
             estado: ["Minas Gerais", "Minas",],
-            logradouro: "Avenida João Pinheiro, 469",
-            imagens: ["./assets/images/logos/logo3.PNG"]
+            logradouro: "Rua Sampaio, 233, Granbery",
+            imagens: ["./assets/images/logos/petshop3.PNG","./assets/images/logos/logo3.PNG"],
+            cords:[-21.766259, -43.345440]
         },              
         {
             id: 3,
             produtos: [Produtos.petshops[0]],
-            nome: "Pet Shop 3",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            nome: "Me Pegue! Pet Shop",
+            descricao: "Me Pegue! Pet Shop. Artigos para animais de estimação. Eles nunca viram nada igual! ",
+            cidade: "juiz de fora",
+            estado: ["Minas Gerais", "Minas",],
+            logradouro: "Rua Halfeld, 584, Centro",
+            imagens: ["./assets/images/logos/petshop2.PNG"],
+            cords:[-21.760812, -43.346965]
+        }, 
+        {
+            id: 4,
+            produtos: [Produtos.petshops[0],Produtos.petshops[2], Produtos.petshops[3]],
+            nome: "Pet Shop Castelo Das Racoes",
+            descricao: "Compre Online e Receba em Horas, ração Frete Grátis Brasil* e Parcele em até 3x Sem Juros. Cobasi Já: Compre Online e Receba em Horas*",
             cidade: "belo horizonte",
             estado: ["Minas Gerais", "Minas",],
             logradouro: "Avenida João Pinheiro, 469",
-            imagens: ["./assets/images/logos/logo1.PNG"]
-        },           
+            imagens: ["./assets/images/logos/petshop3.PNG"],
+            cords:[-21.766145, -43.344251]
+        },                 
     ], //FIM PETS
     moveis:[
         {
@@ -90,7 +132,8 @@ Empresas = {
             cidade: "juiz de fora",
             estado: ["Minas Gerais", "Minas",],
             logradouro: "Avenida João Pinheiro, 469",
-            imagens: ["./assets/images/logos/logo2.PNG"]
+            imagens: ["./assets/images/logos/logo2.PNG"],
+            cords:[-21.765401, -43.948767]
         },
         {
             id: 4,
@@ -100,7 +143,8 @@ Empresas = {
             cidade: "juiz de fora",
             estado: ["Minas Gerais", "Minas",],
             logradouro: "Avenida João Pinheiro, 469",
-            imagens: ["./assets/images/logos/logo4.PNG"]
+            imagens: ["./assets/images/logos/logo4.PNG"],
+            cords:[-21.565401, -43.368767]
         },
     ]
 }; //FIM EMPRESAS

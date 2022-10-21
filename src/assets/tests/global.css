@@ -105,8 +105,7 @@ main section{
   align-items: center;
   justify-content: center;
   width:150px;
-  margin-top:10px;
-  margin:10px;
+  margin:10px 50px;
 }
 
  .logo img{  
@@ -349,4 +348,22 @@ ul li{
 .title{
   color: var(--title-color) ;
   font-weight: var(--title-weight);
+}
+
+.open-menu{
+  display: none;
+}
+
+
+
+/*----------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 950px){
+  .open-menu{
+    display: block;
+  }
+  ul.menu li{
+   
+  }
 }
