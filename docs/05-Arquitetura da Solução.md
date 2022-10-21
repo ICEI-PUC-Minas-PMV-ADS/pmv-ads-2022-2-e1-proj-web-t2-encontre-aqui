@@ -9,7 +9,7 @@ Acompanhe abaixo o diagrama que permite a modelagem física de um sistema, atrav
 Os componentes que fazem parte da solução são apresentados na Figura 20.
 
 ![Diagrama de Componentes](img/Internet.png)
-<p align="center"> <center>Figura 20 - Arquitetura da Solução</p>
+<p align="center">Figura 20 - Arquitetura da Solução</p>
 
 A solução implementada conta com os seguintes módulos:
 - **Navegador** - Interface básica do sistema  
