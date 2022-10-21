@@ -84,7 +84,6 @@ Legenda 2° opção:
 
 ## Tecnologias Utilizadas
 
-<p>As tecnologias nesse primeiro momento serão utilizadas:</p>
 <ul>
   <li>HTML
   <li>CSS</li>
