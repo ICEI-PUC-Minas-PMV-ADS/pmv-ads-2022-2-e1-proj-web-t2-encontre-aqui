@@ -31,7 +31,7 @@ Você pode encontrar uma versão interativa acessando <a href="https://www.figma
 </p>
 <h3 align="center">FIGURA 03</h3>
 
-<p>Na figura 03 temos os seguintes espaços:</p>
+<p>Na figura 03 está os seguintes espaços:</p>
 <ul>
   <li>Cabeçalho - MENU do sistema.
   <li>Corpo - CONTEÚDO do sistema.
@@ -45,7 +45,7 @@ Você pode encontrar uma versão interativa acessando <a href="https://www.figma
 </p>
 <h3 align="center">FIGURA 04</h3>
 
-<p>Na figura 04 temos os seguintes espaços:</p>
+<p>Na figura 04 está os seguintes espaços:</p>
 <ul>
   <li>Cabeçalho - BARRA DE PESQUISA + MENU do sistema.
   <li>Menu lateral - AUXILIA NA BUSCA do sistema.
