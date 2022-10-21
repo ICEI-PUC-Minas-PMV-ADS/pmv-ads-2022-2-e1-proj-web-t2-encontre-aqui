@@ -93,10 +93,6 @@ Legenda 2° opção:
   <li>Editor de código-fonte: Visual Studio Code</li>
 </ul>
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
-
 
 ## Hospedagem
 A hospedagem do sistema será feita através do GitHub pages, onde utilizaremos nosso <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui">repositório </a> que se encontra no próprio GitHub fazendo assim a vinculação do mesmo com o GitHub pages através de uma URL específica.
