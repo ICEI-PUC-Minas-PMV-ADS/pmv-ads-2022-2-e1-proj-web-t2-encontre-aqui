@@ -9,6 +9,7 @@ var w = window.innerWidth;
 
  window.addEventListener('resize', ()=>{
     w  =  window.innerWidth;
+    console.log(w)
     if(w > 1000){
       right_menu.classList.replace("right-menu-reduced", "right-menu")
     }

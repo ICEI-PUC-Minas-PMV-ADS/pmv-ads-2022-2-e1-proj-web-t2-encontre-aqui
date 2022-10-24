@@ -87,6 +87,9 @@ Empresas = {
             estado: ["Minas Gerais", "Minas",],
             logradouro: "Rua Doutor Gil Horta, 15, São Mateus",
             imagens: ["./assets/images/logos/logo3.PNG"],
+            horario:[''],
+            domicilio:true,
+            agendamento:false,
             cords:[-21.766975, -43.348074]
         },
         {

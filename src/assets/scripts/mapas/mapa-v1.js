@@ -1,12 +1,19 @@
 var map, directionsManagers = [];
-
+var rota;
+var origem;
+var cardMap = ''
+var searchManager
 function GetMap(empresa) {
     var origem
     var logo;
     if(empresa != undefined){
         origem =  new Microsoft.Maps.Location(empresa.cords[0], empresa.cords[1])
     
-        var cardMap = `<a href="produto.html?id=${empresa.id}> "<div class="card-map">
+       
+        rota = `${empresa.logradouro}, ${empresa.cidade}, ${empresa.estado}`
+        
+     
+        cardMap = `<a href="produto.html?id=${empresa.id}> "<div class="card-map">
         <img id="logo-empresa" src="${empresa.imagens[0]}">
 
         <div class="card-body">
@@ -21,38 +28,26 @@ function GetMap(empresa) {
         origem = new Microsoft.Maps.Location(-21.762323, -43.346926);
         logo = './../../images/logos/logo1'
     }
-    
-  
-    var teste = document.getElementById("testemap");
+
 
     map = new Microsoft.Maps.Map('#places-in-maps', {
         credentials: 'Aj30kitBtzqfccLqDP_RXQYks09ie-CQ5gvx0dnWFyyQImim-GDuVIVUl0VUwjQr',
         center: origem,
-        zoom: 17
+        zoom: 15
     });
-
-    var pin = new Microsoft.Maps.Pushpin(origem, {
-       // icon: logo,
-        anchor: new Microsoft.Maps.Point(0, 0)
-    });
-
-    map.entities.push(pin);
    
-    infobox = new Microsoft.Maps.Infobox(origem, {
-        htmlContent: cardMap
-    });
-
+   
+    Microsoft.Maps.loadModule('Microsoft.Maps.Search', function () {
+                searchManager = new Microsoft.Maps.Search.SearchManager(map);
+                geocodeQuery(rota);
+            });
     //Assign the infobox to a map instance.
-    infobox.setMap(map);
+  
  
-    var rota1 = 'Rua Doutor João Pinheiro, 469, Jardim Glória, Juiz de Fora - MG, 36036';
-    var rota2 = 'Avenida Barão do Rio Branco, 950, Centro, Juiz de Fora - MG, 36010-908, Brasil';
-    if(empresa != undefined){
-        rota2 = `${empresa.logradouro}, ${empresa.cidade}, ${empresa.estado}`
-    }
-     
+   
+    
 
-
+/*
     //Load the directions module.
     Microsoft.Maps.loadModule('Microsoft.Maps.Directions', function () {
         //Generate some routes.
@@ -82,5 +77,39 @@ function getRoute(start, end, color) {
     dm.addWaypoint(new Microsoft.Maps.Directions.Waypoint({ address: end }));
 
     dm.calculateDirections();
+    */
 }
 
+
+
+
+function geocodeQuery(query) {
+        let location;
+        var searchRequest = {
+            where: query,
+            callback: function (r) {
+                //Add the first result to the map and zoom into it.
+                if (r && r.results && r.results.length > 0) {
+                    location = r.results[0].location;
+                    var pin = new Microsoft.Maps.Pushpin(r.results[0].location);
+                    map.entities.push(pin);
+
+                    infobox = new Microsoft.Maps.Infobox(r.results[0].location, {
+                        htmlContent: cardMap
+                    });
+
+                    infobox.setMap(map);
+                    map.setView({ bounds: r.results[0].bestView });
+                }
+            },
+            errorCallback: function (e) {
+                //If there is an error, alert the user about it.
+         
+            }
+        };
+      
+        //Make the geocode request.
+        console.log(searchRequest.r)
+        searchManager.geocode(searchRequest);
+    
+}

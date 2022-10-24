@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,600;1,800;1,900&display=swap');
 
 :root{
+  --white: #e5e5e5;
   --font-color:#151414;
   --color-header:#1a1919;
   --color-footer: #1a1919;
@@ -138,14 +139,19 @@ header{
   background-color: var(--color-header) ;
  
 }
-
-footer{
-  position:absolute;
+#footer{
+  color:var(--white);
+  grid-area:footer;
   width: 100%;
-  height: 200px;
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+  gap:50px;
   background-color: var(--color-footer);
-  margin-top: 30px;
 }
+
 
 a{
   text-decoration: none;
@@ -196,6 +202,23 @@ ul li{
   color: var(--color-success);
 }
 
+
+
+#footer .footer-categories-links .categories{
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer ul li, span, h1, h2{
+  color:var(--white)
+}
+
+.title{
+  color: var(--title-color) ;
+  font-weight: var(--title-weight);
+}
+
+
 /*--------------------------------NAV-------------------------------*/
 
 
@@ -208,17 +231,16 @@ ul li{
   padding: 10px 30px;
 }
 
-.nav-menu .logo{
+
+.logo{
   display: flex;
   align-items: center;
   justify-content: center;
   width:150px;
-  margin-top:10px;
-  margin:10px;
+  margin:10px 50px;
 }
 
-.nav-menu .logo img{
-  
+ .logo img{  
   width:200px;
 }
 

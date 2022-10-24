@@ -36,14 +36,14 @@ Categorias.forEach(categoria => {
 }
 
 function searchPlace(categoria){
-    i=0
+    
     categoria.tags.forEach(tag => {    
         local = categoria.empresas[i]         
         if(tag.toLowerCase().includes(search.toLowerCase())){   
             updateTags(categoria)
             local.forEach(empresa => {
-          //   console.log(empresa.cidade)               
-
+              
+                 
                 if(empresa.cidade.toLowerCase().includes(place.toLowerCase())){
                    
                     updateCard(empresa)
@@ -53,16 +53,21 @@ function searchPlace(categoria){
                     i++ 
                     return
                 }
+                
             })
                 
         } else{
-            if(local != undefined)
+            if(local != undefined){               
             local.forEach(empresa =>{
                 if(empresa.cidade.toLowerCase().includes(place.toLowerCase())){
                 empresa.produtos.forEach(produto => {                    
                     if(produto.descricao.toLowerCase().includes(search.toLowerCase())){                    
-                           
+                      
+                          if(!foundObj){
+                            updateTags(categoria)    
+                          }
                             updateCard(produto)
+                            
                             cardsData.push(empresa)
                             foundObj = true
                             i++ 
@@ -74,8 +79,10 @@ function searchPlace(categoria){
                 })
                                        
            }    
+        }
                
     })
+    i=0
 }
 
 /*  */
@@ -88,7 +95,7 @@ function searchPlace(categoria){
 
                                         <div class="card-body">
                                             <div class="product-name">${empresa.nome.substr(0,30)}</div>
-                                            <div class="description">${empresa.nome} ${empresa.descricao.substr(0,35)}</div>
+                                            <div class="description">${empresa.nome} ${empresa.descricao.substr(0,60)}</div>
                                             <div class="situation opened mt-10">Aberto</div>
                                         </div>
 
