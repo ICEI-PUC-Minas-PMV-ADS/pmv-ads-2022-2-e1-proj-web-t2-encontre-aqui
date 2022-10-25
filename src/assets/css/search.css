@@ -55,7 +55,7 @@ section{
 .card-container .active{
     box-shadow: 0 0 3px 1px rgb(177, 192, 177);
     transition: 0.2s;
-    border-right: 5px solid #9cc0e1;
+    border-right: 3px solid #9cc0e1;
     transform: scale(1.02)
 }
 .card-container .card:hover{

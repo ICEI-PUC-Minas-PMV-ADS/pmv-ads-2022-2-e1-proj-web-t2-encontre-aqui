@@ -93,9 +93,9 @@ main section{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 95%;
-  padding: 10px 30px;
-
+  width: 100%;
+  padding: 10px 50px;
+  background-color: #1514145c;
   z-index: 1;
 }
 

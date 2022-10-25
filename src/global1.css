@@ -204,6 +204,13 @@ ul li{
 
 
 
+#footer .footer-categories-links{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+
+}
+
 #footer .footer-categories-links .categories{
   display: flex;
   justify-content: space-between;

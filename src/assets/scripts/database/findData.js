@@ -6,6 +6,7 @@ var urlObj = new URL(url)
 var search = urlObj.searchParams.get("search")
 var place = urlObj.searchParams.get("place")
 var tags = document.querySelector('.tags')
+var wanted_place = document.getElementById('wanted-place')
 
 var cardsPag
 var cardsData = []
@@ -13,6 +14,7 @@ var cardsData = []
 if(search === null){
     search = 'petshop'
     place ='juiz de fora'
+    updateWantedLocal(place)
 }
 
 foundObj = false
@@ -45,7 +47,7 @@ function searchPlace(categoria){
               
                  
                 if(empresa.cidade.toLowerCase().includes(place.toLowerCase())){
-                   
+                    updateWantedLocal(empresa.cidade)
                     updateCard(empresa)
                     cardsData.push(empresa)
                     foundObj = true
@@ -150,4 +152,8 @@ function updateTags(categoria){
     })
     tags.innerHTML += data;
     data = ''
+}
+
+function updateWantedLocal(place){
+   wanted_place.innerHTML = place
 }
