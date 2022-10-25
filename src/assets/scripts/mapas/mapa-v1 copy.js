@@ -4,8 +4,6 @@ var origem;
 var cardMap = ''
 var searchManager
 var latitude, longitude
-var pin, infoboxs
-var locations = []
 function GetMap(empresa) {
     var origem
     var logo;
@@ -13,7 +11,7 @@ function GetMap(empresa) {
         rota = `${empresa.logradouro}, ${empresa.cidade}, ${empresa.estado}`
         geocodeQuery(rota)
         if(latitude != null && longitude!= null)
-            origem =  new Microsoft.Maps.Location(latitude, longitude)
+            origem =  new Microsoft.Maps.Location(empresa.cords[0], empresa.cords[1])
         else{
             origem = new Microsoft.Maps.Location(-21.762323, -43.346926);  
         }
@@ -50,12 +48,47 @@ function GetMap(empresa) {
             zoom: 15
         });
    
-        pin = new Microsoft.Maps.Pushpin(3, map.getBounds());
         
-        searchManager = new Microsoft.Maps.Search.SearchManager(map);
-        geocodeQuery(rota);
-        });
+                searchManager = new Microsoft.Maps.Search.SearchManager(map);
+                geocodeQuery(rota);
+            });
+    //Assign the infobox to a map instance.
+  
+ 
    
+    
+
+/*
+    //Load the directions module.
+    Microsoft.Maps.loadModule('Microsoft.Maps.Directions', function () {
+        //Generate some routes.
+
+        getRoute(rota2, rota1, 'orange');
+    });
+}
+
+function getRoute(start, end, color) {
+    var dm = new Microsoft.Maps.Directions.DirectionsManager(map);
+    directionsManagers.push(dm);
+
+    dm.setRequestOptions({
+        routeMode: Microsoft.Maps.Directions.RouteMode.driving
+    });
+
+
+    dm.setRenderOptions({
+        autoUpdateMapView: false,
+        drivingPolylineOptions: {
+            strokeColor: color,
+            strokeThickness: 3
+        }
+    });
+
+    dm.addWaypoint(new Microsoft.Maps.Directions.Waypoint({ address: start }));
+    dm.addWaypoint(new Microsoft.Maps.Directions.Waypoint({ address: end }));
+
+    dm.calculateDirections();
+    */
 }
 
 
@@ -69,9 +102,9 @@ function geocodeQuery(query) {
                 //Add the first result to the map and zoom into it.
                 if (r && r.results && r.results.length > 0) {
                     location = r.results[0].location;
-                    pin = new Microsoft.Maps.Pushpin(r.results[0].location);
+                    var pin = new Microsoft.Maps.Pushpin(r.results[0].location);
                     map.entities.push(pin);
-                  
+                    console.log(map.entities)
                     infobox = new Microsoft.Maps.Infobox(r.results[0].location, {
                         htmlContent: cardMap
                     });
@@ -94,7 +127,6 @@ function geocodeQuery(query) {
 }
 
 function findLocations(location){
-    locations.push(location)
     latitude = location.latitude
     logitude = location.longitude
 }

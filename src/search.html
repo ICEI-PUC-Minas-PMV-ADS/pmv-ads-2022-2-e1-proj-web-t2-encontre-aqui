@@ -3,17 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="./assets/images/logo-site/logo.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./global1.css">
     <link rel="stylesheet" href="./assets/css/search.css">
     <link rel="shortcut icon" href="./assets/images/icons/favority-icon1.png" type="image/x-icon">
-    <title>Pesquisa</title>
+    <title>Encontre-Aqui</title>
 </head>
 
 <body>
-    <header class="mb-10">topo</header>
+    <header class="mb-10">
+        <nav class="nav-menu">
+            <div class="logo"><img src="./assets/images/logo-site/logo2.png"></div>
+            <form action="./search.html" method="GET" class="search">
+                <input name="search" type="text" placeholder="Produtos, Serviços, Empresas">
+                <input name="place" type="text" placeholder="Cidade">
+                <button class="btn-search" type="submit">Pesquisar</button>
+            </form>
+            <div class=""><a href="#" class="btn btn-light">Para Empresas</a></div>
+            <div class="account">
+                <a class="btn btn-light" id="testemap" href="#">Cadastrar-se</a>
+                <a class="btn btn-light" href="#">Login</a>
+            </div>
+        </nav>
+    </header>
 
     <div class="container">
 
@@ -34,8 +47,8 @@
             <div class="subtitle mm mb-20">Sugestões:</div>
 
             <div class="mb-20 ml-5">
-                <div class="title mm">
-                    <span>Serviços Residênciais</span>
+                <div>
+                    <span class="title mm">Serviços Residênciais</span>
                     <span><img src="./assets/images/icons/indicador_menu.svg"> </span>
                 </div>
 
@@ -51,7 +64,7 @@
 
             <div class="mb-20">
                 <div class="title mm ml-5">
-                    <span>Alimentação</span>
+                    <span class="title mm">Alimentação</span>
                     <span><img src="./assets/images/icons/indicador_menu.svg"> </span>
                 </div>
 
@@ -72,145 +85,20 @@
             </div>
             <section class="mt-10">
 
-                <span>Resultado(s) para a pesquisa: </span>
-                <h2>Lugares Encontrados Para de <span class="search-place">Juiz de Fora</span></h2>
+                <span class="title">Resultado(s) para a pesquisa: </span>
+                <h2 class="title">Lugares Encontrados Para de <span class="title" id="wanted-place">Juiz de Fora</span>
+                </h2>
 
                 <div class="related-tags">
-                    <span>Tags Relacionadas</span>
+                    <span class="title">Tags Relacionadas</span>
                     <div class="tags">
-                        <a href="#" class="btn btn-primary-round">Hamburger</a>
-                        <a href="#" class="btn btn-primary-round">Lanches</a>
-                        <a href="#" class="btn btn-primary-round">Lanchonete</a>
-                        <a href="#" class="btn btn-primary-round">mais</a>
+
                     </div>
                 </div>
 
             </section>
 
             <section class="card-container">
-                <div class="card active">
-                    <img id="logo-empresa" src="">
-
-                    <div class="card-body">
-                        <div class="product-name">Burguer Queen</div>
-                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                        <div class="situation opened mt-10">Aberto</div>
-                    </div>
-
-                    <div class="card-btn-actions">
-                        <!--  ------------------------------------  -->
-                        <span class="svg-icon svg-icon-primary svg-icon-2x">
-                            <!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2021-05-14-112058/theme/html/demo1/dist/../src/media/svg/icons/General/Bookmark.svg--><svg
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <rect x="0" y="0" width="24" height="24" />
-                                    <path
-                                        d="M8,4 L16,4 C17.1045695,4 18,4.8954305 18,6 L18,17.726765 C18,18.2790497 17.5522847,18.726765 17,18.726765 C16.7498083,18.726765 16.5087052,18.6329798 16.3242754,18.4639191 L12.6757246,15.1194142 C12.2934034,14.7689531 11.7065966,14.7689531 11.3242754,15.1194142 L7.67572463,18.4639191 C7.26860564,18.8371115 6.63603827,18.8096086 6.26284586,18.4024896 C6.09378519,18.2180598 6,17.9769566 6,17.726765 L6,6 C6,4.8954305 6.8954305,4 8,4 Z"
-                                        fill="#000000" />
-                                </g>
-                            </svg>
-                            <!--end::Svg Icon-->
-                        </span>
-
-                        <!--  ------------------------------------  -->
-
-                        <a href="#" class="btn btn-primary-round">Visitar</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img id="logo-empresa" src="">
-
-                    <div class="card-body">
-                        <div class="product-name">Burguer Queen</div>
-                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                        <div class="situation opened mt-10">Aberto</div>
-                    </div>
-
-                    <div class="card-btn-actions">
-                        <!--  ------------------------------------  -->
-                        <span class="svg-icon svg-icon-primary svg-icon-2x">
-                            <!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2021-05-14-112058/theme/html/demo1/dist/../src/media/svg/icons/General/Bookmark.svg--><svg
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <rect x="0" y="0" width="24" height="24" />
-                                    <path
-                                        d="M8,4 L16,4 C17.1045695,4 18,4.8954305 18,6 L18,17.726765 C18,18.2790497 17.5522847,18.726765 17,18.726765 C16.7498083,18.726765 16.5087052,18.6329798 16.3242754,18.4639191 L12.6757246,15.1194142 C12.2934034,14.7689531 11.7065966,14.7689531 11.3242754,15.1194142 L7.67572463,18.4639191 C7.26860564,18.8371115 6.63603827,18.8096086 6.26284586,18.4024896 C6.09378519,18.2180598 6,17.9769566 6,17.726765 L6,6 C6,4.8954305 6.8954305,4 8,4 Z"
-                                        fill="#000000" />
-                                </g>
-                            </svg>
-                            <!--end::Svg Icon-->
-                        </span>
-
-                        <!--  ------------------------------------  -->
-
-                        <a href="#" class="btn btn-primary-round">Visitar</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img id="logo-empresa" src="">
-
-                    <div class="card-body">
-                        <div class="product-name">Burguer Queen</div>
-                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                        <div class="situation opened mt-10">Aberto</div>
-                    </div>
-
-                    <div class="card-btn-actions">
-                        <!--  ------------------------------------  -->
-                        <span class="svg-icon svg-icon-primary svg-icon-2x">
-                            <!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2021-05-14-112058/theme/html/demo1/dist/../src/media/svg/icons/General/Bookmark.svg--><svg
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <rect x="0" y="0" width="24" height="24" />
-                                    <path
-                                        d="M8,4 L16,4 C17.1045695,4 18,4.8954305 18,6 L18,17.726765 C18,18.2790497 17.5522847,18.726765 17,18.726765 C16.7498083,18.726765 16.5087052,18.6329798 16.3242754,18.4639191 L12.6757246,15.1194142 C12.2934034,14.7689531 11.7065966,14.7689531 11.3242754,15.1194142 L7.67572463,18.4639191 C7.26860564,18.8371115 6.63603827,18.8096086 6.26284586,18.4024896 C6.09378519,18.2180598 6,17.9769566 6,17.726765 L6,6 C6,4.8954305 6.8954305,4 8,4 Z"
-                                        fill="#000000" />
-                                </g>
-                            </svg>
-                            <!--end::Svg Icon-->
-                        </span>
-
-                        <!--  ------------------------------------  -->
-
-                        <a href="#" class="btn btn-primary-round">Visitar</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img id="logo-empresa" src="">
-
-                    <div class="card-body">
-                        <div class="product-name">Burguer Queen</div>
-                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                        <div class="situation opened mt-10">Aberto</div>
-                    </div>
-
-                    <div class="card-btn-actions">
-                        <!--  ------------------------------------  -->
-                        <span class="svg-icon svg-icon-primary svg-icon-2x">
-                            <!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2021-05-14-112058/theme/html/demo1/dist/../src/media/svg/icons/General/Bookmark.svg--><svg
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <rect x="0" y="0" width="24" height="24" />
-                                    <path
-                                        d="M8,4 L16,4 C17.1045695,4 18,4.8954305 18,6 L18,17.726765 C18,18.2790497 17.5522847,18.726765 17,18.726765 C16.7498083,18.726765 16.5087052,18.6329798 16.3242754,18.4639191 L12.6757246,15.1194142 C12.2934034,14.7689531 11.7065966,14.7689531 11.3242754,15.1194142 L7.67572463,18.4639191 C7.26860564,18.8371115 6.63603827,18.8096086 6.26284586,18.4024896 C6.09378519,18.2180598 6,17.9769566 6,17.726765 L6,6 C6,4.8954305 6.8954305,4 8,4 Z"
-                                        fill="#000000" />
-                                </g>
-                            </svg>
-                            <!--end::Svg Icon-->
-                        </span>
-
-                        <!--  ------------------------------------  -->
-
-                        <a href="#" class="btn btn-primary-round">Visitar</a>
-                    </div>
-                </div>
 
 
             </section>
@@ -223,10 +111,59 @@
         </aside>
     </div>
 
-    <footer>footer</footer>
+
+    <footer id="footer" class="mt-50">
+
+        <div class="footer-about">
+            <div class="logo"><img src="./assets/images/logo-site/logo2.png"></div>
+            <span>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Eveniet ipsam </span>
+        </div>
+
+        <div class="footer-categories-links">
+            <h1>Categorias</h1>
+            <div class="categories">
+                <div>
+                    <ul>
+                        <li>Barbearia</li>
+                        <li>Petshop</li>
+                        <li>Restaurante</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Bebidas</li>
+                        <li>Construção</li>
+                        <li>Festas</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Vestuários</li>
+                        <li>Veículos</li>
+                        <li>Educação</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-about-links">
+            <h1>Sobre</h1>
+            <div>
+                <ul>
+                    <li>Sobre o Encontre-aqui</li>
+                    <li>Termos de Serviço</li>
+                    <li>Política de privacidade</li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
 
 
-    <script src="./assets/scripts/script.js"></script>
+
+    <script src="./assets/scripts/search/responsive.js"></script>
     <script src="./assets/scripts/database/database.js"></script>
     <script src="./assets/scripts/database/findData.js"></script>
 

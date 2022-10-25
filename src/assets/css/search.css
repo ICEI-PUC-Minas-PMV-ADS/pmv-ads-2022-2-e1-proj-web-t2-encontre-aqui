@@ -53,13 +53,16 @@ section{
     cursor:pointer;
 }
 .card-container .active{
-    box-shadow: 0 0 3px 1px rgb(182, 173, 173);
+    box-shadow: 0 0 3px 1px rgb(177, 192, 177);
+    transition: 0.2s;
+    border-right: 3px solid #9cc0e1;
+    transform: scale(1.02)
 }
 .card-container .card:hover{
-    box-shadow: 0 0 5px 2px #999;
+    box-shadow: 0 0 5px 2px rgba(224, 216, 216, 0.277);
 }
 
-.card-container .card img{
+.card-container .card #logo-empresa{
     width: 110px;
     height: 100px;
     padding: 10px;
@@ -86,6 +89,9 @@ section{
     margin:10px;
 }
 
+.card-container .card .card-btn-actions img{
+    width: 20px;
+}
 .left-menu{
     display: flex;
     flex-direction: column;    
@@ -130,8 +136,6 @@ section{
 
     transition: 1s;
 }
-
-
 
 .related-tags{
     margin-top:10px;
@@ -196,10 +200,6 @@ section{
     display: none;
 }
 
-.left-menu .filter-area{
-    
-}
-
 .filter{
     display: flex;
     gap:10px;
@@ -210,7 +210,29 @@ section{
     cursor: pointer;
 }
 
-/*----------------------------------------*/
+
+/*-------------card map-----------------------*/
+.card-map{
+    width: 100px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card-map img{
+    width: 100%;
+    height: 80px;
+    border-radius: 6px;
+}
+
+.card-map .product-name{
+    padding-top:5px;
+    font-size: 0.5rem;
+}
+/*------------------------------------------*/
 @media screen and (max-width:1000px){
 
     .open-menu{
@@ -238,6 +260,12 @@ section{
     
 }
 
+.nav-menu a{
+    text-decoration: none;
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 0.1mm;
+  }
 
 @media screen and (max-width:804px){
     .card-container .card{
@@ -250,12 +278,13 @@ section{
     .card-container .card .card-btn-actions{
        display: flex;
        flex-direction: column;
-       margin:10px;
+       position:relative;
+       top:-80px;
     }
 
-    .card-container .card .card-btn-actions span{
+    .card-container .card .card-btn-actions img{
         position: relative;
-        top:-180px;
+        top:-100px;
         margin:2px;
     }
 
@@ -265,7 +294,6 @@ section{
         margin:2px;
     }
 
-    
 }
 
 @media screen and (max-width:480px){
