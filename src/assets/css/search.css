@@ -51,7 +51,9 @@ section{
     background-color: #fff;
     border-radius: 5px;
     cursor:pointer;
+    
 }
+
 .card-container .active{
     box-shadow: 0 0 3px 1px rgb(177, 192, 177);
     transition: 0.2s;
@@ -162,6 +164,10 @@ section{
     font-weight: var(--subtitle-weight);
 }
 
+#places-in-maps{
+    height: 90%;
+}
+
 .toggle{
     display: flex;
     align-items: center;
@@ -220,6 +226,13 @@ section{
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    transition: 0.3s;
+}
+
+.card-map:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 .card-map img{
