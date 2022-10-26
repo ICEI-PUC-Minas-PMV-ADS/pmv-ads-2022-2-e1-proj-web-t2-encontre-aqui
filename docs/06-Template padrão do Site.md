@@ -27,7 +27,8 @@
     <li>Edição de página de produto ou serviço</li>
     <li>Divulgação de produto ou serviço</li>
   </ul>
-  
+  #
+  <p>
   #
   <p>No template da figura Y é comtemplado um único layout: </p>
   <ul>
@@ -38,6 +39,10 @@
   <img src="img/wireframes/Template-Outras-Paginas.png" width="400">
 </p>
 <h3 align="center">FIGURA Y - 2° Template padrão</h3>
+
+#
+
+
 
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
