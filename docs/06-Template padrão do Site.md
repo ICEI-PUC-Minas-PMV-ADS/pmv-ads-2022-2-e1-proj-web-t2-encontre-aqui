@@ -9,7 +9,7 @@
 
 <p>O template desenvolvido está presente no site <a href="#">GitHub Pages</a>
   
-<p>No template da figura X é comtemplado as seguintes telas: </p>
+<p>No template da figura X é comtemplado os seguintes layouts: </p>
   <ul>
     <li>Homepage</li>
     <li>Alterar senha</li>
