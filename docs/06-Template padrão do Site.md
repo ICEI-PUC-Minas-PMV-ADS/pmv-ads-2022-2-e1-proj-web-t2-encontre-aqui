@@ -54,5 +54,11 @@
 
 <p>As imagens abaixos estão relacionadas aos layouts do 2° template padrão, nela está demonstrando a tela de resultados de pesquisas, contendo a  identidade visual, aspectos de responsividade e iconografia do site.</p>
 
+<p align="center"> 
+  <img src="img/FI_V.JPG" width="1000">
+</p>
+ <p align="center"> 
+  <img src="img/FI_U.JPG" width="1000">
+</p>
 #
 
