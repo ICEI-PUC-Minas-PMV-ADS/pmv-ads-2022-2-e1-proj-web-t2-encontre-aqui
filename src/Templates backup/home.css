@@ -1,5 +1,5 @@
 :root{
-  --color-header: #1a191989;
+  --color-header: #1a1919b9;
 }
 
 .header-home-page{
@@ -7,7 +7,7 @@
   flex-direction: column;
   width: calc(100vw - 10px);
   height: 350px;
-  background-image: url('./../images/site/capa/banner.jpg');
+  background-image: url('./Header.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

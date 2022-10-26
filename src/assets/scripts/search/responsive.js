@@ -13,7 +13,7 @@ var w = window.innerWidth;
     if(w > 1000){
       right_menu.classList.replace("right-menu-reduced", "right-menu")
     }
-    if(w < 650){
+    if(w < 400){
       left_menu.classList.replace("left-menu-open","left-menu")
     }
  })

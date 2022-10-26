@@ -53,20 +53,33 @@ body{
     'footer footer footer footer';
 }
 
+
 #header{
   grid-area: header;
   height: 12vh;
-  background-color: var(--color-header);
 }
 
 #sidebar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 400px;
   grid-area: sidebar;
+  border:3px solid;
 }
 
 #content{
   grid-area: content;
-  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border:3px solid;
+}
 
+#sidebar h1, #content h1{
+  color: var(--font-color);
 }
 
 #footer{
@@ -74,11 +87,18 @@ body{
   grid-area:footer;
   height: 270px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px 70px;
   gap:50px;
+  
   background-color: var(--color-footer);
+}
+
+#footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main section{
@@ -87,18 +107,26 @@ main section{
   margin:70px 0;
 }
 
+main{
+  display: flex;
+  width: calc(100vw - 10px);
+  height: 400px;
+}
 
 .nav-menu{
  
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 10px 50px;
-  background-color: var(--color-header);
+  height: 100%;
+  border: 2px solid;
   z-index: 1;
 }
 
+.nav-menu h1{
+  color:var(--font-color);
+}
 
 .logo{
   display: flex;

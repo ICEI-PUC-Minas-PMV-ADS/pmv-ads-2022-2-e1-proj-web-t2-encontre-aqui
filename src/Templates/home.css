@@ -1,13 +1,20 @@
 :root{
-  --color-header: #1a191989;
+  --color-header: #1a191900;
 }
 
+h1{
+  color:var(--font-color);
+}
+
+#footer h1{
+  color:var(--white);
+}
 .header-home-page{
   display:flex;
   flex-direction: column;
   width: calc(100vw - 10px);
   height: 350px;
-  background-image: url('./../images/site/capa/banner.jpg');
+  background-image: url('./Header.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -80,12 +87,13 @@ color: var(--white);
    
   }
   
-  .nav-menu{
+  .header-home-page .nav-menu{
  
     display: flex;
-    justify-content: space-between;
+    border: 3px solid;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    height: 20%;
     padding: 10px 50px;
     background-color: var(--color-header);
     z-index: 1;

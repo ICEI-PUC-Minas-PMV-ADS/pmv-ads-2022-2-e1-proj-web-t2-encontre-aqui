@@ -87,6 +87,9 @@ main section{
   margin:70px 0;
 }
 
+main{
+  height: 400px;
+}
 
 .nav-menu{
  
@@ -152,11 +155,15 @@ main section{
   align-items: center;
 }
 
+
 .nav-menu a{
   margin-top:10px;
   margin-right: 5px;
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.1mm;
 }
-
 
 .btn-burguer{
   width: 20px;
@@ -410,5 +417,13 @@ ul li{
   align-items: center;
   justify-content: center;
    width: 600px;
+}
+#footer .footer-about-links ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+   width: 600px;
+   gap:30px;
 }
 }

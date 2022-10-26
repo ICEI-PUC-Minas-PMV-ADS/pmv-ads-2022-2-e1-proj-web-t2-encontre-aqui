@@ -3,7 +3,24 @@ let currentItem = 0;
 const items = document.querySelectorAll(".item");
 const maxItems = items.length;
 var scroll;
+var height;
 
+var body = document.body,
+    html = document.documentElement;
+
+    height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+
+  window.onscroll = function(ev) {
+    
+    if ((window.innerHeight + window.scrollY) >= height/2) {
+         
+    }else{
+      console.log("Passou")
+      stopCarousel();
+    }
+};
 controls.forEach((control) => {
   control.addEventListener("click", (e) => {
     isLeft = e.target.classList.contains("arrow-left");
@@ -34,19 +51,16 @@ controls.forEach((control) => {
   });
 });
 
-scroll = (document.documentElement.scrollTop || document.body.scrollTop);
-if(scroll > 1180 || scroll < 2010){
-        
-  setInterval(() => {
-    scrool = document.documentElement.scrollTop;
-
-    console.log(scrool)
+       
+  window.setInterval(() => {
+   
     items.forEach((item) => item.classList.remove("current-item"));
     if(currentItem >= maxItems){
       currentItem = 0
     }else{
       currentItem++;
     }
+     
       items[currentItem].scrollIntoView({
         behavior: "smooth",
         inline: "center",
@@ -57,17 +71,11 @@ if(scroll > 1180 || scroll < 2010){
 
 
       items[currentItem].classList.add("current-item");
-      var body = document.body,
-      html = document.documentElement;
-
-      var height = Math.max( body.scrollHeight, body.offsetHeight, 
-                        html.clientHeight, html.scrollHeight, html.offsetHeight );
-
-                    
-                    
+                 
 
 }, 3000);
 
-}else{
-  clearInterval();
+
+function stopCarousel(){
+  window.clearInterval();
 }
