@@ -1,10 +1,11 @@
+:root{
+  --color-header: #1a191989;
+}
+
 .header-home-page{
   display:flex;
   flex-direction: column;
-
-  align-self: center;
-  position: relative;
-  width: 100vw;
+  width: calc(100vw - 10px);
   height: 350px;
   background-image: url('./../images/site/capa/banner.jpg');
   background-repeat: no-repeat;
@@ -77,6 +78,17 @@ color: var(--white);
     transition: ease 0.5s;
     background-color: var(--white);
    
+  }
+  
+  .nav-menu{
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 50px;
+    background-color: var(--color-header);
+    z-index: 1;
   }
   
   
