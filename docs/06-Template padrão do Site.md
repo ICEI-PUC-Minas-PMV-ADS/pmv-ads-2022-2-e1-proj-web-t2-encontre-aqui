@@ -41,29 +41,18 @@
 </p>
  
  #
- 
-  <p>No template da figura Y é comtemplado um único layout: </p>
-  <ul>
-    <li>Resultados de pesquisas</li>
-  </ul>
   
   <p align="center"> 
   <img src="img/wireframes/Template-Outras-Paginas.png" width="400">
 </p>
 <h3 align="center">FIGURA Y - 2° Template padrão</h3>
 
+<p>No template da figura Y é comtemplado um único layout: </p>
+  <ul>
+    <li>Resultados de pesquisas</li>
+  </ul>
+
+<p>As imagens abaixos estão relacionadas aos layouts do 2° template padrão, nela está demonstrando a tela de resultados de pesquisas, contendo a  identidade visual, aspectos de responsividade e iconografia do site.</p>
+
 #
 
-
-
-
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
-
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
-
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
