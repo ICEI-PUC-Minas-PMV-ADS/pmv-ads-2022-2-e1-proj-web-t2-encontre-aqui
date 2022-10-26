@@ -27,9 +27,7 @@
     <li>Edição de página de produto ou serviço</li>
     <li>Divulgação de produto ou serviço</li>
   </ul>
-  #
-  <p>
-  #
+ 
   <p>No template da figura Y é comtemplado um único layout: </p>
   <ul>
     <li>Resultados de pesquisas</li>
