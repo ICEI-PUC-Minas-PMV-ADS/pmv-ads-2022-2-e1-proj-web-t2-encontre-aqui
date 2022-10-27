@@ -41,8 +41,8 @@ color: var(--white);
 }
 
 .card{
-    width: 310px;
-    height: 320px;
+    width: 270px;
+    height: 350px;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
@@ -59,7 +59,7 @@ color: var(--white);
   }
   
   .card-lg{
-    width: 650px;
+    width: 600px;
     height: 320px;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -131,7 +131,7 @@ color: var(--white);
   .card-container{
     display: flex;
     align-items: center;
-    width: 75vw;
+    width: 100%;
     margin: 0 auto;
     flex-wrap: wrap;
     gap:30px;

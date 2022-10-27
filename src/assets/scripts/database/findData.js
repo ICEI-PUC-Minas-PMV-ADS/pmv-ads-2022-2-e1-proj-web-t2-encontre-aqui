@@ -11,11 +11,14 @@ var wanted_place = document.getElementById('wanted-place')
 var cardsPag
 var cardsData = []
 
-if(search === null){
+if(!search){
     search = 'petshop'
     place ='juiz de fora'
     updateWantedLocal(place)
 }
+
+console.log(search)
+console.log(place)
 
 foundObj = false
 var i = 0
@@ -63,7 +66,8 @@ function searchPlace(categoria){
             local.forEach(empresa =>{
                 if(empresa.cidade.toLowerCase().includes(place.toLowerCase())){
                 empresa.produtos.forEach(produto => {                    
-                    if(produto.descricao.toLowerCase().includes(search.toLowerCase())){                    
+                    if((empresa.nome.toLowerCase().includes(search.toLocaleLowerCase()) ||
+                        (produto.descricao.toLowerCase().includes(search.toLowerCase())))){                    
                       
                           if(!foundObj){
                             updateTags(categoria)    
