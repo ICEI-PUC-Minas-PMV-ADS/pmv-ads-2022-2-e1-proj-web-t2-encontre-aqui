@@ -1,0 +1,56 @@
+.carousel-area {
+    position: relative;
+    padding: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.galeria-profissionais {
+    overflow-x: auto;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: row nowrap;
+    gap: 25px;
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 15px;
+    line-height: 15px;
+    width: 20px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    transition: all 600ms ease-in-out;
+}
+.arrow-right {
+    left: auto;
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+.arrow-left:hover, .arrow-right:hover {
+    opacity: 1;
+}
+.item {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+}
+
+.galeria-profissionais::-webkit-scrollbar{
+    display:none;
+}
+.ggaleria-profissionais{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
