@@ -1,6 +1,6 @@
 # Projeto de Interface
 
-A visão do que será desenvolvido para o futuro usuário é muito importante, pois é a partir dele que o sistema vai ganhando forma e sentido, para melhor compreensão da experiência do usuário o projeto de interface nos ajuda através dos processos User flor (fluxo do usuário) e Wireframes, um esqueleto ou protótipo interativo do que será desenvolvido nos próximos passos.
+A visão do que será desenvolvido para o futuro usuário é muito importante, pois é a partir dele que o sistema vai ganhando forma e sentido, para melhor compreensão da experiência do usuário o projeto de interface nos ajuda através dos processos User flow (fluxo do usuário) e Wireframes, um esqueleto ou protótipo interativo do que será desenvolvido nos próximos passos.
 
 ## USER FLOW
 
@@ -24,14 +24,14 @@ Você pode encontrar uma versão interativa acessando <a href="https://www.figma
 
 ## Template Padrão
 
-<p>O nosso template está dividido em duas páginas, o template da figura 03 e o template da figura 04 acompanhe o detalhamento abaixo delas:</p>
+<p>O meu template está dividido em duas páginas, o template da figura 03 e o template da figura 04 acompanhe o detalhamento abaixo delas:</p>
 
 <p align="center"> 
   <img src="img/wireframes/Template-Home.png" width="400">
 </p>
 <h3 align="center">FIGURA 03</h3>
 
-<p>Na figura 03 temos os seguintes espaços:</p>
+<p>Na figura 03 está os seguintes espaços:</p>
 <ul>
   <li>Cabeçalho - MENU do sistema.
   <li>Corpo - CONTEÚDO do sistema.
@@ -45,7 +45,7 @@ Você pode encontrar uma versão interativa acessando <a href="https://www.figma
 </p>
 <h3 align="center">FIGURA 04</h3>
 
-<p>Na figura 04 temos os seguintes espaços:</p>
+<p>Na figura 04 está os seguintes espaços:</p>
 <ul>
   <li>Cabeçalho - BARRA DE PESQUISA + MENU do sistema.
   <li>Menu lateral - AUXILIA NA BUSCA do sistema.

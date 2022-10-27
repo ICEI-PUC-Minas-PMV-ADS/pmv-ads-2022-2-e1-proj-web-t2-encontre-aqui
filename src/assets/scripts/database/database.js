@@ -16,6 +16,7 @@ Produtos = {
         preco: '22.99',
         domicilio:true,
         agendamento:false,
+        nfavoritos: 55,
     },
     {
         id: 2,
@@ -29,6 +30,7 @@ Produtos = {
         preco: "55.98",
         domicilio:true,
         agendamento:false,
+        nfavoritos: 55,
     },
     {
         id: 3,
@@ -38,6 +40,7 @@ Produtos = {
         preco: "22.99",
         domicilio:true,
         agendamento:false,
+        nfavoritos: 55,
     },
 
     {
@@ -52,6 +55,7 @@ Produtos = {
         preco: "55.98",
         domicilio:true,
         agendamento:false,
+        nfavoritos: 55,
     },
     {
         id: 5,
@@ -60,6 +64,7 @@ Produtos = {
         imagens:['./assets/images/products/pets/03/1.jpg'],
         domicilio:true,
         agendamento:false,
+        nfavoritos: 55,
     },
 
     ],
@@ -72,6 +77,7 @@ Produtos = {
         preco: "869.59",
         domicilio:true,
         agendamento:false,
+        nfavoritos: 55,
         
     },
     {
@@ -82,6 +88,7 @@ Produtos = {
         preco: "484.03",
         domicilio:true,
         agendamento:false,
+        nfavoritos: 55,
         
     },
 ]//Fim Produtos
@@ -100,6 +107,7 @@ Empresas = {
             imagens: ["./assets/images/companies/logos/logo3.PNG"],
             hfunc:[''],
             tel: '',
+            nfavoritos: 55,
             rsocial:[''],            
         },
         {
@@ -114,6 +122,7 @@ Empresas = {
             imgBanner:'',
             hfunc:[''],
             tel: '',
+            nfavoritos: 55,
             rsocial:[''],      
         },              
         {
@@ -128,6 +137,7 @@ Empresas = {
             imgBanner:'',
             hfunc:[''],
             tel: '',
+            nfavoritos: 55,
             rsocial:[''], 
         }, 
         {
@@ -142,6 +152,7 @@ Empresas = {
             imgBanner:'',
             hfunc:[''],
             tel: '',
+            nfavoritos: 55,
             rsocial:[''], 
         },                 
     ], //FIM PETS
@@ -158,6 +169,7 @@ Empresas = {
             imgBanner:'',
             hfunc:[''],
             tel: '',
+            nfavoritos: 55,
             rsocial:[''], 
         },
         {
@@ -172,6 +184,7 @@ Empresas = {
             imgBanner:'',
             hfunc:[''],
             tel: '',
+            nfavoritos: 55,
             rsocial:[''], 
         },
     ]
