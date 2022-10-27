@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 25px;
+            padding: 30px;
+        }
+
+        .bg-unselected {
+            position: absolute;
+            top: 215px;
+            left: 0;
+            width: 100%;
+            height: 75%;
+            background-color: rgba(0, 0, 0, 0.717);
+        }
+
+        #section1 {
+
+            background-color: #666;
+        }
+
+        #section2 {
+
+            background-color: #666;
+        }
+
+        #section3 {
+
+            background-color: #666;
+        }
+
+        .loader-incomplete {
+            position: absolute;
+            top: 0;
+            left: 90vw;
+            width: 10px;
+            height: 900px;
+            background-color: #ccc;
+        }
+
+        .loader-complete {
+            position: absolute;
+            top: 0;
+            left: 90vw;
+            width: 10px;
+            height: 0;
+            background-color: rgb(134, 179, 89);
+            transition: ease 0.3s;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main>
+        <section id="section1">
+            <input id="input" type="text" value="teste" placeholder="testando o input">
+            <input id="input" type="text" value="teste" placeholder="testando o input">
+        </section>
+        <section id="section2">
+            <input type="text" value="teste" placeholder="testando o input">
+        </section>
+        <section id="section3">
+            <input type="text" value="teste" placeholder="testando o input">
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <div class="bg-unselected"></div>
+    <div class="loader-incomplete"></div>
+    <div class="loader-complete"></div>
+
+
+    <script>
+
+        var input = document.getElementById('input')
+        var sections = document.getElementById('section1')
+        ninputs = sections.getElementsByTagName('input')
+
+        for (i = 0; i < ninputs.length; i++) {
+            ninputs[i].addEventListener('change', (e) => {
+                alert(e.target.value)
+            })
+        }
+
+
+
+        /*
+        var sec = document.getElementById('section1')
+        inputs = sec.getElementsByTagName('input')
+        inputs.forEach(element => {
+            element.addEventListener('change', () => {
+                alert(element.value)
+            })
+        });
+        */
+
+
+    </script>
+</body>
+
+</html>
