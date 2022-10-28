@@ -31,10 +31,10 @@
  <p>As imagens abaixos estão relacionadas aos layouts do 1° template padrão, nela está sendo demonstrando a homepage, contendo a  identidade visual, aspectos de responsividade e iconografia. </p>
  
  <p align="center"> 
-  <img src="img/FI_X.JPG" width="1000">
+  <img src="img/FI_.JPG" width="1000">
 </p>
  <p align="center"> 
-  <img src="img/FI_Y.JPG" width="1000">
+  <img src="img/FI_.JPG" width="1000">
 </p>
  <p align="center"> 
   <img src="img/FI_Z.JPG" width="1000">
