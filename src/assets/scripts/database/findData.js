@@ -8,8 +8,12 @@ var place = urlObj.searchParams.get("place")
 var tags = document.querySelector('.tags')
 var wanted_place = document.getElementById('wanted-place')
 
+var local = []
 var cardsPag
 var cardsData = []
+
+foundObj = false
+var i = 0
 
 if(!search){
     search = 'petshop'
@@ -17,19 +21,14 @@ if(!search){
     updateWantedLocal(place)
 }
 
+
+
 console.log(search)
 console.log(place)
-
-foundObj = false
-var i = 0
-
-var local = []
 
 
 startSearch();
 updateMap();
-
-
 
 function startSearch(){
 Categorias.forEach(categoria => { 

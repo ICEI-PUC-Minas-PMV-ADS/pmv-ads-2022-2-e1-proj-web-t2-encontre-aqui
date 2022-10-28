@@ -7,7 +7,7 @@ var latitude, longitude
 var pin, infoboxs
 var locations = []
 
-var icon = './../../../src/assets/images/icons/map-marker.png';
+var icon = 'https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/assets/images/icons/map-marker.png';
 
 function GetMap(empresa) {
     var origem
@@ -56,8 +56,7 @@ function GetMap(empresa) {
             zoom: 15
         });
    
-        pin = new Microsoft.Maps.Pushpin(3, map.getBounds());
-        
+                
         searchManager = new Microsoft.Maps.Search.SearchManager(map);
         geocodeQuery(rota);
         });
@@ -76,12 +75,12 @@ function geocodeQuery(query) {
                     location = r.results[0].location;
                     pin = new Microsoft.Maps.Pushpin(r.results[0].location,{
                         icon: icon,
-                        anchor: new Microsoft.Maps.Point(0, 0)
-                    });
+                     });
                     map.entities.push(pin);
                   
                     infobox = new Microsoft.Maps.Infobox(r.results[0].location, {
                         htmlContent: cardMap
+                        
                     });
 
                     findLocations(location)
