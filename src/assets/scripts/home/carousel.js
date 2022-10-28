@@ -4,7 +4,7 @@ const items = document.querySelectorAll(".item");
 const maxItems = items.length;
 var scroll;
 var height;
-
+/*
 var body = document.body,
     html = document.documentElement;
 
@@ -21,6 +21,8 @@ var body = document.body,
       stopCarousel();
     }
 };
+*/
+
 controls.forEach((control) => {
   control.addEventListener("click", (e) => {
     isLeft = e.target.classList.contains("arrow-left");
@@ -51,9 +53,9 @@ controls.forEach((control) => {
   });
 });
 
-       
+  /*     
   window.setInterval(() => {
-   
+   */
     items.forEach((item) => item.classList.remove("current-item"));
     if(currentItem >= maxItems){
       currentItem = 0
@@ -72,10 +74,11 @@ controls.forEach((control) => {
 
       items[currentItem].classList.add("current-item");
                  
-
+/*
 }, 3000);
 
 
 function stopCarousel(){
   window.clearInterval();
 }
+*/

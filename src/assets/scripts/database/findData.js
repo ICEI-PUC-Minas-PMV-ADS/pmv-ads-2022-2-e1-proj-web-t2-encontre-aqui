@@ -8,25 +8,27 @@ var place = urlObj.searchParams.get("place")
 var tags = document.querySelector('.tags')
 var wanted_place = document.getElementById('wanted-place')
 
+var local = []
 var cardsPag
 var cardsData = []
 
-if(search === null){
+foundObj = false
+var i = 0
+
+if(!search){
     search = 'petshop'
     place ='juiz de fora'
     updateWantedLocal(place)
 }
 
-foundObj = false
-var i = 0
 
-var local = []
+
+console.log(search)
+console.log(place)
 
 
 startSearch();
 updateMap();
-
-
 
 function startSearch(){
 Categorias.forEach(categoria => { 
@@ -63,7 +65,8 @@ function searchPlace(categoria){
             local.forEach(empresa =>{
                 if(empresa.cidade.toLowerCase().includes(place.toLowerCase())){
                 empresa.produtos.forEach(produto => {                    
-                    if(produto.descricao.toLowerCase().includes(search.toLowerCase())){                    
+                    if((empresa.nome.toLowerCase().includes(search.toLocaleLowerCase()) ||
+                        (produto.descricao.toLowerCase().includes(search.toLowerCase())))){                    
                       
                           if(!foundObj){
                             updateTags(categoria)    

@@ -6,6 +6,9 @@ var searchManager
 var latitude, longitude
 var pin, infoboxs
 var locations = []
+
+var icon = 'https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/assets/images/icons/map-marker.png';
+
 function GetMap(empresa) {
     var origem
     var logo;
@@ -26,7 +29,10 @@ function GetMap(empresa) {
         <img id="logo-empresa" src="${empresa.imagens[0]}">
 
         <div class="card-body">
-            <div class="product-name">${empresa.nome.substr(0,30)}</div>
+           
+            <div class="description"> ${empresa.descricao.substr(0,45)}</div>
+            <div class="logradouro"> ${empresa.logradouro}</div>
+            <div> ${empresa.tel}</div>
             <div class="situation opened mt-10">Aberto</div>
         </div>
     </div>
@@ -50,14 +56,12 @@ function GetMap(empresa) {
             zoom: 15
         });
    
-        pin = new Microsoft.Maps.Pushpin(3, map.getBounds());
-        
+                
         searchManager = new Microsoft.Maps.Search.SearchManager(map);
         geocodeQuery(rota);
         });
    
 }
-
 
 
 
@@ -69,11 +73,14 @@ function geocodeQuery(query) {
                 //Add the first result to the map and zoom into it.
                 if (r && r.results && r.results.length > 0) {
                     location = r.results[0].location;
-                    pin = new Microsoft.Maps.Pushpin(r.results[0].location);
+                    pin = new Microsoft.Maps.Pushpin(r.results[0].location,{
+                        icon: icon,
+                     });
                     map.entities.push(pin);
                   
                     infobox = new Microsoft.Maps.Infobox(r.results[0].location, {
                         htmlContent: cardMap
+                        
                     });
 
                     findLocations(location)
