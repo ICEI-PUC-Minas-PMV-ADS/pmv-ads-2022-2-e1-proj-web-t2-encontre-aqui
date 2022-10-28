@@ -7,7 +7,7 @@
 </p>
 <h3 align="center">FIGURA X - 1° Template padrão</h3>
 
-<p>O template desenvolvido está presente no site <a href="#">GitHub Pages</a>
+<p>O template desenvolvido está presente no site <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/tree/main/src/Templates">GitHub Pages</a>
   
 <p>No template da figura X é contemplado os seguintes layouts: </p>
   <ul>
