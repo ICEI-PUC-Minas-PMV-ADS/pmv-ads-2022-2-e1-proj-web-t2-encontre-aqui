@@ -29,14 +29,18 @@
 
 <h3>Estrutura de dados</h3>
 
+<p>
+ Os dados de empresas, produtos, serviços e usuários são manipulados em objetos e vetores de objetos da linguagem javascript. <br>Exemplo na figura a seguir.  
+</p>
+
 <p align="center"> 
   <img src="img/PesquisaED.PNG" width="600">
 </p>
 
-##### *Figura 2- Página Contendo Resultado de pesquisas*
+##### *Figura 2- Estrutura de dados*
 
 <h3>Instruções de acesso</h3>
-1. Abra o navegador de internet em seu dispositivo móvel ou desktop e digite a URL: https://
+1. Abra o navegador de internet em seu dispositivo móvel ou desktop e digite a URL: https://pauloosilas.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/
 
 <h3>Resultados de pesquisas - RF-002, RF-003 e RF-004</h3>
 
