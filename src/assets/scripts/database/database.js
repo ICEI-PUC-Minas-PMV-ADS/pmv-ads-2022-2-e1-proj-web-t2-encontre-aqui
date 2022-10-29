@@ -108,7 +108,8 @@ Empresas = {
             hfunc:[''],
             tel: '9546-54684',
             nfavoritos: 55,
-            rsocial:[''],            
+            rsocial:[''],
+            empresa:true            
         },
         {
             id: 2,
@@ -123,7 +124,8 @@ Empresas = {
             hfunc:[''],
             tel: '9546-54684',
             nfavoritos: 55,
-            rsocial:[''],      
+            rsocial:[''],
+            empresa:true      
         },              
         {
             id: 3,
@@ -138,7 +140,8 @@ Empresas = {
             hfunc:[''],
             tel: '9546-54684',
             nfavoritos: 55,
-            rsocial:[''], 
+            rsocial:[''],
+            empresa:true 
         }, 
         {
             id: 4,
@@ -153,7 +156,8 @@ Empresas = {
             hfunc:[''],
             tel: '',
             nfavoritos: 55,
-            rsocial:[''], 
+            rsocial:[''],
+            empresa:true 
         },                 
     ], //FIM PETS
     moveis:[
@@ -170,7 +174,8 @@ Empresas = {
             hfunc:[''],
             tel: '',
             nfavoritos: 55,
-            rsocial:[''], 
+            rsocial:[''],
+            empresa:true 
         },
         {
             id: 4,
@@ -185,7 +190,8 @@ Empresas = {
             hfunc:[''],
             tel: '',
             nfavoritos: 55,
-            rsocial:[''], 
+            rsocial:[''],
+            empresa:true 
         },
     ]
 }; //FIM EMPRESAS

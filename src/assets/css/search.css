@@ -240,23 +240,34 @@ section{
     margin-left: 10px;
     transition: all  0.5s ease;
 }
-.card-map .description, .logradouro{
-    display: none;
+.card-map .description, .logradouro, .product{
+    visibility: hidden;
     opacity: 0;
     width: 0;
     height: 0;
     transition: all  0.2s ease;
 }
+.card-map .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-map .prod img{
+    width: 20px;
+}
 
 .card-map:hover{
-    width: 230px;
-    height: 320px;
+    width: 260px;
+    height: 400px;
     transition: all  0.5s ease;
     transform: translateX(-150px) ;
      
 }
-.card-map:hover .description, .card-map:hover .logradouro{
+.card-map:hover .description, .card-map:hover .logradouro, .card-map:hover .prod{
     display: flex;
+    visibility: visible;
     flex-direction: column;
     width: 100%;
     height: 52px;
@@ -265,7 +276,7 @@ section{
 }
 .card-map:hover img{
     width: 100%;
-    height: 130px;
+    height: 170px;
 }
 .card-map img{
     width: 100%;
@@ -279,6 +290,9 @@ section{
     padding-top:5px;
     font-size: 0.5rem;
 }
+
+
+
 /*------------------------------------------*/
 @media screen and (max-width:1200px){
 
