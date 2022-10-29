@@ -7,7 +7,7 @@ var latitude, longitude
 var pin, infoboxs
 var locations = []
 
-var icon = 'https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/assets/images/icons/map-marker.png';
+var icon = 'https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/assets/images/icons/map-marker.png?raw=true';
 
 function GetMap(empresa) {
     var origem
@@ -24,19 +24,31 @@ function GetMap(empresa) {
        
       
         geocodeQuery(rota)
-     
+        var prod ='';
+ 
+           for(var i =0; i < 1 ; i++){
+            prod += `<a href="/produtos/produtos.html?id=${empresa.produtos[0].id}" > 
+            <img src='${empresa.produtos[0].imagens[i]}' width="25"></a>`
+            }
+
         cardMap = `<a href="produto.html?id=${empresa.id}> "<div class="card-map">
         <img id="logo-empresa" src="${empresa.imagens[0]}">
 
         <div class="card-body">
            
             <div class="description"> ${empresa.descricao.substr(0,45)}</div>
+          
             <div class="logradouro"> ${empresa.logradouro}</div>
             <div> ${empresa.tel}</div>
+                      
             <div class="situation opened mt-10">Aberto</div>
+
         </div>
+      
     </div>
-    </a>`
+    </a>
+    
+    `
 
         logo =  empresa.imagens[0]
     }else{
