@@ -2,8 +2,8 @@ var full_name;
 var email;
 var password;
 
-var btn_login = document.getElementById('btn_login')
-btn_login.addEventListener('click', saveUser());
+var btn_cadastro = document.getElementById('btn_cadastro')
+btn_cadastro.addEventListener('click', saveUser);
 
 function saveUser(){
      full_name = document.getElementById('name').value;
@@ -19,7 +19,8 @@ function saveUser(){
         }
 
         localStorage.setItem('user', JSON.stringify(user))
-        alert("usuario salvo")
+        alert("Novo usuário criado!")
+        document.location.href='./UserProfile.html'
     }else{
         alert("dados incompletos")
         

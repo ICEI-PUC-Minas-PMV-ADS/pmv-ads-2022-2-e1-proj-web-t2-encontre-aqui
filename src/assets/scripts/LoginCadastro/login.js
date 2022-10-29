@@ -15,7 +15,7 @@ function getUser(){
        
        if(email === user.email){
         if(password === user.password){
-            document.location.href = './cadastro.html'
+            document.location.href = './UserProfile.html'
         }else{
             alert("Password invalido")
         }
