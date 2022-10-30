@@ -3,8 +3,10 @@ var id = 2
 
 empresas = Empresas.petshops;
 
-empresas.forEach(empresa => {
-    if(empresa.id === id){
-        console.log(empresa)
-    }
-});
+addEventListener('load', ()=>{
+    empresas.forEach(empresa => {
+        if(empresa.id === id){
+             GetMap(empresa)
+        }
+    });
+})
