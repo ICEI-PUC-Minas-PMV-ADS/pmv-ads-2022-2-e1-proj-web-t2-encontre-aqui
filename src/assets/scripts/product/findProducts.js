@@ -3,12 +3,14 @@ var urlObj = new URL(url);
 
 
 var id = Number(urlObj.searchParams.get("id"))
+var url_categoria = urlObj.searchParams.get("categoria")
 
 console.log(id)
-var categoria = 'petshops'
+
 
 var data = [] ;
 var count = 0;
+var empresas = [];
 
 var logo_user = document.getElementById("logo-user");
 var name_user =  document.getElementById("name-user");
@@ -27,10 +29,17 @@ addEventListener('load', ()=>{
 
 
 function findCetegory(){
-        Object.values(Empresas).forEach(element => {
-                findCompany(element)
-         
-            });
+
+    Categorias.forEach(categoria =>{
+        categoria.tags[0] 
+        if(categoria.tags[0] === url_categoria){
+            empresas = categoria.empresas
+            empresas.forEach(empresa => {
+                findCompany(empresa)
+            })
+           
+        }
+    })
   
     }
  
@@ -38,7 +47,7 @@ function findCetegory(){
 
 
 function findCompany(data){
-   
+    console.log(data)
     data.forEach(empresa =>{
         if(empresa.id === id){
           updatePage(empresa)
@@ -65,7 +74,7 @@ function updatePage(product){
 
     var content = ` <div class="descr-images">
                             <div class="principal-image">
-                                <img src="${product.imagens[0]}">
+                                <img src="${product.produtos[0].imagens[0]}">
                             </div>
                             <div class="other-images">
                                 <div> <img src="${product.imagens[0]}"></div>

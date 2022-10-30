@@ -106,7 +106,7 @@ function searchPlace(categoria){
 
                                         <div class="card-btn-actions">
                                            <img src="./assets/images/icons/bookmark.svg" alt="Adicionar aos favoritos">
-                                            <a href="produto.html?id=${empresa.id}" class="btn btn-primary">Visitar</a>
+                                            <a href="produto.html?categoria=${empresa.categoria}&&id=${empresa.id}" class="btn btn-primary">Visitar</a>
                                         </div>
                                     </div>`
                  //   })
