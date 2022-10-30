@@ -94,7 +94,7 @@
   <img src="img/Pagina login.PNG" width="1000">
 </p>
 
-##### _Figura 5- Página Contendo Resultado de pesquisas_
+##### _Figura 5- Página de Login_
 
 <h3>Requisitos atendidos</h3>
 <ul>

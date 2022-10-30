@@ -17,6 +17,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        categoria: 'petshop' 
     },
     {
         id: 2,
@@ -31,6 +32,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        categoria: 'petshop' 
     },
     {
         id: 3,
@@ -41,6 +43,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        categoria: 'petshop' 
     },
 
     {
@@ -56,6 +59,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        categoria: 'petshop' 
     },
     {
         id: 5,
@@ -65,6 +69,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        categoria: 'petshop' 
     },
 
     ],
@@ -78,6 +83,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        categoria: 'moveis' 
         
     },
     {
@@ -89,6 +95,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        categoria: 'moveis' 
         
     },
 ]//Fim Produtos
@@ -205,7 +212,7 @@ Empresas = {
 Categorias = [
     {
         id: 1,
-        tags: ['petshop', 'pet shop', 'animais'],
+        tags: ['petshop','pet', 'animais'],
         empresas:[Empresas.petshops]
     },
     {
