@@ -104,12 +104,13 @@ Empresas = {
             estado: 'Minas Gerais', 
             logradouro: "Rua Doutor Gil Horta, 15, São Mateus",
             imgBanner:'./assets/images/companies/banners/01/banner.jpg',
-            imagens: ["./assets/images/companies/logos/logo3.PNG"],
+            imagens: ["./assets/images/companies/logos/logo5.PNG"],
             hfunc:[''],
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true            
+            empresa:true,  
+            categoria: 'petshop'          
         },
         {
             id: 2,
@@ -120,12 +121,13 @@ Empresas = {
             estado: 'Minas Gerais',
             logradouro: 'Rua Sampaio, 233, Granbery',
             imagens: ['./assets/images/companies/logos/petshop3.PNG','./assets/images/companies/logos/logo3.PNG'],
-            imgBanner:'',
+            imgBanner:'./assets/images/companies/banners/02/banner.jpg',
             hfunc:[''],
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true      
+            empresa:true,
+            categoria: 'petshop'      
         },              
         {
             id: 3,
@@ -136,12 +138,13 @@ Empresas = {
             estado: 'Minas Gerais',
             logradouro: 'Rua Halfeld, 584, Centro',
             imagens: ['./assets/images/companies/logos/petshop2.PNG'],
-            imgBanner:'',
+            imgBanner:'./assets/images/companies/banners/03/banner.jpg',
             hfunc:[''],
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true 
+            empresa:true ,
+            categoria: 'petshop'
         }, 
         {
             id: 4,
@@ -152,12 +155,13 @@ Empresas = {
             estado: 'Minas Gerais',
             logradouro: 'Avenida João Pinheiro, 469',
             imagens: ['./assets/images/companies/logos/petshop3.PNG'],
-            imgBanner:'',
+            imgBanner:'./assets/images/companies/banners/01/banner.jpg',
             hfunc:[''],
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true 
+            empresa:true ,
+            categoria: 'petshop'
         },                 
     ], //FIM PETS
     moveis:[
@@ -175,7 +179,8 @@ Empresas = {
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true 
+            empresa:true, 
+            categoria: 'moveis'
         },
         {
             id: 4,
@@ -191,7 +196,8 @@ Empresas = {
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true 
+            empresa:true,
+            categoria: 'moveis' 
         },
     ]
 }; //FIM EMPRESAS

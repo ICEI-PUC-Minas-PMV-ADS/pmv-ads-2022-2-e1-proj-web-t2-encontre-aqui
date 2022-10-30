@@ -1,12 +1,17 @@
+:root{
+     
+}
+
 body{
     width: 99vw;
     height: 100vh;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .header-product-page{
-    height: 42%;
-    background: url('../images/site/capa/banner1.jpg');
+    height: 300px;
+    
     background-color: black;
     
 }
@@ -40,10 +45,12 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
+    margin-right: 5px;
 }
 
 #description-ps .descr-images .principal-image img{
-    width:500px
+    width:55%;
+    height: 90%;
     
 }
 
@@ -78,13 +85,24 @@ body{
 .check-info .place-options{
     display: flex;
     
+    
 }
+ 
 .check-info .place-options  *{
     margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.check-info .favorite-area *{
+.check-info .favorite-area {
     margin-right: 16px;
+    display: flex;
+    flex-direction: rows;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .logo-area{
@@ -124,9 +142,9 @@ body{
 #other-products .other-imgs{
     display: flex;
     flex-direction: column;
-    width: 150px;
+    width: 170px;
     height: 150px;
-    margin-left: 20;
+    margin-left: 50px;
 }
 
 .other-products{
