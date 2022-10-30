@@ -1,7 +1,7 @@
 # Instruções de utilização
 
 Acessar o endereço pelo navegador https://pauloosilas.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/ ;
-
+<p>O codigo fonte da aplicação está disponivel na pasta src, em: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui </p>
 <p>Recomedação de pesquisa: petshop no primeiro campo de busca. No segundo campo, a cidade de juiz de fora .</p>
 
 Ao clicar em visitar, em um dos resultados, será direcionado para a pagina da empresa ou produto.
