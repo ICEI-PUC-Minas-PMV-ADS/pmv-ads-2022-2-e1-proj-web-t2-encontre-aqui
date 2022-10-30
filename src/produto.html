@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../global.css">
-    <link rel="stylesheet" href="../assets/css/prod-serv.css">
-    <link rel="stylesheet" href="../assets/css/card-map.css">
+    <link rel="shortcut icon" href="./assets/images/icons/favority-icon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./assets/css/prod-serv.css">
+    <link rel="stylesheet" href="./assets/css/card-map.css">
     <title>Produto</title>
 </head>
 
@@ -17,7 +18,7 @@
     <header class="header-product-page">
 
         <nav class="nav-menu">
-            <div class="logo"><img src="../assets/images/logo-site/logo2.png"></div>
+            <div class="logo"><img src="./assets/images/logo-site/logo2.png"></div>
             <form action="./search.html" method="GET" class="search">
                 <input name="search" type="text" placeholder="Produtos, Serviços, Empresas">
                 <input name="place" type="text" placeholder="Cidade">
@@ -31,8 +32,9 @@
         </nav>
 
         <div class="logo-area">
-            <img src="../assets/images/companies/logos/petshop1.PNG">
-            <span class="client-name">Nome da Empresa Nome da Empresa Nome da Empresa Nome da Empresa</span>
+            <img id="logo-user" src="./assets/images/companies/logos/petshop1.PNG">
+            <span id="name-user" class="client-name">Nome da Empresa Nome da Empresa Nome da Empresa Nome da
+                Empresa</span>
         </div>
 
     </header>
@@ -40,36 +42,36 @@
         <div class="check-info">
             <div class="place-options">
                 <div>
-                    <span>Oferece Entregas</span><img src="../assets/images/icons/bookmark.svg">
+                    <span>Oferece Entregas</span><img src="./assets/images/icons/check.svg">
                 </div>
                 <div>
-                    <span>Aceita Reservas</span><img src="../assets/images/icons/bookmark.svg">
+                    <span>Aceita Reservas</span><img src="./assets/images/icons/check.svg">
                 </div>
             </div>
             <div class="favorite-area">
-                <span>Adicionar aos Favoritos</span> <img src="../assets/images/icons/bookmark.svg">
+                <span>Adicionar aos Favoritos</span> <img src="./assets/images/icons/bookmark.svg">
             </div>
         </div>
     </nav>
     <main>
 
         <div id="content">
-            <section class="descriptio-ps">
+            <section id="description-ps">
                 <div class="descr-images">
                     <div class="principal-image">
-                        <img src="../assets/images/products/moveis/03/2.webp">
+                        <img src="./assets/images/products/moveis/03/2.webp">
                     </div>
                     <div class="other-images">
-                        <div> <img src="../assets/images/products/moveis/03/1.webp"></div>
-                        <div> <img src="../assets/images/products/moveis/03/3.webp"></div>
-                        <div> <img src="../assets/images/products/pets/01/3.webp"></div>
+                        <div> <img src="./assets/images/products/moveis/03/1.webp"></div>
+                        <div> <img src="./assets/images/products/moveis/03/3.webp"></div>
+                        <div> <img src="./assets/images/products/pets/01/3.webp"></div>
                     </div>
                 </div>
                 <div class="description-text">
-                    <div class="title">Nome do Produto</div>
-                    <div class="title">Preço</div>
-                    <div class="title">descrição</div>
-                    <div class="title">descrição descrição descrição descrição descrição descrição descrição descrição
+                    <div id="ps-title" class="title">Nome do Produto</div>
+                    <div id="ps-price"></div>
+                    <div id="">descrição</div>
+                    <div id="ps-descr">descrição descrição descrição descrição descrição descrição descrição descrição
                     </div>
                 </div>
             </section>
@@ -77,13 +79,19 @@
 
         </div>
 
-        <section id="ohters-products"></section>
+        <section class="other-products">
+            <span class="title">Outros deste anunciante</span>
+            <div id="other-products"></div>
+
+        </section>
 
     </main>
 
 
 
+
     <div class="area-map">
+        <div id="complete-address">Rua</div>
         <div id="places-in-maps"></div>
     </div>
 
@@ -91,7 +99,7 @@
     <footer id="footer">
 
         <div class="footer-about">
-            <div class="logo"><img src="../assets/images/logo-site/logo2.png"></div>
+            <div class="logo"><img src="./assets/images/logo-site/logo2.png"></div>
             <span>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Eveniet ipsam </span>
         </div>
 
@@ -140,9 +148,9 @@
     <script type='text/javascript'
         src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Aj30kitBtzqfccLqDP_RXQYks09ie-CQ5gvx0dnWFyyQImim-GDuVIVUl0VUwjQr'
         async defer></script>
-    <script src="../assets/scripts/mapas/mapa-v1.js"></script>
-    <script src="../assets/scripts/database/database.js"></script>
-    <script src="../assets/scripts/product/findProducts.js"></script>
+    <script src="./assets/scripts/mapas/mapa-v1.js"></script>
+    <script src="./assets/scripts/database/database.js"></script>
+    <script src="./assets/scripts/product/findProducts.js"></script>
 </body>
 
 </html>

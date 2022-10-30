@@ -103,7 +103,7 @@ Empresas = {
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais', 
             logradouro: "Rua Doutor Gil Horta, 15, São Mateus",
-            imgBanner:'',
+            imgBanner:'./assets/images/companies/banners/01/banner.jpg',
             imagens: ["./assets/images/companies/logos/logo3.PNG"],
             hfunc:[''],
             tel: '9546-54684',
