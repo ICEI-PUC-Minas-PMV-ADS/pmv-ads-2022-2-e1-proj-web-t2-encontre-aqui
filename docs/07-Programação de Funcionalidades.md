@@ -96,7 +96,7 @@
   <img src="img/Pagina login.PNG" width="1000">
 </p>
 
-##### _Figura 5- Página Contendo Resultado de pesquisas_
+##### _Figura 5- Página de Login_
 
 <h3>Requisitos atendidos</h3>
 <ul>
@@ -116,10 +116,6 @@
 <p>
  Os dados de empresas, produtos, serviços e usuários são manipulados em objetos e vetores de objetos da linguagem javascript. <br>Exemplo na figura a seguir.  
 </p>
-
-
-
- 
 
 <h3>Instruções de acesso</h3>
 
@@ -159,23 +155,18 @@
  Os dados de empresas, produtos, serviços e usuários são manipulados em objetos e vetores de objetos da linguagem javascript. <br>Exemplo na figura a seguir.  
 </p>
 
-
-
- 
-
 <h3>Instruções de acesso</h3>
 
 1. Ao clicar no botão cadastre-se, disponivel caso o cliente não esteja logado, localizado no topo das páginas.
-2. A página pode ser acessada pelo endereço [https://pauloosilas.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/login.html](https://pauloosilas.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/cadastro.html);
+2. A página pode ser acessada pelo endereço https://pauloosilas.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/cadastro.html;
 
 <h3>Página de Visualização de Produto ou Serviço </h3>
 
 <p>Ao clicar em um resultado da pesquisa, o cliente é direcionado para esta página.</p>
 
 <p align="center"> 
-  <img src="img/paginaProdutoservico.png" width="600">
+  <img src="img/paginaProdutoservico.png" width="1000">
 </p>
-
 
 ##### _Figura 7- Página de Visualização de Produto ou Serviço_
 
@@ -211,3 +202,28 @@
 
 1. A página pode ser acessada atravez de um clique do botão visualizar, em um dos resultados da pesquisa.
 2. A página pode ser acessada pelo endereço: https://pauloosilas.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/produto.html?categoria=petshop&&id=1
+
+<h3>Página de Perfil do Cliente</h3>
+
+<p align="center"> 
+  <img src="img/userprofile.png" width="1000">
+</p>
+
+##### _Figura 9- Página de Perfil do Cliente_
+
+<h3>Requisitos atendidos</h3>
+<ul>
+  <li></li>
+</ul>
+
+<h3>Artefatos da funcionalidade</h3>  
+<ul>
+  <li>UserProfile.html</li>
+   <li>leftmenu.css</li>
+  <li>aboutyou.css</li>
+</ul>
+
+<h3>Instruções de acesso</h3>
+
+1. A página pode ser acessada após o login ou cadastro do cliente.
+2. A página pode ser acessada pelo endereço:https://pauloosilas.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/UserProfile.html

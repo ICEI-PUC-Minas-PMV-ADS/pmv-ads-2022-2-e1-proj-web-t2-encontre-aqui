@@ -45,8 +45,8 @@ function searchPlace(categoria){
         local = categoria.empresas[i]         
         if(tag.toLowerCase().includes(search.toLowerCase())){   
             updateTags(categoria)
-            local.forEach(empresa => {
-              
+            if(local != undefined)
+            local.forEach(empresa => {              
                  
                 if(empresa.cidade.toLowerCase().includes(place.toLowerCase())){
                     updateWantedLocal(empresa.cidade)
