@@ -238,7 +238,7 @@ Empresas = {
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Rua Oscár Vidal, 121, Centro',
-            imagens: ['./assets/images/companies/logos/advogado.png'],
+            imagens: ['./assets/images/companies/logos/advogado.PNG'],
             imgBanner:'',
             hfunc:['10:00 - 17:00'],
             tel: '9223-53197',
