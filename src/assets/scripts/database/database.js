@@ -84,7 +84,6 @@ Produtos = {
         agendamento:false,
         nfavoritos: 55,
         categoria: 'moveis' 
-        
     },
     {
         id: 4,
