@@ -11,7 +11,7 @@ var icon = 'https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontr
 
 function GetMap(empresa) {
     var origem
-    console.log(empresa)
+   
     var logo;
     if(empresa != undefined){
         rota = `${empresa.logradouro}, ${empresa.cidade}, ${empresa.estado}`

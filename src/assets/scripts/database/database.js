@@ -84,7 +84,6 @@ Produtos = {
         agendamento:false,
         nfavoritos: 55,
         categoria: 'moveis' 
-        
     },
     {
         id: 4,
@@ -173,7 +172,7 @@ Empresas = {
     ], //FIM PETS
     moveis:[
         {
-            id: 3,
+            id: 5,
             produtos: [Produtos.moveis[0]],
             nome: 'Decoração',
             descricao: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -190,7 +189,7 @@ Empresas = {
             categoria: 'moveis'
         },
         {
-            id: 4,
+            id: 6,
             produtos: [Produtos.moveis[1]],
             nome: 'Moveis',
             descricao: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -206,6 +205,106 @@ Empresas = {
             empresa:true,
             categoria: 'moveis' 
         },
+    ],
+    eletricistas:[
+        {
+            id: 6,
+            produtos: [Produtos.moveis[1]],
+            nome: 'Enrico Gonçalves',
+            descricao: `Atua na cidade de Juiz de Fora.  Montar, manter e reparar equipamentos mecânicos, bem como executar a manutenção preventiva e corretiva de maquinário. Auxiliar em trabalhos de pesquisa e aperfeiçoamento. Executar esboços e desenhos de sua especialidade.`,
+            cidade: 'Juiz de Fora',
+            estado: 'Minas Gerais',
+            logradouro: 'Rua Barão de Santa Helena, 180, Granbery',
+            imagens: ['./assets/images/companies/logos/eletricista.jpg'],
+            imgBanner:'',
+            hfunc:['08:00 - 16:00'],
+            tel: '9111-53197',
+            nfavoritos: 55,
+            rsocial:['https://www.facebook.com/Enrico.Goncalves.545553'],
+            empresa:false,
+            categoria: 'eletricista' 
+        },
+    ],
+    advogados:[
+        {
+            id: 7,
+            produtos: [Produtos.moveis[1]],
+            nome: 'Dra. Brenda Porto',
+            descricao: `mais de 20 anos de Advocacia, prima pela excelência na prestação de serviços, objetivando o melhor resultado para seus clientes.
+
+            Possui profissionais especializados em Direito do Trabalho, Previdenciário, Direito Empresarial, Direito Imobiliário, do Consumidor, de Família e Sucessão, dentre outras áreas.
+            
+            O escritório vem construindo um legado de reputação e credibilidade ao longo dos anos, decorrente da intensa dedicação e comprometimento com as demandas de seus clientes, operando, hoje, em todo o país.`,
+            cidade: 'Juiz de Fora',
+            estado: 'Minas Gerais',
+            logradouro: 'Rua Oscár Vidal, 121, Centro',
+            imagens: ['./assets/images/companies/logos/advogado.png'],
+            imgBanner:'',
+            hfunc:['10:00 - 17:00'],
+            tel: '9223-53197',
+            nfavoritos: 55,
+            rsocial:['https://www.facebook.com/Isadora.Cardoso.5415553a'],
+            empresa:false,
+            categoria: 'advogado' 
+        },
+
+        {
+            id: 8,
+            produtos: [Produtos.moveis[1]],
+            nome: 'Dr. Davi Lucas Viana',
+            descricao: `mais de 20 anos de Advocacia, prima pela excelência na prestação de serviços, objetivando o melhor resultado para seus clientes.
+
+            Possui profissionais especializados em Direito do Trabalho, Previdenciário, Direito Empresarial, Direito Imobiliário, do Consumidor, de Família e Sucessão, dentre outras áreas.
+            
+            O escritório vem construindo um legado de reputação e credibilidade ao longo dos anos, decorrente da intensa dedicação e comprometimento com as demandas de seus clientes, operando, hoje, em todo o país.`,
+            cidade: 'Juiz de Fora',
+            estado: 'Minas Gerais',
+            logradouro: 'Rua Oscár Vidal, 125, Centro',
+            imagens: ['./assets/images/companies/logos/advogado2.png'],
+            imgBanner:'',
+            hfunc:['10:00 - 17:00'],
+            tel: '9224-53197',
+            nfavoritos: 55,
+            rsocial:['https://www.facebook.com/Davi.Lucas.55553a'],
+            empresa:false,
+            categoria: 'advogado' 
+        },
+    ],
+    barbearia:[
+         {
+            id: 9,
+            produtos: [Produtos.moveis[1]],
+            nome: 'Marcos Vinicius Cardoso',
+            descricao: `Barbearia criada com paixão pela arte, aqui fazemos barba, cabelo, negócios e o mais importante, fazemos amigos. Mais que uma barbearia, um local para estar e relaxar. Valorizamos cada personalidade e perfil, seja o homem tradicional ou moderno.`,
+            cidade: 'Juiz de Fora',
+            estado: 'Minas Gerais',
+            logradouro: 'Rua Espírito Santo, 946, Centro',
+            imagens: ['./assets/images/companies/logos/salao.jpg'],
+            imgBanner:'',
+            hfunc:['10:00 - 16:00'],
+            tel: '9777-53197',
+            nfavoritos: 55,
+            rsocial:['https://www.facebook.com/Brenda.Porto.6653a'],
+            empresa:false,
+            categoria: 'barbearia' 
+        },
+        {
+            id: 10,
+            produtos: [Produtos.moveis[1]],
+            nome: 'Kaique Farias',
+            descricao: ` Barbearia criada com paixão pela arte, aqui fazemos barba, cabelo, negócios e o mais importante, fazemos amigos. Mais que uma barbearia, um local para estar e relaxar. Valorizamos cada personalidade e perfil, seja o homem tradicional ou moderno.`,
+            cidade: 'Juiz de Fora',
+            estado: 'Minas Gerais',
+            logradouro: 'Rua Farmacêutico José Mostaro, 25, Alto dos Passos',
+            imagens: ['./assets/images/companies/logos/salao2.jpg'],
+            imgBanner:'',
+            hfunc:['10:00 - 17:00'],
+            tel: '9897-53197',
+            nfavoritos: 55,
+            rsocial:['https://www.facebook.com/Kaique.Farias.6653a'],
+            empresa:false,
+            categoria: 'barbearia' 
+        },
     ]
 }; //FIM EMPRESAS
 
@@ -219,6 +318,21 @@ Categorias = [
         id: 2,
         tags: ['moveis', 'madeira' ],
         empresas:[Empresas.moveis]
+    },
+    {
+        id: 3,
+        tags: ['eletricistas'],
+        empresas:[Empresas.eletricistas]
+    },
+     {
+        id: 4,
+        tags: ['advogado','advogada'],
+        empresas:[Empresas.advogados]
+    },
+    {
+        id: 5,
+        tags: ['barbearia','salão'],
+        empresas:[Empresas.barbearia]
     }
 ]//Fim Catgorias
 /*
