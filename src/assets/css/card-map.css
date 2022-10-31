@@ -31,7 +31,7 @@
 }
 
 .card-map:hover{
-    width: 260px;
+    width: 240px;
     height: 400px;
     transition: all  0.5s ease;
     transform: translateX(-150px) ;
@@ -47,12 +47,13 @@
     transition: all  0.2s ease;
 }
 .card-map:hover img{
-    width: 100%;
+    width: 90%;
     height: 170px;
 }
 .card-map img{
-    width: 100%;
-    height: 80px;
+    margin: 0 auto;
+    width: 90%;
+    height: 70px;
     border-radius: 6px;
     transition: all  0.5s ease;
     margin-bottom: 5px;

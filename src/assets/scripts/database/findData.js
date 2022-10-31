@@ -151,7 +151,7 @@ function searchPlace(categoria){
 
 function updateTags(categoria){
     categoria.tags.forEach(tag => {
-        data += `<a href="#" class="btn btn-primary brad-25">${tag}</a>` 
+        data += `<a href="./search.html?search=${tag}&place=${place}" class="btn btn-primary brad-25">${tag}</a>` 
     })
     tags.innerHTML += data;
     data = ''
