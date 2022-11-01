@@ -123,7 +123,7 @@ main section{
 
  .search input{
   width: 50%;
-  height: 36px;
+  height: 40px;
   padding-left: 15px;
 }
 
@@ -135,7 +135,7 @@ main section{
   right: 4px;
   top:3px;  
   width: 80px;
-  height: 30px;
+  height: 34px;
 
   overflow: hidden;
   
@@ -451,7 +451,8 @@ ul li{
 }
 
 .list-items:hover{
-  background-color:#ddd;  
+  background-color:var(--btn-primary);  
+  border-radius: 0 0 5px 5px;
 }
 
 .search .place-area{

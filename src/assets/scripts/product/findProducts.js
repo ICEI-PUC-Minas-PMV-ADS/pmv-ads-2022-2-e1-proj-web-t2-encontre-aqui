@@ -71,7 +71,6 @@ function updatePage(product){
     }
 
 
-
     var content = ` <div class="descr-images">
                             <div class="principal-image">
                                 <img src="${product.produtos[0].imagens[0]}">
@@ -92,8 +91,6 @@ function updatePage(product){
  
                 description_ps.innerHTML = content; 
 
-
-               
 
                for(var p = 0; p < product.produtos.length; p++){
                     img_products += `<a href="#"><img class = "other-imgs" src='${product.produtos[p].imagens[0]}' ></a>`
