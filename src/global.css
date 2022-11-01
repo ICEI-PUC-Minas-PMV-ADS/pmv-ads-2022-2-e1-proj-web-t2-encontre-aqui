@@ -122,7 +122,7 @@ main section{
 }
 
  .search input{
-  width: 600px;
+  width: 50%;
   height: 36px;
   padding-left: 15px;
 }
@@ -438,8 +438,30 @@ ul li{
   display: none;
 }
 
+.list{
+  position: absolute; 
+  top:36px;
+  width: 50%;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+}
 
+.list-items{
+  padding: 10px 5px;
+}
 
+.list-items:hover{
+  background-color:#ddd;  
+}
+
+.search .place-area{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.search .place-area input{
+  width:100%;
+}
 /*----------------------------------------------------------------------------*/
 
 

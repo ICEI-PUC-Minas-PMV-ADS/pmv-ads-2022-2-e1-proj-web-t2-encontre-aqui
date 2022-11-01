@@ -331,7 +331,7 @@ Categorias = [
     },
     {
         id: 5,
-        tags: ['barbearia','salão'],
+        tags: ['barbearia','salão', 'barbeiro'],
         empresas:[Empresas.barbearia]
     }
 ]//Fim Catgorias

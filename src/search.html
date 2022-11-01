@@ -12,13 +12,16 @@
     <title>Encontre-Aqui</title>
 </head>
 
-<body onload>
+<body>
     <header class="mb-10">
         <nav class="nav-menu">
             <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
-            <form action="./search.html" method="GET" class="search">
+            <form action="./search.html" method="GET" class="search" autocomplete="off">
                 <input name="search" type="text" placeholder="Produtos, Serviços, Empresas">
-                <input name="place" type="text" placeholder="Cidade">
+                <div class="place-area">
+                    <input name="place" id="place" type="text" placeholder="Cidade">
+                    <ul class="list"></ul>
+                </div>
                 <button class="btn-search" type="submit">Pesquisar</button>
             </form>
             <div class=""><a href="./cadastro.html" class="btn btn-light">Para Empresas</a></div>
@@ -173,7 +176,7 @@
     </footer>
 
 
-
+    <script src="./assets/scripts/autocomplete.js"></script>
     <script src="./assets/scripts/search/responsive.js"></script>
     <script src="./assets/scripts/database/database.js"></script>
     <script src="./assets/scripts/database/findData.js"></script>
