@@ -12,7 +12,7 @@ Produtos = {
         - Com ômega 6 para pele e pelo saudáveis de seu cachorro;
         - Vida saudável: nível ideal de ingredientes para qualidade de vida;
         - Disponível em embalagens de 900g, 10,1kg, leve 10,1kg pague 9kg, 15kg e leve 15kg pague 13,5kg.`,
-        imagens:['./assets/images/products/pets/01/1.webp','./assets/images/products/pets/01/2.webp','./assets/images/products/pets/01/3.webp'],
+        imagens:['./assets/images/companies/products/pets/01/1.webp','./assets/images/companies/products/pets/01/2.webp','./assets/images/companies/products/pets/01/3.webp'],
         preco: '22.99',
         domicilio:true,
         agendamento:false,
@@ -27,7 +27,7 @@ Produtos = {
         A Ração Golden Special também ajuda a eliminar o odor das fezes, graças à sua fórmula que é rica em vitaminas e minerais. Isso faz com que a musculatura do animal sempre esteja fortalecida, o que consequentemente torna o cão mais ativo e menos propenso a doenças.
         
         Produzida pela Premier Pet – que é referência no mercado pet -, a Ração Golden Special possui um delicioso sabor de frango e carne. Esse blend de proteínas satisfaz amplamente o paladar dos cães.`,
-        imagens:['./assets/images/products/pets/02/1.webp','./assets/images/products/pets/02/2.webp'],
+        imagens:['./assets/images/companies/products/pets/02/1.webp','./assets/images/companies/products/pets/02/2.webp'],
         preco: "55.98",
         domicilio:true,
         agendamento:false,
@@ -38,7 +38,7 @@ Produtos = {
         id: 3,
         nome: "Anti pulgas e carrapatos Simparic",
         descricao: `O Antipulgas Zoetis Simparic 5 mg para Cães 5,1 a 10 Kg (20 mg) é utilizado para o tratamento das infestações por pulgas e sarna sarcótica. Após a administração do Simparic, a sua atividade contra pulgas dura, pelo menos, 5 semanas`,
-        imagens:['./assets/images/products/pets/03/1.jpg'],
+        imagens:['./assets/images/companies/products/pets/03/1.jpg'],
         preco: "22.99",
         domicilio:true,
         agendamento:false,
@@ -54,7 +54,7 @@ Produtos = {
         A Ração Golden Special também ajuda a eliminar o odor das fezes, graças à sua fórmula que é rica em vitaminas e minerais. Isso faz com que a musculatura do animal sempre esteja fortalecida, o que consequentemente torna o cão mais ativo e menos propenso a doenças.
         
         Produzida pela Premier Pet – que é referência no mercado pet -, a Ração Golden Special possui um delicioso sabor de frango e carne. Esse blend de proteínas satisfaz amplamente o paladar dos cães.`,
-        imagens:['./assets/images/products/pets/01/2.webp','./assets/images/products/pets/02/2.webp'],
+        imagens:['./assets/images/companies/products/pets/01/2.webp','./assets/images/companies/products/pets/02/2.webp'],
         preco: "55.98",
         domicilio:true,
         agendamento:false,
@@ -65,7 +65,7 @@ Produtos = {
         id: 5,
         nome: "Anti pulgas e carrapatos Simparic",
         descricao: `O Antipulgas Zoetis Simparic 5 mg para Cães 5,1 a 10 Kg (20 mg) é utilizado para o tratamento das infestações por pulgas e sarna sarcótica.`,
-        imagens:['./assets/images/products/pets/03/1.jpg'],
+        imagens:['./assets/images/companies/products/pets/03/1.jpg'],
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
@@ -74,11 +74,11 @@ Produtos = {
 
     ],
     moveis : [{
-        id: 3,
+        id: 6,
         nome: "Mesa de Madeira Maciça 4 Lugares com Bancos Mandacaru",
         descricao: `
         Mesa de Madeira Maciça 4 Lugares com Bancos Mandacaru CabeCasa MadeiraMadeira `,
-        imagens:['./assets/images/products/moveis/03/1.webp','./assets/images/products/moveis/03/2.webp'],
+        imagens:['./assets/images/companies/products/moveis/03/1.webp','./assets/images/companies/products/moveis/03/2.webp'],
         preco: "869.59",
         domicilio:true,
         agendamento:false,
@@ -86,10 +86,10 @@ Produtos = {
         categoria: 'moveis' 
     },
     {
-        id: 4,
+        id: 7,
         nome: "Mesa de Jantar com 4 Cadeiras Indekes Salvia",
         descricao: `O conjunto de Mesa de Jantar com 4 Cadeiras Indekes Salvia une o belo, prático e a durabilidade que a sua cozinha merece. Onde temos a mesa ideal para cozinha, com produção mista de MDP e MDF, e a cadeira 100% MDF com assento revestido de courino. A estrutura, ambas da mesa e cadeira são em pintura ultra-violeta. A mesa vem acompanhada por tampo em MDP de 15mm, e o seu formato retangular com desenho em quatro pés, permite atender com perfeição e elegância as suas necessidades.`,
-        imagens:['./assets/images/products/moveis/04/1.jpg','./assets/images/products/moveis/04/2.webp'],
+        imagens:['./assets/images/companies/products/moveis/04/1.jpg','./assets/images/companies/products/moveis/04/2.webp'],
         preco: "484.03",
         domicilio:true,
         agendamento:false,
@@ -97,8 +97,25 @@ Produtos = {
         categoria: 'moveis' 
         
     },
-]//Fim Produtos
+],
+    barbearia : [{
+        id: 8,
+        nome: "Barbearia",
+        descricao: `
+        Mesa de Madeira Maciça 4 Lugares com Bancos Mandacaru CabeCasa MadeiraMadeira `,
+        imagens:['./assets/images/companies/products/barbearia/08/1.jpg','./assets/images/companies/products/barbearia/08/2.png','./assets/images/companies/products/barbearia/08/3.png','./assets/images/companies/products/barbearia/08/4.png'],
+        preco: "20.00",
+        domicilio:false,
+        agendamento:true,
+        nfavoritos: 55,
+        categoria: 'barbearia' 
+    },
+]
+    //Fim Produtos
 }
+
+////////////////////////////////////////////////////////////
+
 Empresas = {
     petshops: [
         {
@@ -238,7 +255,7 @@ Empresas = {
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Rua Oscár Vidal, 121, Centro',
-            imagens: ['./assets/images/companies/logos/advogado.png'],
+            imagens: ['./assets/images/companies/logos/advogado.PNG'],
             imgBanner:'',
             hfunc:['10:00 - 17:00'],
             tel: '9223-53197',
@@ -260,7 +277,7 @@ Empresas = {
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Rua Oscár Vidal, 125, Centro',
-            imagens: ['./assets/images/companies/logos/advogado2.png'],
+            imagens: ['./assets/images/companies/logos/advogado2.PNG'],
             imgBanner:'',
             hfunc:['10:00 - 17:00'],
             tel: '9224-53197',
@@ -273,14 +290,14 @@ Empresas = {
     barbearia:[
          {
             id: 9,
-            produtos: [Produtos.moveis[1]],
+            produtos: [Produtos.barbearia[0]],
             nome: 'Marcos Vinicius Cardoso',
             descricao: `Barbearia criada com paixão pela arte, aqui fazemos barba, cabelo, negócios e o mais importante, fazemos amigos. Mais que uma barbearia, um local para estar e relaxar. Valorizamos cada personalidade e perfil, seja o homem tradicional ou moderno.`,
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Rua Espírito Santo, 946, Centro',
             imagens: ['./assets/images/companies/logos/salao.jpg'],
-            imgBanner:'',
+            imgBanner:'./assets/images/companies/banners/09/banner.jpg',
             hfunc:['10:00 - 16:00'],
             tel: '9777-53197',
             nfavoritos: 55,
@@ -331,7 +348,7 @@ Categorias = [
     },
     {
         id: 5,
-        tags: ['barbearia','salão'],
+        tags: ['barbearia','salão', 'barbeiro'],
         empresas:[Empresas.barbearia]
     }
 ]//Fim Catgorias

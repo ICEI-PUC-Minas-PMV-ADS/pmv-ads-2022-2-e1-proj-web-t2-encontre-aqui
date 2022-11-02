@@ -122,8 +122,8 @@ main section{
 }
 
  .search input{
-  width: 600px;
-  height: 36px;
+  width: 50%;
+  height: 40px;
   padding-left: 15px;
 }
 
@@ -135,7 +135,7 @@ main section{
   right: 4px;
   top:3px;  
   width: 80px;
-  height: 30px;
+  height: 34px;
 
   overflow: hidden;
   
@@ -438,8 +438,31 @@ ul li{
   display: none;
 }
 
+.list{
+  position: absolute; 
+  top:36px;
+  width: 50%;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+}
 
+.list-items{
+  padding: 10px 5px;
+}
 
+.list-items:hover{
+  background-color:var(--btn-primary);  
+  border-radius: 0 0 5px 5px;
+}
+
+.search .place-area{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.search .place-area input{
+  width:100%;
+}
 /*----------------------------------------------------------------------------*/
 
 

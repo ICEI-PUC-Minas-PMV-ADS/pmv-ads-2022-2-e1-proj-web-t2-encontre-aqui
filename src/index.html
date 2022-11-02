@@ -211,10 +211,12 @@
 
         <nav class="header-search-area mt-50">
             <h1 class="title bb fc-w">Bem-Vindo(a) ao <span class="fc-w">Encontre-aqui</span></h1>
-            <form action="./search.html" method="get" class="search">
-
-                <input name="search" type="text" placeholder="Empresas, Produtos, Serviços">
-                <input name="place" type="text" placeholder="Cidade">
+            <form action="./search.html" method="GET" class="search" autocomplete="off">
+                <input name="search" type="text" placeholder="Produtos, Serviços, Empresas">
+                <div class="place-area">
+                    <input name="place" id="place" type="text" placeholder="Cidade">
+                    <ul class="list"></ul>
+                </div>
                 <button class="btn-search" type="submit">Pesquisar</button>
             </form>
         </nav>
@@ -461,6 +463,8 @@
         </div>
     </footer>
 
+
+    <script src="./assets/scripts/autocomplete.js"></script>
 
     <!-- <script src="./assets/scripts/home/carousel.js"></script>-->
 </body>
