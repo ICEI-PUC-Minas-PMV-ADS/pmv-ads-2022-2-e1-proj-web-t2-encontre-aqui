@@ -11,6 +11,7 @@ var wanted_place = document.getElementById('wanted-place')
 var local = []
 var cardsPag
 var cardsData = []
+var favoritos;
 
 foundObj = false
 var i = 0
@@ -27,11 +28,12 @@ startSearch();
 updateMap();
 
 function startSearch(){
-Categorias.forEach(categoria => { 
-    if(foundObj == false)   
-    searchPlace(categoria)
-    foundObj = false
-      
+  
+    Categorias.forEach(categoria => { 
+        if(foundObj == false)   
+        searchPlace(categoria)
+        foundObj = false
+        
 });
 }
 
@@ -89,20 +91,30 @@ function searchPlace(categoria){
 /*  */
       
  function updateCard(empresa){
-    var favoritos =  JSON.parse(localStorage.getItem('favoritos'))
+    favoritos =  JSON.parse(localStorage.getItem('favoritos'))
+    var favorito = {
+        id:empresa.id,
+        categoria:empresa.categoria,
+        isEmpresa:empresa.isEmpresa.toString()
+    }
                     //Verificar se foi marcado como favorito
                    var marked = '';
-                    if(favoritos){
-                         
-                        for(var i = 0; i < favoritos.length; i++){
-                            if(favoritos[i].id === empresa.id && empresa.categoria === favoritos[i].categoria){
-                              console.log(favoritos[i].id)
-                              console.log(empresa.id)
-                                marked = 'marked'
+                    if(favoritos != null && favoritos.length > 0){                        
+                            for(var i = 0; i < favoritos.length; i++){ 
+                              var marcado = {
+                                id:favoritos[i].id,
+                                categoria:favoritos[i].categoria,
+                                isEmpresa:favoritos[i].isEmpresa
+                            }  ;  
+                                if(Object.is(JSON.stringify(marcado), JSON.stringify(favorito))){ 
+                                                     
+                                     marked = 'marked'
+                                }
+                              }
                             }
-                        }
-                    }
-
+                        
+                    
+ 
                         data += `<div class="card">
                                         <img id="logo-empresa" src="${empresa.imagens[0]}">
 
@@ -114,7 +126,7 @@ function searchPlace(categoria){
 
                                         <div class="card-btn-actions">
                                        
-                                        <div onclick="markFavorite(${empresa.id}, '${empresa.categoria}', '${empresa.empresa}')" class="mark-favorite ${marked}">
+                                        <div onclick="markFavorite(${empresa.id}, '${empresa.categoria}', '${empresa.isEmpresa}')" class="mark-favorite ${marked}">
                                             <svg width="32" class="favorite" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <g clip-path="url(#clip0_416_1070)">
                                                 <path d="M4 4V31C3.99987 31.1737 4.04497 31.3443 4.13085 31.4953C4.21673 31.6462 4.34043 31.7722 4.48978 31.8608C4.63913 31.9494 4.80898 31.9976 4.98261 32.0006C5.15624 32.0036 5.32766 31.9614 5.48 31.878L16 26.138L26.52 31.878C26.6723 31.9614 26.8438 32.0036 27.0174 32.0006C27.191 31.9976 27.3609 31.9494 27.5102 31.8608C27.6596 31.7722 27.7833 31.6462 27.8692 31.4953C27.955 31.3443 28.0001 31.1737 28 31V4C28 2.93913 27.5786 1.92172 26.8284 1.17157C26.0783 0.421427 25.0609 0 24 0L8 0C6.93913 0 5.92172 0.421427 5.17157 1.17157C4.42143 1.92172 4 2.93913 4 4Z" fill="#555555"/>
@@ -156,7 +168,7 @@ function searchPlace(categoria){
         })               
         cardsPag.forEach((cards, index) =>{      
            
-            cards.addEventListener('mouseenter', ()=>{
+            cards.addEventListener('mouseup', ()=>{
                id_current = id_next
                id_next = index
                cardsPag[id_current].classList.remove('active')

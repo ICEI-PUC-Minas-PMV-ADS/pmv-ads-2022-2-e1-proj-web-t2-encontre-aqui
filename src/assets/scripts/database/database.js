@@ -17,7 +17,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
-        empresa:false, 
+        isEmpresa:false, 
         categoria: 'petshop' 
     },
     {
@@ -33,7 +33,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
-        empresa:false, 
+        isEmpresa:false, 
         categoria: 'petshop' 
     },
     {
@@ -45,7 +45,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
-        empresa:false, 
+        isEmpresa:false, 
         categoria: 'petshop' 
     },
 
@@ -62,7 +62,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
-        empresa:false, 
+        isEmpresa:false, 
         categoria: 'petshop' 
     },
     {
@@ -73,7 +73,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
-        empresa:false, 
+        isEmpresa:false, 
         categoria: 'petshop' 
     },
 
@@ -88,7 +88,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
-        empresa:false, 
+        isEmpresa:false, 
         categoria: 'moveis' 
     },
     {
@@ -100,7 +100,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
-        empresa:false, 
+        isEmpresa:false, 
         categoria: 'moveis' 
         
     },
@@ -115,7 +115,7 @@ Produtos = {
         domicilio:false,
         agendamento:true,
         nfavoritos: 55,
-        empresa:false, 
+        isEmpresa:false, 
         categoria: 'barbearia' 
     },
 ]
@@ -140,7 +140,7 @@ Empresas = {
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true,  
+            isEmpresa:true,  
             categoria: 'petshop'          
         },
         {
@@ -157,7 +157,7 @@ Empresas = {
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true,
+            isEmpresa:true,
             categoria: 'petshop'      
         },              
         {
@@ -174,7 +174,7 @@ Empresas = {
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true ,
+            isEmpresa:true ,
             categoria: 'petshop'
         }, 
         {
@@ -191,7 +191,7 @@ Empresas = {
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true ,
+            isEmpresa:true ,
             categoria: 'petshop'
         },                 
     ], //FIM PETS
@@ -210,7 +210,7 @@ Empresas = {
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true, 
+            isEmpresa:true, 
             categoria: 'moveis'
         },
         {
@@ -227,7 +227,7 @@ Empresas = {
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true,
+            isEmpresa:true,
             categoria: 'moveis' 
         },
     ],
@@ -246,7 +246,7 @@ Empresas = {
             tel: '9111-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Enrico.Goncalves.545553'],
-            empresa:false,
+            isEmpresa:true,
             categoria: 'eletricista' 
         },
     ],
@@ -269,7 +269,7 @@ Empresas = {
             tel: '9223-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Isadora.Cardoso.5415553a'],
-            empresa:false,
+            isEmpresa:true,
             categoria: 'advogado' 
         },
 
@@ -279,7 +279,7 @@ Empresas = {
             nome: 'Dr. Davi Lucas Viana',
             descricao: `mais de 20 anos de Advocacia, prima pela excelência na prestação de serviços, objetivando o melhor resultado para seus clientes.
 
-            Possui profissionais especializados em Direito do Trabalho, Previdenciário, Direito Empresarial, Direito Imobiliário, do Consumidor, de Família e Sucessão, dentre outras áreas.
+            Possui profissionais especializados em Direito do Trabalho, Previdenciário, Direito empresarial, Direito Imobiliário, do Consumidor, de Família e Sucessão, dentre outras áreas.
             
             O escritório vem construindo um legado de reputação e credibilidade ao longo dos anos, decorrente da intensa dedicação e comprometimento com as demandas de seus clientes, operando, hoje, em todo o país.`,
             cidade: 'Juiz de Fora',
@@ -291,7 +291,7 @@ Empresas = {
             tel: '9224-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Davi.Lucas.55553a'],
-            empresa:false,
+            isEmpresa:true,
             categoria: 'advogado' 
         },
     ],
@@ -310,7 +310,7 @@ Empresas = {
             tel: '9777-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Brenda.Porto.6653a'],
-            empresa:false,
+            isEmpresa:true,
             categoria: 'barbearia' 
         },
         {
@@ -327,7 +327,7 @@ Empresas = {
             tel: '9897-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Kaique.Farias.6653a'],
-            empresa:false,
+            isEmpresa:true,
             categoria: 'barbearia' 
         },
     ]

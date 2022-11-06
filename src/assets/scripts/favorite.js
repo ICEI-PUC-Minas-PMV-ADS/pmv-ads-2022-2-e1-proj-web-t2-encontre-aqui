@@ -10,11 +10,11 @@ window.addEventListener("load", ()=>{
     })
 })
 
-function markFavorite(id,categoria, tipo){
+function markFavorite(id,categoria, isEmpresa){
    var favorito = {
         id:id,
         categoria:categoria,
-        tipo:tipo
+        isEmpresa:isEmpresa
     }
    
     marked = false
