@@ -168,7 +168,7 @@ function searchPlace(categoria){
         })               
         cardsPag.forEach((cards, index) =>{      
            
-            cards.addEventListener('mouseup', ()=>{
+            cards.addEventListener('click', ()=>{
                id_current = id_next
                id_next = index
                cardsPag[id_current].classList.remove('active')
