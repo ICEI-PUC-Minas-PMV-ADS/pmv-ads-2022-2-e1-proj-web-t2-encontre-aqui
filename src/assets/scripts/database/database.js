@@ -17,6 +17,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        empresa:false, 
         categoria: 'petshop' 
     },
     {
@@ -32,6 +33,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        empresa:false, 
         categoria: 'petshop' 
     },
     {
@@ -43,6 +45,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        empresa:false, 
         categoria: 'petshop' 
     },
 
@@ -59,6 +62,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        empresa:false, 
         categoria: 'petshop' 
     },
     {
@@ -69,6 +73,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        empresa:false, 
         categoria: 'petshop' 
     },
 
@@ -83,6 +88,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        empresa:false, 
         categoria: 'moveis' 
     },
     {
@@ -94,6 +100,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        empresa:false, 
         categoria: 'moveis' 
         
     },
@@ -108,6 +115,7 @@ Produtos = {
         domicilio:false,
         agendamento:true,
         nfavoritos: 55,
+        empresa:false, 
         categoria: 'barbearia' 
     },
 ]
@@ -225,7 +233,7 @@ Empresas = {
     ],
     eletricistas:[
         {
-            id: 6,
+            id: 7,
             produtos: [Produtos.moveis[1]],
             nome: 'Enrico Gonçalves',
             descricao: `Atua na cidade de Juiz de Fora.  Montar, manter e reparar equipamentos mecânicos, bem como executar a manutenção preventiva e corretiva de maquinário. Auxiliar em trabalhos de pesquisa e aperfeiçoamento. Executar esboços e desenhos de sua especialidade.`,
@@ -244,7 +252,7 @@ Empresas = {
     ],
     advogados:[
         {
-            id: 7,
+            id: 8,
             produtos: [Produtos.moveis[1]],
             nome: 'Dra. Brenda Porto',
             descricao: `mais de 20 anos de Advocacia, prima pela excelência na prestação de serviços, objetivando o melhor resultado para seus clientes.
@@ -266,7 +274,7 @@ Empresas = {
         },
 
         {
-            id: 8,
+            id: 9,
             produtos: [Produtos.moveis[1]],
             nome: 'Dr. Davi Lucas Viana',
             descricao: `mais de 20 anos de Advocacia, prima pela excelência na prestação de serviços, objetivando o melhor resultado para seus clientes.
@@ -289,7 +297,7 @@ Empresas = {
     ],
     barbearia:[
          {
-            id: 9,
+            id: 10,
             produtos: [Produtos.barbearia[0]],
             nome: 'Marcos Vinicius Cardoso',
             descricao: `Barbearia criada com paixão pela arte, aqui fazemos barba, cabelo, negócios e o mais importante, fazemos amigos. Mais que uma barbearia, um local para estar e relaxar. Valorizamos cada personalidade e perfil, seja o homem tradicional ou moderno.`,
@@ -306,7 +314,7 @@ Empresas = {
             categoria: 'barbearia' 
         },
         {
-            id: 10,
+            id: 11,
             produtos: [Produtos.moveis[1]],
             nome: 'Kaique Farias',
             descricao: ` Barbearia criada com paixão pela arte, aqui fazemos barba, cabelo, negócios e o mais importante, fazemos amigos. Mais que uma barbearia, um local para estar e relaxar. Valorizamos cada personalidade e perfil, seja o homem tradicional ou moderno.`,

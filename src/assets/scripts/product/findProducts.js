@@ -44,8 +44,6 @@ function findCetegory(){
     }
  
 
-
-
 function findCompany(data){
     console.log(data)
     data.forEach(empresa =>{

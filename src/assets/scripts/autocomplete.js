@@ -5,8 +5,7 @@ let names = ["Juiz de Fora",
 
 
 let sortedNames = names.sort();
-console.log(sortedNames)
-
+ 
 let auto_place = document.getElementById("place");
 
 auto_place.addEventListener("keyup", (e)=>{

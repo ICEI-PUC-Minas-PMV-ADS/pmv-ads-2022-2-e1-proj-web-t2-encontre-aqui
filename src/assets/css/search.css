@@ -90,12 +90,13 @@ section{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin:10px;
 }
 
-.card-container .card .card-btn-actions img{
-    width: 20px;
+.card-container .card .card-btn-actions svg{
+    width: 30px;
+    height: 30px;
 }
 .left-menu{
     display: flex;
@@ -227,7 +228,9 @@ section{
     letter-spacing: 0.1mm;
   }
 
-
+  .mark-favorite{
+    font-size: 0.6rem;
+  }
 
 /*------------------------------------------*/
 @media screen and (max-width:1200px){
@@ -274,7 +277,7 @@ section{
        top:-80px;
     }
 
-    .card-container .card .card-btn-actions img{
+    .card-container .card .card-btn-actions svg{
         position: relative;
         top:-100px;
         margin:2px;
