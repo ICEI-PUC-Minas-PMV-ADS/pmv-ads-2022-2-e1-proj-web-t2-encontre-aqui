@@ -245,7 +245,8 @@ Empresas = {
             tel: '9111-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Enrico.Goncalves.545553'],
-            isEmpresa:'empresa',            categoria: 'eletricista' 
+            isEmpresa:'empresa',           
+            categoria: 'eletricista' 
         },
     ],
     advogados:[
@@ -306,7 +307,8 @@ Empresas = {
             tel: '9777-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Brenda.Porto.6653a'],
-            isEmpresa:'empresa',            categoria: 'barbearia' 
+            isEmpresa:'empresa',   
+            categoria: 'barbearia' 
         },
         {
             id: 11,
@@ -322,7 +324,8 @@ Empresas = {
             tel: '9897-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Kaique.Farias.6653a'],
-            isEmpresa:'empresa',            categoria: 'barbearia' 
+            isEmpresa:'empresa',          
+            categoria: 'barbearia' 
         },
     ]
 }; //FIM EMPRESAS
@@ -340,7 +343,7 @@ Categorias = [
     },
     {
         id: 3,
-        tags: ['eletricistas'],
+        tags: ['eletricista'],
         empresas:[Empresas.eletricistas]
     },
      {

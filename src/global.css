@@ -521,7 +521,7 @@ input[type="file"]{
   animation: 1.5s ease-in forwards add-fav;
 }
 .marked .favorite #internal-path{
-   animation: 1.5s ease-in forwards add-fav;
+   animation: 1s ease-in forwards add-fav;
 }
 
 
@@ -531,7 +531,7 @@ input[type="file"]{
   }
   100%{
     stroke-dasharray: 130;
-    stroke: #365769;
+    stroke: #c7e2e5;
    stroke-width: 1.5;
   }
 }
