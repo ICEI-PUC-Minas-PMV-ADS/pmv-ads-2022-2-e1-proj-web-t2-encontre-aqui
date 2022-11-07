@@ -13,9 +13,10 @@
 
 
 
-function markFavorite(id,categoria, isEmpresa){
+function markFavorite(id,nome,categoria, isEmpresa){
    var favorito = {
         id:id,
+        nome:nome,
         categoria:categoria,
         isEmpresa:isEmpresa
     }

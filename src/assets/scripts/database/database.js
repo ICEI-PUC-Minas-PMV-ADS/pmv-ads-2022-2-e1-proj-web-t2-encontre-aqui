@@ -128,7 +128,7 @@ Empresas = {
     petshops: [
         {
             id: 1,
-            produtos: [Produtos.petshops[0],Produtos.petshops[1]],
+            produtos: [Produtos.petshops[0]],
             nome: 'Pet Shop Delivery',
             descricao: `Pet Shop online e delivery de rações e outros produtos para cães e gatos. Entregues em até 2 horas de 9 as 21 de segunda a sexta e sábado até as 17.`,
             cidade: 'Juiz de Fora',
@@ -145,7 +145,7 @@ Empresas = {
         },
         {
             id: 2,
-            produtos: [Produtos.petshops[1], Produtos.petshops[4]],
+            produtos: [Produtos.petshops[1]],
             nome: 'Cão Carinho - Veterinária e Pet Shop',
             descricao: "Contamos com uma especializada equipe de veterinários, tosadores e atendentes que fazem o sucesso da Cão Carinho.",
             cidade: 'Juiz de Fora',
@@ -162,7 +162,7 @@ Empresas = {
         },              
         {
             id: 3,
-            produtos: [Produtos.petshops[0]],
+            produtos: [Produtos.petshops[3]],
             nome: 'Me Pegue! Pet Shop',
             descricao: 'Me Pegue! Pet Shop. Artigos para animais de estimação. Eles nunca viram nada igual! ',
             cidade: 'Juiz de Fora',
@@ -179,7 +179,7 @@ Empresas = {
         }, 
         {
             id: 4,
-            produtos: [Produtos.petshops[0],Produtos.petshops[2], Produtos.petshops[3]],
+            produtos: [Produtos.petshops[4]],
             nome: 'Pet Shop Castelo Das Racoes',
             descricao: 'Compre Online e Receba em Horas, ração Frete Grátis Brasil* e Parcele em até 3x Sem Juros. Cobasi Já: Compre Online e Receba em Horas*',
             cidade: 'Belo Horizonte',

@@ -37,7 +37,7 @@ function findCompanieProduct(empresasProdutos, favorito){
     }else{
         empresasProdutos.forEach(empPro => {
             for(var i=0; i < empPro.produtos.length; i++){
-                if(empPro.produtos[i].id === favorito.id){
+                if(empPro.produtos[i].id === favorito.id && empPro.produtos[i].nome === favorito.nome){
                     if(empPro.produtos[i].categoria === favorito.categoria){
                         updateCards(empPro.produtos[i])
                     }
