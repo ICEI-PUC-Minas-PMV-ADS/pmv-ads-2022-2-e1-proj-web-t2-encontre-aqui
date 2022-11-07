@@ -1,4 +1,4 @@
-<h1>DOCUMENTAÇÃO DE CONTEXTO</h1>
+<h1>DOCUMENTAÇÃO DE CONTEXTO TESTE</h1>
 <p>A digitalização de empresas e negócios próprios nunca foi tão necessária. As mudanças no comportamento do consumidor fazem com que companhias e pessoas autônomas do mundo todo busquem mecanismos como e-mails marketing, redes sociais, sites próprios e locais virtuais de divulgação para gerar visualização e consequentemente mais vendas ou serviços em seus negócios na tecnologia para permanecerem atuais. </p>
 
 <p>Segundo Raquel Dalastti chefe de produtos da Locaweb [Mundo do Marketing - Portal de conteúdos - 15/02/2022] “Para qualquer negócio, a digitalização é extremamente importante, ela tem o poder de levar até nos lugares mais remotos o nome de uma empresa, mesmo que a física esteja a quilômetros de distância, apesar de parecer ser algo bem complexo não é bem assim, a digitalização começa a partir de pequenos passos, como a implementação de redes sociais, domínios e um site próprio”.</p>
