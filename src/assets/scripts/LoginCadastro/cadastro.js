@@ -20,7 +20,7 @@ function saveUser(){
 
         localStorage.setItem('user', JSON.stringify(user))
         alert("Novo usuário criado!")
-        document.location.href='./UserProfile.html'
+        document.location.href='./userProfile.html'
     }else{
         alert("dados incompletos")
         

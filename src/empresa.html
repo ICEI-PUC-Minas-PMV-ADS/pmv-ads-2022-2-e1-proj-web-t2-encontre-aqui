@@ -15,7 +15,7 @@
 
 <body>
 
-    <header class="header-product-page">
+    <header id="header-product" class="header-product-page">
 
         <nav class="nav-menu">
             <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
@@ -36,9 +36,13 @@
         </nav>
 
         <div class="logo-area">
-            <img id="logo-user" src="">
-            <span id="name-user" class="client-name">Nome da
-                Empresa</span>
+            <img id="logo-user" src="./assets/images/companies/logos/logo1.PNG">
+            <span id="name-user" class="client-name">Nome da Empresa</span>
+        </div>
+
+        <div class="imgEmpresa" id="imgPreview">
+            <label for="textoFoto" class="addFoto"> Adicionar Foto</label>
+            <input type="file" id="textoFoto" onchange="addPhoto(event, 'header-product');">
         </div>
 
     </header>
@@ -53,7 +57,7 @@
                 </div>
             </div>
             <div class="favorite-area">
-
+                <span>Adicionar aos Favoritos</span> <img width="24" src="./assets/images/icons/bookmark.svg">
             </div>
         </div>
     </nav>
@@ -61,13 +65,44 @@
 
         <div id="content">
             <section id="description-ps">
+                <div class="descr-images">
+                    <div class="principal-image">
+                        <img class="imgEmpresa" id="principal" src="./assets/images/site/home/Header.png">
 
+                        <label for="textoFoto2" class="addFoto">Adicionar Foto</label>
+                        <input type="file" id="textoFoto2" onchange="addPhoto(event, 'principal');">
+
+
+                    </div>
+                    <div class="other-images">
+                        <div id="photo1">
+                            <label for="textoFoto3" class="addFoto-ms">Add Foto</label>
+                            <input type="file" id="textoFoto3" onchange="addPhoto(event, 'photo1');">
+                        </div>
+                        <div id="photo2">
+                            <label for="textoFoto5" class="addFoto-ms">Add Foto</label>
+                            <input type="file" id="textoFoto5" onchange="addPhoto(event, 'photo2');">
+                        </div>
+                        <div id="photo3">
+                            <label for="textoFoto6" class="addFoto-ms">Add Foto</label>
+                            <input type="file" id="textoFoto6" onchange="addPhoto(event, 'photo3');">
+                        </div>
+                    </div>
+                </div>
+                <div class="description-text">
+                    <input class="input-data" type="text" placeholder="Nome do Produto ou Serviço">
+
+                    <input class="input-data" type="text" placeholder="Preço *opcional R$">
+
+                    <div id=""></div>
+                    <textarea class="description" placeholder="Descrição"></textarea>
+
+                </div>
         </div>
         </section>
 
+
         </div>
-
-
 
         <section class="other-products">
             <span class="title">Outros produtos ou serviços deste anunciante</span>
@@ -136,16 +171,13 @@
     </footer>
 
     <script src="./assets/scripts/autocomplete.js"></script>
-
-    <script type='text/javascript'
+    <script src="./assets/scripts/product/addPhoto.js"></script>
+    <!--    <script type='text/javascript'
         src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Aj30kitBtzqfccLqDP_RXQYks09ie-CQ5gvx0dnWFyyQImim-GDuVIVUl0VUwjQr'
         async defer></script>
-    <script src="./assets/scripts/mapas/mapa-v1.js"></script>
+    <script src="./assets/scripts/mapas/mapa-v1.js"></script> -->
     <script src="./assets/scripts/database/database.js"></script>
-    <script src="./assets/scripts/checkFavorites.js"></script>
-    <script src="./assets/scripts/favorite.js"></script>
     <script src="./assets/scripts/product/findProducts.js"></script>
-
 </body>
 
 </html>

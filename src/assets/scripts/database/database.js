@@ -17,6 +17,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        isEmpresa:'produto', 
         categoria: 'petshop' 
     },
     {
@@ -32,6 +33,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        isEmpresa:'produto', 
         categoria: 'petshop' 
     },
     {
@@ -43,6 +45,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        isEmpresa:'produto', 
         categoria: 'petshop' 
     },
 
@@ -59,6 +62,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        isEmpresa:'produto', 
         categoria: 'petshop' 
     },
     {
@@ -69,6 +73,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        isEmpresa:'produto', 
         categoria: 'petshop' 
     },
 
@@ -83,6 +88,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        isEmpresa:'produto', 
         categoria: 'moveis' 
     },
     {
@@ -94,6 +100,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
+        isEmpresa:'produto', 
         categoria: 'moveis' 
         
     },
@@ -108,6 +115,7 @@ Produtos = {
         domicilio:false,
         agendamento:true,
         nfavoritos: 55,
+        isEmpresa:'produto', 
         categoria: 'barbearia' 
     },
 ]
@@ -132,7 +140,7 @@ Empresas = {
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true,  
+            isEmpresa:'empresa',  
             categoria: 'petshop'          
         },
         {
@@ -149,7 +157,7 @@ Empresas = {
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true,
+            isEmpresa:'empresa',
             categoria: 'petshop'      
         },              
         {
@@ -166,7 +174,7 @@ Empresas = {
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true ,
+            isEmpresa:'empresa',
             categoria: 'petshop'
         }, 
         {
@@ -183,7 +191,7 @@ Empresas = {
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true ,
+            isEmpresa:'empresa',
             categoria: 'petshop'
         },                 
     ], //FIM PETS
@@ -202,7 +210,7 @@ Empresas = {
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true, 
+            isEmpresa:'empresa',
             categoria: 'moveis'
         },
         {
@@ -219,13 +227,12 @@ Empresas = {
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
-            empresa:true,
-            categoria: 'moveis' 
+            isEmpresa:'empresa',            categoria: 'moveis' 
         },
     ],
     eletricistas:[
         {
-            id: 6,
+            id: 7,
             produtos: [Produtos.moveis[1]],
             nome: 'Enrico Gonçalves',
             descricao: `Atua na cidade de Juiz de Fora.  Montar, manter e reparar equipamentos mecânicos, bem como executar a manutenção preventiva e corretiva de maquinário. Auxiliar em trabalhos de pesquisa e aperfeiçoamento. Executar esboços e desenhos de sua especialidade.`,
@@ -238,13 +245,13 @@ Empresas = {
             tel: '9111-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Enrico.Goncalves.545553'],
-            empresa:false,
+            isEmpresa:'empresa',           
             categoria: 'eletricista' 
         },
     ],
     advogados:[
         {
-            id: 7,
+            id: 8,
             produtos: [Produtos.moveis[1]],
             nome: 'Dra. Brenda Porto',
             descricao: `mais de 20 anos de Advocacia, prima pela excelência na prestação de serviços, objetivando o melhor resultado para seus clientes.
@@ -261,17 +268,16 @@ Empresas = {
             tel: '9223-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Isadora.Cardoso.5415553a'],
-            empresa:false,
-            categoria: 'advogado' 
+            isEmpresa:'empresa',            categoria: 'advogado' 
         },
 
         {
-            id: 8,
+            id: 9,
             produtos: [Produtos.moveis[1]],
             nome: 'Dr. Davi Lucas Viana',
             descricao: `mais de 20 anos de Advocacia, prima pela excelência na prestação de serviços, objetivando o melhor resultado para seus clientes.
 
-            Possui profissionais especializados em Direito do Trabalho, Previdenciário, Direito Empresarial, Direito Imobiliário, do Consumidor, de Família e Sucessão, dentre outras áreas.
+            Possui profissionais especializados em Direito do Trabalho, Previdenciário, Direito empresarial, Direito Imobiliário, do Consumidor, de Família e Sucessão, dentre outras áreas.
             
             O escritório vem construindo um legado de reputação e credibilidade ao longo dos anos, decorrente da intensa dedicação e comprometimento com as demandas de seus clientes, operando, hoje, em todo o país.`,
             cidade: 'Juiz de Fora',
@@ -283,13 +289,12 @@ Empresas = {
             tel: '9224-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Davi.Lucas.55553a'],
-            empresa:false,
-            categoria: 'advogado' 
+            isEmpresa:'empresa',            categoria: 'advogado' 
         },
     ],
     barbearia:[
          {
-            id: 9,
+            id: 10,
             produtos: [Produtos.barbearia[0]],
             nome: 'Marcos Vinicius Cardoso',
             descricao: `Barbearia criada com paixão pela arte, aqui fazemos barba, cabelo, negócios e o mais importante, fazemos amigos. Mais que uma barbearia, um local para estar e relaxar. Valorizamos cada personalidade e perfil, seja o homem tradicional ou moderno.`,
@@ -302,11 +307,11 @@ Empresas = {
             tel: '9777-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Brenda.Porto.6653a'],
-            empresa:false,
+            isEmpresa:'empresa',   
             categoria: 'barbearia' 
         },
         {
-            id: 10,
+            id: 11,
             produtos: [Produtos.moveis[1]],
             nome: 'Kaique Farias',
             descricao: ` Barbearia criada com paixão pela arte, aqui fazemos barba, cabelo, negócios e o mais importante, fazemos amigos. Mais que uma barbearia, um local para estar e relaxar. Valorizamos cada personalidade e perfil, seja o homem tradicional ou moderno.`,
@@ -319,7 +324,7 @@ Empresas = {
             tel: '9897-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Kaique.Farias.6653a'],
-            empresa:false,
+            isEmpresa:'empresa',          
             categoria: 'barbearia' 
         },
     ]
@@ -338,7 +343,7 @@ Categorias = [
     },
     {
         id: 3,
-        tags: ['eletricistas'],
+        tags: ['eletricista'],
         empresas:[Empresas.eletricistas]
     },
      {
