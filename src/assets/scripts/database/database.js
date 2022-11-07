@@ -17,7 +17,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
-        isEmpresa:false, 
+        isEmpresa:'produto', 
         categoria: 'petshop' 
     },
     {
@@ -33,7 +33,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
-        isEmpresa:false, 
+        isEmpresa:'produto', 
         categoria: 'petshop' 
     },
     {
@@ -45,7 +45,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
-        isEmpresa:false, 
+        isEmpresa:'produto', 
         categoria: 'petshop' 
     },
 
@@ -62,7 +62,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
-        isEmpresa:false, 
+        isEmpresa:'produto', 
         categoria: 'petshop' 
     },
     {
@@ -73,7 +73,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
-        isEmpresa:false, 
+        isEmpresa:'produto', 
         categoria: 'petshop' 
     },
 
@@ -88,7 +88,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
-        isEmpresa:false, 
+        isEmpresa:'produto', 
         categoria: 'moveis' 
     },
     {
@@ -100,7 +100,7 @@ Produtos = {
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
-        isEmpresa:false, 
+        isEmpresa:'produto', 
         categoria: 'moveis' 
         
     },
@@ -115,7 +115,7 @@ Produtos = {
         domicilio:false,
         agendamento:true,
         nfavoritos: 55,
-        isEmpresa:false, 
+        isEmpresa:'produto', 
         categoria: 'barbearia' 
     },
 ]
@@ -140,7 +140,7 @@ Empresas = {
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
-            isEmpresa:true,  
+            isEmpresa:'empresa',  
             categoria: 'petshop'          
         },
         {
@@ -157,7 +157,7 @@ Empresas = {
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
-            isEmpresa:true,
+            isEmpresa:'empresa',
             categoria: 'petshop'      
         },              
         {
@@ -174,7 +174,7 @@ Empresas = {
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
-            isEmpresa:true ,
+            isEmpresa:'empresa',
             categoria: 'petshop'
         }, 
         {
@@ -191,7 +191,7 @@ Empresas = {
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
-            isEmpresa:true ,
+            isEmpresa:'empresa',
             categoria: 'petshop'
         },                 
     ], //FIM PETS
@@ -210,7 +210,7 @@ Empresas = {
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
-            isEmpresa:true, 
+            isEmpresa:'empresa',
             categoria: 'moveis'
         },
         {
@@ -227,8 +227,7 @@ Empresas = {
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
-            isEmpresa:true,
-            categoria: 'moveis' 
+            isEmpresa:'empresa',            categoria: 'moveis' 
         },
     ],
     eletricistas:[
@@ -246,8 +245,7 @@ Empresas = {
             tel: '9111-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Enrico.Goncalves.545553'],
-            isEmpresa:true,
-            categoria: 'eletricista' 
+            isEmpresa:'empresa',            categoria: 'eletricista' 
         },
     ],
     advogados:[
@@ -269,8 +267,7 @@ Empresas = {
             tel: '9223-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Isadora.Cardoso.5415553a'],
-            isEmpresa:true,
-            categoria: 'advogado' 
+            isEmpresa:'empresa',            categoria: 'advogado' 
         },
 
         {
@@ -291,8 +288,7 @@ Empresas = {
             tel: '9224-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Davi.Lucas.55553a'],
-            isEmpresa:true,
-            categoria: 'advogado' 
+            isEmpresa:'empresa',            categoria: 'advogado' 
         },
     ],
     barbearia:[
@@ -310,8 +306,7 @@ Empresas = {
             tel: '9777-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Brenda.Porto.6653a'],
-            isEmpresa:true,
-            categoria: 'barbearia' 
+            isEmpresa:'empresa',            categoria: 'barbearia' 
         },
         {
             id: 11,
@@ -327,8 +322,7 @@ Empresas = {
             tel: '9897-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Kaique.Farias.6653a'],
-            isEmpresa:true,
-            categoria: 'barbearia' 
+            isEmpresa:'empresa',            categoria: 'barbearia' 
         },
     ]
 }; //FIM EMPRESAS

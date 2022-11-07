@@ -1,14 +1,17 @@
-const mark_favorite = document.querySelectorAll(".mark-favorite");
 
-window.addEventListener("load", ()=>{
-        mark_favorite.forEach(mark =>{
+ function toggleFavority(){
+    const mark_favorite = document.querySelectorAll(".mark-favorite");
+    mark_favorite.forEach(mark =>{
 
-        mark.addEventListener('click',()=>{
-
-            mark.classList.toggle('marked')
-        })
+    mark.addEventListener('click',()=>{
+       mark.classList.toggle('marked')
     })
 })
+ }
+
+
+
+
 
 function markFavorite(id,categoria, isEmpresa){
    var favorito = {

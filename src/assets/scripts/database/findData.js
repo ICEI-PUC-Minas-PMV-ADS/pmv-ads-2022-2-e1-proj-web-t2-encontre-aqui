@@ -8,6 +8,7 @@ var place = urlObj.searchParams.get("place")
 var tags = document.querySelector('.tags')
 var wanted_place = document.getElementById('wanted-place')
 
+
 var local = []
 var cardsPag
 var cardsData = []
@@ -91,29 +92,8 @@ function searchPlace(categoria){
 /*  */
       
  function updateCard(empresa){
-    favoritos =  JSON.parse(localStorage.getItem('favoritos'))
-    var favorito = {
-        id:empresa.id,
-        categoria:empresa.categoria,
-        isEmpresa:empresa.isEmpresa.toString()
-    }
-                    //Verificar se foi marcado como favorito
-                   var marked = '';
-                    if(favoritos != null && favoritos.length > 0){                        
-                            for(var i = 0; i < favoritos.length; i++){ 
-                              var marcado = {
-                                id:favoritos[i].id,
-                                categoria:favoritos[i].categoria,
-                                isEmpresa:favoritos[i].isEmpresa
-                            }  ;  
-                                if(Object.is(JSON.stringify(marcado), JSON.stringify(favorito))){ 
-                                                     
-                                     marked = 'marked'
-                                }
-                              }
-                            }
-                        
-                    
+       
+        var marked = checkFavorites(empresa)    
  
                         data += `<div class="card">
                                         <img id="logo-empresa" src="${empresa.imagens[0]}">
@@ -142,7 +122,7 @@ function searchPlace(categoria){
                                         </div>
 
 
-                                            <a href="produto.html?categoria=${empresa.categoria}&&id=${empresa.id}" class="btn btn-primary">Visitar</a>
+                                            <a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&&id=${empresa.id}" class="btn btn-primary">Visitar</a>
                                         </div>
                                     </div>`
                  //   })
@@ -150,7 +130,7 @@ function searchPlace(categoria){
 
             container.innerHTML += data;
             data = '';
-           
+            toggleFavority();
         }
 
 
