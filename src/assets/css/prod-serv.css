@@ -1,5 +1,6 @@
 :root{
      --border-input: #ccc;
+     --title-color: #2e2c2c;
 }
 
 body{
@@ -198,4 +199,43 @@ body{
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
+  }
+
+  #info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10%;
+    width: 100%;
+  }
+
+  #info h1{
+    color: var(--title-color)
+  }
+  #info .horarios input{
+    width:60px;
+    margin:0 5px;
+  }
+
+  #info .contato{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #info .contato .local{
+    display: flex;
+    justify-content: space-between;
+    margin:0 5%;
+  }
+
+  #info .redes{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #info .redes .social{
+    display: flex;
+  }
+  #info .redes .social div{
+    margin:0 5%;
   }
