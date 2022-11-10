@@ -22,13 +22,13 @@
     bottom: 0;
     font-size: 15px;
     line-height: 15px;
-    width: 100px;
+    width: 220px;
     height: 100px;
     text-align: center;
     color: #fff;
     cursor: pointer;
     border: none;
-    margin:20px;
+    margin:10px;
     background-color: darkgrey;
 }
 .arrow-right {
