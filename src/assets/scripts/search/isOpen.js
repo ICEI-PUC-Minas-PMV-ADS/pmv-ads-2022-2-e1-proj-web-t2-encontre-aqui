@@ -7,40 +7,28 @@ function isOpen(horario){
     horasInicio = horas[0].split(':')
     horasFim = horas[1].split(':')
     
-    inicio = checkTime(horasInicio[0], horasFim[0], horasInicio[1], horasFim[1], hoje)
+   
+    strh1 = horas[1];
+   
     
+    check = checkTime(horas[0],horas[1], hoje)
     
-    
-    if(inicio){
+    if(check){
         funcionamento = 'Aberto'
     }else{
         funcionamento = 'Fechado'
         classFunc= 'closed'
     }
 
-    
     return  `<div class="situation ${classFunc} mt-10">${ funcionamento }</div>`;
 }
 
-function checkTime(horaIni, horaFim, minIni, minFin, hoje){
+function checkTime(horaIni,horaFin, hoje){
+    var horaAtual = `${hoje.getHours()}:${hoje.getMinutes()}`
     var estadoFunc = true;
+    if(horaIni > horaAtual || horaFin < horaAtual)
+        estadoFunc = false;
     
-    if(horaIni < hoje.getHours() && horaFim > hoje.getHours()){
-        estadoFunc = true
-    }else 
-        if(horaIni > hoje.getHours() || horaFim < hoje.getHours()){
-            estadoFunc = false
-        }
-        else{
-            if(horaIni == hoje.getHours()){
-                if(minIni <= hoje.getMinutes() || minFin >= hoje.getMinutes){
-                    estadoFunc = true
-                }
-                else
-                    estadoFunc = false
-            }
-
-        }
-
-        return estadoFunc;
+    console.log(estadoFunc, horaIni, horaFin, horaAtual)
+    return estadoFunc;
 }

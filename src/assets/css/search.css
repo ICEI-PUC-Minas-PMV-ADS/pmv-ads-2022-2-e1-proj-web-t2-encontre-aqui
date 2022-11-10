@@ -181,9 +181,9 @@ section{
     position: relative;
     width: 30px;
     height: 5px;
-    background-color: #3689d7;
+    background-color: #cccccc;
     border-radius: 30px;
-    border: 2px solid #3689d7;
+    border: 2px solid #cccccc;
     padding: 7px;
 }
 
@@ -205,8 +205,8 @@ section{
 }
 
 .checkbox:checked+.toggle {
-    background-color: #cccccc;
-    border: 2px solid #cccccc;
+    background-color: #3689d7;
+    border: 2px solid #3689d7;
 }
 
 .checkbox {
@@ -268,7 +268,6 @@ section{
     }
     
 }
-
 
 
 @media screen and (max-width:1100px){
