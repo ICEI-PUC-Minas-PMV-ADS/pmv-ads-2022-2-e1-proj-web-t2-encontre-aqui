@@ -136,7 +136,7 @@ Empresas = {
             logradouro: "Rua Doutor Gil Horta, 15, São Mateus",
             imgBanner:'./assets/images/companies/banners/01/banner.jpg',
             imagens: ["./assets/images/companies/logos/pet2.PNG"],
-            hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-20:00','08:00-18:00','08:00-18:00','08:00-12:00'],
+            hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-20:00','08:00-11:40','08:00-18:00','08:00-12:00'],
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
