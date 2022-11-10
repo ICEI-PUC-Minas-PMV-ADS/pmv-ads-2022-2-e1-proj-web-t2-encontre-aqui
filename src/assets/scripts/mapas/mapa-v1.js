@@ -42,7 +42,7 @@ function GetMap(empresa) {
             <div class="logradouro"> ${empresa.logradouro}</div>
             <div> ${empresa.tel}</div>
                       
-            <div class="situation opened mt-10">Aberto</div>
+            ${isOpen(empresa.hfunc)}
 
         </div>
       

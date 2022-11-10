@@ -421,8 +421,15 @@ ul li{
 }
 
 .opened{
+  
   color: var(--color-success);
 }
+
+.closed{
+   
+  color: var(--color-danger);
+}
+
 
 #footer .footer-categories-links{
   display: flex;
