@@ -378,6 +378,20 @@
     color: white;
   }
   
+  button {
+    outline: none;
+    background: black;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    width:200px;
+}
 
 /*-----------------------------------Texto Sobre Voce----------------------------------------*/ 
 .menuconteiner {

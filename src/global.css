@@ -527,15 +527,15 @@ input[type="file"]{
 }
 
 .mark-favorite .favorite path{
-  fill:#adc6d4;
+  fill:#bccbd4;
   
 }
 .mark-favorite .favorite #internal-path{
-  stroke: #a3bfcf;
+  stroke: #c5d4dc;
 }
 
 .marked .favorite path{
-  fill:#618ca4;
+  fill:#86aabd;
   animation: 1.5s ease-in forwards add-fav;
 }
 .marked .favorite #internal-path{
@@ -549,7 +549,7 @@ input[type="file"]{
   }
   100%{
     stroke-dasharray: 130;
-    stroke: #c7e2e5;
+    stroke: #4fab91;
    stroke-width: 1.5;
   }
 }
