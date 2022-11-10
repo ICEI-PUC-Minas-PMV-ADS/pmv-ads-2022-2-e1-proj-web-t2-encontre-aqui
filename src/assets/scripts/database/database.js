@@ -2,8 +2,8 @@
 Produtos = {
     petshops : [{
         id: 1,
-        nome: 'Ração Pedigree Nutrição Essencial Carne para Cães Adultos',
-        descricao: `- Indicada para cães
+        nome: 'Ração Pedigree petshop Nutrição Essencial Carne para Cães Adultos',
+        descricao: `- Indicada para cães petshop
         - Nutrição essencial sabor carne para cães adultos;
         - Alimento premium 100% completo e balanceado;
         - Sem corantes artificiais presentes na ração;
@@ -287,7 +287,8 @@ Empresas = {
             tel: '9223-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Isadora.Cardoso.5415553a'],
-            isEmpresa:'empresa',            categoria: 'advogado' 
+            isEmpresa:'empresa',        
+            categoria: 'advogado' 
         },
 
         {
@@ -308,7 +309,8 @@ Empresas = {
             tel: '9224-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Davi.Lucas.55553a'],
-            isEmpresa:'empresa',            categoria: 'advogado' 
+            isEmpresa:'empresa',      
+            categoria: 'advogado' 
         },
     ],
     barbearia:[

@@ -235,6 +235,12 @@ section{
     font-size: 0.6rem;
   }
 
+.removeCard{
+    display: none;
+    transition:all 1s ease;
+    background-color: #3689d7;
+}
+
 /*------------------------------------------*/
 @media screen and (max-width:1200px){
 

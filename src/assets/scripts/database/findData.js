@@ -13,6 +13,7 @@ var local = []
 var cardsPag
 var cardsData = []
 var favoritos;
+var isOpened;
 
 foundObj = false
 var i = 0
@@ -48,6 +49,7 @@ function searchPlace(categoria){
             local.forEach(empresa => {              
                  
                 if(empresa.cidade.toLowerCase().includes(place.toLowerCase())){
+                    isOpened = isOpen(empresa.hfunc)
                     updateWantedLocal(empresa.cidade)
                     updateCard(empresa)
                     cardsData.push(empresa)
@@ -59,7 +61,7 @@ function searchPlace(categoria){
                 
             })
                 
-        } else{
+        } 
             if(local != undefined){               
             local.forEach(empresa =>{
                 if(empresa.cidade.toLowerCase().includes(place.toLowerCase())){
@@ -70,6 +72,7 @@ function searchPlace(categoria){
                           if(!foundObj){
                             updateTags(categoria)    
                           }
+                            isOpened = isOpen(empresa.hfunc)
                             updateCard(produto)
                             
                             cardsData.push(empresa)
@@ -83,7 +86,7 @@ function searchPlace(categoria){
                 })
                                        
            }    
-        }
+        
                
     })
     i=0
@@ -101,7 +104,7 @@ function searchPlace(categoria){
                                         <div class="card-body">
                                             <div class="product-name">${empresa.nome.substr(0,30)}</div>
                                             <div class="description">${empresa.nome} ${empresa.descricao.substr(0,45)}...</div>
-                                            ${isOpen(empresa.hfunc)}
+                                            ${isOpened}
                                         </div>
 
                                         <div class="card-btn-actions">
@@ -122,7 +125,7 @@ function searchPlace(categoria){
                                         </div>
 
 
-                                            <a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&&id=${empresa.id}" class="btn btn-primary">Visitar</a>
+                                            <a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${empresa.id}" class="btn btn-primary">Visitar</a>
                                         </div>
                                     </div>`
                  //   })

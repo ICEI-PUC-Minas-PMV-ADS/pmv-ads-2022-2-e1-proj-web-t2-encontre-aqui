@@ -8,7 +8,7 @@ function isOpen(horario){
     horasFim = horas[1].split(':')
     
     inicio = checkTime(horasInicio[0], horasFim[0], horasInicio[1], horasFim[1], hoje)
-    //fim =  checkTime(horasFim[0], horasFim[1], hoje)
+    
     
     
     if(inicio){
