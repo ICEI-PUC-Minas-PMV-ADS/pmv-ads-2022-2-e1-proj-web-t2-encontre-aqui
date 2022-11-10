@@ -45,8 +45,7 @@ function findCetegory(){
  
 
 function findCompany(data){
-    console.log("Empresas", data)
-    data.forEach(empresa =>{
+     data.forEach(empresa =>{
         if(empresa.id === id){
           updatePage(empresa)
           GetMap(empresa)
@@ -63,37 +62,10 @@ function updatePage(product){
     logo_user.src = `${product.imagens[0]}`;
     name_user.innerHTML = `${product.nome}`;
 
-    var price = ''
-    if(product.ps_price != undefined && product.ps_price != null && product.ps_price != ''){
-        price = "Preço: " + product.ps_price
-    }
-
-
-    var content = ` <div class="descr-images">
-                            <div class="principal-image">
-                                <img src="${product.produtos[0].imagens[0]}">
-                            </div>
-                            <div class="other-images">
-                                <div> <img src="${product.produtos[0].imagens[0]}"></div>
-                                <div> <img src="${product.produtos[0].imagens[1]}"></div>
-                                <div> <img src="${product.produtos[0].imagens[2]}"></div>
-                            </div>
-                        </div>
-                        <div class="description-text">
-                            <div id="ps-title" class="title">${product.nome}</div>
-                            <div id="ps-price">${price}</div>
-                            <div id=""></div>
-                            <div id="ps-descr"> ${product.descricao}  </div>
-                        </div>
-                        `
- 
-                description_ps.innerHTML = content; 
-
-
-               for(var p = 0; p < product.produtos.length; p++){
-                    img_products += `<a href="#"><img class = "other-imgs" src='${product.produtos[p].imagens[0]}' ></a>`
-
-                }
+   
+     for(var p = 0; p < product.produtos.length; p++){
+            img_products += `<a href="produto.html?categoria=${product.categoria}&id=${product.id}"><img class = "other-imgs" src='${product.produtos[p].imagens[0]}' ></a>`
+         }
                                
                // console.log(product.produtos[p])
                 other_products.innerHTML = img_products
