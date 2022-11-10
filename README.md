@@ -17,7 +17,7 @@ fornecedores de materia prima. Possibilitanto assim uma interação de MEI's e M
 - Pedro Ítalo Costa Vieira
 - Renê Matias de Misquita
 
-## Orientador
+## Orientadora
 
 - Joyce Christina De Paiva Carvalho
 
