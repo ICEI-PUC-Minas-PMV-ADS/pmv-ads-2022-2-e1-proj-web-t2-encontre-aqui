@@ -3,17 +3,21 @@
      --title-color: #2e2c2c;
 }
 
+*{
+    scroll-behavior: smooth;
+}
 body{
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     margin: 0 auto;
-    overflow-x: hidden;
-  
+    overflow: hidden;
+    
 }
 
 .header-product-page{
-    height: 300px;    
-   
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 #description-ps{
@@ -26,6 +30,7 @@ body{
     height: 400px;    
     padding-left: 15%; 
     padding-right: 10%; 
+       
 }
 #description-ps .descr-images {
     width: 100%;
@@ -63,6 +68,7 @@ body{
     width:95%;
     height: 90%;
     border-radius: 6px;
+    margin-top: 70px;
 }
 
 #description-ps .descr-images .other-images {
@@ -89,8 +95,9 @@ body{
 
 .check-info-area{
     width: 100%;
-    height: 10%;
+    height: 50px;
     background: linear-gradient(180deg, #e9e6e6 0%, rgba(239, 233, 233, 0) 100%);
+    margin-bottom: 10%;
 }
 .check-info{
     display: flex;
@@ -99,6 +106,7 @@ body{
     margin: 0 auto;
     padding-top:20px; ;
     width: 80%;
+ 
 }
 
 .check-info .place-options{
@@ -127,21 +135,21 @@ body{
 .logo-area{
     display:flex;
     flex-direction: column;
-    position:relative;
-    top:140px;
+    position:absolute;
+    top:40%;
     left:10%;
 }
 
 .logo-area img{
-    width: 8%;
+    width: 50%;
     border-radius: 7px;
 }
 
 .logo-area .client-name{
     color:rgb(254, 254, 254);
-    font-size: 2rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     -webkit-text-stroke: 0.8px rgb(0, 0, 0); 
 }
 
@@ -158,7 +166,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-   
 }
 
 #other-products .other-imgs{
@@ -178,14 +185,6 @@ body{
    
     width: 95%;
     height: 200px;
-}
-
-.header-product-page .imgEmpresa{
-  width: 100%; 
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 
@@ -238,4 +237,43 @@ body{
   }
   #info .redes .social div{
     margin:0 5%;
+  }
+
+
+  .imgEmpresa{
+    width: 100%; 
+    background-color: rgb(128, 155, 159);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+
+  #imgPreview{
+    width: 100%;
+    height: 45vh;
+  }
+
+  .section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .pageNavigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 83vh;
+    position: fixed;
+    top:12%;
+    left:90%;
+  }
+
+  .pageNavigation  #downPage{
+    transform: rotate(180deg);
   }

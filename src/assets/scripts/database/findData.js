@@ -101,7 +101,7 @@ function searchPlace(categoria){
                                         <div class="card-body">
                                             <div class="product-name">${empresa.nome.substr(0,30)}</div>
                                             <div class="description">${empresa.nome} ${empresa.descricao.substr(0,45)}...</div>
-                                            <div class="situation opened mt-10">Aberto</div>
+                                            ${isOpen(empresa.hfunc)}
                                         </div>
 
                                         <div class="card-btn-actions">
