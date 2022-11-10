@@ -56,6 +56,9 @@ section{
     cursor:pointer;
     
 }
+.card-container .card img{
+    border-radius: 12px;
+}
 
 .card-container .active{
     box-shadow: 0 0 3px 1px rgb(177, 192, 177);
@@ -231,6 +234,12 @@ section{
   .mark-favorite{
     font-size: 0.6rem;
   }
+
+.removeCard{
+    display: none;
+    transition:all 1s ease;
+    background-color: #3689d7;
+}
 
 /*------------------------------------------*/
 @media screen and (max-width:1200px){

@@ -2,8 +2,8 @@
 Produtos = {
     petshops : [{
         id: 1,
-        nome: 'Ração Pedigree Nutrição Essencial Carne para Cães Adultos',
-        descricao: `- Indicada para cães
+        nome: 'Ração Pedigree petshop Nutrição Essencial Carne para Cães Adultos',
+        descricao: `- Indicada para cães petshop
         - Nutrição essencial sabor carne para cães adultos;
         - Alimento premium 100% completo e balanceado;
         - Sem corantes artificiais presentes na ração;
@@ -128,15 +128,15 @@ Empresas = {
     petshops: [
         {
             id: 1,
-            produtos: [Produtos.petshops[0],Produtos.petshops[1]],
+            produtos: [Produtos.petshops[0]],
             nome: 'Pet Shop Delivery',
             descricao: `Pet Shop online e delivery de rações e outros produtos para cães e gatos. Entregues em até 2 horas de 9 as 21 de segunda a sexta e sábado até as 17.`,
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais', 
             logradouro: "Rua Doutor Gil Horta, 15, São Mateus",
             imgBanner:'./assets/images/companies/banners/01/banner.jpg',
-            imagens: ["./assets/images/companies/logos/logo5.PNG"],
-            hfunc:[''],
+            imagens: ["./assets/images/companies/logos/pet2.PNG"],
+            hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-20:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
@@ -145,7 +145,7 @@ Empresas = {
         },
         {
             id: 2,
-            produtos: [Produtos.petshops[1], Produtos.petshops[4]],
+            produtos: [Produtos.petshops[1]],
             nome: 'Cão Carinho - Veterinária e Pet Shop',
             descricao: "Contamos com uma especializada equipe de veterinários, tosadores e atendentes que fazem o sucesso da Cão Carinho.",
             cidade: 'Juiz de Fora',
@@ -153,7 +153,7 @@ Empresas = {
             logradouro: 'Rua Sampaio, 233, Granbery',
             imagens: ['./assets/images/companies/logos/petshop3.PNG','./assets/images/companies/logos/logo3.PNG'],
             imgBanner:'./assets/images/companies/banners/02/banner.jpg',
-            hfunc:[''],
+             hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-23:00','08:00-18:00','08:00-12:00'],
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
@@ -162,15 +162,15 @@ Empresas = {
         },              
         {
             id: 3,
-            produtos: [Produtos.petshops[0]],
+            produtos: [Produtos.petshops[3]],
             nome: 'Me Pegue! Pet Shop',
             descricao: 'Me Pegue! Pet Shop. Artigos para animais de estimação. Eles nunca viram nada igual! ',
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Rua Halfeld, 584, Centro',
-            imagens: ['./assets/images/companies/logos/petshop2.PNG'],
+            imagens: ['./assets/images/companies/logos/pet1.PNG'],
             imgBanner:'./assets/images/companies/banners/03/banner.jpg',
-            hfunc:[''],
+             hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-24:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
@@ -179,7 +179,7 @@ Empresas = {
         }, 
         {
             id: 4,
-            produtos: [Produtos.petshops[0],Produtos.petshops[2], Produtos.petshops[3]],
+            produtos: [Produtos.petshops[4]],
             nome: 'Pet Shop Castelo Das Racoes',
             descricao: 'Compre Online e Receba em Horas, ração Frete Grátis Brasil* e Parcele em até 3x Sem Juros. Cobasi Já: Compre Online e Receba em Horas*',
             cidade: 'Belo Horizonte',
@@ -187,13 +187,31 @@ Empresas = {
             logradouro: 'Avenida João Pinheiro, 469',
             imagens: ['./assets/images/companies/logos/petshop3.PNG'],
             imgBanner:'./assets/images/companies/banners/01/banner.jpg',
-            hfunc:[''],
+             hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
             isEmpresa:'empresa',
             categoria: 'petshop'
-        },                 
+        },    
+        , 
+        {
+            id: 5,
+            produtos: [Produtos.petshops[4]],
+            nome: 'Pet Shop Castelo Das Rações 2',
+            descricao: 'Compre Online e Receba em Horas, ração Frete Grátis Brasil* e Parcele em até 3x Sem Juros. Cobasi Já: Compre Online e Receba em Horas*',
+            cidade: 'Juiz de Fora',
+            estado: 'Minas Gerais',
+            logradouro: 'Avenida João Pinheiro, 469',
+            imagens: ['./assets/images/companies/logos/logo5.PNG'],
+            imgBanner:'./assets/images/companies/banners/01/banner.jpg',
+            hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
+            tel: '',
+            nfavoritos: 55,
+            rsocial:[''],
+            isEmpresa:'empresa',
+            categoria: 'petshop'
+        },                
     ], //FIM PETS
     moveis:[
         {
@@ -206,7 +224,7 @@ Empresas = {
             logradouro: 'Avenida João Pinheiro, 469',
             imagens: ['./assets/images/companies/logos/logo2.PNG'],
             imgBanner:'',
-            hfunc:[''],
+             hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
@@ -223,11 +241,12 @@ Empresas = {
             logradouro: 'Avenida João Pinheiro, 469',
             imagens: ['./assets/images/companies/logos/logo4.PNG'],
             imgBanner:'',
-            hfunc:[''],
+             hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
-            isEmpresa:'empresa',            categoria: 'moveis' 
+            isEmpresa:'empresa',       
+            categoria: 'moveis' 
         },
     ],
     eletricistas:[
@@ -264,11 +283,12 @@ Empresas = {
             logradouro: 'Rua Oscár Vidal, 121, Centro',
             imagens: ['./assets/images/companies/logos/advogado.PNG'],
             imgBanner:'',
-            hfunc:['10:00 - 17:00'],
+            hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '9223-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Isadora.Cardoso.5415553a'],
-            isEmpresa:'empresa',            categoria: 'advogado' 
+            isEmpresa:'empresa',        
+            categoria: 'advogado' 
         },
 
         {
@@ -285,11 +305,12 @@ Empresas = {
             logradouro: 'Rua Oscár Vidal, 125, Centro',
             imagens: ['./assets/images/companies/logos/advogado2.PNG'],
             imgBanner:'',
-            hfunc:['10:00 - 17:00'],
+            hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '9224-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Davi.Lucas.55553a'],
-            isEmpresa:'empresa',            categoria: 'advogado' 
+            isEmpresa:'empresa',      
+            categoria: 'advogado' 
         },
     ],
     barbearia:[
@@ -303,7 +324,7 @@ Empresas = {
             logradouro: 'Rua Espírito Santo, 946, Centro',
             imagens: ['./assets/images/companies/logos/salao.jpg'],
             imgBanner:'./assets/images/companies/banners/09/banner.jpg',
-            hfunc:['10:00 - 16:00'],
+            hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '9777-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Brenda.Porto.6653a'],
@@ -320,7 +341,7 @@ Empresas = {
             logradouro: 'Rua Farmacêutico José Mostaro, 25, Alto dos Passos',
             imagens: ['./assets/images/companies/logos/salao2.jpg'],
             imgBanner:'',
-            hfunc:['10:00 - 17:00'],
+            hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '9897-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Kaique.Farias.6653a'],

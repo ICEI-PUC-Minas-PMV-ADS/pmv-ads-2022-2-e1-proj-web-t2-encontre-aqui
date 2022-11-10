@@ -104,7 +104,7 @@ function updatePage(product){
                 var marked = checkFavorites(product)
 
            favorite_area.innerHTML =   `<span>Adicionar aos Favoritos</span>
-                <div onclick="markFavorite(${product.id}, '${product.categoria}', '${product.isEmpresa}')"
+                <div onclick="markFavorite(${product.id},'${product.nome}', '${product.categoria}', '${product.isEmpresa}')"
                     class="mark-favorite ${marked}">
                     <svg width="32" class="favorite" height="32" viewBox="0 0 32 32" fill="none"
                         xmlns="http://www.w3.org/2000/svg">

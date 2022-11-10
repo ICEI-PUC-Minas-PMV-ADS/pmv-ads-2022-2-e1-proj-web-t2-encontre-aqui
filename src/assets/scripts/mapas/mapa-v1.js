@@ -42,13 +42,12 @@ function GetMap(empresa) {
             <div class="logradouro"> ${empresa.logradouro}</div>
             <div> ${empresa.tel}</div>
                       
-            <div class="situation opened mt-10">Aberto</div>
+            ${isOpen(empresa.hfunc)}
 
         </div>
       
     </div>
-    </a>
-    
+    </a>    
     `
 
         logo =  empresa.imagens[0]
@@ -59,8 +58,6 @@ function GetMap(empresa) {
     }
 
 
-  
-   
     Microsoft.Maps.loadModule('Microsoft.Maps.Search', function () {
 
         map = new Microsoft.Maps.Map('#places-in-maps', {
@@ -75,7 +72,6 @@ function GetMap(empresa) {
         });
    
 }
-
 
 
 function geocodeQuery(query) {
