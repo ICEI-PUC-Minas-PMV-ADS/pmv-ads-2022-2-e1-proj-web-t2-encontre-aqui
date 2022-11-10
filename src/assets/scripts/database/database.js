@@ -247,7 +247,7 @@ Empresas = {
             rsocial:[''],
             isEmpresa:'empresa',       
             categoria: 'moveis' 
-        },
+        }
     ],
     eletricistas:[
         {

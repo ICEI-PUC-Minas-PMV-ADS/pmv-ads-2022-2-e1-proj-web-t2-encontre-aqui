@@ -124,7 +124,7 @@ body{
     margin-right: 16px;
 }
 
-.logo-area{
+.logo-area a{
     display:flex;
     flex-direction: column;
     position:relative;

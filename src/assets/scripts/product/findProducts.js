@@ -4,7 +4,7 @@ var urlObj = new URL(url);
 
 var id = Number(urlObj.searchParams.get("id"))
 var url_categoria = urlObj.searchParams.get("categoria")
-
+var logo_area = document.querySelector('.logo-area')
 var _empresa;
 
 var data = [] ;
@@ -60,8 +60,11 @@ function updatePage(product){
      
     header_product_page.style.backgroundImage = `url(${product.imgBanner})`; 
     header_product_page.style.backgroundSize = 'cover'
-    logo_user.src = `${product.imagens[0]}`;
-    name_user.innerHTML = `${product.nome}`;
+    
+    logo_area.innerHTML = ` <a href='empresa.html?categoria=${product.categoria}&id=${product.id}'>
+                            <img id="logo-user" src='${product.imagens[0]}'>
+                            <span id="name-user" class="client-name">${product.nome}</span> </a>`
+   
 
     var price = ''
     if(product.ps_price != undefined && product.ps_price != null && product.ps_price != ''){
