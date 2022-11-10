@@ -358,6 +358,9 @@ section{
     height: 130px;
   }
 
+  #info h1{
+    color: var(--title-color)
+  }
 /*------------------------------------------*/
 @media screen and (max-width:1200px){
 

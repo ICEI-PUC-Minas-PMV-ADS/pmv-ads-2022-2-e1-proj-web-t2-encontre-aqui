@@ -15,7 +15,7 @@ function loadPersons(){
 }
 
 function updateCards(selected){
-    data +=  `<a class="card-prof item" href="./search.html?search=petshop&place=Juiz de Fora">
+    data +=  `<a class="card-prof item" href="./empresa.html?categoria=${selected.categoria}&id=${selected.id}">
     <img src="${selected.imagens[0]}">
     <div class="descricao">
         <h4>${selected.nome}</h4>
