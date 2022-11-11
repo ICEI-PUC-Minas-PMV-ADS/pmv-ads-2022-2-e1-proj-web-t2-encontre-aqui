@@ -58,7 +58,7 @@ body{
 #header{
   grid-area: header;
   height: 12vh;
-  background-color: var(--color-header);
+ 
 }
 
 #sidebar{
