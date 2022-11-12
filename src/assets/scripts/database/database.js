@@ -122,7 +122,7 @@ Produtos = {
 restaurantes : [
     {
         id: 9,
-        nome: "Picanha, Steaks Prime beef (300g)",
+        nome: "Brasador Picanha, Steaks Prime beef (300g)",
         descricao: `
         Ancho angus, da parte mais nobre do contra-filé. Macio e extremamente saboroso. Mais 2 acompanhamentos. `,
         imagens:['../src/assets/images/companies/products/restaurantes/12/01/01.jpg','../src/assets/images/companies/products/restaurantes/12/01/02.jpg','../src/assets/images/companies/products/restaurantes/12/01/03.jpg','../src/assets/images/companies/products/restaurantes/12/01/04.jpg'],
@@ -137,7 +137,7 @@ restaurantes : [
         id: 10,
         nome: "Picanha, Steaks Prime beef (300g)",
         descricao: `
-        Ancho angus, da parte mais nobre do contra-filé. Macio e extremamente saboroso. Mais 2 acompanhamentos. `,
+        Ancho angus, Brasador da parte mais nobre do contra-filé. Macio e extremamente saboroso. Mais 2 acompanhamentos. `,
         imagens:['../src/assets/images/companies/products/restaurantes/12/02/01.jpg','../src/assets/images/companies/products/restaurantes/12/02/02.jpg','../src/assets/images/companies/products/restaurantes/12/02/03.jpg','../src/assets/images/companies/products/restaurantes/12/02/04.jpg'],
         preco: "20.00",
         domicilio:true,
