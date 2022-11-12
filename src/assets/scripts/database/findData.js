@@ -51,7 +51,7 @@ function searchPlace(categoria){
                 if(empresa.cidade.toLowerCase().includes(place.toLowerCase())){
                     isOpened = isOpen(empresa.hfunc)
                     updateWantedLocal(empresa.cidade)
-                    updateCard(empresa)
+                    updateCard(empresa, null)
                     cardsData.push(empresa)
                     foundObj = true
                   
@@ -73,7 +73,7 @@ function searchPlace(categoria){
                             updateTags(categoria)    
                           }
                             isOpened = isOpen(empresa.hfunc)
-                            updateCard(produto)
+                            updateCard(produto, empresa)
                             
                             cardsData.push(empresa)
                             foundObj = true
@@ -94,8 +94,15 @@ function searchPlace(categoria){
 
 /*  */
       
- function updateCard(empresa){
+ function updateCard(empresa, produto){
        
+        var prodserv;
+        if(produto!==null){           
+            prodserv =  empresa.id
+        }else{
+            produto = empresa
+            prodserv = 22464654;
+        }
         var marked = checkFavorites(empresa)    
  
                         data += `<div class="card">
@@ -104,7 +111,7 @@ function searchPlace(categoria){
                                         <div class="card-body">
                                             <div class="product-name">${empresa.nome.substr(0,30)}</div>
                                             <div class="description">${empresa.nome} ${empresa.descricao.substr(0,45)}...</div>
-                                            ${isOpened}
+                                            ${produto.cidade} ${isOpened}
                                         </div>
 
                                         <div class="card-btn-actions">
@@ -125,7 +132,7 @@ function searchPlace(categoria){
                                         </div>
 
 
-                                            <a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${empresa.id}" class="btn btn-primary">Visitar</a>
+                                            <a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${produto.id}&prodserv=${prodserv}" class="btn btn-primary">Visitar</a>
                                         </div>
                                     </div>`
                  //   })

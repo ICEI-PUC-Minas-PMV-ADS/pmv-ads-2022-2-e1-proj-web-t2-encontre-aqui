@@ -69,7 +69,8 @@ function updatePage(empresa){
     company_desc.innerHTML += '<div>'+ empresa.descricao.substr(0,600)+'<div>';
 
      for(var p = 0; p < empresa.produtos.length; p++){
-            img_products += `<a href="produto.html?categoria=${empresa.categoria}&id=${empresa.id}"><div><img class ="other-imgs" src='${empresa.produtos[p].imagens[0]}' >
+            img_products += `<a href="produto.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=${empresa.produtos[p].id}">
+            <div><img class ="other-imgs" src='${empresa.produtos[p].imagens[0]}' >
                 </div><div style="width:150px" class="opened">${empresa.produtos[p].nome}</div></a>`
          }
                                

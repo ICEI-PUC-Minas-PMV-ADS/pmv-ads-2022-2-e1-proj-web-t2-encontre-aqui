@@ -127,8 +127,10 @@ section{
 
 
 .right-menu{
+    position: relative;
+    top:-60px;
     width:30%;
-    height: 90vh;
+    
     margin-left: 5px;
     margin-top: 15px;
     border-radius: 10px;
@@ -352,10 +354,14 @@ section{
     margin:0 5%;
   }
 
+  #other-products {
+    display: flex;
+  }
 
   #other-products .other-imgs{
     width: 120px;
     height: 130px;
+    margin-top:10px;
     border-radius: 8px;
     transition:all 0.2s ease;
   }
@@ -398,6 +404,7 @@ section{
 
     .body-container{
         width: 60%;
+        
     }
     
 }

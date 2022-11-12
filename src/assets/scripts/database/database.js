@@ -119,19 +119,46 @@ Produtos = {
         categoria: 'barbearia' 
     },
 ],
-restaurantes : [{
-    id: 9,
-    nome: "Picanha, Steaks Prime beef (300g)",
-    descricao: `
-    Ancho angus, da parte mais nobre do contra-filé. Macio e extremamente saboroso. Mais 2 acompanhamentos. `,
-    imagens:['../src/assets/images/companies/products/restaurantes/12/01.jpg','../src/assets/images/companies/products/restaurantes/12/02.jpg','../src/assets/images/companies/products/restaurantes/12/03.jpg','../src/assets/images/companies/products/restaurantes/12/04.jpg'],
-    preco: "20.00",
-    domicilio:true,
-    agendamento:false,
-    nfavoritos: 55,
-    isEmpresa:'produto', 
-    categoria: 'restaurante' 
-},
+restaurantes : [
+    {
+        id: 9,
+        nome: "Picanha, Steaks Prime beef (300g)",
+        descricao: `
+        Ancho angus, da parte mais nobre do contra-filé. Macio e extremamente saboroso. Mais 2 acompanhamentos. `,
+        imagens:['../src/assets/images/companies/products/restaurantes/12/01/01.jpg','../src/assets/images/companies/products/restaurantes/12/01/02.jpg','../src/assets/images/companies/products/restaurantes/12/01/03.jpg','../src/assets/images/companies/products/restaurantes/12/01/04.jpg'],
+        preco: "20.00",
+        domicilio:true,
+        agendamento:false,
+        nfavoritos: 55,
+        isEmpresa:'produto', 
+        categoria: 'restaurante' 
+    },
+    {
+        id: 10,
+        nome: "Picanha, Steaks Prime beef (300g)",
+        descricao: `
+        Ancho angus, da parte mais nobre do contra-filé. Macio e extremamente saboroso. Mais 2 acompanhamentos. `,
+        imagens:['../src/assets/images/companies/products/restaurantes/12/02/01.jpg','../src/assets/images/companies/products/restaurantes/12/02/02.jpg','../src/assets/images/companies/products/restaurantes/12/02/03.jpg','../src/assets/images/companies/products/restaurantes/12/02/04.jpg'],
+        preco: "20.00",
+        domicilio:true,
+        agendamento:false,
+        nfavoritos: 55,
+        isEmpresa:'produto', 
+        categoria: 'restaurante' 
+    },
+    {
+        id: 11,
+        nome: "Picanha, Steaks Prime beef (300g)",
+        descricao: `
+        Ancho angus, da parte mais nobre do contra-filé. Macio e extremamente saboroso. Mais 2 acompanhamentos. `,
+        imagens:['../src/assets/images/companies/products/restaurantes/12/04/01.jpg','../src/assets/images/companies/products/restaurantes/12/04/02.jpg','../src/assets/images/companies/products/restaurantes/12/04/03.jpg','../src/assets/images/companies/products/restaurantes/12/04/04.jpg'],
+        preco: "20.00",
+        domicilio:true,
+        agendamento:false,
+        nfavoritos: 55,
+        isEmpresa:'produto', 
+        categoria: 'restaurante' 
+    },
 ],
     //Fim Produtos
 }
@@ -142,7 +169,7 @@ Empresas = {
     restaurantes:[
         {
             id: 12,
-            produtos: [Produtos.restaurantes[0]],
+            produtos: [Produtos.restaurantes[0],Produtos.restaurantes[1],Produtos.restaurantes[2]],
             nome: 'Brasador',
             descricao: `Restaurante Juiz de Fora
             Nossa matriz, localizada no coração gastronômico de Juiz de Fora, é um templo de adoração ao que há de melhor na culinária, na cultura e nas artes cosmopolitas.
@@ -175,7 +202,7 @@ Empresas = {
             logradouro: "Rua Doutor Gil Horta, 15, São Mateus",
             imgBanner:'../src/assets/images/companies/banners/01/banner.jpg',
             imagens: ["../src/assets/images/companies/logos/pet2.PNG"],
-            hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-23:00','08:00-11:40','08:00-23:00','08:00-12:00'],
+            hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-23:00','08:00-11:40','08:00-23:00','08:00-14:00'],
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
@@ -201,7 +228,7 @@ Empresas = {
         },              
         {
             id: 3,
-            produtos: [Produtos.petshops[3]],
+            produtos: [Produtos.petshops[2]],
             nome: 'Me Pegue! Pet Shop',
             descricao: 'Me Pegue! Pet Shop. Artigos para animais de estimação. Eles nunca viram nada igual! ',
             cidade: 'Juiz de Fora',
@@ -218,7 +245,7 @@ Empresas = {
         }, 
         {
             id: 4,
-            produtos: [Produtos.petshops[4]],
+            produtos: [Produtos.petshops[3]],
             nome: 'Pet Shop Castelo Das Racoes',
             descricao: 'Compre Online e Receba em Horas, ração Frete Grátis Brasil* e Parcele em até 3x Sem Juros. Cobasi Já: Compre Online e Receba em Horas*',
             cidade: 'Belo Horizonte',

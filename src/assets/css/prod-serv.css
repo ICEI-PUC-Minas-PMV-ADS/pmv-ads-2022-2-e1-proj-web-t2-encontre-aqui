@@ -151,6 +151,7 @@ body{
     height: 34%;   
 }
 
+
 #other-products{
     margin: 50px 50px;
     display: flex;
@@ -162,12 +163,23 @@ body{
 }
 
 #other-products .other-imgs{
-    display: flex;
-    flex-direction: column;
-    width: 170px;
-    height: 150px;
-    margin-left: 50px;
-}
+    width: 120px;
+    height: 130px;
+    margin-top:10px;
+    margin-left: 20px;
+    border-radius: 8px;
+    transition:all 0.2s ease;
+  }
+
+
+#other-products .other-imgs:hover{
+   
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(156,156,156,1);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(156,156,156,1);
+    box-shadow: 1px 1px 5px 1px rgba(156,156,156,1);
+     
+  }
+
 
 .other-products{
     margin: 50px 50px;
