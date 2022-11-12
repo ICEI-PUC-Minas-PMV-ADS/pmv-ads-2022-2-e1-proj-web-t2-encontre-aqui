@@ -56,7 +56,7 @@ function findCompany(data){
 
 function updatePage(empresa){
     var img_products = '';  
-     
+    isOpened = isOpen(empresa.hfunc); 
     header_product_page.style.backgroundImage = `url(${empresa.imgBanner})`; 
     header_product_page.style.backgroundSize = 'cover'
    
@@ -65,8 +65,9 @@ function updatePage(empresa){
                             <span id="name-user" class="client-name">${empresa.nome}</span> </a>`;
 
 
-    company_desc.innerHTML += '<div class="title">'+ empresa.nome +'<div>';
-    company_desc.innerHTML += '<div>'+ empresa.descricao.substr(0,600)+'<div>';
+    company_desc.innerHTML += '<div class="title">'+ empresa.nome +'</div>' + isOpened +
+    '<div>'+ empresa.descricao.substr(0,600)+'</div>';
+    
 
      for(var p = 0; p < empresa.produtos.length; p++){
             img_products += `<a href="produto.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=${empresa.produtos[p].id}">

@@ -46,8 +46,7 @@ function searchPlace(categoria){
         if(tag.toLowerCase().includes(search.toLowerCase())){   
             updateTags(categoria)
             if(local != undefined)
-            local.forEach(empresa => {              
-                 
+            local.forEach(empresa => {                 
                 if(empresa.cidade.toLowerCase().includes(place.toLowerCase())){
                     isOpened = isOpen(empresa.hfunc)
                     updateWantedLocal(empresa.cidade)
@@ -61,32 +60,44 @@ function searchPlace(categoria){
                 
             })
                 
-        } 
+        } else{
             if(local != undefined){               
             local.forEach(empresa =>{
                 if(empresa.cidade.toLowerCase().includes(place.toLowerCase())){
-                empresa.produtos.forEach(produto => {                    
-                    if((empresa.nome.toLowerCase().includes(search.toLocaleLowerCase()) ||
-                        (produto.descricao.toLowerCase().includes(search.toLowerCase())))){                    
-                      
-                          if(!foundObj){
-                            updateTags(categoria)    
-                          }
-                            isOpened = isOpen(empresa.hfunc)
-                            updateCard(produto, empresa)
-                            
-                            cardsData.push(empresa)
-                            foundObj = true
-                            i++ 
-                            return
+                    if(empresa.nome.toLowerCase().includes(search.toLocaleLowerCase()) ){                    
+                        if(!foundObj){
+                          updateTags(categoria)    
                         }
+                          isOpened = isOpen(empresa.hfunc)
+                          updateCard(empresa, null)
+                          
+                          cardsData.push(empresa)
+                          foundObj = true
+                          i++ 
+                         
+                      }
+                empresa.produtos.forEach(produto => {                    
+                  
+                        if(produto.descricao.toLowerCase().includes(search.toLowerCase())){                    
+                      
+                            if(!foundObj){
+                              updateTags(categoria)    
+                            }
+                              isOpened = isOpen(empresa.hfunc)
+                              updateCard(produto, empresa)
+                              
+                              cardsData.push(empresa)
+                              foundObj = true
+                              i++ 
+                              return
+                          }
                                    
                     }) 
                 }
                 })
                                        
            }    
-        
+        }
                
     })
     i=0
