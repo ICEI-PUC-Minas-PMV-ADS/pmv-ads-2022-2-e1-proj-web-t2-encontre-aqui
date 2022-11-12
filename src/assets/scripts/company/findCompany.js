@@ -11,9 +11,9 @@ var data = [] ;
 var count = 0;
 var empresas = [];
 
-var logo_user = document.getElementById("logo-user");
-var name_user =  document.getElementById("name-user");
+var logo_area = document.querySelector('.logo-area')
 var ps_descr = document.getElementById("ps-descr");
+var company_desc = document.getElementById('company_desc');
 var description_ps = document.getElementById("description-ps");
 var header_product_page = document.querySelector('.header-product-page');
 var favorite_area = document.querySelector('.favorite-area');
@@ -54,29 +54,35 @@ function findCompany(data){
 }
 
 
-function updatePage(product){
+function updatePage(empresa){
     var img_products = '';  
      
-    header_product_page.style.backgroundImage = `url(${product.imgBanner})`; 
+    header_product_page.style.backgroundImage = `url(${empresa.imgBanner})`; 
     header_product_page.style.backgroundSize = 'cover'
-    logo_user.src = `${product.imagens[0]}`;
-    name_user.innerHTML = `${product.nome}`;
-
    
-     for(var p = 0; p < product.produtos.length; p++){
-            img_products += `<a href="produto.html?categoria=${product.categoria}&id=${product.id}"><img class = "other-imgs" src='${product.produtos[p].imagens[0]}' ></a>`
+    logo_area.innerHTML = ` <a href='empresa.html?categoria=${empresa.categoria}&id=${empresa.id}'>
+                            <img id="logo-user" src='${empresa.imagens[0]}'>
+                            <span id="name-user" class="client-name">${empresa.nome}</span> </a>`;
+
+
+    company_desc.innerHTML += '<div class="title">'+ empresa.nome +'<div>';
+    company_desc.innerHTML += '<div>'+ empresa.descricao.substr(0,600)+'<div>';
+
+     for(var p = 0; p < empresa.produtos.length; p++){
+            img_products += `<a href="produto.html?categoria=${empresa.categoria}&id=${empresa.id}"><div><img class ="other-imgs" src='${empresa.produtos[p].imagens[0]}' >
+                </div><div style="width:150px" class="opened">${empresa.produtos[p].nome}</div></a>`
          }
                                
-               // console.log(product.produtos[p])
+               // console.log(empresa.produtos[p])
                 other_products.innerHTML = img_products
 
 
-                complete_address.innerHTML = `${product.logradouro} ${product.cidade} ${product.estado}` 
+                complete_address.innerHTML = `${empresa.logradouro} ${empresa.cidade} ${empresa.estado}` 
 
-                var marked = checkFavorites(product)
+                var marked = checkFavorites(empresa)
 
            favorite_area.innerHTML =   `<span>Adicionar aos Favoritos</span>
-                <div onclick="markFavorite(${product.id},'${product.nome}', '${product.categoria}', '${product.isEmpresa}')"
+                <div onclick="markFavorite(${empresa.id},'${empresa.nome}', '${empresa.categoria}', '${empresa.isEmpresa}')"
                     class="mark-favorite ${marked}">
                     <svg width="32" class="favorite" height="32" viewBox="0 0 32 32" fill="none"
                         xmlns="http://www.w3.org/2000/svg">

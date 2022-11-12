@@ -118,13 +118,52 @@ Produtos = {
         isEmpresa:'produto', 
         categoria: 'barbearia' 
     },
-]
+],
+restaurantes : [{
+    id: 9,
+    nome: "Picanha, Steaks Prime beef (300g)",
+    descricao: `
+    Ancho angus, da parte mais nobre do contra-filé. Macio e extremamente saboroso. Mais 2 acompanhamentos. `,
+    imagens:['../src/assets/images/companies/products/restaurantes/12/01.jpg','../src/assets/images/companies/products/restaurantes/12/02.jpg','../src/assets/images/companies/products/restaurantes/12/03.jpg','../src/assets/images/companies/products/restaurantes/12/04.jpg'],
+    preco: "20.00",
+    domicilio:true,
+    agendamento:false,
+    nfavoritos: 55,
+    isEmpresa:'produto', 
+    categoria: 'restaurante' 
+},
+],
     //Fim Produtos
 }
 
 ////////////////////////////////////////////////////////////
 
 Empresas = {
+    restaurantes:[
+        {
+            id: 12,
+            produtos: [Produtos.restaurantes[0]],
+            nome: 'Brasador',
+            descricao: `Restaurante Juiz de Fora
+            Nossa matriz, localizada no coração gastronômico de Juiz de Fora, é um templo de adoração ao que há de melhor na culinária, na cultura e nas artes cosmopolitas.
+            
+            Fundada em 2004, em uma pequena casa, o restaurante logo se transformaria em uma referência inquestionável na arte de servir. Com ambiente exclusivo inspirado nas viagens, livros e na vida artística de seus fundadores, o Brasador foi uma das pioneiras do rótulo Heineken no Brasil, sendo certamente a primeira a trazer o rótulo para a Zona da Mata Mineira.
+            
+            A visão obsessiva do restaurante sobre a qualidade em todos os aspectos do serviço culinário e humano estão expostos nos 200m2 do Restaurante/Pub. Nossa reconhecida carta de carnes, saladas, entradas, vinhos, cervejas, bebidas, drinks e sobremesas é fruto de uma constante pesquisa e experimentação de nossos Chefes e Executivos.`,
+            cidade: 'Juiz de Fora',
+            estado: 'Minas Gerais',
+            logradouro: 'Rua Machado Sobrinho, 146 Alto dos Passos',
+            imagens: ['../src/assets/images/companies/logos/brasador.jpg'],
+            imgBanner:'../src/assets/images/companies/banners/12/banner.jpg',
+            hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
+            tel: '9297-53197',
+            nfavoritos: 55,
+            rsocial:['https://www.facebook.com/Kaique.Farias.6653a'],
+            isEmpresa:'empresa',          
+            categoria: 'restaurante' 
+        }
+    ],
+
     petshops: [
         {
             id: 1,
@@ -348,32 +387,39 @@ Empresas = {
             isEmpresa:'empresa',          
             categoria: 'barbearia' 
         },
-    ]
+    ],
+   
 }; //FIM EMPRESAS
 
 Categorias = [
+    
     {
         id: 1,
+        tags: ['restaurante','comida', 'churasco'],
+        empresas:[Empresas.restaurantes]
+    },
+    {
+        id: 2,
         tags: ['petshop','pet', 'animais'],
         empresas:[Empresas.petshops]
     },
     {
-        id: 2,
+        id: 3,
         tags: ['moveis', 'madeira' ],
         empresas:[Empresas.moveis]
     },
     {
-        id: 3,
+        id: 4,
         tags: ['eletricista', 'rede eletrica'],
         empresas:[Empresas.eletricistas]
     },
      {
-        id: 4,
+        id: 5,
         tags: ['advogado','advogada'],
         empresas:[Empresas.advogados]
     },
     {
-        id: 5,
+        id: 6,
         tags: ['barbearia','salão', 'barbeiro'],
         empresas:[Empresas.barbearia]
     }
