@@ -12,7 +12,7 @@ Produtos = {
         - Com ômega 6 para pele e pelo saudáveis de seu cachorro;
         - Vida saudável: nível ideal de ingredientes para qualidade de vida;
         - Disponível em embalagens de 900g, 10,1kg, leve 10,1kg pague 9kg, 15kg e leve 15kg pague 13,5kg.`,
-        imagens:['./assets/images/companies/products/pets/01/1.webp','./assets/images/companies/products/pets/01/2.webp','./assets/images/companies/products/pets/01/3.webp'],
+        imagens:['../src/assets/images/companies/products/pets/01/1.webp','../src/assets/images/companies/products/pets/01/2.webp','../src/assets/images/companies/products/pets/01/3.webp'],
         preco: '22.99',
         domicilio:true,
         agendamento:false,
@@ -28,7 +28,7 @@ Produtos = {
         A Ração Golden Special também ajuda a eliminar o odor das fezes, graças à sua fórmula que é rica em vitaminas e minerais. Isso faz com que a musculatura do animal sempre esteja fortalecida, o que consequentemente torna o cão mais ativo e menos propenso a doenças.
         
         Produzida pela Premier Pet – que é referência no mercado pet -, a Ração Golden Special possui um delicioso sabor de frango e carne. Esse blend de proteínas satisfaz amplamente o paladar dos cães.`,
-        imagens:['./assets/images/companies/products/pets/02/1.webp','./assets/images/companies/products/pets/02/2.webp','./assets/images/companies/products/pets/02/2.webp'],
+        imagens:['../src/assets/images/companies/products/pets/02/1.webp','../src/assets/images/companies/products/pets/02/2.webp','../src/assets/images/companies/products/pets/02/2.webp'],
         preco: "55.98",
         domicilio:true,
         agendamento:false,
@@ -40,7 +40,7 @@ Produtos = {
         id: 3,
         nome: "Anti pulgas e carrapatos Simparic",
         descricao: `O Antipulgas Zoetis Simparic 5 mg para Cães 5,1 a 10 Kg (20 mg) é utilizado para o tratamento das infestações por pulgas e sarna sarcótica. Após a administração do Simparic, a sua atividade contra pulgas dura, pelo menos, 5 semanas`,
-        imagens:['./assets/images/companies/products/pets/03/1.jpg','./assets/images/companies/products/pets/03/1.jpg','./assets/images/companies/products/pets/03/1.jpg'],
+        imagens:['../src/assets/images/companies/products/pets/03/1.jpg','../src/assets/images/companies/products/pets/03/1.jpg','../src/assets/images/companies/products/pets/03/1.jpg'],
         preco: "22.99",
         domicilio:true,
         agendamento:false,
@@ -57,7 +57,7 @@ Produtos = {
         A Ração Golden Special também ajuda a eliminar o odor das fezes, graças à sua fórmula que é rica em vitaminas e minerais. Isso faz com que a musculatura do animal sempre esteja fortalecida, o que consequentemente torna o cão mais ativo e menos propenso a doenças.
         
         Produzida pela Premier Pet – que é referência no mercado pet -, a Ração Golden Special possui um delicioso sabor de frango e carne. Esse blend de proteínas satisfaz amplamente o paladar dos cães.`,
-        imagens:['./assets/images/companies/products/pets/01/2.webp','./assets/images/companies/products/pets/02/2.webp','./assets/images/companies/products/pets/01/2.webp'],
+        imagens:['../src/assets/images/companies/products/pets/01/2.webp','../src/assets/images/companies/products/pets/02/2.webp','../src/assets/images/companies/products/pets/01/2.webp'],
         preco: "55.98",
         domicilio:true,
         agendamento:false,
@@ -69,7 +69,7 @@ Produtos = {
         id: 5,
         nome: "Anti pulgas e carrapatos Simparic",
         descricao: `O Antipulgas Zoetis Simparic 5 mg para Cães 5,1 a 10 Kg (20 mg) é utilizado para o tratamento das infestações por pulgas e sarna sarcótica.`,
-        imagens:['./assets/images/companies/products/pets/03/1.jpg','./assets/images/companies/products/pets/03/1.jpg','./assets/images/companies/products/pets/03/1.jpg'],
+        imagens:['../src/assets/images/companies/products/pets/03/1.jpg','../src/assets/images/companies/products/pets/03/1.jpg','../src/assets/images/companies/products/pets/03/1.jpg'],
         domicilio:true,
         agendamento:false,
         nfavoritos: 55,
@@ -83,7 +83,7 @@ Produtos = {
         nome: "Mesa de Madeira Maciça 4 Lugares com Bancos Mandacaru",
         descricao: `
         Mesa de Madeira Maciça 4 Lugares com Bancos Mandacaru CabeCasa MadeiraMadeira `,
-        imagens:['./assets/images/companies/products/moveis/03/1.webp','./assets/images/companies/products/moveis/03/2.webp','./assets/images/companies/products/moveis/03/2.webp'],
+        imagens:['../src/assets/images/companies/products/moveis/03/1.webp','../src/assets/images/companies/products/moveis/03/2.webp','../src/assets/images/companies/products/moveis/03/2.webp'],
         preco: "869.59",
         domicilio:true,
         agendamento:false,
@@ -95,7 +95,7 @@ Produtos = {
         id: 7,
         nome: "Mesa de Jantar com 4 Cadeiras Indekes Salvia",
         descricao: `O conjunto de Mesa de Jantar com 4 Cadeiras Indekes Salvia une o belo, prático e a durabilidade que a sua cozinha merece. Onde temos a mesa ideal para cozinha, com produção mista de MDP e MDF, e a cadeira 100% MDF com assento revestido de courino. A estrutura, ambas da mesa e cadeira são em pintura ultra-violeta. A mesa vem acompanhada por tampo em MDP de 15mm, e o seu formato retangular com desenho em quatro pés, permite atender com perfeição e elegância as suas necessidades.`,
-        imagens:['./assets/images/companies/products/moveis/04/1.jpg','./assets/images/companies/products/moveis/04/2.webp','./assets/images/companies/products/moveis/04/1.jpg'],
+        imagens:['../src/assets/images/companies/products/moveis/04/1.jpg','../src/assets/images/companies/products/moveis/04/2.webp','../src/assets/images/companies/products/moveis/04/1.jpg'],
         preco: "484.03",
         domicilio:true,
         agendamento:false,
@@ -110,7 +110,7 @@ Produtos = {
         nome: "Barbearia",
         descricao: `
         Mesa de Madeira Maciça 4 Lugares com Bancos Mandacaru CabeCasa MadeiraMadeira `,
-        imagens:['./assets/images/companies/products/barbearia/08/1.jpg','./assets/images/companies/products/barbearia/08/2.png','./assets/images/companies/products/barbearia/08/3.png','./assets/images/companies/products/barbearia/08/4.png'],
+        imagens:['../src/assets/images/companies/products/barbearia/08/1.jpg','../src/assets/images/companies/products/barbearia/08/2.png','../src/assets/images/companies/products/barbearia/08/3.png','../src/assets/images/companies/products/barbearia/08/4.png'],
         preco: "20.00",
         domicilio:false,
         agendamento:true,
@@ -118,13 +118,79 @@ Produtos = {
         isEmpresa:'produto', 
         categoria: 'barbearia' 
     },
-]
+],
+restaurantes : [
+    {
+        id: 9,
+        nome: "Picanha, Steaks Prime beef (300g)",
+        descricao: `
+        Ancho angus, da parte mais nobre do contra-filé. Macio e extremamente saboroso. Mais 2 acompanhamentos. `,
+        imagens:['../src/assets/images/companies/products/restaurantes/12/01/01.jpg','../src/assets/images/companies/products/restaurantes/12/01/02.jpg','../src/assets/images/companies/products/restaurantes/12/01/03.jpg','../src/assets/images/companies/products/restaurantes/12/01/04.jpg'],
+        preco: "20.00",
+        domicilio:true,
+        agendamento:false,
+        nfavoritos: 55,
+        isEmpresa:'produto', 
+        categoria: 'restaurante' 
+    },
+    {
+        id: 10,
+        nome: "Picanha, Steaks Prime beef (300g)",
+        descricao: `
+        Ancho angus, da parte mais nobre do contra-filé. Macio e extremamente saboroso. Mais 2 acompanhamentos. `,
+        imagens:['../src/assets/images/companies/products/restaurantes/12/02/01.jpg','../src/assets/images/companies/products/restaurantes/12/02/02.jpg','../src/assets/images/companies/products/restaurantes/12/02/03.jpg','../src/assets/images/companies/products/restaurantes/12/02/04.jpg'],
+        preco: "20.00",
+        domicilio:true,
+        agendamento:false,
+        nfavoritos: 55,
+        isEmpresa:'produto', 
+        categoria: 'restaurante' 
+    },
+    {
+        id: 11,
+        nome: "Picanha, Steaks Prime beef (300g)",
+        descricao: `
+        Ancho angus, da parte mais nobre do contra-filé. Macio e extremamente saboroso. Mais 2 acompanhamentos. `,
+        imagens:['../src/assets/images/companies/products/restaurantes/12/04/01.jpg','../src/assets/images/companies/products/restaurantes/12/04/02.jpg','../src/assets/images/companies/products/restaurantes/12/04/03.jpg','../src/assets/images/companies/products/restaurantes/12/04/04.jpg'],
+        preco: "20.00",
+        domicilio:true,
+        agendamento:false,
+        nfavoritos: 55,
+        isEmpresa:'produto', 
+        categoria: 'restaurante' 
+    },
+],
     //Fim Produtos
 }
 
 ////////////////////////////////////////////////////////////
 
 Empresas = {
+    restaurantes:[
+        {
+            id: 12,
+            produtos: [Produtos.restaurantes[0],Produtos.restaurantes[1],Produtos.restaurantes[2]],
+            nome: 'Brasador',
+            descricao: `Restaurante Juiz de Fora
+            Nossa matriz, localizada no coração gastronômico de Juiz de Fora, é um templo de adoração ao que há de melhor na culinária, na cultura e nas artes cosmopolitas.
+            
+            Fundada em 2004, em uma pequena casa, o restaurante logo se transformaria em uma referência inquestionável na arte de servir. Com ambiente exclusivo inspirado nas viagens, livros e na vida artística de seus fundadores, o Brasador foi uma das pioneiras do rótulo Heineken no Brasil, sendo certamente a primeira a trazer o rótulo para a Zona da Mata Mineira.
+            
+            A visão obsessiva do restaurante sobre a qualidade em todos os aspectos do serviço culinário e humano estão expostos nos 200m2 do Restaurante/Pub. Nossa reconhecida carta de carnes, saladas, entradas, vinhos, cervejas, bebidas, drinks e sobremesas é fruto de uma constante pesquisa e experimentação de nossos Chefes e Executivos.`,
+            cidade: 'Juiz de Fora',
+            estado: 'Minas Gerais',
+            logradouro: 'Rua Machado Sobrinho, 146 Alto dos Passos',
+            imagens: ['../src/assets/images/companies/logos/brasador.jpg'],
+            imgBanner:'../src/assets/images/companies/banners/12/banner.jpg',
+            hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
+            tel: '9297-53197',
+            nfavoritos: 55,
+            rsocial:['https://www.facebook.com/Kaique.Farias.6653a'],
+            isEmpresa:'empresa',          
+            categoria: 'restaurante' 
+        }
+    ],
+
     petshops: [
         {
             id: 1,
@@ -134,9 +200,9 @@ Empresas = {
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais', 
             logradouro: "Rua Doutor Gil Horta, 15, São Mateus",
-            imgBanner:'./assets/images/companies/banners/01/banner.jpg',
-            imagens: ["./assets/images/companies/logos/pet2.PNG"],
-            hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-23:00','08:00-11:40','08:00-23:00','08:00-12:00'],
+            imgBanner:'../src/assets/images/companies/banners/01/banner.jpg',
+            imagens: ["../src/assets/images/companies/logos/pet2.PNG"],
+            hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-23:00','08:00-11:40','08:00-23:00','08:00-14:00'],
             tel: '9546-54684',
             nfavoritos: 55,
             rsocial:[''],
@@ -151,8 +217,8 @@ Empresas = {
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Rua Sampaio, 233, Granbery',
-            imagens: ['./assets/images/companies/logos/petshop3.PNG','./assets/images/companies/logos/logo3.PNG'],
-            imgBanner:'./assets/images/companies/banners/02/banner.jpg',
+            imagens: ['../src/assets/images/companies/logos/petshop3.PNG','../src/assets/images/companies/logos/logo3.PNG'],
+            imgBanner:'../src/assets/images/companies/banners/02/banner.jpg',
              hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-23:00','08:00-18:00','08:00-12:00'],
             tel: '9546-54684',
             nfavoritos: 55,
@@ -162,14 +228,14 @@ Empresas = {
         },              
         {
             id: 3,
-            produtos: [Produtos.petshops[3]],
+            produtos: [Produtos.petshops[2]],
             nome: 'Me Pegue! Pet Shop',
             descricao: 'Me Pegue! Pet Shop. Artigos para animais de estimação. Eles nunca viram nada igual! ',
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Rua Halfeld, 584, Centro',
-            imagens: ['./assets/images/companies/logos/pet1.PNG'],
-            imgBanner:'./assets/images/companies/banners/03/banner.jpg',
+            imagens: ['../src/assets/images/companies/logos/pet1.PNG'],
+            imgBanner:'../src/assets/images/companies/banners/03/banner.jpg',
              hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-24:00','08:00-23:00','08:00-18:00','08:00-12:00'],
             tel: '9546-54684',
             nfavoritos: 55,
@@ -179,14 +245,14 @@ Empresas = {
         }, 
         {
             id: 4,
-            produtos: [Produtos.petshops[4]],
+            produtos: [Produtos.petshops[3]],
             nome: 'Pet Shop Castelo Das Racoes',
             descricao: 'Compre Online e Receba em Horas, ração Frete Grátis Brasil* e Parcele em até 3x Sem Juros. Cobasi Já: Compre Online e Receba em Horas*',
             cidade: 'Belo Horizonte',
             estado: 'Minas Gerais',
             logradouro: 'Avenida João Pinheiro, 469',
-            imagens: ['./assets/images/companies/logos/petshop3.PNG'],
-            imgBanner:'./assets/images/companies/banners/01/banner.jpg',
+            imagens: ['../src/assets/images/companies/logos/petshop3.PNG'],
+            imgBanner:'../src/assets/images/companies/banners/01/banner.jpg',
              hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-23:00','08:00-18:00','08:00-12:00'],
             tel: '',
             nfavoritos: 55,
@@ -203,8 +269,8 @@ Empresas = {
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Avenida João Pinheiro, 469',
-            imagens: ['./assets/images/companies/logos/logo5.PNG'],
-            imgBanner:'./assets/images/companies/banners/01/banner.jpg',
+            imagens: ['../src/assets/images/companies/logos/logo5.PNG'],
+            imgBanner:'../src/assets/images/companies/banners/01/banner.jpg',
             hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-22:00','08:00-18:00','08:00-12:00'],
             tel: '',
             nfavoritos: 55,
@@ -222,8 +288,8 @@ Empresas = {
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Avenida João Pinheiro, 469',
-            imagens: ['./assets/images/companies/logos/logo2.PNG'],
-            imgBanner:'./assets/images/companies/banners/06/banner.jpg',
+            imagens: ['../src/assets/images/companies/logos/logo2.PNG'],
+            imgBanner:'../src/assets/images/companies/banners/06/banner.jpg',
              hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '',
             nfavoritos: 55,
@@ -239,8 +305,8 @@ Empresas = {
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Avenida João Pinheiro, 469',
-            imagens: ['./assets/images/companies/logos/logo4.PNG'],
-            imgBanner:'./assets/images/companies/banners/06/banner.jpg',
+            imagens: ['../src/assets/images/companies/logos/logo4.PNG'],
+            imgBanner:'../src/assets/images/companies/banners/06/banner.jpg',
              hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '',
             nfavoritos: 55,
@@ -254,13 +320,13 @@ Empresas = {
             id: 7,
             produtos: [Produtos.moveis[1]],
             nome: 'Enrico Gonçalves',
-            descricao: `Atua na cidade de Juiz de Fora.  Montar, manter e reparar equipamentos mecânicos, bem como executar a manutenção preventiva e corretiva de maquinário. Auxiliar em trabalhos de pesquisa e aperfeiçoamento. Executar esboços e desenhos de sua especialidade.`,
+            descricao: `Eletricista Atua na cidade de Juiz de Fora.  Montar, manter e reparar equipamentos mecânicos, bem como executar a manutenção preventiva e corretiva de maquinário. Auxiliar em trabalhos de pesquisa e aperfeiçoamento. Executar esboços e desenhos de sua especialidade.`,
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Rua Barão de Santa Helena, 180, Granbery',
-            imagens: ['./assets/images/companies/logos/eletricista.jpg'],
+            imagens: ['../src/assets/images/companies/logos/eletricista.jpg'],
             imgBanner:'',
-            hfunc:['08:00 - 16:00'],
+            hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '9111-53197',
             nfavoritos: 55,
             rsocial:['https://www.facebook.com/Enrico.Goncalves.545553'],
@@ -281,7 +347,7 @@ Empresas = {
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Rua Oscár Vidal, 121, Centro',
-            imagens: ['./assets/images/companies/logos/advogado.PNG'],
+            imagens: ['../src/assets/images/companies/logos/advogado.PNG'],
             imgBanner:'',
             hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '9223-53197',
@@ -303,7 +369,7 @@ Empresas = {
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Rua Oscár Vidal, 125, Centro',
-            imagens: ['./assets/images/companies/logos/advogado2.PNG'],
+            imagens: ['../src/assets/images/companies/logos/advogado2.PNG'],
             imgBanner:'',
             hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '9224-53197',
@@ -322,8 +388,8 @@ Empresas = {
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Rua Espírito Santo, 946, Centro',
-            imagens: ['./assets/images/companies/logos/salao.jpg'],
-            imgBanner:'./assets/images/companies/banners/09/banner.jpg',
+            imagens: ['../src/assets/images/companies/logos/salao.jpg'],
+            imgBanner:'../src/assets/images/companies/banners/09/banner.jpg',
             hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '9777-53197',
             nfavoritos: 55,
@@ -339,7 +405,7 @@ Empresas = {
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Rua Farmacêutico José Mostaro, 25, Alto dos Passos',
-            imagens: ['./assets/images/companies/logos/salao2.jpg'],
+            imagens: ['../src/assets/images/companies/logos/salao2.jpg'],
             imgBanner:'',
             hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
             tel: '9897-53197',
@@ -348,32 +414,39 @@ Empresas = {
             isEmpresa:'empresa',          
             categoria: 'barbearia' 
         },
-    ]
+    ],
+   
 }; //FIM EMPRESAS
 
 Categorias = [
+    
     {
         id: 1,
+        tags: ['restaurante','comida', 'churasco'],
+        empresas:[Empresas.restaurantes]
+    },
+    {
+        id: 2,
         tags: ['petshop','pet', 'animais'],
         empresas:[Empresas.petshops]
     },
     {
-        id: 2,
+        id: 3,
         tags: ['moveis', 'madeira' ],
         empresas:[Empresas.moveis]
     },
     {
-        id: 3,
-        tags: ['eletricista'],
+        id: 4,
+        tags: ['eletricista', 'rede eletrica'],
         empresas:[Empresas.eletricistas]
     },
      {
-        id: 4,
+        id: 5,
         tags: ['advogado','advogada'],
         empresas:[Empresas.advogados]
     },
     {
-        id: 5,
+        id: 6,
         tags: ['barbearia','salão', 'barbeiro'],
         empresas:[Empresas.barbearia]
     }

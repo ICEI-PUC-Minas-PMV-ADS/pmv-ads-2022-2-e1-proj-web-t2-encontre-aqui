@@ -20,6 +20,7 @@ function updateCards(selected){
     <div class="descricao">
         <h4>${selected.nome}</h4>
         <p>${selected.logradouro.substr(0,30)}</p>
+        <p class="opened">${selected.categoria}</p>
 
     </div>
 </a>`

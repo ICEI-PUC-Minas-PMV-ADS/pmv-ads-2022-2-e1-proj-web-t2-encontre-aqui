@@ -3,7 +3,10 @@ var urlObj = new URL(url);
 
 
 var id = Number(urlObj.searchParams.get("id"))
+var prodserv = Number(urlObj.searchParams.get("prodserv"))
+
 var url_categoria = urlObj.searchParams.get("categoria")
+
 var logo_area = document.querySelector('.logo-area')
 var _empresa;
 
@@ -31,7 +34,7 @@ addEventListener('load', ()=>{
 function findCetegory(){
 
     Categorias.forEach(categoria =>{
-        categoria.tags[0] 
+      
         if(categoria.tags[0] === url_categoria){
             empresas = categoria.empresas
             empresas.forEach(empresa => {
@@ -45,9 +48,9 @@ function findCetegory(){
  
 
 function findCompany(data){
-    console.log("Empresas", data)
-    data.forEach(empresa =>{
+      data.forEach(empresa =>{
         if(empresa.id === id){
+         
           updatePage(empresa)
           GetMap(empresa)
         }
@@ -55,59 +58,66 @@ function findCompany(data){
 }
 
 
-function updatePage(product){
+function updatePage(empresa){
     var img_products = '';  
-     
-    header_product_page.style.backgroundImage = `url(${product.imgBanner})`; 
+    var product = getProduct(empresa);
+    var other_images = ''; 
+    header_product_page.style.backgroundImage = `url(${empresa.imgBanner})`; 
     header_product_page.style.backgroundSize = 'cover'
     
-    logo_area.innerHTML = ` <a href='empresa.html?categoria=${product.categoria}&id=${product.id}'>
-                            <img id="logo-user" src='${product.imagens[0]}'>
-                            <span id="name-user" class="client-name">${product.nome}</span> </a>`
+    logo_area.innerHTML = ` <a href='empresa.html?categoria=${empresa.categoria}&id=${empresa.id}'>
+                            <img id="logo-user" src='${empresa.imagens[0]}'>
+                            <span id="name-user" class="client-name">${empresa.nome}</span> </a>`
    
 
     var price = ''
-    if(product.ps_price != undefined && product.ps_price != null && product.ps_price != ''){
-        price = "Preço: " + product.ps_price
+/*
+    if(empresa.produto.preco != undefined && empresa.produto.preco != null && empresa.produto.preco != ''){
+        price = "Preço: " + empresa.preco
     }
+*/
+    
 
+   for(var i = 1 ; i < product.imagens.length; i++){
+    other_images += `<div> <img src="${product.imagens[i]}"></div>`
+   }
 
     var content = ` <div class="descr-images">
                             <div class="principal-image">
-                                <img src="${product.produtos[0].imagens[0]}">
+                                <img src="${product.imagens[0]}">
                             </div>
                             <div class="other-images">
-                                <div> <img src="${product.produtos[0].imagens[0]}"></div>
-                                <div> <img src="${product.produtos[0].imagens[1]}"></div>
-                                <div> <img src="${product.produtos[0].imagens[2]}"></div>
+                                    ${other_images}
                             </div>
                         </div>
                         <div class="description-text">
-                            <div id="ps-title" class="title">${product.nome}</div>
+                            <div id="ps-title" class="title">${empresa.produtos[0].nome}</div>
                             <div id="ps-price">${price}</div>
                             <div id=""></div>
-                            <div id="ps-descr"> ${product.descricao}  </div>
+                            <div id="ps-descr"> ${empresa.produtos[0].descricao.substr(0, 600)}  </div>
                         </div>
                         `
  
                 description_ps.innerHTML = content; 
 
 
-               for(var p = 0; p < product.produtos.length; p++){
-                    img_products += `<a href="#"><img class = "other-imgs" src='${product.produtos[p].imagens[0]}' ></a>`
+               for(var p = 0; p <empresa.produtos.length; p++){
+                    img_products += `<a href="produto.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=${empresa.produtos[p].id}">
+                    <div><img class ="other-imgs" src='${empresa.produtos[p].imagens[0]}' >
+                        </div><div style="width:150px" class="opened">${empresa.produtos[p].nome}</div></a>`
 
                 }
                                
-               // console.log(product.produtos[p])
+              
                 other_products.innerHTML = img_products
 
 
-                complete_address.innerHTML = `${product.logradouro} ${product.cidade} ${product.estado}` 
+                complete_address.innerHTML = `${empresa.logradouro} ${empresa.cidade} ${empresa.estado}` 
 
-                var marked = checkFavorites(product)
+                var marked = checkFavorites(empresa)
 
            favorite_area.innerHTML =   `<span>Adicionar aos Favoritos</span>
-                <div onclick="markFavorite(${product.id},'${product.nome}', '${product.categoria}', '${product.isEmpresa}')"
+                <div onclick="markFavorite(${empresa.id},'${empresa.nome}', '${empresa.categoria}', '${empresa.isEmpresa}')"
                     class="mark-favorite ${marked}">
                     <svg width="32" class="favorite" height="32" viewBox="0 0 32 32" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -128,4 +138,16 @@ function updatePage(product){
                 </div>
                 `
                 toggleFavority();
+}
+
+function getProduct(empresa){
+    var p; 
+    empresa.produtos.forEach(produto => {
+        if(prodserv === produto.id){
+           p = produto
+        }
+       
+    })
+    
+     return p;
 }

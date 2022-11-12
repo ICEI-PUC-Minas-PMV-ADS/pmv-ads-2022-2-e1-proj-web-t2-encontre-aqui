@@ -127,8 +127,10 @@ section{
 
 
 .right-menu{
+    position: relative;
+    top:-60px;
     width:30%;
-    height: 90vh;
+    
     margin-left: 5px;
     margin-top: 15px;
     border-radius: 10px;
@@ -280,7 +282,7 @@ section{
 }
 
 
-.logo-area{
+.logo-area a{
     display:flex;
     flex-direction: column;
     position:relative;
@@ -352,15 +354,32 @@ section{
     margin:0 5%;
   }
 
+  #other-products {
+    display: flex;
+  }
 
   #other-products .other-imgs{
     width: 120px;
     height: 130px;
+    margin-top:10px;
+    border-radius: 8px;
+    transition:all 0.2s ease;
   }
+
+ 
+  #other-products .other-imgs:hover{
+   
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(156,156,156,1);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(156,156,156,1);
+    box-shadow: 1px 1px 5px 1px rgba(156,156,156,1);
+     
+  }
+
 
   #info h1{
     color: var(--title-color)
   }
+  
 /*------------------------------------------*/
 @media screen and (max-width:1200px){
 
@@ -385,6 +404,7 @@ section{
 
     .body-container{
         width: 60%;
+        
     }
     
 }
@@ -419,7 +439,10 @@ section{
 
 }
 
-@media screen and (max-width:580px){
+.company_desc{
+    padding:50px;
+}
+@media screen and (max-width:880px){
     .right-menu{
      
         display:none;
