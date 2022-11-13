@@ -20,7 +20,8 @@ var ps_descr = document.getElementById("ps-descr");
 var description_ps = document.getElementById("description-ps");
 var header_product_page = document.querySelector('.header-product-page');
 var favorite_area = document.querySelector('.favorite-area');
-
+var info = document.getElementById('info');
+var place_options = document.querySelector(".place-options");
 var other_products = document.getElementById("other-products");
 var complete_address = document.getElementById("complete-address");
 
@@ -62,6 +63,10 @@ function updatePage(empresa){
     var img_products = '';  
     var product = getProduct(empresa);
     var other_images = ''; 
+    var domicilio = false;
+    var reservas = false;
+    var domicilioReservas =''
+
     header_product_page.style.backgroundImage = `url(${empresa.imgBanner})`; 
     header_product_page.style.backgroundSize = 'cover'
     
@@ -116,6 +121,20 @@ function updatePage(empresa){
 
                 var marked = checkFavorites(empresa)
 
+                
+                if(product.domicilio){
+                    domicilioReservas =  `<div>
+                                 <span>Oferece Entregas</span><img width="24" src="./assets/images/icons/check.svg">
+                                 </div>`
+                }
+                if(product.agendamento){
+                    domicilioReservas +=  ` <div>
+                                        <span>Aceita Reservas</span><img width="24" src="./assets/images/icons/check.svg">
+                                          </div>`
+                }
+
+                place_options.innerHTML = domicilioReservas;         
+
            favorite_area.innerHTML =   `<span>Adicionar aos Favoritos</span>
                 <div onclick="markFavorite(${empresa.id},'${empresa.nome}', '${empresa.categoria}', '${empresa.isEmpresa}')"
                     class="mark-favorite ${marked}">
@@ -137,9 +156,84 @@ function updatePage(empresa){
 
                 </div>
                 `
-                toggleFavority();
-}
-
+                var horarios = splitHorarios(empresa.hfunc[0]);
+                info.innerHTML = `
+                  <div class="horarios">
+                      <span class="title">Horários</span>
+                      <div class="table">
+                              <div><span class="week">Domingo </span>
+                               ${splitHorarios(empresa.hfunc[0])}                            
+                               </div>
+                          
+                              <div><span class="week"> Segunda</span>
+                              ${splitHorarios(empresa.hfunc[1])} 
+                              </div>
+                                               
+                              <div><span class="week"> Terça  </span>
+                              ${splitHorarios(empresa.hfunc[2])} 
+                              </div>
+                          
+                              <div><span class="week">Quarta</span>
+                              ${splitHorarios(empresa.hfunc[3])} 
+                              </div>
+                          
+                              <div><span class="week">Quinta</span>
+                              ${splitHorarios(empresa.hfunc[4])} 
+                               </div>
+                           
+                               <div><span class="week">Sexta</span>
+                              ${splitHorarios(empresa.hfunc[5])} 
+                               </div>
+                          
+                              <div><span class="week">Sabado</span> 
+                              ${splitHorarios(empresa.hfunc[6])} 
+                              </div>
+                      </div>
+                      </div>
+                      
+                  <div class="contato">
+                      <div class="local">
+                          <div id="complete-address">
+                            ${empresa.logradouro} ${empresa.cidade} ${empresa.estado}
+                          </div>
+                          <div>
+                              <img width='32' src="./assets/images/icons/map.svg">
+                          </div>
+                      </div>
+                      <div class="local">
+                          <div>
+                          <a href="http://web.whatsapp.com/">  (31)${empresa.tel} </a>
+                          </div>
+                          <div>
+                          <img width='32' src="./assets/images/icons/whats.svg">
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="redes">
+                  <div class="social">
+                  <div>
+                  <a href="${empresa.rsocial[0]}"> Facebook  <img width='24' src="./assets/images/icons/facebook.svg"></a>   
+                  </div>
+                 
+                 
+                  </div>
+              </div>
+              <div class="social">
+                  <div>
+                  <a href="${empresa.rsocial[0]}"> Instagram <img width='24' src="./assets/images/icons/instagram.svg"></a>    
+                  </div>
+                   
+              </div>
+                      
+                  </div>`
+                      toggleFavority();
+      }
+      
+      function splitHorarios(horario){
+          var h = horario.split('-');
+          return `<span> ${h[0]}</span><span>  ${h[1]}</span>`;
+      }
 function getProduct(empresa){
     var p; 
     empresa.produtos.forEach(produto => {

@@ -17,14 +17,12 @@ var company_desc = document.getElementById('company_desc');
 var description_ps = document.getElementById("description-ps");
 var header_product_page = document.querySelector('.header-product-page');
 var favorite_area = document.querySelector('.favorite-area');
-
+var info = document.getElementById('info');
 var other_products = document.getElementById("other-products");
-var complete_address = document.getElementById("complete-address");
-
+var place_options = document.querySelector(".place-options");
 
 addEventListener('load', ()=>{
-    findCetegory()
-   
+    findCetegory()   
 })
 
 
@@ -56,6 +54,9 @@ function findCompany(data){
 
 function updatePage(empresa){
     var img_products = '';  
+    var domicilio = false;
+    var reservas = false;
+    var domicilioReservas =''
     isOpened = isOpen(empresa.hfunc); 
     header_product_page.style.backgroundImage = `url(${empresa.imgBanner})`; 
     header_product_page.style.backgroundSize = 'cover'
@@ -68,20 +69,37 @@ function updatePage(empresa){
     company_desc.innerHTML += '<div class="title">'+ empresa.nome +'</div>' + isOpened +
     '<div>'+ empresa.descricao.substr(0,600)+'</div>';
     
-
+ 
      for(var p = 0; p < empresa.produtos.length; p++){
+            if(empresa.produtos[p].domicilio){
+                domicilio = true
+            }
+            if(empresa.produtos[p].agendamento){
+                reservas = true
+            }
             img_products += `<a href="produto.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=${empresa.produtos[p].id}">
             <div><img class ="other-imgs" src='${empresa.produtos[p].imagens[0]}' >
                 </div><div style="width:150px" class="opened">${empresa.produtos[p].nome}</div></a>`
          }
                                
                // console.log(empresa.produtos[p])
-                other_products.innerHTML = img_products
-
-
-                complete_address.innerHTML = `${empresa.logradouro} ${empresa.cidade} ${empresa.estado}` 
-
+                other_products.innerHTML = img_products 
                 var marked = checkFavorites(empresa)
+
+
+                if(domicilio){
+                    domicilioReservas =  `<div>
+                                 <span>Oferece Entregas</span><img width="24" src="./assets/images/icons/check.svg">
+                                 </div>`
+                }
+                if(reservas){
+                    domicilioReservas +=  ` <div>
+                                        <span>Aceita Reservas</span><img width="24" src="./assets/images/icons/check.svg">
+                                          </div>`
+                }
+
+                place_options.innerHTML = domicilioReservas;              
+                                          
 
            favorite_area.innerHTML =   `<span>Adicionar aos Favoritos</span>
                 <div onclick="markFavorite(${empresa.id},'${empresa.nome}', '${empresa.categoria}', '${empresa.isEmpresa}')"
@@ -104,5 +122,80 @@ function updatePage(empresa){
 
                 </div>
                 `
+
+          
+          info.innerHTML = `
+            <div class="horarios">
+                <span class="title">Horários</span>
+                <div class="table">
+                        <div><span class="week">Domingo </span>
+                         ${splitHorarios(empresa.hfunc[0])}                            
+                         </div>
+                    
+                        <div><span class="week"> Segunda</span>
+                        ${splitHorarios(empresa.hfunc[1])} 
+                        </div>
+                                         
+                        <div><span class="week"> Terça  </span>
+                        ${splitHorarios(empresa.hfunc[2])} 
+                        </div>
+                    
+                        <div><span class="week">Quarta</span>
+                        ${splitHorarios(empresa.hfunc[3])} 
+                        </div>
+                    
+                        <div><span class="week">Quinta</span>
+                        ${splitHorarios(empresa.hfunc[4])} 
+                         </div>
+                     
+                         <div><span class="week">Sexta</span>
+                        ${splitHorarios(empresa.hfunc[5])} 
+                         </div>
+                    
+                        <div><span class="week">Sabado</span> 
+                        ${splitHorarios(empresa.hfunc[6])} 
+                        </div>
+                </div>
+                </div>
+                
+            <div class="contato">
+                <div class="local">
+                    <div id="complete-address">
+                      ${empresa.logradouro} ${empresa.cidade} ${empresa.estado}
+                    </div>
+                    <div>
+                        <img width='32' src="./assets/images/icons/map.svg">
+                    </div>
+                </div>
+                <div class="local">
+                    <div>
+                      <a href="http://web.whatsapp.com/">  (31)${empresa.tel} </a>
+                    </div>
+                    <div>
+                    <img width='32' src="./assets/images/icons/whats.svg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="redes">
+                <div class="social">
+                    <div>
+                    <a href="${empresa.rsocial[0]}"><span> Facebook  </span><img width='24' src="./assets/images/icons/facebook.svg"></a>   
+                    </div>
+                </div>
+                </div>
+                <div class="social">
+                    <div>
+                    <a href="${empresa.rsocial[0]}"><span> Instagram </span> <img width='24' src="./assets/images/icons/instagram.svg"></a>    
+                    </div>
+                     
+                </div>
+                
+            </div>`
                 toggleFavority();
+}
+
+function splitHorarios(horario){
+    var h = horario.split('-');
+    return `<span> ${h[0]}</span><span>  ${h[1]}</span>`;
 }

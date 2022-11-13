@@ -60,8 +60,8 @@ function updateCards(empPro){
                 <p class="description">
                     ${empPro.descricao.substr(0,150)} ...
                 </p>
-                <a href="./${empPro.isEmpresa}.html?categoria=${empPro.categoria}&id=${empPro.id}">
-                 <button>   Ir para ${empPro.isEmpresa}  </button>
+                <a href="./${empPro.isEmpresa}.html?categoria=${empPro.categoria}&id=${empPro.id}&prodserv=${empPro.id}">
+                 <button class="button-bl">   Ir para ${empPro.isEmpresa}  </button>
                 </a>
             </div>`
 }

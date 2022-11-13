@@ -127,7 +127,7 @@ restaurantes : [
         Ancho angus, da parte mais nobre do contra-filé. Macio e extremamente saboroso. Mais 2 acompanhamentos. `,
         imagens:['../src/assets/images/companies/products/restaurantes/12/01/01.jpg','../src/assets/images/companies/products/restaurantes/12/01/02.jpg','../src/assets/images/companies/products/restaurantes/12/01/03.jpg','../src/assets/images/companies/products/restaurantes/12/01/04.jpg'],
         preco: "20.00",
-        domicilio:true,
+        domicilio:false,
         agendamento:false,
         nfavoritos: 55,
         isEmpresa:'produto', 
@@ -154,7 +154,7 @@ restaurantes : [
         imagens:['../src/assets/images/companies/products/restaurantes/12/04/01.jpg','../src/assets/images/companies/products/restaurantes/12/04/02.jpg','../src/assets/images/companies/products/restaurantes/12/04/03.jpg','../src/assets/images/companies/products/restaurantes/12/04/04.jpg'],
         preco: "20.00",
         domicilio:true,
-        agendamento:false,
+        agendamento:true,
         nfavoritos: 55,
         isEmpresa:'produto', 
         categoria: 'restaurante' 
