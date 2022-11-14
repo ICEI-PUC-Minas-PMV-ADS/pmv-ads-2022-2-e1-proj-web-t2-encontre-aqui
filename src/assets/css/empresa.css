@@ -377,24 +377,21 @@ section{
   #info .redes{
     display: flex;
     flex-direction: column;
-  }
-
-  #info .redes .social div a{
-   
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-   
-  }
-  #info .redes .social div a img{
-    margin:5px 5px;  
-  }
-
-  #info .redes .social {   
-    margin:0 10%;
+    
+    width: 200px;
     
   }
 
+  #info .redes .social a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    height: 30px;     
+  }
+
+ 
   #other-products {
     display: flex;
   }

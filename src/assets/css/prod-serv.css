@@ -254,6 +254,7 @@ body{
     
    }
 
+ 
   #info .contato{
     display: flex;
     flex-direction: column;
@@ -268,20 +269,16 @@ body{
   #info .redes{
     display: flex;
     flex-direction: column;
+    
+    width: 200px;
+    
   }
 
-  #info .redes .social{
+  #info .redes .social a{
     display: flex;
-  }
-  #info .redes .social div a{
-    display: flex;
-     
-    margin:5px 5px;
-    align-items: center;   
+    flex-direction: row;
     justify-content: center;
-  }
-
-  #info .redes .social div {   
-    margin:0 5%;
-
+    align-items: center;
+    gap:5px;
+    height: 30px;     
   }
