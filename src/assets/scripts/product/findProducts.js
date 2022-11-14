@@ -211,20 +211,22 @@ function updatePage(empresa){
                   </div>
       
                   <div class="redes">
-                  <div class="social">
-                  <div>
-                  <a href="${empresa.rsocial[0]}"> Facebook  <img width='24' src="./assets/images/icons/facebook.svg"></a>   
-                  </div>
-                 
-                 
-                  </div>
-              </div>
-              <div class="social">
-                  <div>
-                  <a href="${empresa.rsocial[0]}"> Instagram <img width='24' src="./assets/images/icons/instagram.svg"></a>    
-                  </div>
+                  <div class="social">                   
+                    <a href="${empresa.rsocial[0]}">
+                     <span> Facebook  </span>
+                     <img width='24' src="./assets/images/icons/facebook.svg">
+                     </a>   
                    
-              </div>
+                </div>
+               
+                <div class="social">                   
+                    <a href="${empresa.rsocial[0]}">
+                        <span> Instagram </span>
+                         <img width='24' src="./assets/images/icons/instagram.svg">
+                        </a>    
+                   
+                        </div>
+                </div>
                       
                   </div>`
                       toggleFavority();
