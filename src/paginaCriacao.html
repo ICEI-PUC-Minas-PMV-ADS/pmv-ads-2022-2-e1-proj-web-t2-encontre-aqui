@@ -16,8 +16,8 @@
 <body>
 
     <div class="pageNavigation">
-        <a id="upPage" href="#previous"> <img src="./assets/images/icons/up.svg"></a>
-        <a id="downPage" href="#next"> <img src="./assets/images/icons/up.svg"></a>
+        <a id="upPage" href="#previous"> Anterior <img src="./assets/images/icons/up.svg"></a>
+        <a id="downPage" href="#next"> Próximo <img src="./assets/images/icons/up.svg"></a>
     </div>
 
     <header id="header-product" class="header-product-page">
@@ -42,7 +42,173 @@
 
     </header>
 
-    <section class="section" id="previous">
+
+    <div id="content">
+        <section class="section" id="previous">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <nav class="check-info-area">
+                <div class="check-info">
+                    <div class="place-options">
+                        <div>
+                            <span>Oferece Entregas</span> <input type="checkbox" id="isDeliveries">
+                            <!--<img width="24" src="./assets/images/icons/check.svg"> -->
+                        </div>
+                        <div>
+                            <span>Aceita Reservas</span><input type="checkbox" id="isReservation">
+                            <!--<img width="24" src="./assets/images/icons/check.svg">-->
+                        </div>
+                    </div>
+                    <div class="favorite-area">
+                        <span>Adicionar aos Favoritos</span> <img width="24" src="./assets/images/icons/bookmark.svg">
+                    </div>
+                </div>
+            </nav>
+
+
+            <section id="description-ps">
+                <div class="descr-images">
+                    <div class="principal-image">
+                        <img class="imgEmpresa" id="principal" src="./assets/images/site/home/Header.png">
+
+                        <label for="textoFoto2" class="addFoto">Adicionar Foto</label>
+                        <input type="file" id="textoFoto2" onchange="addPhoto(event, 'principal');">
+
+
+                    </div>
+                    <div class="other-images">
+                        <div id="photo1">
+                            <label for="textoFoto3" class="addFoto-ms">Add Foto</label>
+                            <input type="file" id="textoFoto3" onchange="addPhoto(event, 'photo1');">
+                        </div>
+                        <div id="photo2">
+                            <label for="textoFoto5" class="addFoto-ms">Add Foto</label>
+                            <input type="file" id="textoFoto5" onchange="addPhoto(event, 'photo2');">
+                        </div>
+                        <div id="photo3">
+                            <label for="textoFoto6" class="addFoto-ms">Add Foto</label>
+                            <input type="file" id="textoFoto6" onchange="addPhoto(event, 'photo3');">
+                        </div>
+                    </div>
+                </div>
+                <div class="description-text">
+                    <input class="input-data" type="text" placeholder="Nome do Produto ou Serviço">
+
+                    <input class="input-data" type="text" placeholder="Preço *opcional R$">
+
+                    <div id=""></div>
+                    <textarea class="description" placeholder="Descrição"></textarea>
+
+                </div>
+    </div>
+    </section>
+    </div>
+
+    </section>
+
+    <section class="section" id="next">
+        <section id="info">
+            <div class="horarios">
+                <h1>Horários</h1>
+                <table>
+                    <tr>
+                        <td>Domingo</td>
+                        <td><input type="text" placeholder="08:00"></td>
+                        <td> às </td>
+                        <td><input type="text" placeholder="08:00"> </td>
+                    </tr>
+                    <tr>
+                        <td>Segunda</td>
+                        <td><input type="text" placeholder="08:00"></td>
+                        <td> às </td>
+                        <td><input type="text" placeholder="08:00"> </td>
+                    </tr>
+                    <tr>
+                        <td>Terça</td>
+                        <td><input type="text" placeholder="08:00"></td>
+                        <td> às </td>
+                        <td><input type="text" placeholder="08:00"> </td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td><input type="text" placeholder="08:00"></td>
+                        <td> às </td>
+                        <td><input type="text" placeholder="08:00"> </td>
+                    </tr>
+                    <tr>
+                        <td>Quinta</td>
+                        <td><input type="text" placeholder="08:00"></td>
+                        <td> às </td>
+                        <td><input type="text" placeholder="08:00"> </td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td><input type="text" placeholder="08:00"></td>
+                        <td> às </td>
+                        <td><input type="text" placeholder="08:00"> </td>
+                    </tr>
+                    <tr>
+                        <td>Sabado</td>
+                        <td><input type="text" placeholder="08:00"></td>
+                        <td> às </td>
+                        <td><input type="text" placeholder="08:00"> </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="contato">
+                <div class="local">
+                    <div>
+                        Av. do Contorno, 8727 Gutierrez
+                        Belo Horizonte - MG 30110-059
+                    </div>
+                    <div>
+                        icon
+                    </div>
+                </div>
+                <div class="local">
+                    <div>
+                        (31) 99534-1354
+                    </div>
+                    <div>
+                        icon
+                    </div>
+                </div>
+            </div>
+
+            <div class="redes">
+                <div class="social">
+                    <div>
+                        facebook
+                    </div>
+                    <div>
+                        icon
+                    </div>
+                </div>
+                <div class="social">
+                    <div>
+                        facebook
+                    </div>
+                    <div>
+                        icon
+                    </div>
+                </div>
+                <div class="social">
+                    <div>
+                        facebook
+                    </div>
+                    <div>
+                        icon
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <section class="section">
         <div class="logo-area">
             <img id="logo-user" src="./assets/images/companies/logos/logo1.PNG">
             <span id="name-user" class="client-name">Nome da Empresa</span>
@@ -55,180 +221,12 @@
 
     </section>
 
-    <section class="section" id="next">
-        <nav class="check-info-area">
-            <div class="check-info">
-                <div class="place-options">
-                    <div>
-                        <span>Oferece Entregas</span> <input type="checkbox" id="isDeliveries">
-                        <!--<img width="24" src="./assets/images/icons/check.svg"> -->
-                    </div>
-                    <div>
-                        <span>Aceita Reservas</span><input type="checkbox" id="isReservation">
-                        <!--<img width="24" src="./assets/images/icons/check.svg">-->
-                    </div>
-                </div>
-                <div class="favorite-area">
-                    <span>Adicionar aos Favoritos</span> <img width="24" src="./assets/images/icons/bookmark.svg">
-                </div>
-            </div>
-        </nav>
+
+    <section class="other-products">
+        <span class="title">Outros produtos ou serviços deste anunciante</span>
+        <div id="other-products"></div>
+
     </section>
-
-
-    <main>
-        <section class="section">
-            <div id="content">
-                <section id="description-ps">
-                    <div class="descr-images">
-                        <div class="principal-image">
-                            <img class="imgEmpresa" id="principal" src="./assets/images/site/home/Header.png">
-
-                            <label for="textoFoto2" class="addFoto">Adicionar Foto</label>
-                            <input type="file" id="textoFoto2" onchange="addPhoto(event, 'principal');">
-
-
-                        </div>
-                        <div class="other-images">
-                            <div id="photo1">
-                                <label for="textoFoto3" class="addFoto-ms">Add Foto</label>
-                                <input type="file" id="textoFoto3" onchange="addPhoto(event, 'photo1');">
-                            </div>
-                            <div id="photo2">
-                                <label for="textoFoto5" class="addFoto-ms">Add Foto</label>
-                                <input type="file" id="textoFoto5" onchange="addPhoto(event, 'photo2');">
-                            </div>
-                            <div id="photo3">
-                                <label for="textoFoto6" class="addFoto-ms">Add Foto</label>
-                                <input type="file" id="textoFoto6" onchange="addPhoto(event, 'photo3');">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description-text">
-                        <input class="input-data" type="text" placeholder="Nome do Produto ou Serviço">
-
-                        <input class="input-data" type="text" placeholder="Preço *opcional R$">
-
-                        <div id=""></div>
-                        <textarea class="description" placeholder="Descrição"></textarea>
-
-                    </div>
-            </div>
-        </section>
-        </div>
-
-        </section>
-
-        <section class="section">
-            <section id="info">
-                <div class="horarios">
-                    <h1>Horários</h1>
-                    <table>
-                        <tr>
-                            <td>Domingo</td>
-                            <td><input type="text" placeholder="08:00"></td>
-                            <td> às </td>
-                            <td><input type="text" placeholder="08:00"> </td>
-                        </tr>
-                        <tr>
-                            <td>Segunda</td>
-                            <td><input type="text" placeholder="08:00"></td>
-                            <td> às </td>
-                            <td><input type="text" placeholder="08:00"> </td>
-                        </tr>
-                        <tr>
-                            <td>Terça</td>
-                            <td><input type="text" placeholder="08:00"></td>
-                            <td> às </td>
-                            <td><input type="text" placeholder="08:00"> </td>
-                        </tr>
-                        <tr>
-                            <td>Quarta</td>
-                            <td><input type="text" placeholder="08:00"></td>
-                            <td> às </td>
-                            <td><input type="text" placeholder="08:00"> </td>
-                        </tr>
-                        <tr>
-                            <td>Quinta</td>
-                            <td><input type="text" placeholder="08:00"></td>
-                            <td> às </td>
-                            <td><input type="text" placeholder="08:00"> </td>
-                        </tr>
-                        <tr>
-                            <td>Sexta</td>
-                            <td><input type="text" placeholder="08:00"></td>
-                            <td> às </td>
-                            <td><input type="text" placeholder="08:00"> </td>
-                        </tr>
-                        <tr>
-                            <td>Sabado</td>
-                            <td><input type="text" placeholder="08:00"></td>
-                            <td> às </td>
-                            <td><input type="text" placeholder="08:00"> </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="contato">
-                    <div class="local">
-                        <div>
-                            Av. do Contorno, 8727 Gutierrez
-                            Belo Horizonte - MG 30110-059
-                        </div>
-                        <div>
-                            icon
-                        </div>
-                    </div>
-                    <div class="local">
-                        <div>
-                            (31) 99534-1354
-                        </div>
-                        <div>
-                            icon
-                        </div>
-                    </div>
-                </div>
-
-                <div class="redes">
-                    <div class="social">
-                        <div>
-                            facebook
-                        </div>
-                        <div>
-                            icon
-                        </div>
-                    </div>
-                    <div class="social">
-                        <div>
-                            facebook
-                        </div>
-                        <div>
-                            icon
-                        </div>
-                    </div>
-                    <div class="social">
-                        <div>
-                            facebook
-                        </div>
-                        <div>
-                            icon
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-        </section>
-
-
-        <section class="other-products">
-            <span class="title">Outros produtos ou serviços deste anunciante</span>
-            <div id="other-products"></div>
-
-        </section>
-
-
-
-    </main>
-
 
 
 
@@ -294,8 +292,7 @@
         src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Aj30kitBtzqfccLqDP_RXQYks09ie-CQ5gvx0dnWFyyQImim-GDuVIVUl0VUwjQr'
         async defer></script>
     <script src="./assets/scripts/mapas/mapa-v1.js"></script> -->
-    <script src="./assets/scripts/database/database.js"></script>
-    <script src="./assets/scripts/product/findProducts.js"></script>
+
 </body>
 
 </html>

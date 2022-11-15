@@ -28,7 +28,7 @@ var complete_address = document.getElementById("complete-address");
 
 addEventListener('load', ()=>{
     findCetegory()
-   
+    imageView() 
 })
 
 
@@ -87,13 +87,21 @@ function updatePage(empresa){
     other_images += `<div> <img src="${product.imagens[i]}"></div>`
    }
 
-    var content = ` <div class="descr-images">
-                            <div class="principal-image">
-                                <img src="${product.imagens[0]}">
-                            </div>
-                            <div class="other-images">
-                                    ${other_images}
-                            </div>
+                var content = ` <div class="popup-img">
+                                     <span>&times;</span>
+                                   <img src="${product.imagens[0]}">
+                                </div>
+    
+    
+                   <div class="descr-images">                           
+
+                   <div class="principal-image">
+                                 
+                   <img src="${product.imagens[0]}">
+                    </div>
+                     <div class="other-images">
+                        ${other_images}
+                     </div>
                         </div>
                         <div class="description-text">
                             <div id="ps-title" class="title">${empresa.produtos[0].nome}</div>
@@ -156,7 +164,7 @@ function updatePage(empresa){
 
                 </div>
                 `
-                var horarios = splitHorarios(empresa.hfunc[0]);
+              
                 info.innerHTML = `
                   <div class="horarios">
                       <span class="title">Horários</span>
@@ -232,7 +240,7 @@ function updatePage(empresa){
                       toggleFavority();
       }
       
-      function splitHorarios(horario){
+function splitHorarios(horario){
           var h = horario.split('-');
           return `<span> ${h[0]}</span><span>  ${h[1]}</span>`;
       }
@@ -246,4 +254,19 @@ function getProduct(empresa){
     })
     
      return p;
+}
+
+function imageView(){
+    document.querySelectorAll('.descr-images img').forEach(image => {
+        image.addEventListener('click', ()=>{
+            document.querySelector('.popup-img img').src = image.getAttribute('src');           
+            document.querySelector('.popup-img').classList.toggle('popup-img-large');
+         //   document.querySelector('.popup-img-large').classList.remove('popup-img');
+             
+        })
+            document.querySelector('.popup-img span').onclick = () =>{
+                document.querySelector('.popup-img').classList.toggle('popup-img-large');
+            }
+})
+   
 }

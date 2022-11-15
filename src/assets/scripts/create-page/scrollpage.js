@@ -3,7 +3,8 @@ const upPage = document.getElementById('upPage')
 const downPage = document.getElementById('downPage')
 
 var previous, next;
-var selected = 0;
+var selected = 0; 
+
 upPage.addEventListener('click', ()=>{
     if(selected > 0){ 
         previous = document.getElementById('previous') 
@@ -22,18 +23,18 @@ upPage.addEventListener('click', ()=>{
 })
 
 downPage.addEventListener('click', ()=>{
-   if(selected < 3){
+   if(selected < 2){
     next = document.getElementById('next')     
     previous = document.getElementById('previous') 
     next.removeAttribute('id')
     previous.removeAttribute('id')
      
-    
+     
         console.log(selected)
         sections[selected].setAttribute('id','previous')
-        selected++
-        sections[selected].setAttribute('id', 'next')
-    
+            selected++        
+            sections[selected].setAttribute('id', 'next')
+        
    
    }
 })
