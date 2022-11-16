@@ -13,7 +13,7 @@ main
     padding: 5px 40px;
     margin-top: 20px;
     border-radius: 10px;
-
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
 
@@ -49,9 +49,9 @@ margin: 0% auto;
 
 .business .bloco-um{
     position: relative;
-    width: 50%;
+    width: 45%;
     height: 80vh;
-    border-radius: 10px;
+    border-radius: 5px;
     padding:16px;
     background-color: rgba(240, 248, 255, 0.814);
     
@@ -89,13 +89,12 @@ margin: 0% auto;
 }
 
 
-
 .business .bloco-tres{
     display: flex;
 }
 
 .business .bloco-tres img{
-     max-width: 420px;
+    max-width: 420px;
     max-height: 350px;
     margin: 0 50px;
     border-radius: 5px;
@@ -105,4 +104,9 @@ margin: 0% auto;
     width: 100%;
     margin: 5% 0;
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.business .bloco-quatro{    
+    margin:100px auto;
+    text-align: center;
 }
