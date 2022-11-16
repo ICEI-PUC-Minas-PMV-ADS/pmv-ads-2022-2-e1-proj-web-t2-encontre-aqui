@@ -12,9 +12,9 @@ a{
  }
 
 .name input{
-  border-radius: 15px;
-  border: auto;
-  width: 250px;
+  border-radius: 7px;
+  border: 0.5px solid #5f5f5f;
+  width: 350px;
   height: 40px;
   padding-left: 15px;
   background-color: #fff;
@@ -23,9 +23,9 @@ a{
 }
 
 .email input{
-border-radius: 15px;
-border: auto;
-width: 250px;
+border-radius: 7px;
+border: 0.5px solid #5f5f5f;
+width: 350px;
 height: 40px;
 padding-left: 15px;
 background-color: #fff;
@@ -33,9 +33,9 @@ color: #b6b6b6;
 }
 
 .senha input{
-border-radius: 15px;
-border: auto;
-width: 250px;
+border-radius: 7px;
+border: 0.5px solid #5f5f5f;
+width: 350px;
 height: 40px;
 padding-left: 15px;
 background-color: #fff;
@@ -45,9 +45,9 @@ margin-top: 15px
 
 .entrar input{
   cursor: pointer;
-  width: 120px;
+  width: 150px;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 7px;
   background-color: aquamarine;
   color: #141414;
 }

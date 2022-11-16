@@ -7,7 +7,7 @@ function addPhoto(event, local){
       console.log(src)
       preview.style.backgroundImage = `url(${preview.src})` 
       preview.style.backgroundSize = `cover` 
-     
+      
       preview.style.backgroundRepeat = `no-repeat` 
        
     }
