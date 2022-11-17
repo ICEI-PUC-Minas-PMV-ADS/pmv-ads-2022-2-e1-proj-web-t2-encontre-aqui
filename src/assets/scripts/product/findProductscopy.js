@@ -90,7 +90,7 @@ function updatePage(empresa){
     
 
    for(var i = 1 ; i < product.imagens.length; i++){
-    other_images += `<div> <img src="${product.imagens[i]}"></div>`
+    other_images += `<div> <img src="${company_data.imagens[i]}"></div>`
    }
 
                 var content = ` <div class="popup-img">
@@ -122,7 +122,7 @@ function updatePage(empresa){
 
                for(var p = 0; p <empresa.produtos.length; p++){
                     img_products += `<a href="produto.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=${empresa.produtos[p].id}">
-                    <div><img class ="other-imgs" src='${empresa.produtos[p].imagens[0]}' >
+                    <div><img class ="other-imgs" src='${company_data.imagens[0]}' >
                         </div><div style="width:150px" class="opened">${empresa.produtos[p].nome}</div></a>`
 
                 }
