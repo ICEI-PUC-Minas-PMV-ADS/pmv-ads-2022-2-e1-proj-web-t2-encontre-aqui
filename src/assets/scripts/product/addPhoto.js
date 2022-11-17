@@ -1,9 +1,9 @@
-function upload_img(){
+function upload_img(id_foto, url){
 
 const CLIENT = '0aabe048fb4dea2'
 
-        const file = document.getElementById("textoFoto")
-        var url_img = document.getElementById("url_img")
+        const file = document.getElementById(id_foto)
+        var url_img = document.getElementById(url)
         file.addEventListener("change", ev => {
             const formData = new FormData()
             formData.append("image", ev.target.files[0])

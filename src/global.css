@@ -395,6 +395,25 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   background-color:var(--btn-light);
 }
 
+.btn-cadastro{
+  width: 50%;
+  height: 50px;
+  border-radius: 7px;
+  background-color: rgb(59, 163, 129);
+  position:absolute;
+  top:85%;
+  left: 25%;
+}
+
+.btn-visualization{
+  width: 30%;
+  height: 50px;
+  border-radius: 7px;
+  background-color: rgb(59, 163, 129);
+  margin-top: 5px; 
+}
+
+
 .btn-light:hover{
   background-color:var(--btn-light-hover);
   transition: ease 0.2;

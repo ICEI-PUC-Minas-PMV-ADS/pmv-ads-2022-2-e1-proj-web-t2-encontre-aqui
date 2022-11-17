@@ -75,32 +75,39 @@
                         <img class="imgEmpresa" id="principal" src="./assets/images/site/home/Header.png">
 
                         <label for="textoFoto2" class="addFoto">Adicionar Foto</label>
-                        <input type="file" id="textoFoto2" onchange="addPhoto(event, 'principal');">
-
+                        <input type="file" id="textoFoto2" onclick="upload_img('textoFoto2', 'url_img1')"
+                            onchange="addPhoto(event, 'principal');">
+                        <input id="url_img1" type="hidden" value="">
 
                     </div>
                     <div class="other-images">
                         <div id="photo1">
                             <label for="textoFoto3" class="addFoto-ms">Add Foto</label>
-                            <input type="file" id="textoFoto3" onchange="addPhoto(event, 'photo1');">
+                            <input type="file" id="textoFoto3" onclick="upload_img('textoFoto2', 'url_img2')"
+                                onchange="addPhoto(event, 'photo1');">
+                            <input id="url_img2" type="hidden" value="">
                         </div>
                         <div id="photo2">
                             <label for="textoFoto5" class="addFoto-ms">Add Foto</label>
-                            <input type="file" id="textoFoto5" onchange="addPhoto(event, 'photo2');">
+                            <input type="file" id="textoFoto5" onclick="upload_img('textoFoto5', 'url_img3')"
+                                onchange="addPhoto(event, 'photo2');">
+                            <input id="url_img3" type="hidden" value="">
                         </div>
                         <div id="photo3">
                             <label for="textoFoto6" class="addFoto-ms">Add Foto</label>
-                            <input type="file" id="textoFoto6" onchange="addPhoto(event, 'photo3');">
+                            <input type="file" id="textoFoto6" onclick="upload_img('textoFoto6', 'url_img4')"
+                                onchange="addPhoto(event, 'photo3');">
+                            <input id="url_img4" type="hidden" value="">
                         </div>
                     </div>
                 </div>
                 <div class="description-text">
-                    <input class="input-data" type="text" placeholder="Nome do Produto ou Serviço">
+                    <input class="input-data" id="product_name" type="text" placeholder="Nome do Produto ou Serviço">
 
-                    <input class="input-data" type="text" placeholder="Preço *opcional R$">
+                    <input class="input-data" id="product_price" type="text" placeholder="Preço *opcional R$">
 
                     <div id=""></div>
-                    <textarea class="description" placeholder="Descrição"></textarea>
+                    <textarea class="description" id="product_description" placeholder="Descrição"></textarea>
 
                 </div>
     </div>
@@ -216,9 +223,12 @@
 
         <div class="imgEmpresa" id="imgPreview">
             <label for="textoFoto" class="addFoto"> Adicionar Foto</label>
-            <input type="file" id="textoFoto" onchange="addPhoto(event, 'imgPreview');">
+            <input type="file" id="textoFoto" onclick="upload_img('textoFoto', 'url_img_pr')"
+                onchange="addPhoto(event, 'imgPreview');">
+            <input id="url_img_pr" type="hidden" value="">
         </div>
 
+        <a href="./produto.html" id="btn_visualization" class="btn btn-visualization">Visualizar Página</a>
     </section>
 
 
@@ -288,6 +298,7 @@
     <script src="./assets/scripts/autocomplete.js"></script>
     <script src="./assets/scripts/product/addPhoto.js"></script>
     <script src="./assets/scripts/create-page/scrollpage.js"></script>
+
     <!--    <script type='text/javascript'
         src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Aj30kitBtzqfccLqDP_RXQYks09ie-CQ5gvx0dnWFyyQImim-GDuVIVUl0VUwjQr'
         async defer></script>
