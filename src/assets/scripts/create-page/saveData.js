@@ -32,5 +32,5 @@ btn_visualization.addEventListener('click', () =>{
     }
 
     localStorage.setItem('company_data', JSON.stringify(all_data))
-    document.location.href='./produto.html?categoria=restaurante&id=12&prodserv=11'
+    document.location.href='./produtocopy.html'
 })
