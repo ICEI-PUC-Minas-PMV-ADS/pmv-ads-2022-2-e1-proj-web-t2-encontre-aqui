@@ -4,6 +4,7 @@ var password;
 
 var btn_cadastro = document.getElementById('btn_cadastro')
 btn_cadastro.addEventListener('click', saveUser);
+client = document.getElementById('company');
 
 function saveUser(){
      full_name = document.getElementById('name').value;
@@ -20,7 +21,11 @@ function saveUser(){
 
         localStorage.setItem('user', JSON.stringify(user))
         alert("Novo usuário criado!")
-        document.location.href='./userProfile.html'
+        if(client.value === 'company'){
+             document.location.href='./edicaodeDados.html'
+        }else{
+             document.location.href='./userProfile.html'
+        }
     }else{
         alert("dados incompletos")
         

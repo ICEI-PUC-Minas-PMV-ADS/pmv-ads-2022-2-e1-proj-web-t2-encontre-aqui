@@ -123,6 +123,7 @@
 
                 </div>
 
+
                 <div id="login" class="create-account">
 
                     <div id="cadastro" class="caixa  mt-100 mb-50">
@@ -131,24 +132,25 @@
                         <h1>Cadastre-se</h1>
 
                         <div class="name">
-                            <input id="name" type="text" placeholder="Nome">
+                            <input id="name" type="text" placeholder="Nome" required="required">
                         </div>
 
                         <div class="email">
-                            <input id="email" type="email" placeholder="E-mail">
+                            <input id="email" type="email" placeholder="E-mail" required="required">
                         </div>
 
                         <div class="senha">
-                            <input id="password" type="password" placeholder="Senha">
+                            <input id="password" type="password" placeholder="Senha" required="required">
                         </div>
 
                         <div class="senha">
-                            <input type="password" placeholder="Confirme a sua senha">
+                            <input type="password" placeholder="Confirme a sua senha" required="required">
                         </div>
+                        <input id="company" type="hidden" value="company">
 
                         <div class="entrar">
                             <p> Já tem uma conta?&nbsp;&nbsp;<a href="login.html">Entre aqui</a> </p>
-                            <input id="btn_cadastro" type="button" value="Entrar">
+                            <input id="btn_cadastro" type="submit" value="Entrar">
                         </div>
 
                     </div>
@@ -257,7 +259,7 @@
 
 
     <script src="./assets/scripts/autocomplete.js"></script>
-    <script src="./assets/scripts/search/responsive.js"></script>
+    <script src="./assets/scripts/LoginCadastro/cadastro.js"></script>
 
 
 </body>

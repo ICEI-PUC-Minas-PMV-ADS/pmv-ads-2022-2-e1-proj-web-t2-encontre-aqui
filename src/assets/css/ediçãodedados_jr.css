@@ -24,9 +24,10 @@ body {
     top:35px;
     width: 80%;
     background: #fff;
-    padding: 5px 0px 0px 15%;
+   
     align-items: center;
     margin: 0px 0px 0px 40px;
+   
 }
 .btn-1 {
     padding-left: 3.5%;
@@ -132,7 +133,7 @@ body {
 }
 .btn-1 {
     display: block;
-    width: 100px;
+    width: 120px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -140,18 +141,19 @@ body {
     opacity: 80%;
     color: #000;
     padding: 15px;
-    border-radius: 0px 0px 100px 100px;
+    border-radius: 0px 0px 7px 7px;
     transition: .5s;   
+    font-weight: bold;
+    cursor: pointer;
 }
-.btn-1 {
-    font-weight: bold
-}
+
 .adicionar-image {
     height: 100px;
-    width: 100px;
-    border-radius: 100px 100px 00px 0px;
+    width: 120px;
+    border-radius: 7px 7px 00px 0px;
     background-position: center;
     background-size: cover;
+    
 }
 #img-1 {
     background-image: url('../images/site/userprofile/avatar.png');
