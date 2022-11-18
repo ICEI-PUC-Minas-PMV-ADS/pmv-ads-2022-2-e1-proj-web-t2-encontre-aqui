@@ -64,7 +64,7 @@ function findCompany(data){
 
 
 function updatePage(empresa){
-    var company_data = JSON.parse(localStorage.getItem('company_data'))
+    var company_data = JSON.parse(localStorage.getItem('atual_page'))
 
     var img_products = '';  
     var product = getProduct(empresa);
