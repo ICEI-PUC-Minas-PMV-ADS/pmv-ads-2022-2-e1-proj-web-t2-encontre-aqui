@@ -6,6 +6,7 @@ function loadData(){
     var page_cards = document.querySelector('.cards');
     var cards = '';
     if(pages!= null){
+    console.log(pages)
     for(var i = 0; i < pages.length; i++){
         cards += `<div class="card">
                         <img src='${pages[i].imagens[0]}'
