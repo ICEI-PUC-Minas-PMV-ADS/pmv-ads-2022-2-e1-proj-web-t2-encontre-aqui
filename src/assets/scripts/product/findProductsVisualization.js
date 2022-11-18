@@ -64,8 +64,9 @@ function findCompany(data){
 
 
 function updatePage(empresa){
-    var company_data = JSON.parse(localStorage.getItem('atual_page'))
-
+    var company_data = JSON.parse(localStorage.getItem('page_data'))
+    var atual_page = JSON.parse(localStorage.getItem('atual_page'))
+    
     var img_products = '';  
     var product = getProduct(empresa);
     var other_images = ''; 
@@ -90,12 +91,12 @@ function updatePage(empresa){
     
 
    for(var i = 1 ; i < product.imagens.length; i++){
-    other_images += `<div> <img src="${company_data.imagens[i]}"></div>`
+    other_images += `<div> <img src="${atual_page.imagens[i]}"></div>`
    }
 
                 var content = ` <div class="popup-img">
                                      <span>&times;</span>
-                                   <img src="${product.imagens[0]}">
+                                   <img src="${atual_page.imagens[0]}">
                                 </div>
     
     
@@ -103,17 +104,17 @@ function updatePage(empresa){
 
                    <div class="principal-image">
                                  
-                   <img src="${company_data.imagens[0]}">
+                   <img src="${atual_page.imagens[0]}">
                     </div>
                      <div class="other-images">
                         ${other_images}
                      </div>
                         </div>
                         <div class="description-text">
-                            <div id="ps-title" class="title">${empresa.produtos[0].nome}</div>
-                            <div id="ps-price">${company_data.preco}</div>
+                            <div id="ps-title" class="title">${atual_page.nome}</div>
+                            <div id="ps-price">${atual_page.preco}</div>
                             <div id=""></div>
-                            <div id="ps-descr"> ${company_data.descricao}  </div>
+                            <div id="ps-descr"> ${atual_page.descricao}  </div>
                         </div>
                         `
  
@@ -122,8 +123,8 @@ function updatePage(empresa){
 
                for(var p = 0; p <empresa.produtos.length; p++){
                     img_products += `<a href="produto.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=${empresa.produtos[p].id}">
-                    <div><img class ="other-imgs" src='${company_data.imagens[0]}' >
-                        </div><div style="width:150px" class="opened">${empresa.produtos[p].nome}</div></a>`
+                    <div><img class ="other-imgs" src='${atual_page.imagens[0]}' >
+                        </div><div style="width:150px" class="opened">${atual_page.nome}</div></a>`
 
                 }
                                
@@ -136,12 +137,12 @@ function updatePage(empresa){
                 var marked = checkFavorites(empresa)
 
                 
-                if(product.domicilio){
+                if(atual_page.domicilio){
                     domicilioReservas =  `<div>
                                  <span>Oferece Entregas</span><img width="24" src="./assets/images/icons/check.svg">
                                  </div>`
                 }
-                if(product.agendamento){
+                if(atual_page.agendamento){
                     domicilioReservas +=  ` <div>
                                         <span>Aceita Reservas</span><img width="24" src="./assets/images/icons/check.svg">
                                           </div>`

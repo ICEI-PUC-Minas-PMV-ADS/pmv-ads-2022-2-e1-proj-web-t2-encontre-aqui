@@ -152,7 +152,8 @@ h3 {
 .btn-publ {
     display: flex;
     flex-direction: row;
-    padding-left: 60%;
+   
+    float:right;
 }
 
 main {
