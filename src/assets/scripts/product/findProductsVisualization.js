@@ -74,7 +74,7 @@ function updatePage(empresa){
     var reservas = false;
     var domicilioReservas =''
 
-    header_product_page.style.backgroundImage = `url(${company_data.banner})`; 
+    header_product_page.style.backgroundImage = `url(${atual_page.banner})`; 
     header_product_page.style.backgroundSize = 'cover'
     
     logo_area.innerHTML = ` <a href='empresa.html?categoria=${empresa.categoria}&id=${empresa.id}'>
