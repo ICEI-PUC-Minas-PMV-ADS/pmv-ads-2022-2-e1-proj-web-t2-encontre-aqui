@@ -5,11 +5,13 @@ function loadData(){
     var pages = JSON.parse(localStorage.getItem('pages_data'))
     var page_cards = document.querySelector('.cards');
     var cards = '';
+    if(pages!= null){
     for(var i = 0; i < pages.length; i++){
         cards += `<div class="card">
                         <img src='${pages[i].imagens[0]}'
                   </div>
                     `
+        }
     }
 
     cards += `<div class="card">
