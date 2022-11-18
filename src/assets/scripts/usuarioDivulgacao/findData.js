@@ -9,7 +9,7 @@ function loadData(){
     console.log(pages)
     for(var i = 0; i < pages.length; i++){
         cards += `<div class="card">
-                        <img src='${pages[i].imagens[0]}'
+                        <img style="border-radius:6px" src='${pages[i].imagens[0]}'>
                   </div>
                     `
         }
