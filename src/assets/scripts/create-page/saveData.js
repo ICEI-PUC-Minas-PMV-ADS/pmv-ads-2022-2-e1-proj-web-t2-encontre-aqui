@@ -13,7 +13,7 @@ btn_visualization.addEventListener('click', () =>{
     var company_data = JSON.parse(localStorage.getItem('company_data'))
 
     var all_data = {
-        imagens:[url_img1.value,url_img2.value,url_img3.value,url_img4.value],
+        imagens:[url_img1.value, url_img2.value, url_img3.value, url_img4.value],
         nome:product_name.value,
         descricao:product_description.value,
         preco:product_price.value,
