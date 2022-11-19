@@ -16,12 +16,16 @@
 
     <nav class="nav-menu">
       <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
-      <form action="./search.html" method="GET" class="search">
+      <form action="./search.html" method="GET" class="search" autocomplete="off">
         <input name="search" type="text" placeholder="Produtos, Serviços, Empresas">
-        <input name="place" type="text" placeholder="Cidade">
+        <div class="place-area">
+          <input name="place" id="place" type="text" placeholder="Cidade">
+          <ul class="list"></ul>
+        </div>
         <button class="btn-search" type="submit">Pesquisar</button>
       </form>
-      <div class=""><a href="./cadastro.html" class="btn btn-light">Para Empresas</a></div>
+
+      <div class=""><a href="./paraEmpresas.html" class="btn btn-light">Para Empresas</a></div>
       <div class="account">
         <a class="btn btn-light" href="./cadastro.html">Cadastrar-se</a>
         <a class="btn btn-light" href="./login.html">Login</a>
@@ -39,24 +43,25 @@
         <h1>Cadastro</h1>
 
         <div class="name">
-          <input type="text" placeholder="Nome">
+          <input id="name" type="text" placeholder="Nome">
         </div>
 
         <div class="email">
-          <input type="email" placeholder="E-mail">
+          <input id="email" type="email" placeholder="E-mail">
         </div>
 
         <div class="senha">
-          <input type="password" placeholder="Senha">
+          <input id="password" type="password" placeholder="Senha">
         </div>
 
         <div class="senha">
           <input type="password" placeholder="Confirme a sua senha">
         </div>
 
+        <input id="company" type="hidden" value="commun">
         <div class="entrar">
           <p> Já tem uma conta?&nbsp;&nbsp;<a href="login.html">Entre aqui</a> </p>
-          <input type="submit" value="Entrar">
+          <input id="btn_cadastro" type="button" value="Entrar">
         </div>
 
       </div>
@@ -111,8 +116,8 @@
       </div>
     </div>
   </footer>
-
-
+  <script src="./assets/scripts/autocomplete.js"></script>
+  <script src="./assets/scripts/LoginCadastro/cadastro.js"></script>
 </body>
 
 </html>

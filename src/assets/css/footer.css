@@ -1,0 +1,17 @@
+.footer-about {
+    padding: auto;
+  }
+  .logo {
+    padding: 1%;
+  }
+  .footer-categories-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+  }
+  .categories {
+    display: flex;
+    justify-content: space-around;
+    gap: 150px;
+  }

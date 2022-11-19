@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,600;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', 'Helvetica';
+    box-sizing: border-box;      
+}
+body {
+    background-color: #F5F5F5;
+}
+
+.box{
+    display: flex;
+}
+.container-nav .empresa-profissional  {
+    display: flex;
+    padding-left: 10%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.container-nav .seletor {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;    
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.opcao {
+    width: 185px;
+    height: 25px;
+    background-color: #FFFFFF;
+    border-color: #4D80C3;
+    border-radius: 0px 5px 5px 0px;   
+}
+
+.mapa-img {
+    position:relative;
+    top:50px;
+    left: -50px;
+}
+
+.selecao {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 13%;
+}
+
+h3 {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.avatar {
+    width: 100px;
+    margin: 30px;
+    border-radius: 100%;
+}
+.botao {
+    border-color: #4D80C3;
+    background: #EDF4FD;
+    border-radius: 0px 5px 5px 0px;
+}
+.subtitulo {
+    width: 650px;
+    word-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 10%; 
+}
+.card-container {
+    
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 50%;
+    display: inline-block;
+    margin: 1 1%;
+    padding: 14px;    
+}
+.cards{
+    width: 90%;
+}
+.btn-1 {
+    display: block;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #3F383833;
+    opacity: 80%;
+    color: #000;
+    padding: 15px;
+    border-radius: 0px 0px 20px 20px;
+    transition: .5s;   
+}
+.btn-1 {
+    font-weight: bold
+}
+.adicionar-image {
+    height: 100px;
+    width: 50%;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+    background-size: cover;
+}
+#img-1 {
+    background-image: url('../images/site/userprofile/Add.png');
+}
+
+#img-2 {
+    background-image: url('../images/site/userprofile/Add.png');
+}
+
+#img-3 {
+    background-image: url('../images/site/userprofile/Add.png');
+}
+
+#img-4 {
+    background-image: url('../images/site/userprofile/Add.png');
+}
+
+#img-5 {
+    background-image: url('../images/site/userprofile/Add.png');
+}
+
+#img-6 {
+    background-image: url('../images/site/userprofile/Add.png');
+}
+
+.btn-publicar {
+    display: block;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #4AA5CC;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.btn-publ {
+    display: flex;
+    flex-direction: row;
+   
+    float:right;
+}
+
+main {
+    background-color: #fff;
+    width: 90%;
+    height: 90%;
+    margin: 100px;
+}
+

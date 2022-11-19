@@ -1,0 +1,31 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+.container{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  text-align: center;
+  color: #343434;
+}
+
+.container h1{
+  font-size: 160px;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 20px;
+}
+
+.entrar input{
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: aquamarine;
+  color: #141414;
+}

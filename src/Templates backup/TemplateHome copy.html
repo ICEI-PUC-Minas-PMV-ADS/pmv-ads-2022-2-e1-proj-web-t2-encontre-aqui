@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/icons/favority-icon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./home.css">
+
+
+    <style>
+        #places-in-maps {
+            position: absolute;
+
+
+            width: 80%;
+            height: 300px;
+        }
+    </style>
+
+    <title>Encontre-Aqui</title>
+</head>
+
+
+<body class="container-home">
+
+    <header class="header-home-page">
+        <nav class="nav-menu">
+            <div class="open-menu">
+                <img class="btn-burguer" src="./assets/images/icons/hamburguer_w.png">
+            </div>
+
+            <div class="logo"><img src="../assets/images/logo-site/logo2.png"></div>
+
+
+
+            <ul class="menu mt-10">
+                <li><a href="#Serviços Residênciais">Serviços Residênciais
+                        <span><img src="../assets/images/icons/indicador_menu.svg"> </span>
+                    </a></li>
+                <li><a href="#Entrega em Domicilio">Entrega em Domicilio
+                        <span><img src="../assets/images/icons/indicador_menu.svg"> </span>
+                    </a></li>
+                <li><a href="#Na sua cidade">Na sua cidade
+                        <span><img src="../assets/images/icons/indicador_menu.svg"> </span>
+                    </a></li>
+            </ul>
+
+
+            <div class=""><a href="#" class="btn btn-light">Para Empresas</a></div>
+            <div class="account">
+                <a class="btn btn-light" href="#">Cadastrar-se</a>
+                <a class="btn btn-light" href="#">Login</a>
+            </div>
+
+        </nav>
+
+
+        <nav class="header-search-area mt-50">
+            <h1>Bem-Vindo(a) ao <span>Encontre-aqui</span></h1>
+            <form action="./serch.html" method="get" class="search">
+
+                <input name="search" type="text" placeholder="Empresas, Produtos, Serviços">
+                <input name="place" type="text" placeholder="Cidade">
+                <button class="btn-search" type="submit">Pesquisar</button>
+            </form>
+        </nav>
+    </header>
+
+
+    <main id="content">
+
+        <div id="places-in-maps">
+
+    </main>
+
+
+    <footer id="footer" class="mt-10">
+
+        <div class="footer-about">
+            <div class="logo"><img src="../assets/images/logo-site/logo2.png"></div>
+            <span>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Eveniet ipsam </span>
+        </div>
+
+        <div class="footer-categories-links color-w">
+            <h1>Categorias</h1>
+            <div class="categories">
+                <div>
+                    <ul>
+                        <li>Barbearia</li>
+                        <li>Petshop</li>
+                        <li>Restaurante</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Bebidas</li>
+                        <li>Construção</li>
+                        <li>Festas</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Vestuários</li>
+                        <li>Veículos</li>
+                        <li>Educação</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-about-links">
+            <h1>Sobre</h1>
+            <div>
+                <ul>
+                    <li>Sobre o Encontre-aqui</li>
+                    <li>Termos de Serviço</li>
+                    <li>Política de privacidade</li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/scripts/database/database.js"></script>
+    <script src="../assets/scripts/product/findProducts.js"></script>
+    <script type='text/javascript'
+        src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Aj30kitBtzqfccLqDP_RXQYks09ie-CQ5gvx0dnWFyyQImim-GDuVIVUl0VUwjQr'
+        async defer></script>
+    <script src="../assets/scripts/mapas/mapa-v1.js"></script>
+</body>
+
+</html>

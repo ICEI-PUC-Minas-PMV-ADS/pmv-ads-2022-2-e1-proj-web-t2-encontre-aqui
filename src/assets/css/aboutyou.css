@@ -1,0 +1,176 @@
+
+
+/*-----------------------------------Botão Editar----------------------------------------*/ 
+
+
+.button {
+    width: 11%;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+  }
+  
+  .button1 {
+    position: relative;
+    left: 60vw;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #151414;
+  }
+  
+  .button1:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .button-bl {
+    outline: none;
+    background: black;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    width:200px;
+}
+
+/*-----------------------------------Texto Sobre Voce----------------------------------------*/ 
+.menuconteiner {
+    width: 20%;
+    margin-top: 20px;
+    background: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteinertudo{
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo {
+    display: flex;
+}
+
+.image {
+    display: flex;
+    width: 80%;
+    margin: 0 0 0 29px;
+}
+
+/*--- Texto Sobre ---*/
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: justify;
+    padding-left: 30px;
+    margin: auto;
+}
+
+.TituloSobre {
+    margin-bottom: 20px;
+}
+
+.textPrincipal {
+    width: 90%;
+    
+    height: 230px;
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;
+    padding: 0;
+    margin: auto;
+    border: none;   
+    background-color: #fcfcfc;
+    
+}
+
+.fav-info {
+    padding-top: 50px;
+}
+
+/*-----------------------------------Grid Principal----------------------------------------*/
+
+.container {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: #fcfcfc;
+}
+.grid-container {
+    background-color: #fcfcfc;
+    padding: 0px;
+    width: 79%;  
+    margin-right: 0px;
+    border-style: solid;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.featured-products {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 19.5%);
+    grid-gap: 5px;
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1440px) {
+    .featured-products {
+        grid-template-columns: repeat(auto-fit, 33%);
+    }
+}
+
+@media (max-width: 800px) {
+    .featured-products {
+        grid-template-columns: 1fr;
+    }
+}
+
+.featured-products-title {
+    text-align: center;
+}
+
+.featured-product-item {
+    border-radius: 5px;
+    margin-right: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.featured-product-item-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.featured-product-item>.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.featured-product-item>.description {
+    color: #666;
+}
+
+.featured-product-item>.price {
+    font-style: italic;
+}
+

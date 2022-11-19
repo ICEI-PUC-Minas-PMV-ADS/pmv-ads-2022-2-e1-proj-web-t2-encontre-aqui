@@ -1,7 +1,9 @@
 .carousel-area {
+    display: flex;
+    align-items: center;
     position: relative;
     padding: 10px;
-    max-width: 900px;
+    max-width: 80vw;
     margin: 0 auto;
 }
 
@@ -16,26 +18,23 @@
 }
 
 .arrow-left, .arrow-right {
-    position: absolute;
-    top: 0;
-    left: 0;
     right: auto;
     bottom: 0;
     font-size: 15px;
     line-height: 15px;
-    width: 20px;
+    width: 220px;
+    height: 100px;
     text-align: center;
     color: #fff;
     cursor: pointer;
     border: none;
-    background: linear-gradient(to left, transparent 0%, black 200%);
-    opacity: 0.1;
-    transition: all 600ms ease-in-out;
+    margin:10px;
+    background-color: darkgrey;
 }
 .arrow-right {
     left: auto;
     right: 0;
-    background: linear-gradient(to right, transparent 0%, black 200%);
+  
 }
 .arrow-left:hover, .arrow-right:hover {
     opacity: 1;

@@ -1,28 +1,13 @@
-const controls = document.querySelectorAll(".control");
-let currentItem = 0;
-const items = document.querySelectorAll(".item");
-const maxItems = items.length;
-var scroll;
-var height;
-/*
-var body = document.body,
-    html = document.documentElement;
 
-    height = Math.max( body.scrollHeight, body.offsetHeight, 
-                       html.clientHeight, html.scrollHeight, html.offsetHeight );
-
-
-  window.onscroll = function(ev) {
-    
-    if ((window.innerHeight + window.scrollY) >= height/2) {
-         
-    }else{
-      console.log("Passou")
-      stopCarousel();
-    }
-};
-*/
-
+window.addEventListener('load', ()=>{
+  const controls = document.querySelectorAll(".control");
+  let currentItem = 0;
+  const items = document.querySelectorAll(".item");
+  const maxItems = items.length;
+  var scroll;
+  var height;
+  
+  
 controls.forEach((control) => {
   control.addEventListener("click", (e) => {
     isLeft = e.target.classList.contains("arrow-left");
@@ -74,11 +59,5 @@ controls.forEach((control) => {
 
       items[currentItem].classList.add("current-item");
                  
-/*
-}, 3000);
 
-
-function stopCarousel(){
-  window.clearInterval();
-}
-*/
+})

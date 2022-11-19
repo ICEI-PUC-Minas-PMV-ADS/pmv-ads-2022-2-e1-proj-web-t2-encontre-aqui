@@ -5,11 +5,16 @@
 <p align="center"> 
   <img src="img/wireframes/Template-Home.png" width="400">
 </p>
-<h3 align="center">FIGURA X - 1° Template padrão</h3>
 
-<p>O template desenvolvido está presente no site <a href="#">GitHub Pages</a>
+#### *Figura 1- Home Page*
+
+<p>O codigo fonte do template desenvolvido está presente no site <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/tree/main/src/Templates">GitHub</a></p>
+<p> O template da Home Page pode ser visualizado acessando o endereço:
+  https://pauloosilas.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/Templates/TemplateHome.html</p>
+
   
-<p>No template da figura X é contemplado os seguintes layouts: </p>
+  
+<p>No template da figura 1 é contemplado os seguintes layouts: </p>
   <ul>
     <li>Homepage</li>
     <li>Alterar senha</li>
@@ -40,13 +45,19 @@
   <img src="img/FI_Z.JPG" width="1000">
 </p>
  
- #
+ ##### *Figura 2 - Home Page*
   
   <p align="center"> 
   <img src="img/wireframes/Template-Outras-Paginas.png" width="400">
 </p>
-<h3 align="center">FIGURA Y - 2° Template padrão</h3>
 
+##### *Figura 3 - Outras Páginas*
+
+<h3 align="center">FIGURA 2 - 2° Template padrão</h3>
+
+<p> Este template pode ser visualizado acessando o endereço:
+  https://pauloosilas.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/Templates/TemplateOutras.html</p>
+  
 <p>No template da figura Y é comtemplado um único layout: </p>
   <ul>
     <li>Resultados de pesquisas</li>
@@ -61,3 +72,4 @@
   <img src="img/FI_U.JPG" width="1000">
 </p>
 
+##### *Figura 3 - Página Com Resultado das pesquisas*
