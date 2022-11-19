@@ -209,7 +209,7 @@ function updatePage(empresa){
                   <div class="contato">
                       <div class="local">
                           <div id="complete-address">
-                            ${empresa.logradouro} ${empresa.cidade} ${empresa.estado}
+                            ${company_data.logradouro} ${company_data.cidade} ${company_data.estado}
                           </div>
                           <div>
                               <img width='32' src="./assets/images/icons/map.svg">
@@ -217,7 +217,7 @@ function updatePage(empresa){
                       </div>
                       <div class="local">
                           <div>
-                          <a href="http://web.whatsapp.com/">  (31)${empresa.tel} </a>
+                          <a href="http://web.whatsapp.com/">  (31)${company_data.tel} </a>
                           </div>
                           <div>
                           <img width='32' src="./assets/images/icons/whats.svg">
