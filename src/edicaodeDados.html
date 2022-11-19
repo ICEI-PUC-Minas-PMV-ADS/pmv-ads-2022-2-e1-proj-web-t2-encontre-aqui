@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/css/avatar.css">
     <link rel="stylesheet" href="./assets/css/ediçãodedados_jr.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <script defer src="./assets/scripts/UsuarioEdicao/UsuarioDivulgação.js"></script>
+    <script defer src="./assets/scripts/UsuarioEdicao/usuarioDivulgacao.js"></script>
     <title>Edição de dados Juridicos</title>
 </head>
 
@@ -31,7 +31,7 @@
                     <a href="#" class="avatar-1"><img src="./assets/images/site/userprofile/avatar.png"></a>
                 </div>
                 <div>
-                    <h1 class="texto">Olá, Marcos Nunes</h1>
+                    <h1 class="texto" id="user_name"></h1>
                     <a class="btn btn-light" href="#">Sair</a>
                 </div>
             </div>
@@ -45,14 +45,18 @@
                     <div class="adicionar-imagem">
                         <div class="card">
                             <div class="adicionar-image" id="img-1"></div>
-                            <a href="#" class="btn-1">Adicionar foto</a>
+                            <label for="textoFoto" class="btn-1">Adicionar foto</label>
+                            <input type="file" id="textoFoto" onclick="upload_img('textoFoto', 'url_img')"
+                                onchange="addPhoto(event, 'img-1');">
+                            <input id="url_img" type="hidden" value="">
                         </div>
                     </div>
-                    <form id="form">
+                    <form action="./usuarioDivulgacao.html" id="form">
                         <div class="inputBox-1">
                             <input type="text" required="required">
                             <span class="spans">Razão Social</span>
                         </div>
+
 
                         <div class="inputBox-1">
                             <input type="CNPJ">
@@ -80,13 +84,13 @@
                         </div>
 
                         <div class="inputBox-1">
-                            <input type="Inscrição Estadual" required="required">
+                            <input type="Inscrição Estadual">
                             <span class="spans">Inscrição Estadual</span>
                         </div>
 
                         <div class="inputBox-1">
-                            <input type="Bairro" required="required">
-                            <span class="spans">Bairro</span>
+                            <input type="Cidade" required="required">
+                            <span class="spans">Cidade</span>
                         </div>
 
                         <div class="inputBox-1">
@@ -98,14 +102,19 @@
                             <input type="Telefone" required="required">
                             <span class="spans">Telefone</span>
                         </div>
+                        <div class="inputBox-1">
+                            <label for="descricao" class="spans">Faça uma breve descrição do seu negócio</label><br>
+                            <textarea id="descricao" required="required"></textarea>
+                        </div>
 
                         <div class="inputBox-2">
-                            <input type="submit" value="Atualizar">
+                            <input type="submit" onclick="saveData()" value="Atualizar">
                         </div>
                 </div>
                 </form>
             </div>
         </section>
+
     </main>
 
     <footer id="footer" class="mt-10">
@@ -170,6 +179,8 @@
             }
         }
     </script>
+
+    <script src="./assets/scripts/product/addPhoto.js"></script>
 </body>
 
 </html>

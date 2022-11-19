@@ -203,7 +203,7 @@ body{
   #info{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 10%;
     width: 100%;
   }

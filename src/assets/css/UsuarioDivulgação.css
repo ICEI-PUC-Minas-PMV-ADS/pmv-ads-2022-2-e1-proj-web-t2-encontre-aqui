@@ -81,7 +81,7 @@ h3 {
 }
 
 .card {
-    width: 31%;
+    width: 50%;
     display: inline-block;
     margin: 1 1%;
     padding: 14px;    
@@ -152,7 +152,8 @@ h3 {
 .btn-publ {
     display: flex;
     flex-direction: row;
-    padding-left: 60%;
+   
+    float:right;
 }
 
 main {

@@ -5,11 +5,15 @@ const downPage = document.getElementById('downPage')
 var previous, next;
 var selected = 0; 
 
+previous = document.getElementById('previous') 
+next = document.getElementById('next')    
+ 
+
 upPage.addEventListener('click', ()=>{
     if(selected > 0){ 
         previous = document.getElementById('previous') 
         next = document.getElementById('next')    
-       
+        
         previous.removeAttribute('id')
         next.removeAttribute('id')       
        
@@ -23,9 +27,10 @@ upPage.addEventListener('click', ()=>{
 })
 
 downPage.addEventListener('click', ()=>{
-   if(selected < 2){
+   if(selected < 3){
     next = document.getElementById('next')     
     previous = document.getElementById('previous') 
+  
     next.removeAttribute('id')
     previous.removeAttribute('id')
      
