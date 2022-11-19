@@ -79,7 +79,7 @@ function updatePage(empresa){
     
     logo_area.innerHTML = ` <a href='empresa.html?categoria=${empresa.categoria}&id=${empresa.id}'>
                             <img id="logo-user" src='${company_data.url_img}'>
-                            <span id="name-user" class="client-name">${company_data.nome}</span> </a>`
+                            <span id="name-user" class="client-name">${company_data.razao_social}</span> </a>`
    
 
     var price = ''
