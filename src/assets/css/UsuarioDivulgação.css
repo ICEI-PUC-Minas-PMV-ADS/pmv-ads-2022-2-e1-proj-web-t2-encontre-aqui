@@ -77,11 +77,12 @@ h3 {
     
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
+  
+    width: 100%;
 }
 
 .card {
-    width: 50%;
+    width: 40%;
     display: inline-block;
     margin: 1 1%;
     padding: 14px;    
@@ -152,8 +153,9 @@ h3 {
 .btn-publ {
     display: flex;
     flex-direction: row;
-   
-    float:right;
+    position: relative;
+    
+    right: -60%;
 }
 
 main {

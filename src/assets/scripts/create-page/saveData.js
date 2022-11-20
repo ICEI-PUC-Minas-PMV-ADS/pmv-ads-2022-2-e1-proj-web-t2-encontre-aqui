@@ -23,8 +23,7 @@ btn_visualization.addEventListener('click', () =>{
         preco:product_price.value,
         domicilio: isDeliveries.checked,
         agendamento:isReservation.checked,
-        banner: url_img_pr.value,     
-         
+        banner: url_img_pr.value,             
     };
 
     localStorage.setItem('atual_page', JSON.stringify(page_data))

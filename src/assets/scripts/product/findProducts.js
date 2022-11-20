@@ -24,7 +24,7 @@ var info = document.getElementById('info');
 var place_options = document.querySelector(".place-options");
 var other_products = document.getElementById("other-products");
 var complete_address = document.getElementById("complete-address");
-
+var titlePage = document.getElementById('titlePage');
 
 addEventListener('load', ()=>{
     findCetegory()
@@ -66,7 +66,8 @@ function updatePage(empresa){
     var domicilio = false;
     var reservas = false;
     var domicilioReservas =''
-
+    titlePage.innerHTML = empresa.nome;
+    
     header_product_page.style.backgroundImage = `url(${empresa.imgBanner})`; 
     header_product_page.style.backgroundSize = 'cover'
     

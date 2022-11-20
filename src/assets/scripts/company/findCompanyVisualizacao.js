@@ -25,7 +25,27 @@ var other_products = document.getElementById("other-products");
 var place_options = document.querySelector(".place-options");
 
 addEventListener('load', ()=>{
-    findCetegory()   
+
+    var empresa = {}
+    var company_data = JSON.parse(localStorage.getItem('company_data'))
+    var atual_page = JSON.parse(localStorage.getItem('atual_page'))
+   
+    if(company_data){
+        empresa.imgBanner = atual_page.banner;/// <-----
+        empresa.descricao = company_data.descricao; 
+        empresa.nome = company_data.razao_social;
+        empresa.logradouro = company_data.logradouro + ', ' + company_data.bairro;
+        empresa.cidade = company_data.cidade;
+        empresa.estado = company_data.estado;
+        empresa.categoria = company_data.categoria;
+        empresa.imagens = [`${company_data.url_img}`];
+        empresa.hfunc = ['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'];
+        empresa.rsocial = ['facebook.com'];   
+        empresa.tel = '9297-53197';
+    }
+
+    updatePage(empresa)
+    GetMap(empresa) 
 })
 
 
@@ -49,20 +69,15 @@ function findCompany(data){
      data.forEach(empresa =>{
         if(empresa.id === id){
           updatePage(empresa)
-          GetMap(empresa)
+          
         }
     })
 }
 
 
 function updatePage(empresa){
-    var company_data = JSON.parse(localStorage.getItem('company_data'))
+    var pages_data = JSON.parse(localStorage.getItem('pages_data'))
     var atual_page = JSON.parse(localStorage.getItem('atual_page'))
-
-   // empresa.imgBanner = atual_page.banner;
-  //  empresa.descricao = company_data.descricao; /// <-----
-    empresa.nome = company_data.razao_social;
-
 
     var img_products = '';  
     var domicilio = false;
@@ -80,18 +95,19 @@ function updatePage(empresa){
     company_desc.innerHTML += '<div class="title">'+ empresa.nome +'</div>' + isOpened +
     '<div>'+ empresa.descricao.substr(0,600)+'</div>';
     
- 
-     for(var p = 0; p < empresa.produtos.length; p++){
-            if(empresa.produtos[p].domicilio){
-                domicilio = true
+    if(pages_data){
+        for(var p = 0; p < pages_data.length; p++){
+                if(pages_data[p].domicilio){
+                    domicilio = true
+                }
+                if(pages_data[p].agendamento){
+                    reservas = true
+                }
+                img_products += `<a href="produto.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=${pages_data[p].id}">
+                <div><img class ="other-imgs" src='${pages_data[p].imagens[0]}' >
+                    </div><div style="width:150px" class="opened">${pages_data[p].nome}</div></a>`
             }
-            if(empresa.produtos[p].agendamento){
-                reservas = true
-            }
-            img_products += `<a href="produto.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=${empresa.produtos[p].id}">
-            <div><img class ="other-imgs" src='${empresa.produtos[p].imagens[0]}' >
-                </div><div style="width:150px" class="opened">${empresa.produtos[p].nome}</div></a>`
-         }
+        }
                                
                // console.log(empresa.produtos[p])
                 other_products.innerHTML = img_products 
