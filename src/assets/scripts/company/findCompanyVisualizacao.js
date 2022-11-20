@@ -59,10 +59,13 @@ function updatePage(empresa){
     var company_data = JSON.parse(localStorage.getItem('company_data'))
     var atual_page = JSON.parse(localStorage.getItem('atual_page'))
 
-   // empresa.imgBanner = atual_page.banner;
-  //  empresa.descricao = company_data.descricao; /// <-----
+    empresa.imgBanner = atual_page.banner;
+    empresa.descricao = company_data.descricao; /// <-----
     empresa.nome = company_data.razao_social;
-
+    empresa.logradouro = company_data.lologradouro + ', ' + company_data.bairro;
+    empresa.cidade = company_data.cidade;
+    empresa.estado = company_data.estado;
+    empresa.categoria = company_data.categoria;
 
     var img_products = '';  
     var domicilio = false;
