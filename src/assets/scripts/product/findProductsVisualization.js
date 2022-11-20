@@ -128,10 +128,10 @@ function updatePage(empresa){
                      </div>
                         </div>
                         <div class="description-text">
-                            <div id="ps-title" class="title">${empresa.produtos[0].nome}</div>
+                            <div id="ps-title" class="title">${atual_page.nome}</div>
                             <div id="ps-price">${price}</div>
                             <div id=""></div>
-                            <div id="ps-descr"> ${empresa.produtos[0].descricao.substr(0, 600)}  </div>
+                            <div id="ps-descr"> ${atual_page.descricao.substr(0, 600)}  </div>
                         </div>
                         `
                     }
