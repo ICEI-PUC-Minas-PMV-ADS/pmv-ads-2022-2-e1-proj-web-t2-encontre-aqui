@@ -29,7 +29,7 @@ addEventListener('load', ()=>{
     var empresa = {}
     var company_data = JSON.parse(localStorage.getItem('company_data'))
     var atual_page = JSON.parse(localStorage.getItem('atual_page'))
-
+   
     if(company_data){
         empresa.imgBanner = atual_page.banner;/// <-----
         empresa.descricao = company_data.descricao; 
