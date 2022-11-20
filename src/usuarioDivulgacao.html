@@ -53,9 +53,8 @@
 
                     <div class="selecao">
                         <h3>Ramo/Profissão</h3>
-                        <select class="opcao">
-                            <option selected disabled value=""></option>
-                            <option>Eletricista</option>
+                        <select onchange="addCategoria(this)" class="opcao">
+                            <option selected disabled>Eletricista</option>
                             <option>Marcenaria</option>
                             <option>Advogado</option>
                             <option>Dentista</option>
@@ -82,9 +81,10 @@
                 <a href="./empresaVisualizacao.html" class="btn-publicar">PUBLICAR AGORA</a>
             </div>
         </div>
-        <div>
+        <!-- <div>
             <div class="mapa-img"><img src="./assets/images/site/userprofile/Mapas.JPG" alt="Mapa"></div>
         </div>
+        -->
     </main>
 
     <footer id="footer" class="mt-10">

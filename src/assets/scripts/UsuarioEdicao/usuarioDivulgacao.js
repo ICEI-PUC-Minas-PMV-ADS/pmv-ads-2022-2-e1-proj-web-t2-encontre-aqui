@@ -1,4 +1,3 @@
-var dataForm = document.querySelectorAll('#form input')
 
 var user_name = document.getElementById('user_name')
 var user = JSON.parse(localStorage.getItem('user'))
@@ -11,19 +10,25 @@ if(user){
 
 
 function saveData(){
+    var dataForm = document.querySelectorAll('#form input')
+    var descricaoArea = document.getElementById('descricao') 
+    
     var company_data = {
         url_img: url_img.value, 
         razao_social:dataForm[0].value,
         cnpj: dataForm[1].value,
-        logradouro: dataForm[2].value,
-        municipio: dataForm[3].value,
-        cep: dataForm[4].value,
-        email: dataForm[5].value,
-        inscricaoEstadual: dataForm[6].value,
-        bairro: dataForm[7].value,
+        logradouro: dataForm[4].value,
+        bairro: dataForm[5].value,
+        cep: dataForm[6].value,
+        email: dataForm[3].value,
+        inscricaoEstadual: dataForm[2].value,
+        cidade: dataForm[7].value,
         uf: dataForm[8].value,
-        telefone: dataForm[9].value,      
+        telefone: dataForm[9].value,
+        descricao:descricaoArea.value,
+        categoria: ''      
     }
+    console.log(company_data)
     localStorage.setItem('company_data', JSON.stringify(company_data))
   
 }
