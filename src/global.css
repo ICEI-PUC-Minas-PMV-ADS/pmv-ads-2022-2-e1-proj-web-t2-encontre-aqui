@@ -509,7 +509,10 @@ ul li{
 .search .place-area input{
   width:100%;
 }
+input{
+  outline: none;
 
+}
 input[type="file"]{
   display: none;
 }
