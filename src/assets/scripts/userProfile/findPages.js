@@ -1,5 +1,5 @@
 window.addEventListener('load', ()=>{
-    var img_avatar = document.querySelector('#avatar')
+    var img_avatar = document.getElementById('avatar')
     const user = JSON.parse(localStorage.getItem('user')) 
     if(user === null || user === undefined){
         window.location.href = './login.html'
@@ -13,8 +13,7 @@ window.addEventListener('load', ()=>{
 
     if(company_data){
         if(img_avatar){
-          img_avatar.innerHTML = ` <img class="img_avatar"
-            src="${company_data.img_url}">`
+          img_avatar.setAttribute('src', company_data.img_url)
         }
            
     }
