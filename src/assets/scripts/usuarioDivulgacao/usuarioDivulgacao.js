@@ -19,10 +19,11 @@ window.addEventListener('load', ()=>{
     var company_data = JSON.parse(localStorage.getItem('company_data'))
     if(company_data){
         var img_avatar = document.querySelectorAll(".img_avatar")
-        var company_name = document.getElementById("company_name")
-       
-            company_name.innerHTML = company_data.razao_social;        
-      
+        var user_name = document.getElementById("user_name")
+        if(user_name != null && user_name != undefined){
+            user_name.innerHTML = company_data.razao_social;
+        
+        }
         
     for(var i = 0; i < img_avatar.length; i++){      
         img_avatar[i].setAttribute('src', company_data.url_img)  
