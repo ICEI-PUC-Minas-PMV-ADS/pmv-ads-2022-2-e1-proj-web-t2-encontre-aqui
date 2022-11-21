@@ -6,7 +6,7 @@ window.addEventListener('load', ()=>{
     var logged =  `            
     <nav class="nav-menu">
     <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
-    <form action="#" method="GET" class="search" autocomplete="off">
+    <form action="./search.html" method="GET" class="search" autocomplete="off">
         <input name="search" type="text" placeholder="Produtos, Serviços, Empresas">
         <div class="place-area">
             <input name="place" id="place" type="text" placeholder="Cidade">
