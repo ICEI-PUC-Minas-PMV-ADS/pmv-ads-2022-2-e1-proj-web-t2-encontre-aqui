@@ -1,5 +1,5 @@
 window.addEventListener('load', ()=>{
-    var img_avatar = document.getElementById('avatar')
+    var img_avatar = document.getElementById('avatar-user')
     const user = JSON.parse(localStorage.getItem('user')) 
     if(user === null || user === undefined){
         window.location.href = './login.html'
@@ -13,7 +13,9 @@ window.addEventListener('load', ()=>{
 
     if(company_data){
         if(img_avatar){
-          img_avatar.setAttribute('src', company_data.img_url)
+            alert(img_avatar.getAttribute('src'))
+          img_avatar.setAttribute('src', company_data.url_img)
+          alert(img_avatar.getAttribute('src'))
         }
            
     }
