@@ -1,15 +1,22 @@
 window.addEventListener('load', ()=>{
+    var img_avatar = document.querySelector('.img_avatar')
     const user = JSON.parse(localStorage.getItem('user')) 
     if(user === null || user === undefined){
         window.location.href = './login.html'
     }
     
     const pages_data = JSON.parse(localStorage.getItem('pages_data')) 
+    const company_data = JSON.parse(localStorage.getItem('company_data')) 
+
     var pages = document.getElementById('pages')
     var cards= ''
 
-   
+    if(company_data){
+        img_avatar.setAttribute('src', company_data.img_url)
+    }
+
     if(pages_data){
+       
         for(var i = 0 ; i < pages_data.length; i++){
              cards += ` <div class="featured-product-item">
                 <div style="background-image: url('${pages_data[i].imagens[0]}');"
