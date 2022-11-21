@@ -44,9 +44,9 @@ addEventListener('load', ()=>{
            empresa.estado = company_data.estado;
            empresa.categoria = company_data.categoria;
            empresa.imagens = [`${company_data.url_img}`];
-           empresa.hfunc = ['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'];
+           empresa.hfunc =  company_data.hfunc;
            empresa.rsocial = ['facebook.com'];   
-           empresa.tel = '9297-53197';
+           empresa.tel = company_data.telefone;
        }
    
        updatePage(empresa)

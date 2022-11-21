@@ -6,13 +6,6 @@ var url_img = document.getElementById('url_img')
     if(user === null || user === undefined){
         window.location.href = './login.html'
     }
-    
-if(user){
-     user_name.innerHTML = `Olá, ${user.full_name}`;
-}else{
-    url_img.value ='./assets/images/site/userprofile/avatar.png'
-}
-
 
 function saveData(){
     var dataForm = document.querySelectorAll('#form input')

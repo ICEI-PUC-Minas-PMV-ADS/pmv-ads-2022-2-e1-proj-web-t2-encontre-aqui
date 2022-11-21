@@ -10,6 +10,23 @@ function addCategoria(opcoes_categoria){
    }
 }
 
+function addHorarios(){
+    var hfunc = [];
+    var company_data = JSON.parse(localStorage.getItem('company_data'))
+    var horarios = document.querySelectorAll('.horarios input')
+    
+    for(var i = 0; i < horarios.length/2; i++){
+        hfunc.push(joinHorarios(horarios[i].value, horarios[i+1].value))
+    }
+   
+    company_data.hfunc = hfunc
+    localStorage.setItem('company_data', JSON.stringify(company_data))   
+}
+
+function joinHorarios(inicio, fim){
+    return `${inicio}-${fim}`
+}
+
 window.addEventListener('load', ()=>{
     const user = JSON.parse(localStorage.getItem('user')) 
     if(user === null || user === undefined){
@@ -22,7 +39,6 @@ window.addEventListener('load', ()=>{
         var user_name = document.getElementById("user_name")
         if(user_name != null && user_name != undefined){
             user_name.innerHTML = company_data.razao_social;
-        
         }
         
     for(var i = 0; i < img_avatar.length; i++){      
