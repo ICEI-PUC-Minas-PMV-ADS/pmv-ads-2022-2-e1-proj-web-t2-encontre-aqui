@@ -19,10 +19,10 @@ window.addEventListener('load', ()=>{
     var company_data = JSON.parse(localStorage.getItem('company_data'))
     if(company_data){
         var img_avatar = document.querySelectorAll(".img_avatar")
-        if(document.getElementById("user_name"))
-          document.getElementById("user_name").innerHTML = company_data.razao_social;
-        if(document.getElementById("company_name"))
-          document.getElementById("company_name").innerHTML = company_data.razao_social;
+        var company_name = document.getElementById("company_name")
+        if(company_name != null && company_name != undefined){
+            company_name.innerHTML = company_data.razao_social;        
+        }
         
     for(var i = 0; i < img_avatar.length; i++){      
         img_avatar[i].setAttribute('src', company_data.url_img)  
