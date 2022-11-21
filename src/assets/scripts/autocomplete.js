@@ -1,3 +1,5 @@
+window.addEventListener('load', () => {
+    
 let names = ["Juiz de Fora",
              "Belo Horizonte",
              "Contagem",
@@ -42,3 +44,6 @@ function removeElements(){
         item.remove()
     })
 }
+
+
+})

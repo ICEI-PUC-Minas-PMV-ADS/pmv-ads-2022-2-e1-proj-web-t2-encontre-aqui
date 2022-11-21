@@ -1,8 +1,7 @@
 window.addEventListener('load', ()=>{
     var user = JSON.parse(localStorage.getItem('user'))        
     var company_data = JSON.parse(localStorage.getItem('company_data'))
-    
-   
+    var user_name = document.getElementById("user_name")
 
     if(user){
         user_name.innerHTML = `Olá, ${user.full_name}`;
@@ -10,7 +9,7 @@ window.addEventListener('load', ()=>{
     
     if(company_data){
             var img_avatar = document.querySelector(".img_avatar")
-            var user_name = document.getElementById("user_name")
+           
             
             user_name.innerHTML =  `Olá, ${company_data.razao_social}`;
             if(img_avatar){
