@@ -1,5 +1,5 @@
 var cards = '';
-var featured_products = document.querySelector('.featured-products');
+var featured_products = document.getElementById('area_favorites');
 
 findFavories();
 
