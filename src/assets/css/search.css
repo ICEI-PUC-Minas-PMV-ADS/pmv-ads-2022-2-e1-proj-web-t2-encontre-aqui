@@ -79,6 +79,7 @@ section{
 
 .card-container .card .card-body{
     padding:10px;
+    width: 100%;
 }
 
 .card-container .card .card-body .product-name{
