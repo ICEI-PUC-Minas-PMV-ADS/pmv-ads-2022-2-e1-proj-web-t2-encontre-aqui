@@ -48,7 +48,7 @@ addEventListener('load', ()=>{
            empresa.rsocial = atual_page.rsocial;   
            empresa.tel = company_data.telefone;
        }
-   
+       
        updatePage(empresa)
        GetMap(empresa) 
   
