@@ -49,7 +49,7 @@ section{
 .card-container .card{
     display: flex;
     width: 95%;
-    height: 120px;
+    height: 130px;
     margin-top: 10px;
     background-color: #fff;
     border-radius: 5px;
@@ -72,21 +72,28 @@ section{
 
 .card-container .card #logo-empresa{
     width: 110px;
-    height: 100px;
+    height: 105px;
     padding: 10px 2px;
     margin: 5px;
 }
 
 .card-container .card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding:10px;
     width: 100%;
+    height: 100%;
 }
 .card-container .card .card-body .local_card{
     display: flex;
     margin:0 2%;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-end;
+     
     font-size: 0.8rem;
+}
+.card-container .card .card-body .local_card span{
+    margin-right: 5%;
 }
 .card-container .card .card-body .product-name{
     font-weight: 700;

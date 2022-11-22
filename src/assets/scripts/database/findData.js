@@ -117,16 +117,17 @@ function searchPlace(categoria){
         }
         var marked = checkFavorites(empresa)    
  
-                        data += `<div class="card">
+                        data += `<div class="card ">
                                         <img id="logo-empresa" src="${empresa.imagens[0]}">
 
                                         <div class="card-body">
-                                            <div class="product-name">${empresa.nome.substr(0,30)}</div>
-                                            <div class="description">${empresa.nome} ${empresa.descricao.substr(0,45)}...</div>
+                                            <div class="product-name">${empresa.nome.substr(0,60)}</div>
+                                            <div class="description">${empresa.nome} ${empresa.descricao.substr(0,60)}...</div>
                                                <div class="local_card"> <span> ${isOpened} </span>
-                                                                        <span> ${empresa.cidade} </span> </div>
-                                        </div>
-
+                                                                        <span> ${empresa.cidade} </span> 
+                                                                        <span> ${empresa.estado} </span>  
+                                                                        </div></div>
+                                        
                                         <div class="card-btn-actions">
                                        
                                         <div onclick="markFavorite(${empresa.id},'${empresa.nome}', '${empresa.categoria}', '${empresa.isEmpresa}')" class="mark-favorite ${marked}">
@@ -147,8 +148,9 @@ function searchPlace(categoria){
 
                                             <a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${produto.id}&prodserv=${prodserv}" class="btn btn-primary">Visitar</a>
                                         </div>
+                                      
                                     </div>
-                                    ${empresa.categoria} 
+                                 
                                     `
                                     
                  //   })
