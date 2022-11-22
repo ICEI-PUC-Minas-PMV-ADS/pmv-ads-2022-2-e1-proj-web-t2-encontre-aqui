@@ -27,11 +27,11 @@ function GetMap(empresa) {
         geocodeQuery(rota)
         var prod ='';
  
-           for(var i =0; i < 1 ; i++){
+ /*          for(var i =0; i < 1 ; i++){
             prod += `<a href="/produtos/produtos.html?id=${empresa.produtos[0].id}" > 
             <img src='${empresa.produtos[0].imagens[i]}' width="25"></a>`
             }
-
+*/
         cardMap = `<a href="produto.html?id=${empresa.id}> "<div class="card-map">
         <img id="logo-empresa" src="${empresa.imagens[0]}">
 
