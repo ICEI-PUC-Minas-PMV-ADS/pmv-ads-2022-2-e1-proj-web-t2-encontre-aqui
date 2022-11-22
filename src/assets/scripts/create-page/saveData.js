@@ -11,6 +11,8 @@ btn_visualization.addEventListener('click', () =>{
     var url_img3 = document.getElementById("url_img3");
     var url_img4 = document.getElementById("url_img4");
 
+    var rsocial = document.querySelectorAll('.rsocial input');
+
     var product_name = document.getElementById("product_name");
     var product_price = document.getElementById("product_price");
     var product_description = document.getElementById("product_description");
@@ -29,7 +31,8 @@ btn_visualization.addEventListener('click', () =>{
         preco:product_price.value,
         domicilio: isDeliveries.checked,
         agendamento:isReservation.checked,
-        banner: url_img_pr.value,             
+        banner: url_img_pr.value, 
+        rsocial:[rsocial[0].value, rsocial[1].value]            
     };
 
     localStorage.setItem('atual_page', JSON.stringify(page_data))

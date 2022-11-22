@@ -40,7 +40,7 @@ addEventListener('load', ()=>{
         empresa.categoria = company_data.categoria;
         empresa.imagens = [`${company_data.url_img}`];
         empresa.hfunc = company_data.hfunc;
-        empresa.rsocial = ['facebook.com'];   
+        empresa.rsocial = atual_page.rsocial;   
         empresa.tel = company_data.telefone;
     }
 

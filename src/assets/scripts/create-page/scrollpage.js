@@ -27,7 +27,7 @@ upPage.addEventListener('click', ()=>{
 })
 
 downPage.addEventListener('click', ()=>{
-   if(selected < 3){
+   if(selected < 2){
     next = document.getElementById('next')     
     previous = document.getElementById('previous') 
   
