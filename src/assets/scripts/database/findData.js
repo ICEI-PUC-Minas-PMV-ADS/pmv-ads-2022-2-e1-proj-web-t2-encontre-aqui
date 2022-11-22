@@ -5,6 +5,8 @@ var url = window.location.href
 var urlObj = new URL(url)
 var search = urlObj.searchParams.get("search")
 var place = urlObj.searchParams.get("place")
+var url_categoria = urlObj.searchParams.get("categoria")
+var id =  parseInt(urlObj.searchParams.get("id"))
 var tags = document.querySelector('.tags')
 var wanted_place = document.getElementById('wanted-place')
 
@@ -18,7 +20,10 @@ var isOpened;
 foundObj = false
 var i = 0
 
-if(search ==null || search == undefined || search == ""){
+if(url_categoria != null && url_categoria != undefined  && id!=null && id!=undefined){
+    findCategory()
+   // updateWantedLocal("Produtos")
+}else if(search ==null || search == undefined || search == ""){
     findAllCompanies()
     updateWantedLocal("Principais Empresas")
 }else{    
@@ -109,9 +114,12 @@ function searchPlace(categoria){
  function updateCard(empresa, produto){
        
         var prodserv;
-        if(produto!==null){           
+        var temp = empresa;
+        if(produto!==null){     
+            temp = produto     
             prodserv =  empresa.id
         }else{
+           
             produto = empresa
             prodserv = 22464654;
         }
@@ -121,11 +129,11 @@ function searchPlace(categoria){
                                         <img id="logo-empresa" src="${empresa.imagens[0]}">
 
                                         <div class="card-body">
-                                            <div class="product-name">${empresa.nome.substr(0,60)}</div>
-                                            <div class="description">${empresa.nome} ${empresa.descricao.substr(0,60)}...</div>
+                                            <div class="product-name">${empresa.nome.substr(0,35)}</div>
+                                            <div class="description">${empresa.nome} ${empresa.descricao.substr(0,40)}...</div>
                                                <div class="local_card"> <span> ${isOpened} </span>
-                                                                        <span> ${empresa.cidade} </span> 
-                                                                        <span> ${empresa.estado} </span>  
+                                                                        <span> ${temp.cidade} </span> 
+                                                                        <span> ${temp.estado} </span>  
                                                                         </div></div>
                                         
                                         <div class="card-btn-actions">
@@ -166,17 +174,18 @@ function searchPlace(categoria){
     let tags = [];
    
     Categorias.forEach(categoria => {
-        if(i < 8){
+        if(i < 12){
         categoria.empresas.forEach(cat_empresas => {
             cat_empresas.forEach(empresa => {
                 isOpened = isOpen(empresa.hfunc)
               
                 if(!tags.includes(empresa.categoria)){
                   tags.push(empresa.categoria)
-                }              
                   place = empresa.cidade
-                updateCard(empresa, null)
-                cardsData.push(empresa)
+                  updateCard(empresa, null)
+                  cardsData.push(empresa)
+                }              
+               
                 i++
             })
         })    
@@ -233,4 +242,44 @@ function updateTags(categoria){
 
 function updateWantedLocal(place){
    wanted_place.innerHTML = place
+}
+
+
+
+function findCategory(){
+
+    Categorias.forEach(categoria =>{
+        categoria.tags[0] 
+        if(categoria.tags[0] === url_categoria){
+            empresas = categoria.empresas
+            updateTags(categoria)
+            empresas.forEach(empresa => {
+                console.log(empresa)
+                findCompany(empresa)
+               
+            })
+           
+        }
+    })
+  
+    }
+ 
+
+function findCompany(data){
+     data.forEach(empresa =>{       
+        if(empresa.id === id){
+          cardsData.push(empresa) 
+          place = empresa.cidade
+          isOpened = isOpen(empresa.hfunc)
+          updateWantedLocal(empresa.cidade)
+          findProducts(empresa)
+        }
+    })
+}
+
+function findProducts(empresa){
+  empresa.produtos.forEach(produto => {
+    updateCard(produto, empresa)
+  })        
+       
 }
