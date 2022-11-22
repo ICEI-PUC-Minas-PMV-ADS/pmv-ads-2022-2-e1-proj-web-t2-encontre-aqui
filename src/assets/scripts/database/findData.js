@@ -18,15 +18,16 @@ var isOpened;
 foundObj = false
 var i = 0
 
-if(!search){
-    search = 'petshop'
-    place ='juiz de fora'
+if(search ==null || search == undefined || search == ""){
+    findAllCompanies()
+    updateWantedLocal("Principais Empresas")
+}else{    
+    startSearch();
     updateWantedLocal(place)
 }
 
 
 
-startSearch();
 updateMap();
 
 function startSearch(){
@@ -122,7 +123,7 @@ function searchPlace(categoria){
                                         <div class="card-body">
                                             <div class="product-name">${empresa.nome.substr(0,30)}</div>
                                             <div class="description">${empresa.nome} ${empresa.descricao.substr(0,45)}...</div>
-                                                     ${isOpened} 
+                                                 ${empresa.cidade}    ${isOpened} 
                                         </div>
 
                                         <div class="card-btn-actions">
@@ -154,6 +155,17 @@ function searchPlace(categoria){
             toggleFavority();
         }
 
+ function findAllCompanies(){
+    Categorias.forEach(categoria => {
+        categoria.empresas.forEach(cat_empresas => {
+            cat_empresas.forEach(empresa => {
+                isOpened = isOpen(empresa.hfunc)
+                updateCard(empresa, null)
+                cardsData.push(empresa)
+            })
+        })    
+    })
+ }
 
  function updateMap(){
     var id_current = 0
