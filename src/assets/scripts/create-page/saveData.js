@@ -1,6 +1,7 @@
 var btn_visualization = document.getElementById("btn_visualization");
 
 btn_visualization.addEventListener('click', () =>{
+    var page_id = 0;
     var isDeliveries = document.getElementById("isDeliveries")
     var isReservation = document.getElementById("isReservation")
 
@@ -15,8 +16,13 @@ btn_visualization.addEventListener('click', () =>{
     var product_description = document.getElementById("product_description");
     
     var company_data = JSON.parse(localStorage.getItem('company_data'))
-
+    var pages = JSON.parse(localStorage.getItem('pages_data'))
+    
+    if(pages){
+        page_id = pages.length
+    }
     var page_data = {
+        id:page_id,
         imagens:[url_img1.value, url_img2.value, url_img3.value, url_img4.value],
         nome:product_name.value,
         descricao:product_description.value,
@@ -27,7 +33,7 @@ btn_visualization.addEventListener('click', () =>{
     };
 
     localStorage.setItem('atual_page', JSON.stringify(page_data))
-    var pages = JSON.parse(localStorage.getItem('pages_data'))
+    
    
     if(pages!=null && pages!= undefined && pages.length > 0){
         pages.push(page_data)

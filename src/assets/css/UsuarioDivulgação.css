@@ -13,6 +13,7 @@ body {
 
 .box{
     display: flex;
+    flex-direction: column;
 }
 .container-nav .empresa-profissional  {
     display: flex;
@@ -76,13 +77,13 @@ h3 {
 .card-container {
     
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
   
-    width: 100%;
+    width: 50%;
 }
 
 .card {
-    width: 40%;
+    width: 70%;
     display: inline-block;
     margin: 1 1%;
     padding: 14px;    
@@ -155,7 +156,7 @@ h3 {
     flex-direction: row;
     position: relative;
     
-    right: -60%;
+    left: 20%;
 }
 
 main {
@@ -165,3 +166,6 @@ main {
     margin: 100px;
 }
 
+.add-pages{
+    display: flex;
+}

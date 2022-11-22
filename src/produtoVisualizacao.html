@@ -8,32 +8,15 @@
     <link rel="shortcut icon" href="./assets/images/icons/favority-icon1.png" type="image/x-icon">
     <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./assets/css/prod-serv.css">
-    <link rel="stylesheet" href="./assets/css/card-map.css">
+    <link rel="stylesheet" href="./assets/css/avatar.css">
+    <link rel="stylesheet" href="./assets/css/UsuarioDivulgação.css">
     <title>Página de visualização</title>
 </head>
 
 
 <body>
 
-    <header class="header-product-page">
-
-        <nav class="nav-menu">
-            <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
-            <form action="./search.html" method="GET" class="search" autocomplete="off">
-                <input name="search" type="text" placeholder="Produtos, Serviços, Empresas">
-                <div class="place-area">
-                    <input name="place" id="place" type="text" placeholder="Cidade">
-                    <ul class="list"></ul>
-                </div>
-                <button class="btn-search" type="submit">Pesquisar</button>
-            </form>
-
-            <div class=""><a href="./paraEmpresas.html" class="btn btn-light">Para Empresas</a></div>
-            <div class="account">
-                <a class="btn btn-light" href="./cadastro.html">Cadastrar-se</a>
-                <a class="btn btn-light" href="./login.html">Login</a>
-            </div>
-        </nav>
+    <header id="userLogged" class="header-product-page">
 
         <div class="logo-area">
         </div>
@@ -142,7 +125,10 @@
     <script src="./assets/scripts/checkFavorites.js"></script>
     <script src="./assets/scripts/favorite.js"></script>
     <script src="./assets/scripts/search/isOpen.js"></script>
+    <script src="./assets/scripts/userIsLogged.js"></script>
     <script src="./assets/scripts/product/findProductsVisualization.js"></script>
+    <script src="./assets/scripts/usuarioDivulgacao/usuarioDivulgacao.js"></script>
+    <script src="./assets/scripts/logout.js"></script>
 
 </body>
 

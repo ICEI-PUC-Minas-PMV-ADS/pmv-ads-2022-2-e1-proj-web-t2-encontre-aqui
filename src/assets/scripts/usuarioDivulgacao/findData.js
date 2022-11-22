@@ -21,24 +21,6 @@ function loadData(){
                     <div class="btn-1">Adicionar Página</div>
                 </a>
             </div>
-            <div class="card">
-            <a href="./paginaCriacao.html">
-                    <div class="adicionar-image" id="img-1"></div>
-                    <div class="btn-1">Adicionar Página</div>
-                </a>
-            </div>
-            <div class="card">
-            <a href="./paginaCriacao.html">
-                    <div class="adicionar-image" id="img-1"></div>
-                    <div class="btn-1">Adicionar Página</div>
-                </a>
-            </div>
-            <div class="card">
-            <a href="./paginaCriacao.html">
-                    <div class="adicionar-image" id="img-1"></div>
-                    <div class="btn-1">Adicionar Página</div>
-                </a>
-            </div>
                 `
     page_cards.innerHTML = cards
 

@@ -37,34 +37,34 @@
   <main id="content">
     <div id="login" class="mb-50">
 
-      <div class="caixa">
+      <form class="caixa">
 
         <img src="./assets/images/logo-site/logo1.png" alt="">
         <h1>Cadastro</h1>
 
         <div class="name">
-          <input id="name" type="text" placeholder="Nome">
+          <input id="name" type="text" required placeholder="Nome">
         </div>
 
         <div class="email">
-          <input id="email" type="email" placeholder="E-mail">
+          <input id="email" type="email" required placeholder="E-mail">
         </div>
 
         <div class="senha">
-          <input id="password" type="password" placeholder="Senha">
+          <input id="password" type="password" required placeholder="Senha">
         </div>
 
         <div class="senha">
-          <input type="password" placeholder="Confirme a sua senha">
+          <input type="password" id="confirm_pass" required placeholder="Confirme a sua senha">
         </div>
 
         <input id="company" type="hidden" value="commun">
         <div class="entrar">
           <p> Já tem uma conta?&nbsp;&nbsp;<a href="login.html">Entre aqui</a> </p>
-          <input id="btn_cadastro" type="button" value="Entrar">
+          <input id="btn_cadastro" type="submit" value="Entrar">
         </div>
 
-      </div>
+      </form>
 
     </div>
   </main>

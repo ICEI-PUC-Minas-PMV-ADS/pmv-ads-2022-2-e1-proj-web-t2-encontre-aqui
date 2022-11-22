@@ -2,12 +2,10 @@
 var user_name = document.getElementById('user_name')
 var user = JSON.parse(localStorage.getItem('user'))
 var url_img = document.getElementById('url_img')
-if(user){
-     user_name.innerHTML = `Olá, ${user.full_name}`;
-}else{
-    url_img.value ='./assets/images/site/userprofile/avatar.png'
-}
-
+ 
+    if(user === null || user === undefined){
+        window.location.href = './login.html'
+    }
 
 function saveData(){
     var dataForm = document.querySelectorAll('#form input')
