@@ -25,7 +25,7 @@ function saveUser(evt){
                 localStorage.setItem('user', JSON.stringify(user))
                 alert("Novo usuário criado!")
                 if(client.value === 'company'){
-                    document.location.href='./edicaodeDados.html'
+                    document.location.href='./edicaodeDados.html?cliente=empresa'
                 }else{
                     document.location.href='./userProfile.html'
                 }
