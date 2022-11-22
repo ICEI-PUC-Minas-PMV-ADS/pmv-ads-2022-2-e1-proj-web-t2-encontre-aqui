@@ -123,7 +123,8 @@ function searchPlace(categoria){
                                         <div class="card-body">
                                             <div class="product-name">${empresa.nome.substr(0,30)}</div>
                                             <div class="description">${empresa.nome} ${empresa.descricao.substr(0,45)}...</div>
-                                                 ${empresa.cidade}    ${isOpened} 
+                                               <div class="local_card"> <span> ${isOpened} </span>
+                                                                        <span> ${empresa.cidade} </span> </div>
                                         </div>
 
                                         <div class="card-btn-actions">
@@ -146,7 +147,10 @@ function searchPlace(categoria){
 
                                             <a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${produto.id}&prodserv=${prodserv}" class="btn btn-primary">Visitar</a>
                                         </div>
-                                    </div>`
+                                    </div>
+                                    ${empresa.categoria} 
+                                    `
+                                    
                  //   })
          
 
@@ -156,15 +160,32 @@ function searchPlace(categoria){
         }
 
  function findAllCompanies(){
+   var i = 0
+    let tags = [];
+   
     Categorias.forEach(categoria => {
+        if(i < 8){
         categoria.empresas.forEach(cat_empresas => {
             cat_empresas.forEach(empresa => {
                 isOpened = isOpen(empresa.hfunc)
+              
+                if(!tags.includes(empresa.categoria)){
+                  tags.push(empresa.categoria)
+                }              
+                  place = empresa.cidade
                 updateCard(empresa, null)
                 cardsData.push(empresa)
+                i++
             })
         })    
+    }
     })
+
+   var categorias = {
+        tags: tags
+    };
+    
+    updateTags(categorias)
  }
 
  function updateMap(){
@@ -202,8 +223,10 @@ function updateTags(categoria){
     categoria.tags.forEach(tag => {
         data += `<a href="./search.html?search=${tag}&place=${place}" class="btn btn-primary brad-25">${tag}</a>` 
     })
+    console.log(data)
     tags.innerHTML += data;
     data = ''
+   
 }
 
 function updateWantedLocal(place){

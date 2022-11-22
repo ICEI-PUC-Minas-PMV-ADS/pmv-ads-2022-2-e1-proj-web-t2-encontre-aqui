@@ -81,7 +81,13 @@ section{
     padding:10px;
     width: 100%;
 }
-
+.card-container .card .card-body .local_card{
+    display: flex;
+    margin:0 2%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
 .card-container .card .card-body .product-name{
     font-weight: 700;
 }
@@ -128,12 +134,12 @@ section{
 
 
 .right-menu{
+    contain: content;
     width:60%;
     height: 90vh;
     margin-left: 5px;
     margin-top: 15px;
-    border-radius: 10px;
-
+    border-radius: 10px; 
     transition: 0.5s;
 }
 
@@ -154,7 +160,11 @@ section{
 
 .related-tags .tags{
     display: flex;
-    margin:2px; 
+    flex-wrap: wrap;
+    gap:5px;
+}
+.related-tags .tags a{
+    margin:10px 2px; 
 }
 
 .related-tags .tags a{
