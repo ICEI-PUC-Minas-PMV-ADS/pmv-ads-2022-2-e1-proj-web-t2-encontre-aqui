@@ -1,9 +1,24 @@
+
+function displayNames(value){
+    let auto_place = document.getElementById("place");
+    auto_place.value = value;
+    removeElements();
+}
+
+function removeElements(){
+    let items = document.querySelectorAll(".list-items");
+    items.forEach((item)=>{
+        item.remove()
+    })
+}
+
 window.addEventListener('load', () => {
     
 let names = ["Juiz de Fora",
              "Belo Horizonte",
              "Contagem",
              "Ouro Preto"];
+
 
 
 let sortedNames = names.sort();
@@ -32,18 +47,6 @@ auto_place.addEventListener("keyup", (e)=>{
         }
     }
 })
-
-function displayNames(value){
-    auto_place.value = value;
-    removeElements();
-}
-
-function removeElements(){
-    let items = document.querySelectorAll(".list-items");
-    items.forEach((item)=>{
-        item.remove()
-    })
-}
 
 
 })

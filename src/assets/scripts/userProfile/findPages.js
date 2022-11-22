@@ -12,10 +12,8 @@ window.addEventListener('load', ()=>{
     var cards= ''
 
     if(company_data){
-        if(img_avatar){
-            alert(img_avatar.getAttribute('src'))
-          img_avatar.setAttribute('src', company_data.url_img)
-          alert(img_avatar.getAttribute('src'))
+        if(img_avatar){          
+          img_avatar.setAttribute('src', company_data.url_img)        
         }
            
     }
