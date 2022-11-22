@@ -166,17 +166,18 @@ function searchPlace(categoria){
     let tags = [];
    
     Categorias.forEach(categoria => {
-        if(i < 8){
+        if(i < 12){
         categoria.empresas.forEach(cat_empresas => {
             cat_empresas.forEach(empresa => {
                 isOpened = isOpen(empresa.hfunc)
               
                 if(!tags.includes(empresa.categoria)){
                   tags.push(empresa.categoria)
-                }              
                   place = empresa.cidade
-                updateCard(empresa, null)
-                cardsData.push(empresa)
+                  updateCard(empresa, null)
+                  cardsData.push(empresa)
+                }              
+               
                 i++
             })
         })    
