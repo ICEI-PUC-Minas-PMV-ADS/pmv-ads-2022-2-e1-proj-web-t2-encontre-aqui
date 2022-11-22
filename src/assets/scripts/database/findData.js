@@ -18,15 +18,16 @@ var isOpened;
 foundObj = false
 var i = 0
 
-if(!search){
-    search = 'petshop'
-    place ='juiz de fora'
+if(search ==null || search == undefined || search == ""){
+    findAllCompanies()
+    updateWantedLocal("Principais Empresas")
+}else{    
+    startSearch();
     updateWantedLocal(place)
 }
 
 
 
-startSearch();
 updateMap();
 
 function startSearch(){
@@ -116,15 +117,17 @@ function searchPlace(categoria){
         }
         var marked = checkFavorites(empresa)    
  
-                        data += `<div class="card">
+                        data += `<div class="card ">
                                         <img id="logo-empresa" src="${empresa.imagens[0]}">
 
                                         <div class="card-body">
-                                            <div class="product-name">${empresa.nome.substr(0,30)}</div>
-                                            <div class="description">${empresa.nome} ${empresa.descricao.substr(0,45)}...</div>
-                                            ${produto.cidade} ${isOpened}
-                                        </div>
-
+                                            <div class="product-name">${empresa.nome.substr(0,60)}</div>
+                                            <div class="description">${empresa.nome} ${empresa.descricao.substr(0,60)}...</div>
+                                               <div class="local_card"> <span> ${isOpened} </span>
+                                                                        <span> ${empresa.cidade} </span> 
+                                                                        <span> ${empresa.estado} </span>  
+                                                                        </div></div>
+                                        
                                         <div class="card-btn-actions">
                                        
                                         <div onclick="markFavorite(${empresa.id},'${empresa.nome}', '${empresa.categoria}', '${empresa.isEmpresa}')" class="mark-favorite ${marked}">
@@ -145,7 +148,11 @@ function searchPlace(categoria){
 
                                             <a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${produto.id}&prodserv=${prodserv}" class="btn btn-primary">Visitar</a>
                                         </div>
-                                    </div>`
+                                      
+                                    </div>
+                                 
+                                    `
+                                    
                  //   })
          
 
@@ -154,6 +161,34 @@ function searchPlace(categoria){
             toggleFavority();
         }
 
+ function findAllCompanies(){
+   var i = 0
+    let tags = [];
+   
+    Categorias.forEach(categoria => {
+        if(i < 8){
+        categoria.empresas.forEach(cat_empresas => {
+            cat_empresas.forEach(empresa => {
+                isOpened = isOpen(empresa.hfunc)
+              
+                if(!tags.includes(empresa.categoria)){
+                  tags.push(empresa.categoria)
+                }              
+                  place = empresa.cidade
+                updateCard(empresa, null)
+                cardsData.push(empresa)
+                i++
+            })
+        })    
+    }
+    })
+
+   var categorias = {
+        tags: tags
+    };
+    
+    updateTags(categorias)
+ }
 
  function updateMap(){
     var id_current = 0
@@ -190,8 +225,10 @@ function updateTags(categoria){
     categoria.tags.forEach(tag => {
         data += `<a href="./search.html?search=${tag}&place=${place}" class="btn btn-primary brad-25">${tag}</a>` 
     })
+    console.log(data)
     tags.innerHTML += data;
     data = ''
+   
 }
 
 function updateWantedLocal(place){
