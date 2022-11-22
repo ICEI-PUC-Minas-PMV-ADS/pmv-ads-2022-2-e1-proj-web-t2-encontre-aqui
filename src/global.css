@@ -411,6 +411,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   border-radius: 7px;
   background-color: rgb(59, 163, 129);
   margin-top: 5px; 
+  cursor: pointer;
 }
 
 
