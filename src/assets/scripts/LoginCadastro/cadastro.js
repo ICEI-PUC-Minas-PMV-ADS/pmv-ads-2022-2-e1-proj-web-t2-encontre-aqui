@@ -5,9 +5,10 @@ var msg = document.querySelector('.msg_error');
 
 var btn_cadastro = document.getElementById('btn_cadastro')
 btn_cadastro.addEventListener('click', saveUser);
-client = document.getElementById('company');
+
 
 function saveUser(evt){
+     client = document.getElementById('company');
      full_name = document.getElementById('name').value;
      email = document.getElementById('email').value;
      password = document.getElementById('password').value;
@@ -25,7 +26,11 @@ function saveUser(evt){
         
                 localStorage.setItem('user', JSON.stringify(user))
                 alert("Novo usuário criado!")
-               
+                if(client.value === 'company'){
+                    document.location.href='./edicaodeDados.html?cliente=empresa'
+                }else{
+                    document.location.href='./userProfile.html'
+                }
             }else{
                
                 updateError("As senhas não coincidem!")
