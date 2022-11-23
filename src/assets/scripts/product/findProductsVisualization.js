@@ -31,8 +31,27 @@ var complete_address = document.getElementById("complete-address");
 
 
 addEventListener('load', ()=>{
-    findCetegory()
-    imageView() 
+    var empresa = {}
+    var company_data = JSON.parse(localStorage.getItem('company_data'))
+    var atual_page = JSON.parse(localStorage.getItem('atual_page'))
+    
+    if(company_data){
+           empresa.imgBanner = atual_page.banner;/// <-----
+           empresa.descricao = company_data.descricao; 
+           empresa.nome = company_data.razao_social;
+           empresa.logradouro = company_data.logradouro + ', ' + company_data.bairro;
+           empresa.cidade = company_data.cidade;
+           empresa.estado = company_data.uf;
+           empresa.categoria = company_data.categoria;
+           empresa.imagens = [`${company_data.url_img}`];
+           empresa.hfunc =  company_data.hfunc;
+           empresa.rsocial = atual_page.rsocial;   
+           empresa.tel = company_data.telefone;
+       }
+       
+       updatePage(empresa)
+       GetMap(empresa) 
+  
 })
 
 
@@ -64,22 +83,23 @@ function findCompany(data){
 
 
 function updatePage(empresa){
-    var company_data = JSON.parse(localStorage.getItem('company_data'))
+  
+    var pages_data = JSON.parse(localStorage.getItem('pages_data'))
     var atual_page = JSON.parse(localStorage.getItem('atual_page'))
-    
+
     var img_products = '';  
-    var product = getProduct(empresa);
+   // var product = getProduct(empresa);
     var other_images = ''; 
     var domicilio = false;
     var reservas = false;
     var domicilioReservas =''
-
-    header_product_page.style.backgroundImage = `url(${atual_page.banner})`; 
+  
+    header_product_page.style.backgroundImage = `url(${empresa.imgBanner})`; 
     header_product_page.style.backgroundSize = 'cover'
     
     logo_area.innerHTML = ` <a href='empresa.html?categoria=${empresa.categoria}&id=${empresa.id}'>
-                            <img id="logo-user" src='${company_data.url_img}'>
-                            <span id="name-user" class="client-name">${company_data.razao_social}</span> </a>`
+                            <img id="logo-user" src='${empresa.imagens[0]}'>
+                            <span id="name-user" class="client-name">${empresa.nome}</span> </a>`
    
 
     var price = ''
@@ -89,8 +109,8 @@ function updatePage(empresa){
     }
 */
     
-
-   for(var i = 1 ; i < product.imagens.length; i++){
+   if(atual_page){
+   for(var i = 1 ; i < atual_page.imagens.length; i++){
     other_images += `<div> <img src="${atual_page.imagens[i]}"></div>`
    }
 
@@ -112,27 +132,28 @@ function updatePage(empresa){
                         </div>
                         <div class="description-text">
                             <div id="ps-title" class="title">${atual_page.nome}</div>
-                            <div id="ps-price">${atual_page.preco}</div>
+                            <div id="ps-price">${price}</div>
                             <div id=""></div>
-                            <div id="ps-descr"> ${atual_page.descricao}  </div>
+                            <div id="ps-descr"> ${atual_page.descricao.substr(0, 600)}  </div>
                         </div>
                         `
- 
+                    }
+                document.getElementById('title_product').innerHTML =`<div id="ps-title" class="title">${atual_page.nome}</div>`;
                 description_ps.innerHTML = content; 
 
-
-               for(var p = 0; p <empresa.produtos.length; p++){
-                    img_products += `<a href="produto.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=${empresa.produtos[p].id}">
-                    <div><img class ="other-imgs" src='${atual_page.imagens[0]}' >
-                        </div><div style="width:150px" class="opened">${atual_page.nome}</div></a>`
+            if(pages_data){
+               for(var p = 0; p <pages_data.length; p++){
+                    img_products += `<a href="produto.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=${pages_data[p].id}">
+                    <div><img class ="other-imgs" src='${pages_data[p].imagens[0]}' >
+                        </div><div style="width:150px" class="opened">${pages_data[p].nome}</div></a>`
 
                 }
-                               
+            }           
               
                 other_products.innerHTML = img_products
 
 
-                complete_address.innerHTML = `${company_data.logradouro} ${company_data.cidade} ${company_data.estado}` 
+                complete_address.innerHTML = `${empresa.logradouro} ${empresa.cidade} ${empresa.estado}` 
 
                 var marked = checkFavorites(empresa)
 
@@ -209,7 +230,7 @@ function updatePage(empresa){
                   <div class="contato">
                       <div class="local">
                           <div id="complete-address">
-                            ${company_data.logradouro} ${company_data.cidade} ${company_data.estado}
+                            ${empresa.logradouro} ${empresa.cidade} ${empresa.estado}
                           </div>
                           <div>
                               <img width='32' src="./assets/images/icons/map.svg">
@@ -217,7 +238,7 @@ function updatePage(empresa){
                       </div>
                       <div class="local">
                           <div>
-                          <a href="http://web.whatsapp.com/">  (31)${company_data.tel} </a>
+                          <a href="http://web.whatsapp.com/">  (31)${empresa.tel} </a>
                           </div>
                           <div>
                           <img width='32' src="./assets/images/icons/whats.svg">

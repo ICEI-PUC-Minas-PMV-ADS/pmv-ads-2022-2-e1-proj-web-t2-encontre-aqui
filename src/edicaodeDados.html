@@ -10,32 +10,13 @@
     <link rel="stylesheet" href="./assets/css/avatar.css">
     <link rel="stylesheet" href="./assets/css/ediçãodedados_jr.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <script defer src="./assets/scripts/UsuarioEdicao/usuarioDivulgacao.js"></script>
+
     <title>Edição de dados Juridicos</title>
 </head>
 
 <body>
-    <header class="container-cabecalho">
-        <nav class="nav-menu">
-            <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
-            <form action="#" method="GET" class="search" autocomplete="off">
-                <input name="search" type="text" placeholder="Produtos, Serviços, Empresas">
-                <div class="place-area">
-                    <input name="place" id="place" type="text" placeholder="Cidade">
-                    <ul class="list"></ul>
-                </div>
-                <button class="btn-search" type="submit">Pesquisar</button>
-            </form>
-            <div class="account">
-                <div class="avatar-1">
-                    <a href="#" class="avatar-1"><img src="./assets/images/site/userprofile/avatar.png"></a>
-                </div>
-                <div>
-                    <h1 class="texto" id="user_name"></h1>
-                    <a class="btn btn-light" href="#">Sair</a>
-                </div>
-            </div>
-        </nav>
+    <header id="userLogged" class="container-cabecalho">
+
     </header>
 
     <main id="box">
@@ -51,68 +32,10 @@
                             <input id="url_img" type="hidden" value="">
                         </div>
                     </div>
-                    <form action="./usuarioDivulgacao.html" id="form">
-                        <div class="inputBox-1">
-                            <input type="text" required="required">
-                            <span class="spans">Razão Social</span>
-                        </div>
+                    <div id="form">
 
-
-                        <div class="inputBox-1">
-                            <input type="CNPJ">
-                            <span class="spans">CNPJ</span>
-                        </div>
-
-                        <div class="inputBox-1">
-                            <input type="Logradouro" required="required">
-                            <span class="spans">Logradouro</span>
-                        </div>
-
-                        <div class="inputBox-1">
-                            <input type="Município" required="required">
-                            <span class="spans">Município</span>
-                        </div>
-
-                        <div class="inputBox-1">
-                            <input type="CEP" required="required">
-                            <span class="spans">CEP</span>
-                        </div>
-
-                        <div class="inputBox-1">
-                            <input type="email" required="required">
-                            <span class="spans">E-mail</span>
-                        </div>
-
-                        <div class="inputBox-1">
-                            <input type="Inscrição Estadual">
-                            <span class="spans">Inscrição Estadual</span>
-                        </div>
-
-                        <div class="inputBox-1">
-                            <input type="Cidade" required="required">
-                            <span class="spans">Cidade</span>
-                        </div>
-
-                        <div class="inputBox-1">
-                            <input type="UF" required="required">
-                            <span class="spans">UF</span>
-                        </div>
-
-                        <div class="inputBox-1">
-                            <input type="Telefone" required="required">
-                            <span class="spans">Telefone</span>
-                        </div>
-                        <div class="inputBox-1">
-                            <label for="descricao" class="spans">Faça uma breve descrição do seu negócio</label><br>
-                            <textarea id="descricao" required="required"></textarea>
-                        </div>
-
-                        <div class="inputBox-2">
-                            <input type="submit" onclick="saveData()" value="Atualizar">
-                        </div>
+                    </div>
                 </div>
-                </form>
-            </div>
         </section>
 
     </main>
@@ -180,7 +103,11 @@
         }
     </script>
 
-    <script src="./assets/scripts/product/addPhoto.js"></script>
+    <script src="./assets/scripts/userIsLogged.js"></script>
+    <script src="./assets/scripts/UsuarioEdicao/usuarioDivulgacao.js"></script>
+    <script src="./assets/scripts/product/addPhoto.js "></script>
+    <script src="./assets/scripts/logout.js"></script>
+    <script src="./assets/scripts/UsuarioEdicao/editUser.js"></script>
 </body>
 
 </html>

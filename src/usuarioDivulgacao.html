@@ -15,29 +15,8 @@
 </head>
 
 <body>
-    <header class="container-cabecalho">
-        <nav class="nav-menu">
-            <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
-            <form action="#" method="GET" class="search" autocomplete="off">
-                <input name="search" type="text" placeholder="Produtos, Serviços, Empresas">
-                <div class="place-area">
-                    <input name="place" id="place" type="text" placeholder="Cidade">
-                    <ul class="list"></ul>
-                </div>
-                <button class="btn-search" type="submit">Pesquisar</button>
-            </form>
-            <div class="account">
-                <div class="avatar-1">
-                    <a href="#" class="avatar-1"><img class="img_avatar"
-                            src="./assets/images/site/userprofile/avatar.png"></a>
-                </div>
-                <div>
-                    <h1 class="texto" id="user_name"></h1>
-                    </h1>
-                    <a class="btn btn-light" href="#">Sair</a>
-                </div>
-            </div>
-        </nav>
+    <header id="userLogged" class="container-cabecalho">
+
     </header>
 
 
@@ -53,9 +32,8 @@
 
                     <div class="selecao">
                         <h3>Ramo/Profissão</h3>
-                        <select class="opcao">
-                            <option selected disabled value=""></option>
-                            <option>Eletricista</option>
+                        <select onchange="addCategoria(this)" class="opcao">
+                            <option selected disabled>Eletricista</option>
                             <option>Marcenaria</option>
                             <option>Advogado</option>
                             <option>Dentista</option>
@@ -65,26 +43,76 @@
                 </div>
 
             </section>
+        </div>
 
-            <div class="subtitulo">
-                <h2>
-                    Adicione páginas descrevendo seus Produto(s) ou serviço(s).
-                </h2>
-            </div>
+        <div class="add-pages">
 
             <section class="card-container">
+                <div class="subtitulo">
+                    <h2>
+                        Adicione páginas descrevendo seus Produto(s) ou serviço(s).
+                    </h2>
+                </div>
                 <div class="cards">
 
                 </div>
             </section>
 
-            <div class="btn-publ">
-                <a href="./empresaVisualizacao.html" class="btn-publicar">PUBLICAR AGORA</a>
-            </div>
+
+            <section>
+                <div class="horarios">
+                    <h1>Adicione Horários de Atendimento</h1>
+                    <table>
+                        <tr>
+                            <td>Domingo</td>
+                            <td><input type="text" placeholder="08:00" value="08:00"></td>
+                            <td> às </td>
+                            <td><input type="text" placeholder="12:00" value="12:00"> </td>
+                        </tr>
+                        <tr>
+                            <td>Segunda</td>
+                            <td><input type="text" placeholder="08:00" value="08:00"></td>
+                            <td> às </td>
+                            <td><input type="text" placeholder="20:00" value="20:00"> </td>
+                        </tr>
+                        <tr>
+                            <td>Terça</td>
+                            <td><input type="text" placeholder="08:00" value="08:00"></td>
+                            <td> às </td>
+                            <td><input type="text" placeholder="20:00" value="20:00"> </td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td><input type="text" placeholder="08:00" value="08:00"></td>
+                            <td> às </td>
+                            <td><input type="text" placeholder="20:00" value="20:00"> </td>
+                        </tr>
+                        <tr>
+                            <td>Quinta</td>
+                            <td><input type="text" placeholder="08:00" value="08:00"></td>
+                            <td> às </td>
+                            <td><input type="text" placeholder="20:00" value="20:00"> </td>
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
+                            <td><input type="text" placeholder="08:00" value="08:00"></td>
+                            <td> às </td>
+                            <td><input type="text" placeholder="20:00" value="20:00"> </td>
+                        </tr>
+                        <tr>
+                            <td>Sabado</td>
+                            <td><input type="text" placeholder="08:00" value="08:00"></td>
+                            <td> às </td>
+                            <td><input type="text" placeholder="20:00" value="20:00"> </td>
+                        </tr>
+                    </table>
+
+            </section>
         </div>
-        <div>
-            <div class="mapa-img"><img src="./assets/images/site/userprofile/Mapas.JPG" alt="Mapa"></div>
+        <div class="btn-publ">
+            <a href="./empresaVisualizacao.html" onclick="addHorarios()" class="btn-publicar">PUBLICAR AGORA</a>
         </div>
+
     </main>
 
     <footer id="footer" class="mt-10">
@@ -135,10 +163,11 @@
             </div>
         </div>
     </footer>
+    <script src="./assets/scripts/userIsLogged.js"></script>
+    <script src="./assets/scripts/usuarioDivulgacao/findData.js"></script>
+    <script src="./assets/scripts/usuarioDivulgacao/usuarioDivulgacao.js"></script>
 
-    <script defer src="./assets/scripts/usuarioDivulgacao/findData.js"></script>
-    <script defer src="./assets/scripts/usuarioDivulgacao/usuarioDivulgacao.js"></script>
-
+    <script src="./assets/scripts/logout.js"></script>
 </body>
 
 </html>

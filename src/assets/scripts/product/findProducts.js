@@ -24,7 +24,7 @@ var info = document.getElementById('info');
 var place_options = document.querySelector(".place-options");
 var other_products = document.getElementById("other-products");
 var complete_address = document.getElementById("complete-address");
-
+var titlePage = document.getElementById('titlePage');
 
 addEventListener('load', ()=>{
     findCetegory()
@@ -66,7 +66,8 @@ function updatePage(empresa){
     var domicilio = false;
     var reservas = false;
     var domicilioReservas =''
-
+    titlePage.innerHTML = empresa.nome;
+    
     header_product_page.style.backgroundImage = `url(${empresa.imgBanner})`; 
     header_product_page.style.backgroundSize = 'cover'
     
@@ -87,7 +88,9 @@ function updatePage(empresa){
     other_images += `<div> <img src="${product.imagens[i]}"></div>`
    }
 
-                var content = ` <div class="popup-img">
+                var content = `
+                   
+                <div class="popup-img">
                                      <span>&times;</span>
                                    <img src="${product.imagens[0]}">
                                 </div>
@@ -104,13 +107,13 @@ function updatePage(empresa){
                      </div>
                         </div>
                         <div class="description-text">
-                            <div id="ps-title" class="title">${empresa.produtos[0].nome}</div>
+                           
                             <div id="ps-price">${price}</div>
                             <div id=""></div>
                             <div id="ps-descr"> ${empresa.produtos[0].descricao.substr(0, 600)}  </div>
                         </div>
                         `
- 
+                document.getElementById('title_product').innerHTML =`<div id="ps-title" class="title">${empresa.produtos[0].nome}</div>`;
                 description_ps.innerHTML = content; 
 
 

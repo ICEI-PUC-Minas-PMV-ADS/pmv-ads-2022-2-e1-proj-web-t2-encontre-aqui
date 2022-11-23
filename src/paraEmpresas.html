@@ -25,7 +25,7 @@
                 </div>
                 <button class="btn-search" type="submit">Pesquisar</button>
             </form>
-            <div class=""><a href="./cadastro.html" class="btn btn-light">Para Empresas</a></div>
+            <div class=""><a href="#login" class="btn btn-light">Para Empresas</a></div>
             <div class="account">
                 <a class="btn btn-light" href="./cadastro.html">Cadastrar-se</a>
                 <a class="btn btn-light" href="./login.html">Login</a>
@@ -126,9 +126,10 @@
 
                 <div id="login" class="create-account">
 
-                    <div id="cadastro" class="caixa  mt-100 mb-50">
+                    <form id="cadastro" method="get" action="./edicaodeDados.html?cliente=empresa"
+                        class="caixa  mt-100 mb-50">
 
-
+                        <div class="msg_error"></div>
                         <h1>Cadastre-se</h1>
 
                         <div class="name">
@@ -144,16 +145,17 @@
                         </div>
 
                         <div class="senha">
-                            <input type="password" placeholder="Confirme a sua senha" required="required">
+                            <input type="password" id="confirm_pass" placeholder="Confirme a sua senha"
+                                required="required">
                         </div>
                         <input id="company" type="hidden" value="company">
 
                         <div class="entrar">
                             <p> Já tem uma conta?&nbsp;&nbsp;<a href="login.html">Entre aqui</a> </p>
-                            <input id="btn_cadastro" type="submit" value="Entrar">
+                            <input id="btn_cadastro" type="button" value="Entrar">
                         </div>
 
-                    </div>
+                    </form>
 
                 </div>
 
