@@ -66,8 +66,8 @@ function updatePage(empresa){
                             <span id="name-user" class="client-name">${empresa.nome}</span> </a>`;
 
 
-    company_desc.innerHTML += `<div class="title"> ${empresa.nome} 
-        <a class="view_all_produtos" href="./search.html?categoria=${empresa.categoria}&id=${empresa.id}">Todos Meus Produtos</a> </div> 
+    company_desc.innerHTML += `<div class="title view_all_produtos"> ${empresa.nome} 
+        <a class="" href="./search.html?categoria=${empresa.categoria}&id=${empresa.id}">Todos Meus Produtos</a> </div> 
         ${isOpened} 
         <div> ${empresa.descricao.substr(0,600)}     
         </div>`;
