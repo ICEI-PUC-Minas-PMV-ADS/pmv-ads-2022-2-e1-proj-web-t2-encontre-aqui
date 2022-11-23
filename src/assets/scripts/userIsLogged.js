@@ -16,7 +16,7 @@ window.addEventListener('load', ()=>{
     </form>
     <div class="account">
         <div class="avatar-1">
-            <a href="#" class="avatar-1"><img class="img_avatar"
+            <a href="./userProfile.html" class="avatar-1"><img class="img_avatar"
                     src="./assets/images/site/userprofile/avatar.png"></a>
         </div>
         <div>

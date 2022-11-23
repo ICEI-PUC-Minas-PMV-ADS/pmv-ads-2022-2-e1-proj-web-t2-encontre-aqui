@@ -138,6 +138,7 @@ function updatePage(empresa){
                         </div>
                         `
                     }
+                document.getElementById('title_product').innerHTML =`<div id="ps-title" class="title">${atual_page.nome}</div>`;
                 description_ps.innerHTML = content; 
 
             if(pages_data){
