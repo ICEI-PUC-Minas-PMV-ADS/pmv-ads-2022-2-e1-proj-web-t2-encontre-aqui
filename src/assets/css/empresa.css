@@ -418,6 +418,17 @@ section{
     color: var(--title-color)
   }
   
+  .view_all_produtos{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .view_all_produtos a:hover{
+    color:#527a82;
+    transition:all 0.3s;
+  }
+
 /*------------------------------------------*/
 @media screen and (max-width:1200px){
 
