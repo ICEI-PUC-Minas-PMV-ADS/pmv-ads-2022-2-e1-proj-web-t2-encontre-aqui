@@ -65,3 +65,21 @@ margin-top: 70px;
 input:focus{
  outline:none; 
 }
+
+.msg{
+  visibility: hidden;
+}
+.msg_error{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+  height: 50px;
+  background-color: #e25959;
+  color: #343434;
+  border-radius:5px;
+  visibility: hidden;
+
+  transition: all 0.3 ease;
+}
