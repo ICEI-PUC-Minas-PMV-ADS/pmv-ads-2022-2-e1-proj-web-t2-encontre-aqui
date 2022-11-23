@@ -36,9 +36,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 | EU COMO... `PERSONA` | QUERO/PRECISO ... `FUNCIONALIDADE`                                            | PARA ... `MOTIVO/VALOR`                                     |
 | -------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Marcos Nunes         | Quero poder buscar por profissionais de perto de onde será realizada a obra   | Para poder calcular o custo com transporte                  |
+| Marcos Nunes         | Quero poder buscar por profissionais perto de onde será realizada a obra      | Para poder calcular o custo com transporte                  |
 | Marcos Nunes         | Desejo obter os dados de contato em evidência                                 | Para entrar em contato caso goste do perfil do profissional |
-| Marcos Nunes         | Desejo buscar por especialidade                                               | Para encontrar tudo em um mesmo lugar                       |
+| Marcos Nunes         | Desejo buscar por profissionais capacitados                                   | Para sentir mais seguro na hora de contratar                |
 | Regiane Rodrigues    | Desejo ter opção de comentar e ler opiniões de outras pessoas sobre o produto | Para ter mais confiança em adquirir o produto               |
 | Regiane Rodrigues    | Desejo que as empresas cadastradas forneçam os detalhes de suas mercadorias   | Para comparar com outros fornecedores                       |
 | Regiane Rodrigues    | Desejo que o site tenha um layout adaptável                                   | Para poder acessar de vários dispositivos                   |
