@@ -164,13 +164,16 @@ body{
 .check-info .favorite-area span{
     margin-right: 16px;
 }
+.logo-area{
+    position:absolute;
+    top: 130px;
+    left:10%;
+}
 
 .logo-area a{
     display:flex;
     flex-direction: column;
-    position:relative;
-    top:140px;
-    left:10%;
+  
 }
 
 .logo-area img{
@@ -324,6 +327,10 @@ body{
     height: 30px;     
   }
 
+  #title_product{
+    text-align: center;
+    font-size: 2rem;
+  }
 
   @media (max-width:770px){
     .popup-img img{
