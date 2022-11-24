@@ -322,7 +322,7 @@ function findLocalEmpresa(localEmpresa, localProdutos){
         if(localProdutos[i].domicilio)
             domicilio = true
 
-        imgBanner = localProduto[i].banner
+        imgBanner = localProdutos[i].banner
     }
     var empresa = {
         nome: localEmpresa.razao_social,
