@@ -2,7 +2,8 @@ function removePages(page){
     var pages = document.getElementById('pages')
     const pages_data = JSON.parse(localStorage.getItem('pages_data')) 
     var cards= ''
-    temp = []
+    var temp = []
+    console.log(temp)
     for(var i = 0 ; i < pages_data.length; i++){
         if(pages_data[i].id != page){
             temp.push(page)
@@ -21,8 +22,10 @@ function removePages(page){
                ${pages_data[i].descricao.substr(0,150)} ...
            </p>
            <a href="./produto.html?categoria=${pages_data[i].categoria}&id=${pages_data[i].id}&prodserv=${pages_data[i].id}">
-            <button class="button-bl"> Editar  </button> <button id="removePage" onclick='removePages(pages_data[i])' class="button-bl"> Remover  </button>
-           </a>
+            <button class="button-bl"> Editar  </button> 
+            </a>
+            <button id="removePage" onclick='removePages("${pages_data[i]}")' class="button-bl"> Remover  </button>
+           
        </div>`
    }
     
