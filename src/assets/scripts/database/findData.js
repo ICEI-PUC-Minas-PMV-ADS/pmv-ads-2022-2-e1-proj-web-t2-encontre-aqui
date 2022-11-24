@@ -305,7 +305,7 @@ function findByLocal(){
 
             for(var i = 0; i < localProdutos.length; i++){
                 alert("produtos atualização de produtos")
-                if(localProdutos[i].razao_social.includes(search) || localProdutos.descricao.includes(search))
+                if(localProdutos[i].nome.includes(search) || localProdutos.descricao.includes(search))
                 updateCard(localProdutos[i], empresa)
             }
         }
