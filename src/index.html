@@ -212,10 +212,13 @@
         <nav class="header-search-area mt-50">
             <h1 class="title bb fc-w mt-100">Bem-Vindo(a) ao <span class="fc-w">Encontre-Aqui</span></h1>
             <form action="./search.html" method="GET" class="search" autocomplete="off">
-                <input name="search" type="text" placeholder="Produtos, Serviços, Empresas">
+                <div class="place-area">
+                    <input name="search" id="search_input" type="text" placeholder="Produtos, Serviços, Empresas">
+                    <ul class="list1"></ul>
+                </div>
                 <div class="place-area">
                     <input name="place" id="place" type="text" placeholder="Cidade">
-                    <ul class="list"></ul>
+                    <ul class="list2"></ul>
                 </div>
                 <button class="btn-search" type="submit">Pesquisar</button>
             </form>
