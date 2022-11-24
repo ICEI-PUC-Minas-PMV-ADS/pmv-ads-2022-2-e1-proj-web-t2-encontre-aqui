@@ -296,7 +296,7 @@ function findByLocal(){
        
         var empresa = findLocalEmpresa(localEmpresa, localProdutos)  
         alert(empresa.razao_social.toLowerCase()) 
-        if(empresa.razao_social.toLowerCase().includes(search.toLowerCase()) || empresa.descricao.toLowerCase().includes(search.toLowerCase())){
+        if((empresa.razao_social.toLowerCase()).includes(search.toLowerCase()) || (empresa.descricao.toLowerCase()).includes(search.toLowerCase())){
             cardsData.push(empresa) 
             isOpened = isOpen(empresa.hfunc)
             updateWantedLocal(empresa.cidade)
