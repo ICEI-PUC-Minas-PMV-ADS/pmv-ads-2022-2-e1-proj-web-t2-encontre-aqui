@@ -174,7 +174,7 @@ function searchPlace(categoria){
     let tags = [];
    
     Categorias.forEach(categoria => {
-        if(i < 12){
+        if(i < 20){
         categoria.empresas.forEach(cat_empresas => {
             cat_empresas.forEach(empresa => {
                 isOpened = isOpen(empresa.hfunc)
