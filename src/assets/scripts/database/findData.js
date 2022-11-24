@@ -291,6 +291,7 @@ function findByLocal(){
     localEmpresa = JSON.parse(localStorage.getItem('company_data'))
 
     if(localEmpresa  && localProdutos){ 
+        alert("ok")
         var empresa = findLocalEmpresa(localEmpresa, localProdutos)   
         if(empresa.razao_social.includes(search) || empresa.descricao.includes(search)){
             cardsData.push(empresa) 
@@ -300,6 +301,7 @@ function findByLocal(){
         }
 
             for(var i = 0; i < localProdutos.length; i++){
+                alert("produtos")
                 if(localProdutos[i].razao_social.includes(search) || localProdutos.descricao.includes(search))
                 updateCard(localProdutos[i], empresa)
             }
