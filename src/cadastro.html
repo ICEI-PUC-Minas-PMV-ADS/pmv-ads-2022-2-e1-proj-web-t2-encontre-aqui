@@ -37,9 +37,11 @@
   <main id="content">
     <div id="login" class="mb-50">
 
-      <form class="caixa">
+      <form class="caixa" method="get" action="./userProfile.html">
+
 
         <img src="./assets/images/logo-site/logo1.png" alt="">
+        <div class="msg_error"></div>
         <h1>Cadastro</h1>
 
         <div class="name">
@@ -61,7 +63,7 @@
         <input id="company" type="hidden" value="commun">
         <div class="entrar">
           <p> Já tem uma conta?&nbsp;&nbsp;<a href="login.html">Entre aqui</a> </p>
-          <input id="btn_cadastro" type="submit" value="Entrar">
+          <input id="btn_cadastro" type="button" value="Cadastrar">
         </div>
 
       </form>

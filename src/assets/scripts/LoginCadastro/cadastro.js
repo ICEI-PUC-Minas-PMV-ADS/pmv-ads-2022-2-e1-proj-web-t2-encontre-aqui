@@ -1,17 +1,19 @@
 var full_name;
 var email;
 var password;
+var msg = document.querySelector('.msg_error');
 
 var btn_cadastro = document.getElementById('btn_cadastro')
 btn_cadastro.addEventListener('click', saveUser);
-client = document.getElementById('company');
+
 
 function saveUser(evt){
+     client = document.getElementById('company');
      full_name = document.getElementById('name').value;
      email = document.getElementById('email').value;
      password = document.getElementById('password').value;
      confirm_pass = document.getElementById('confirm_pass').value;
- 
+     var msg = document.querySelector('.msg_error');
 
     if(full_name.length > 6 && email.length > 0){
         if(password.length > 6){
@@ -30,16 +32,27 @@ function saveUser(evt){
                     document.location.href='./userProfile.html'
                 }
             }else{
-                alert("As senhas não coincidem")
+               
+                updateError("As senhas não coincidem!")
                 evt.preventDefault();
             }
         }else{
-            alert("A senha deve ter mais que 6 caracteres")
+           
+            updateError("A senha deve ter mais que 6 caracteres...")
             evt.preventDefault();
         }        
     }   
     else{
-        alert("dados incompletos")
+       
+        updateError("Campos vazios... Preencha todos os campos.")
         evt.preventDefault();
     }
+   // msg.classList.add('msg')
+}
+
+function updateError(msgMessage){
+   
+    msg.style.visibility = 'visible'
+     msg.innerHTML = msgMessage
+    
 }

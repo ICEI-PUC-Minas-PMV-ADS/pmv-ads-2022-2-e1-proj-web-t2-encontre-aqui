@@ -5,10 +5,12 @@
     padding: 10px;
     max-width: 80vw;
     margin: 0 auto;
+   
 }
 
 .galeria-profissionais {
     overflow-x: auto;
+    z-index: -1;
 }
 
 .galeria {

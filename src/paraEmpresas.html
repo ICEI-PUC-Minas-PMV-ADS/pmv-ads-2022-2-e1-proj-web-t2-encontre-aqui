@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/avatar.css">
     <link rel="shortcut icon" href="./assets/images/icons/favority-icon1.png" type="image/x-icon">
 
     <link rel="stylesheet" href="./assets/css/feed.css">
@@ -14,23 +15,8 @@
 </head>
 
 <body>
-    <header class="mb-10">
-        <nav class="nav-menu">
-            <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
-            <form action="./search.html" method="GET" class="search" autocomplete="off">
-                <input name="search" type="text" placeholder="Produtos, Serviços, Empresas">
-                <div class="place-area">
-                    <input name="place" id="place" type="text" placeholder="Cidade">
-                    <ul class="list"></ul>
-                </div>
-                <button class="btn-search" type="submit">Pesquisar</button>
-            </form>
-            <div class=""><a href="#login" class="btn btn-light">Para Empresas</a></div>
-            <div class="account">
-                <a class="btn btn-light" href="./cadastro.html">Cadastrar-se</a>
-                <a class="btn btn-light" href="./login.html">Login</a>
-            </div>
-        </nav>
+    <header id="toggleUserLogged" class="mb-10">
+
     </header>
 
     <div class="presentation-bg"></div>
@@ -126,9 +112,10 @@
 
                 <div id="login" class="create-account">
 
-                    <div id="cadastro" class="caixa  mt-100 mb-50">
+                    <form id="cadastro" method="get" action="./edicaodeDados.html?cliente=empresa"
+                        class="caixa  mt-100 mb-50">
 
-
+                        <div class="msg_error"></div>
                         <h1>Cadastre-se</h1>
 
                         <div class="name">
@@ -151,10 +138,10 @@
 
                         <div class="entrar">
                             <p> Já tem uma conta?&nbsp;&nbsp;<a href="login.html">Entre aqui</a> </p>
-                            <input id="btn_cadastro" type="submit" value="Entrar">
+                            <input id="btn_cadastro" type="button" value="Cadastrar">
                         </div>
 
-                    </div>
+                    </form>
 
                 </div>
 
@@ -258,10 +245,11 @@
         </div>
     </footer>
 
+    <script src="./assets/scripts/database/database.js"></script>
 
-    <script src="./assets/scripts/autocomplete.js"></script>
     <script src="./assets/scripts/LoginCadastro/cadastro.js"></script>
-
+    <script src="./assets/scripts/userIsLogged.js"></script>
+    <script src="./assets/scripts/autocomplete.js"></script>
 
 </body>
 

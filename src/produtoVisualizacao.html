@@ -21,10 +21,13 @@
         <nav class="nav-menu">
             <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
             <form action="./search.html" method="GET" class="search" autocomplete="off">
-                <input name="search" type="text" placeholder="Produtos, Serviços, Empresas">
+                <div class="place-area">
+                    <input name="search" id="search_input" type="text" placeholder="Produtos, Serviços, Empresas">
+                    <ul class="list1"></ul>
+                </div>
                 <div class="place-area">
                     <input name="place" id="place" type="text" placeholder="Cidade">
-                    <ul class="list"></ul>
+                    <ul class="list2"></ul>
                 </div>
                 <button class="btn-search" type="submit">Pesquisar</button>
             </form>
@@ -58,6 +61,7 @@
     <main>
 
         <div id="content">
+            <div id="title_product"></div>
             <section id="description-ps">
 
         </div>
@@ -138,13 +142,14 @@
         </div>
     </footer>
 
-    <script src="./assets/scripts/autocomplete.js"></script>
+
 
     <script type='text/javascript'
         src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Aj30kitBtzqfccLqDP_RXQYks09ie-CQ5gvx0dnWFyyQImim-GDuVIVUl0VUwjQr'
         async defer></script>
     <script src="./assets/scripts/mapas/mapa-v1.js"></script>
     <script src="./assets/scripts/database/database.js"></script>
+    <script src="./assets/scripts/autocomplete.js"></script>
     <script src="./assets/scripts/checkFavorites.js"></script>
     <script src="./assets/scripts/favorite.js"></script>
     <script src="./assets/scripts/search/isOpen.js"></script>

@@ -1,12 +1,21 @@
 # Registro de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
+## Registro de Teste: Cadastro de Pessoa Física
 
-Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
+### Caso de Sucesso
 
-## Avaliação
+<p> O sistema cadastrou o cliente na base de dados(localStorage) </p>
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+<p align="center"> 
+  <img src="img/testes/RegistroTesteSucesso.PNG" width="800">
+</p>
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+##### _Figura 1- Registro de Teste para Pessoa Física_
+
+<p> O sistema direcionou o cliente para a página de Perfil de Usuário </p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroTesteSucesso1.PNG" width="600">
+</p>
+
+##### _Figura 2- Cliente Direcionado para página de Perfil_

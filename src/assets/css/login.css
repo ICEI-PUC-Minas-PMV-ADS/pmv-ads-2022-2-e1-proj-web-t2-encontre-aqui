@@ -65,3 +65,24 @@ margin-top: 70px;
 input:focus{
  outline:none; 
 }
+
+.msg{
+  visibility: hidden;
+}
+.msg_error{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+  height: 50px;
+  background-color: #275988;
+  color: #e3e3e3;
+  border-radius:5px;
+  visibility: hidden;
+
+  transition: all 0.3 ease;
+  -webkit-box-shadow: 2px 4px 20px 1px rgb(88, 172, 240);
+  -moz-box-shadow: 2px 4px 20px 1px rgb(88, 172, 240);
+  box-shadow: 2px 4px 20px 1px rgb(88, 172, 240);
+}

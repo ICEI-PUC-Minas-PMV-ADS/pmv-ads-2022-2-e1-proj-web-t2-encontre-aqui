@@ -15,8 +15,9 @@ function addHorarios(){
     var company_data = JSON.parse(localStorage.getItem('company_data'))
     var horarios = document.querySelectorAll('.horarios input')
     
-    for(var i = 0; i < (horarios.length/2); i+=2){
-        hfunc.push(joinHorarios(horarios[i].value, horarios[i+1].value))
+    for(var i = 0; i < (horarios.length); i++){
+        if(i % 2 == 0)
+             hfunc.push(joinHorarios(horarios[i].value, horarios[i+1].value))
     }
    
     company_data.hfunc = hfunc
