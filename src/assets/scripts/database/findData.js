@@ -24,7 +24,7 @@ if(url_categoria != null && url_categoria != undefined  && id!=null && id!=undef
     findCategory()
    // updateWantedLocal("Produtos")
 }else if(search ==null || search == undefined || search == ""){
-    findByLocal()
+   
     findAllCompanies()
     updateWantedLocal("Principais Empresas")
 }else{    
@@ -32,8 +32,6 @@ if(url_categoria != null && url_categoria != undefined  && id!=null && id!=undef
     startSearch();
     updateWantedLocal(place)
 }
-
-findByLocal
 
 
 updateMap();
@@ -304,7 +302,6 @@ function findByLocal(){
         }
 
             for(var i = 0; i < localProdutos.length; i++){
-                alert("produtos atualização de produtos")
                 if(localProdutos[i].nome.includes(search) || localProdutos.descricao.includes(search))
                 updateCard(localProdutos[i], empresa)
             }
@@ -329,7 +326,7 @@ function findLocalEmpresa(localEmpresa, localProdutos){
         nome: localEmpresa.razao_social,
         descricao: localEmpresa.descricao,
         imgBanner: imgBanner,
-        imagens: [localEmpresa.img_url],
+        imagens: [localEmpresa.url_img],
         hfunc: localEmpresa.hfunc,
         logradouro : localEmpresa.logradouro,
         cidade: localEmpresa.cidade,
