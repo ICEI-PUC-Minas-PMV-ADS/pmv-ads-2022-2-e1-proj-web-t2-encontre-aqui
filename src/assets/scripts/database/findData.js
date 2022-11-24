@@ -24,13 +24,14 @@ if(url_categoria != null && url_categoria != undefined  && id!=null && id!=undef
     findCategory()
    // updateWantedLocal("Produtos")
 }else if(search ==null || search == undefined || search == ""){
+   
     findAllCompanies()
     updateWantedLocal("Principais Empresas")
 }else{    
+    findByLocal()
     startSearch();
     updateWantedLocal(place)
 }
-
 
 
 updateMap();
@@ -282,4 +283,57 @@ function findProducts(empresa){
     updateCard(produto, empresa)
   })        
        
+}
+
+function findByLocal(){
+
+    localProdutos = JSON.parse(localStorage.getItem('pages_data'))
+    localEmpresa = JSON.parse(localStorage.getItem('company_data'))
+    
+    if(localEmpresa  && localProdutos){ 
+       
+        var empresa = findLocalEmpresa(localEmpresa, localProdutos)  
+        console.log(empresa) 
+        if((empresa.nome.toLowerCase()).includes(search.toLowerCase()) || (empresa.descricao.toLowerCase()).includes(search.toLowerCase())){
+            cardsData.push(empresa) 
+            isOpened = isOpen(empresa.hfunc)
+            updateWantedLocal(empresa.cidade)
+            updateCard(empresa, null)
+        }
+
+            for(var i = 0; i < localProdutos.length; i++){
+                if(localProdutos[i].nome.includes(search) || localProdutos.descricao.includes(search))
+                updateCard(localProdutos[i], empresa)
+            }
+        }
+    }
+    
+
+function findLocalEmpresa(localEmpresa, localProdutos){
+    var domicilio = false, agendamento = false;
+    var imgBanner;
+
+    for(var i = 0; i < localProdutos.length; i++){
+        if(localProdutos[i].agendamento)
+            agendamento = true
+        if(localProdutos[i].domicilio)
+            domicilio = true
+
+        imgBanner = localProdutos[i].banner
+    }
+    var empresa = {
+        nome: localEmpresa.razao_social,
+        descricao: localEmpresa.descricao,
+        imgBanner: imgBanner,
+        imagens: [localEmpresa.url_img],
+        hfunc: localEmpresa.hfunc,
+        logradouro : localEmpresa.logradouro,
+        cidade: localEmpresa.cidade,
+        tel: localEmpresa.tel,
+        estado: localEmpresa.uf,
+        domicilio: domicilio,
+        agendamento:agendamento,
+    };
+  
+    return empresa;
 }
