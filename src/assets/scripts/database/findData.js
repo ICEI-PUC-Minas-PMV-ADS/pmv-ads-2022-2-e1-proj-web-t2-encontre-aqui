@@ -33,6 +33,7 @@ if(url_categoria != null && url_categoria != undefined  && id!=null && id!=undef
     updateWantedLocal(place)
 }
 
+findByLocal
 
 
 updateMap();
