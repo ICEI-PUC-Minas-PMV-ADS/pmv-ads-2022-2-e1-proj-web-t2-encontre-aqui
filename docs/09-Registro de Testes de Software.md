@@ -12,7 +12,7 @@
 
 ##### _Figura 1- Registro de Teste para Pessoa Física_
 
-<p> O sistema foi direcionado para a página de Perfil de Usuário </p>
+<p> O sistema direcionol o cliente para a página de Perfil de Usuário </p>
 
 <p align="center"> 
   <img src="img/testes/RegistroTesteSucesso1.PNG" width="600">
