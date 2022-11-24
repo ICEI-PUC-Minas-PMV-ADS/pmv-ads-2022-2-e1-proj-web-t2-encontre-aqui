@@ -7,7 +7,7 @@
 <p> O sistema cadastrou o cliente na base de dados(localStorage) </p>
 
 <p align="center"> 
-  <img src="img/testes/RegistroTesteSucesso.PNG" width="600">
+  <img src="img/testes/RegistroTesteSucesso.PNG" width="800">
 </p>
 
 ##### _Figura 1- Registro de Teste para Pessoa Física_
