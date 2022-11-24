@@ -21,13 +21,14 @@ foundObj = false
 var i = 0
 
 if(url_categoria != null && url_categoria != undefined  && id!=null && id!=undefined){
-    findByLocal()
     findCategory()
    // updateWantedLocal("Produtos")
 }else if(search ==null || search == undefined || search == ""){
+    findByLocal()
     findAllCompanies()
     updateWantedLocal("Principais Empresas")
 }else{    
+    findByLocal()
     startSearch();
     updateWantedLocal(place)
 }
