@@ -12,10 +12,10 @@
 
 ##### _Figura 1- Registro de Teste para Pessoa Física_
 
-<p> O sistema direcionol o cliente para a página de Perfil de Usuário </p>
+<p> O sistema levou o cliente para a página de Perfil de Usuário </p>
 
 <p align="center"> 
   <img src="img/testes/RegistroTesteSucesso1.PNG" width="600">
 </p>
 
-##### _Figura 2- Registro de Teste para Pessoa Física_
+##### _Figura 2- Cliente Direcionado para página de Perfil_
