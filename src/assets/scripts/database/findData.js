@@ -291,9 +291,9 @@ function findByLocal(){
 
     localProdutos = JSON.parse(localStorage.getItem('pages_data'))
     localEmpresa = JSON.parse(localStorage.getItem('company_data'))
-    alert("ok")
+    
     if(localEmpresa  && localProdutos){ 
-        alert("ok")
+       
         var empresa = findLocalEmpresa(localEmpresa, localProdutos)   
         if(empresa.razao_social.includes(search) || empresa.descricao.includes(search)){
             cardsData.push(empresa) 
