@@ -11,3 +11,11 @@
 </p>
 
 ##### _Figura 1- Registro de Teste para Pessoa Física_
+
+<p> O sistema direcionou o cliente para a página de Perfil de Usuário </p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroTesteSucesso1.PNG" width="600">
+</p>
+
+##### _Figura 2- Cliente Direcionado para página de Perfil_
