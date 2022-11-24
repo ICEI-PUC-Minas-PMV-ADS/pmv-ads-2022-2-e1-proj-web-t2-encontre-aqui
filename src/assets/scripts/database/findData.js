@@ -300,9 +300,7 @@ function findByLocal(){
         }
 
             for(var i = 0; i < localProdutos.length; i++){
-                cardsData.push(empresa) 
-                isOpened = isOpen(empresa.hfunc)
-                updateWantedLocal(empresa.cidade)
+                if(localProdutos[i].razao_social.includes(search) || localProdutos.descricao.includes(search))
                 updateCard(localProdutos[i], empresa)
             }
         }
