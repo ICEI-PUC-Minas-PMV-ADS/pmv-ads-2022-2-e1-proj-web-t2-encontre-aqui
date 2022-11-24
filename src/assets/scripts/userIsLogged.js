@@ -7,11 +7,14 @@ window.addEventListener('load', ()=>{
     <nav class="nav-menu">
     <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
     <form action="./search.html" method="GET" class="search" autocomplete="off">
-        <input name="search" type="text" placeholder="Produtos, Serviços, Empresas">
-        <div class="place-area">
-            <input name="place" id="place" type="text" placeholder="Cidade">
-            <ul class="list"></ul>
-        </div>
+                <div class="place-area">
+                <input name="search" id="search_input" type="text" placeholder="Produtos, Serviços, Empresas">
+                <ul class="list1"></ul>
+            </div>
+            <div class="place-area">
+                <input name="place" id="place" type="text" placeholder="Cidade">
+                <ul class="list2"></ul>
+            </div>
         <button class="btn-search" type="submit">Pesquisar</button>
     </form>
     <div class="account">
@@ -30,11 +33,14 @@ window.addEventListener('load', ()=>{
     var notLogged = ` <nav class="nav-menu">
     <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
     <form action="./search.html" method="GET" class="search" autocomplete="off">
-        <input name="search" type="text" placeholder="Produtos, Serviços, Empresas">
-        <div class="place-area">
-            <input name="place" id="place" type="text" placeholder="Cidade">
-            <ul class="list"></ul>
-        </div>
+    <div class="place-area">
+    <input name="search" id="search_input" type="text" placeholder="Produtos, Serviços, Empresas">
+                <ul class="list1"></ul>
+            </div>
+            <div class="place-area">
+                <input name="place" id="place" type="text" placeholder="Cidade">
+                <ul class="list2"></ul>
+            </div>
         <button class="btn-search" type="submit">Pesquisar</button>
     </form>
     <div class=""><a href="./paraEmpresas.html" class="btn btn-light">Para Empresas</a></div>
