@@ -309,7 +309,6 @@ function findByLocal(){
     }
     
 
-
 function findLocalEmpresa(localEmpresa, localProdutos){
     var domicilio = false, agendamento = false;
     var imgBanner;
