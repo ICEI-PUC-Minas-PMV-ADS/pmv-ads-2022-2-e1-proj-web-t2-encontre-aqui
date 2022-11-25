@@ -20,5 +20,5 @@
 ### Criar Página de divulgação de produto ou serviço
 
 <p align="center"> 
-  <img src="img/testes/CriarPaginaJuridic.JPG" width="600">
+  <img src="img/testes/CriarPaginaJuridica.JPG" width="600">
 </p>
