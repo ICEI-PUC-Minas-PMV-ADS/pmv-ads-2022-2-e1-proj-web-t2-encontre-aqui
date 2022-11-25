@@ -127,12 +127,10 @@ function searchPlace(categoria){
       
         let linkPage;
         if(produto.view){
-          
+            linkPage = `<a href=empresaVisualizacao.html?view=true" class="btn btn-primary">Visitar</a>`
             if(prodserv !== null){
-                linkPage = `<a href="produtoVisualizacao.html?id=${empresa.id}" class="btn btn-primary">Visitar</a>`
-            }else{
-                linkPage = `<a href=empresaVisualizacao.html?view=true" class="btn btn-primary">Visitar</a>`
-            }          
+                linkPage = `<a href="produtoVisualizacao.html?id=${prodserv}" class="btn btn-primary">Visitar</a>`
+            }         
            }else{
             linkPage = `<a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${produto.id}&prodserv=${prodserv}" class="btn btn-primary">Visitar</a>`
            }    
