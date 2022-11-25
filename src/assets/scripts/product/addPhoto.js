@@ -26,8 +26,6 @@ function addPhoto(event, local){
       var src = URL.createObjectURL(event.target.files[0]);
       var preview = document.getElementById(local);
       preview.src = src;
-      console.log(src)
-      console.log(preview.src)
       preview.style.backgroundImage = `url(${preview.src})` 
       preview.style.backgroundSize = `cover` 
         
