@@ -122,12 +122,11 @@ function searchPlace(categoria){
             prodserv =  empresa.id
         }else{           
             produto = empresa
-            prodserv = 22464654;
+            prodserv = null;
         }
       
         let  linkPage = `<a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${produto.id}&prodserv=${prodserv}" class="btn btn-primary">Visitar</a>`;
-        if(produto.view){
-           
+        if(produto.view){           
             if(prodserv !== null && prodserv !== undefined){
                 linkPage = `<a href="produtoVisualizacao.html?id=${prodserv}" class="btn btn-primary">Visitar</a>`
             }         
