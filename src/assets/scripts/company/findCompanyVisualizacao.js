@@ -3,7 +3,8 @@ var urlObj = new URL(url);
 
 
 //var id = Number(urlObj.searchParams.get("id"))
-//var url_categoria = urlObj.searchParams.get("categoria")
+var viewPageSearch = urlObj.searchParams.get("view")
+
 
 var id = 12;
 var prodserv = 9;
@@ -25,11 +26,14 @@ var other_products = document.getElementById("other-products");
 var place_options = document.querySelector(".place-options");
 
 addEventListener('load', ()=>{
-
     var empresa = {}
+    if(viewPageSearch==='true'){
+
+    }else{
+   
     var company_data = JSON.parse(localStorage.getItem('company_data'))
     var atual_page = JSON.parse(localStorage.getItem('atual_page'))
-   
+    }
     if(company_data){
         empresa.imgBanner = atual_page.banner;/// <-----
         empresa.descricao = company_data.descricao; 
