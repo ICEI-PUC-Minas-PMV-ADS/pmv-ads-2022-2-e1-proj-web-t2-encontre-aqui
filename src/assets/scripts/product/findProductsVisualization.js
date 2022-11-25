@@ -4,11 +4,11 @@ var urlObj = new URL(url);
 
 var id = Number(urlObj.searchParams.get("id"))
 //var prodserv = Number(urlObj.searchParams.get("prodserv"))
-
+/*
 var id = 12;
 var prodserv = 9;
 url_categoria ="restaurante";
-
+*/
 //var url_categoria = urlObj.searchParams.get("categoria")
 
 var logo_area = document.querySelector('.logo-area')
@@ -86,6 +86,14 @@ function updatePage(empresa){
   
     var pages_data = JSON.parse(localStorage.getItem('pages_data'))
     var atual_page = JSON.parse(localStorage.getItem('atual_page'))
+
+    if(id!=null && id!= undefined){
+        pages_data.forEach(page => {
+            if(page.id === id){
+                atual_page =  page
+            }
+        });
+    }
 
     var img_products = '';  
    // var product = getProduct(empresa);
