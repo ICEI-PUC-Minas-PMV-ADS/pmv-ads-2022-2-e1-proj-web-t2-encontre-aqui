@@ -4,6 +4,7 @@ var password;
 
 var btn_login = document.getElementById('btn_login')
 btn_login.addEventListener('click', getUser);
+var msg = document.querySelector('.msg_error');
 
 function getUser(){
     email = document.getElementById('email').value;
@@ -17,18 +18,25 @@ function getUser(){
         if(password === user.password){
             document.location.href = './userProfile.html'
         }else{
-            alert("Password invalido")
+            updateError("Password invalido")
+            evt.preventDefault();
         }
        }else{
-        alert("Email invalido")
+        updateError("Email invalido")
+        evt.preventDefault();
        }
     }
     else{
-        alert("dados invalidos")
+        updateError("dados invalidos")
+        evt.preventDefault();
     }
-
  
 
-    //console.log('user');
+}
 
+function updateError(msgMessage){
+   
+    msg.style.visibility = 'visible'
+     msg.innerHTML = msgMessage
+    
 }
