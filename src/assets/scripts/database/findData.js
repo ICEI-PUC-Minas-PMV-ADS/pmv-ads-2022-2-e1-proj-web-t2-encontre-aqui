@@ -28,8 +28,9 @@ if(url_categoria != null && url_categoria != undefined  && id!=null && id!=undef
     findAllCompanies()
     updateWantedLocal("Principais Empresas")
 }else{    
-    findByLocal()
+  
     startSearch();
+    findByLocal()
     updateWantedLocal(place)
 }
 
