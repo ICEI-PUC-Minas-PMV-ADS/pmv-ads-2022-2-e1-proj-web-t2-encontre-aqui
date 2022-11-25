@@ -27,5 +27,5 @@
 <p> O sistema cadastrou o produto/serviço na base de dados(localStorage) </p>
 
 <p align="center"> 
-  <img src="img/testes/RegistroTeste_Sucesso3.JPG" width="800">
+  <img src="img/testes/RegistroTesteSucesso3.JPG" width="800">
 </p>
