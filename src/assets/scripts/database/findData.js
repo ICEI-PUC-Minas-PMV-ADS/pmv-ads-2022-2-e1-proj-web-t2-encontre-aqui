@@ -128,7 +128,7 @@ function searchPlace(categoria){
         let linkPage;
         if(produto.view){
           
-            if(temp.id){
+            if(empresa.id){
                 linkPage = `<a href="produtoVisualizacao.html?id=${empresa.id}" class="btn btn-primary">Visitar</a>`
             }else{
                 linkPage = `<a href=empresaVisualizacao.html?view=true" class="btn btn-primary">Visitar</a>`
