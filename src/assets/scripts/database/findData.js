@@ -126,7 +126,7 @@ function searchPlace(categoria){
         }
         let linkPage;
         if(produto.view){
-            console.log(produto)
+            console.log("produto",produto)
             if(empresa.id){
                 linkPage = `<a href="produtoVisualizacao.html?id=${empresa.id}" class="btn btn-primary">Visitar</a>`
             }else{
@@ -244,7 +244,7 @@ function updateTags(categoria){
     categoria.tags.forEach(tag => {
         data += `<a href="./search.html?search=${tag}&place=${place}" class="btn btn-primary brad-25">${tag}</a>` 
     })
-    console.log(data)
+    
     tags.innerHTML += data;
     data = ''
    
@@ -264,7 +264,7 @@ function findCategory(){
             empresas = categoria.empresas
             updateTags(categoria)
             empresas.forEach(empresa => {
-                console.log(empresa)
+               
                 findCompany(empresa)
                
             })
@@ -302,7 +302,7 @@ function findByLocal(){
     if(localEmpresa  && localProdutos){ 
        
         var empresa = findLocalEmpresa(localEmpresa, localProdutos)  
-        console.log(empresa) 
+        
         if((empresa.nome.toLowerCase()).includes(search.toLowerCase()) || (empresa.descricao.toLowerCase()).includes(search.toLowerCase())){
             cardsData.push(empresa) 
             isOpened = isOpen(empresa.hfunc)
@@ -311,7 +311,6 @@ function findByLocal(){
         }
 
             for(var i = 0; i < localProdutos.length; i++){
-                console.log(localProdutos[i])
                 updateCard(localProdutos[i], empresa)
             }
         }
