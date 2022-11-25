@@ -88,6 +88,11 @@ h3 {
     margin: 1 1%;
     padding: 14px;    
 }
+
+.card .img_product_added{
+    width: 200px;
+    border-radius: 7px;
+}
 .cards{
     width: 90%;
 }
