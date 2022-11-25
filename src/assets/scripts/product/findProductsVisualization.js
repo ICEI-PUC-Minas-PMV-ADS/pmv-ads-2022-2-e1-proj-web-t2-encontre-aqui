@@ -86,7 +86,7 @@ function updatePage(empresa){
   
     var pages_data = JSON.parse(localStorage.getItem('pages_data'))
     var atual_page = JSON.parse(localStorage.getItem('atual_page'))
-    var publicar_area = document.getElementById("publicar_area");
+    var publicar_content = document.getElementById("publicar_content");
     var id_produto = urlObj.searchParams.get("id")
 
     if(id_produto && id_produto!=null && id_produto!= undefined){
@@ -98,11 +98,11 @@ function updatePage(empresa){
         });
     }    
     else{    
-        publicar_area.innerHTML =  `
+        publicar_content.innerHTML =  ` <div id="publicar_area">
         <h2 class="title">Se estiver tudo certo, publique sua página agora...</h2>
             <div class="btn-publ">          
              <a href="./usuarioDivulgacao.html" class="btn-publicar">PUBLICAR AGORA</a>
-          </div>`
+          </div></div>`
     }
 
     var img_products = '';  
