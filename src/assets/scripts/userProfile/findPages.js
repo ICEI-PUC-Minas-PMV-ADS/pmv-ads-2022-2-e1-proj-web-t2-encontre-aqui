@@ -32,7 +32,7 @@ window.addEventListener('load', ()=>{
                 <p class="description">
                     ${pages_data[i].descricao.substr(0,150)} ...
                 </p>
-                <a href="./produto.html?categoria=${pages_data[i].categoria}&id=${pages_data[i].id}&prodserv=${pages_data[i].id}">
+                <a href="./paginaCriacao.html?id=${pages_data[i].id}">
                  <button class="button-bl"> Editar  </button>  </a>
                  <button id="removePage" onclick='removePages("${pages_data[i]}")' class="button-bl"> Remover  </button>
                

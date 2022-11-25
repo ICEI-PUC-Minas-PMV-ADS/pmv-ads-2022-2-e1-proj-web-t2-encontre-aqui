@@ -1,0 +1,46 @@
+window.addEventListener('load', updatePageInputs());
+
+
+function updatePageInputs(){
+    const url = window.location.href;
+    const urlObj = new URL(url);
+    const id_produto = urlObj.searchParams.get("id")
+
+    var isDeliveries = document.getElementById("isDeliveries")
+    var isReservation = document.getElementById("isReservation")
+
+    var principal = document.getElementById("principal");
+    var url_img1 = document.getElementById("url_img1");
+    var url_img2 = document.getElementById("url_img2");
+    var url_img3 = document.getElementById("url_img3");
+    var url_img4 = document.getElementById("url_img4");
+
+    var rsocial = document.querySelectorAll('.social input');
+
+    var product_name = document.getElementById("product_name");
+    var product_price = document.getElementById("product_price");
+    var product_description = document.getElementById("product_description");
+
+    const pages_data = JSON.parse(localStorage.getItem("pages_data"));
+    const company_data = JSON.parse(localStorage.getItem("company_data"));
+    
+    if(company_data){
+        if(pages_data){
+            for(var i = 0; i < pages_data.length; i++){
+                if(pages_data[i].id === parseInt(id_produto)){
+                isDeliveries.checked = pages_data[i].domicilio;
+                isReservation.checked = pages_data[i].agendamento;
+
+                updateBackground(principal, pages_data[i].banner)
+            }
+            }
+        }
+    }
+
+}
+
+function updateBackground(area){
+    area.style.backgroundImage = `url(${preview.src})` 
+    area.style.backgroundSize = `cover`                   
+    area.style.backgroundRepeat = `no-repeat` 
+}
