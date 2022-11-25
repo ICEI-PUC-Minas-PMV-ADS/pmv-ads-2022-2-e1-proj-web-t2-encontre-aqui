@@ -234,6 +234,11 @@ function searchPlace(categoria){
          
         })
        
+    }else{
+        container.innerHTML = `<div class="not_find"> <img src="./assets/images/icons/not_find_sad.svg" >
+                                    <h1>NÃO FOI POSSÍVEL ENCONTRAR LUGARES</h1> 
+                                    <h1>PARA OS TERMOS DIGITADOS...</h1> 
+                              </div>`
     }
        
    

@@ -258,7 +258,17 @@ section{
     transition:all 1s ease;
     background-color: #3689d7;
 }
+.not_find{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.not_find img{
+   width: 35%;
+   opacity: 0.5;
+}
 /*------------------------------------------*/
 @media screen and (max-width:1200px){
 
