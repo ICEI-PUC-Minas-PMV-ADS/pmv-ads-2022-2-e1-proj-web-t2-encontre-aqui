@@ -10,10 +10,10 @@ function updatePageInputs(){
     var isReservation = document.getElementById("isReservation")
 
     var principal = document.getElementById("principal");
-    var url_img1 = document.getElementById("url_img1");
-    var url_img2 = document.getElementById("url_img2");
-    var url_img3 = document.getElementById("url_img3");
-    var url_img4 = document.getElementById("url_img4");
+    var photo1 = document.getElementById("photo1");
+    var photo2 = document.getElementById("photo2");
+    var photo3 = document.getElementById("photo3");
+    var photo4 = document.getElementById("photo4");
 
     var rsocial = document.querySelectorAll('.social input');
 
@@ -30,8 +30,11 @@ function updatePageInputs(){
                 if(pages_data[i].id === parseInt(id_produto)){
                 isDeliveries.checked = pages_data[i].domicilio;
                 isReservation.checked = pages_data[i].agendamento;
-
-                updateBackground(principal, pages_data[i].banner)
+            
+                    updateBackground(principal, pages_data[i].banner)
+                    updateBackground(photo1, pages_data[i].imagens[0])
+                    updateBackground(photo2,pages_data[i].imagens[1])
+                    updateBackground(photo3,pages_data[i].imagens[2])
             }
             }
         }
@@ -40,7 +43,9 @@ function updatePageInputs(){
 }
 
 function updateBackground(area, src){
-    area.style.backgroundImage = `url(${src})` 
-    area.style.backgroundSize = `cover`                   
-    area.style.backgroundRepeat = `no-repeat` 
+    if(src != ''){
+        area.style.backgroundImage = `url(${src})` 
+        area.style.backgroundSize = `cover`                   
+        area.style.backgroundRepeat = `no-repeat` 
+    }
 }
