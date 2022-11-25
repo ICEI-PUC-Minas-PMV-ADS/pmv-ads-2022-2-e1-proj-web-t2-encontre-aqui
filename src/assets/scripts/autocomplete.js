@@ -5628,7 +5628,7 @@ let search = categorias.sort();
 search_input.addEventListener("keyup", (e)=>{
     removeElements();
    
-    console.log(search)
+ 
     for(let i of search){
         
        if(i.toLowerCase().startsWith(search_input.value.

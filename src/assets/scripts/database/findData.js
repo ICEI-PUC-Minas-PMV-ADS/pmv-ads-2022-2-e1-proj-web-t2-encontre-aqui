@@ -304,7 +304,7 @@ function findByLocal(){
     if(localEmpresa  && localProdutos){ 
        
         var empresa = findLocalEmpresa(localEmpresa, localProdutos)  
-        
+        if(empresa.length > 0){
         if((empresa.nome.toLowerCase()).includes(search.toLowerCase()) || (empresa.descricao.toLowerCase()).includes(search.toLowerCase())){
             cardsData.push(empresa) 
             isOpened = isOpen(empresa.hfunc)
@@ -316,6 +316,7 @@ function findByLocal(){
                 updateCard(localProdutos[i], empresa)
             }
         }
+    }
     }
     
 
