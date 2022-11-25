@@ -34,15 +34,15 @@ function GetMap(empresa) {
 */
         cardMap = `<a href="produto.html?id=${empresa.id}> "<div class="card-map">
         <img id="logo-empresa" src="${empresa.imagens[0]}">
-
+        ${isOpen(empresa.hfunc)}
         <div class="card-body">
            
-            <div class="description"> ${empresa.descricao.substr(0,45)}</div>
-          
+            
+            <br>
             <div class="logradouro"> ${empresa.logradouro}</div>
             <div> ${empresa.tel}</div>
                       
-            ${isOpen(empresa.hfunc)}
+          
 
         </div>
       
