@@ -485,7 +485,15 @@ ul li{
   display: none;
 }
 
-.list{
+.list2{
+  position: absolute; 
+  top:36px;
+  width: 50%;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+}
+
+.list1{
   position: absolute; 
   top:36px;
   width: 50%;

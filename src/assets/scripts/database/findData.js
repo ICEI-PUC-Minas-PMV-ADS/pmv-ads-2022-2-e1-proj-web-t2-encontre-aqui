@@ -24,13 +24,15 @@ if(url_categoria != null && url_categoria != undefined  && id!=null && id!=undef
     findCategory()
    // updateWantedLocal("Produtos")
 }else if(search ==null || search == undefined || search == ""){
+   
     findAllCompanies()
     updateWantedLocal("Principais Empresas")
 }else{    
+  
     startSearch();
+    findByLocal()
     updateWantedLocal(place)
 }
-
 
 
 updateMap();
@@ -118,11 +120,20 @@ function searchPlace(categoria){
         if(produto!==null){     
             temp = produto     
             prodserv =  empresa.id
-        }else{
-           
+        }else{           
             produto = empresa
             prodserv = 22464654;
         }
+      
+        let linkPage;
+        if(produto.view !== null && produto.view !== undefined){
+            linkPage = `<a href=empresaVisualizacao.html?view=true" class="btn btn-primary">Visitar</a>`
+            if(prodserv != null && prodserv != undefined && prodserv != 22464654){
+                linkPage = `<a href="produtoVisualizacao.html?id=${prodserv}" class="btn btn-primary">Visitar</a>`
+            }         
+           }else{
+            linkPage = `<a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${produto.id}&prodserv=${prodserv}" class="btn btn-primary">Visitar</a>`
+           }    
         var marked = checkFavorites(empresa)    
  
                         data += `<div class="card ">
@@ -152,9 +163,7 @@ function searchPlace(categoria){
                                             </svg>
                                             <span>Favoritar</span>                                            
                                         </div>
-
-
-                                            <a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${produto.id}&prodserv=${prodserv}" class="btn btn-primary">Visitar</a>
+                                            ${linkPage}                                 
                                         </div>
                                       
                                     </div>
@@ -174,7 +183,7 @@ function searchPlace(categoria){
     let tags = [];
    
     Categorias.forEach(categoria => {
-        if(i < 12){
+        if(i < 20){
         categoria.empresas.forEach(cat_empresas => {
             cat_empresas.forEach(empresa => {
                 isOpened = isOpen(empresa.hfunc)
@@ -225,6 +234,11 @@ function searchPlace(categoria){
          
         })
        
+    }else{
+        container.innerHTML = `<div class="not_find"> <img src="./assets/images/icons/not_find_sad.svg" >
+                                    <h1>NÃO FOI POSSÍVEL ENCONTRAR LUGARES</h1> 
+                                    <h1>PARA OS TERMOS DIGITADOS...</h1> 
+                              </div>`
     }
        
    
@@ -234,7 +248,7 @@ function updateTags(categoria){
     categoria.tags.forEach(tag => {
         data += `<a href="./search.html?search=${tag}&place=${place}" class="btn btn-primary brad-25">${tag}</a>` 
     })
-    console.log(data)
+    
     tags.innerHTML += data;
     data = ''
    
@@ -254,7 +268,7 @@ function findCategory(){
             empresas = categoria.empresas
             updateTags(categoria)
             empresas.forEach(empresa => {
-                console.log(empresa)
+               
                 findCompany(empresa)
                
             })
@@ -282,4 +296,60 @@ function findProducts(empresa){
     updateCard(produto, empresa)
   })        
        
+}
+
+function findByLocal(){
+
+    localProdutos = JSON.parse(localStorage.getItem('pages_data'))
+    localEmpresa = JSON.parse(localStorage.getItem('company_data'))
+    
+    if(localEmpresa  && localProdutos){ 
+       
+        var empresa = findLocalEmpresa(localEmpresa, localProdutos)  
+      
+        if(empresa.view && empresa!== null && empresa !== undefined){
+        console.log(empresa)
+        if((empresa.nome.toLowerCase()).includes(search.toLowerCase()) || (empresa.descricao.toLowerCase()).includes(search.toLowerCase())){
+            cardsData.push(empresa) 
+            isOpened = isOpen(empresa.hfunc)
+            updateWantedLocal(empresa.cidade)
+            updateCard(empresa, null)
+        }
+
+            for(var i = 0; i < localProdutos.length; i++){
+                updateCard(localProdutos[i], empresa)
+            }
+        }
+    }
+    }
+    
+
+function findLocalEmpresa(localEmpresa, localProdutos){
+    var domicilio = false, agendamento = false;
+    var imgBanner;
+
+    for(var i = 0; i < localProdutos.length; i++){
+        if(localProdutos[i].agendamento)
+            agendamento = true
+        if(localProdutos[i].domicilio)
+            domicilio = true
+
+        imgBanner = localProdutos[i].banner
+    }
+    var empresa = {
+        nome: localEmpresa.razao_social,
+        descricao: localEmpresa.descricao,
+        imgBanner: imgBanner,
+        imagens: [localEmpresa.url_img],
+        hfunc: localEmpresa.hfunc,
+        logradouro : localEmpresa.logradouro,
+        cidade: localEmpresa.cidade,
+        tel: localEmpresa.tel,
+        estado: localEmpresa.uf,
+        domicilio: domicilio,
+        agendamento:agendamento,
+        view:true
+    };
+  
+    return empresa;
 }

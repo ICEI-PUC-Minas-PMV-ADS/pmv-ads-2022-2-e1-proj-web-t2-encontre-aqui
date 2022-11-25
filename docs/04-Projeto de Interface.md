@@ -295,7 +295,7 @@ Na figura 14 abaixo, podemos contemplar a usabilidade de adicionar páginas para
 
 ### Criar Página de Visualização de Produto ou Serviço
 
-Após clicar no ícone de criar página da figura 14 o usuário é direcionado para página detalhada da figura 15 estruturada da seguinte forma abaixo:
+Após clicar no ícone de criar página da figura 14 o usuário é direcionado para página detalhada da figura 16 estruturada da seguinte forma abaixo:
 
 <ul>
   <li>Cabeçalho - Logo e foto de capa - nome da empresa.</li>
@@ -317,7 +317,7 @@ Após clicar no ícone de criar página da figura 14 o usuário é direcionado p
 
 ### Atualizar Página de Visualização de Produto ou Serviço
 
-A figura 16 representa a atualização de dados que o MEI ou ME desejar, veja que a estrutura se mantém a mesma da figura 15, mas ao final o botão é alterado para atualizar a página do produto ou serviço descrito, acompanhe a descrição da estrutura:
+A figura 17 representa a atualização de dados que o MEI ou ME desejar, veja que a estrutura se mantém a mesma da figura 16, mas ao final o botão é alterado para atualizar a página do produto ou serviço descrito, acompanhe a descrição da estrutura:
 
 <ul>
   <li>Cabeçalho - Logo e foto de capa - nome da empresa.</li>
@@ -339,7 +339,7 @@ A figura 16 representa a atualização de dados que o MEI ou ME desejar, veja qu
 
 ### Editar Usuário Divulgador
 
-A figura 17 é onde o MEI ou ME pode editar seus dados, acompanhe abaixo a estrutura:
+A figura 18 é onde o MEI ou ME pode editar seus dados, acompanhe abaixo a estrutura:
 
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - foto de perfil e status logado na conta.</li>
@@ -363,7 +363,7 @@ A figura 17 é onde o MEI ou ME pode editar seus dados, acompanhe abaixo a estru
 
 ### Editar Usuário.
 
-Já a figura 18 é contemplada na edição do usuário comum que está no sistema buscando serviços para contratar ou produtos para comprar, veja abaixo a estrutura e campos necessários para essa edição:
+Já a figura 19 é contemplada na edição do usuário comum que está no sistema buscando serviços para contratar ou produtos para comprar, veja abaixo a estrutura e campos necessários para essa edição:
 
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - foto de perfil e status logado na conta.</li>
@@ -387,7 +387,7 @@ Já a figura 18 é contemplada na edição do usuário comum que está no sistem
 
 ### Página de Erro.
 
-A figura 19 é estabelecida quando o usuário pesquisa uma URL incorreta ou faz uma pesquisa que não leve a lugar algum, para que ele não fique sem resposta a página de erro é mostrada para que ele tenha um ponto de ação a partir dela, acompanhe a estrutura abaixo:
+A figura 20 é estabelecida quando o usuário pesquisa uma URL incorreta ou faz uma pesquisa que não leve a lugar algum, para que ele não fique sem resposta a página de erro é mostrada para que ele tenha um ponto de ação a partir dela, acompanhe a estrutura abaixo:
 
 <ul>
   <li>Cabeçalho - Logo, Menu do sistema contendo botão para entrar como uma empresa - Barra de pesquisa de empresas, produtos, serviços disponíveis e cidades que você gostaria de pesquisar alguma dessas opções passadas - foto de perfil e status logado na conta.</li>

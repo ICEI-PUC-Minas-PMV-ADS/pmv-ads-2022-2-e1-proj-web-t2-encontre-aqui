@@ -1,5 +1,6 @@
 window.addEventListener('load', ()=>{
     var img_avatar = document.getElementById('avatar-user')
+    var textPrincipal = document.getElementById('textPrincipal')
     const user = JSON.parse(localStorage.getItem('user')) 
     if(user === null || user === undefined){
         window.location.href = './login.html'
@@ -12,7 +13,8 @@ window.addEventListener('load', ()=>{
     var cards= ''
 
     if(company_data){
-        if(img_avatar){          
+        if(img_avatar){
+          textPrincipal.innerHTML = company_data.descricao          
           img_avatar.setAttribute('src', company_data.url_img)        
         }
            
@@ -30,9 +32,10 @@ window.addEventListener('load', ()=>{
                 <p class="description">
                     ${pages_data[i].descricao.substr(0,150)} ...
                 </p>
-                <a href="./produto.html?categoria=${pages_data[i].categoria}&id=${pages_data[i].id}&prodserv=${pages_data[i].id}">
-                 <button class="button-bl"> Editar  </button>
-                </a>
+                <a href="./paginaCriacao.html?id=${pages_data[i].id}">
+                 <button class="button-bl"> Editar  </button>  </a>
+                 <button id="removePage" onclick='removePages("${pages_data[i]}")' class="button-bl"> Remover  </button>
+               
             </div>`
         }
     }

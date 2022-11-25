@@ -2,13 +2,13 @@ var url = window.location.href;
 var urlObj = new URL(url);
 
 
-//var id = Number(urlObj.searchParams.get("id"))
-//var prodserv = Number(urlObj.searchParams.get("prodserv"))
 
+//var prodserv = Number(urlObj.searchParams.get("prodserv"))
+/*
 var id = 12;
 var prodserv = 9;
 url_categoria ="restaurante";
-
+*/
 //var url_categoria = urlObj.searchParams.get("categoria")
 
 var logo_area = document.querySelector('.logo-area')
@@ -86,6 +86,24 @@ function updatePage(empresa){
   
     var pages_data = JSON.parse(localStorage.getItem('pages_data'))
     var atual_page = JSON.parse(localStorage.getItem('atual_page'))
+    var publicar_content = document.getElementById("publicar_content");
+    var id_produto = urlObj.searchParams.get("id")
+
+    if(id_produto && id_produto!=null && id_produto!= undefined){
+        
+        pages_data.forEach(page => {
+            if(page.id == parseInt(id_produto)){
+                atual_page =  page
+            }
+        });
+    }    
+    else{    
+        publicar_content.innerHTML =  ` <div id="publicar_area">
+        <h2 class="title">Se estiver tudo certo, publique sua página agora...</h2>
+            <div class="btn-publ">          
+             <a href="./usuarioDivulgacao.html" class="btn-publicar">PUBLICAR AGORA</a>
+          </div></div>`
+    }
 
     var img_products = '';  
    // var product = getProduct(empresa);

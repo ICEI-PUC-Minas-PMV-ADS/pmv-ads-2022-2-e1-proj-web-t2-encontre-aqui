@@ -35,6 +35,7 @@ body{
 #description-ps .description-text {
     display:flex ;
     flex-direction: column;
+    max-width: 650px;
     width: 70%;
     height: 100%;
     padding-top: 20px;
@@ -331,6 +332,21 @@ body{
     text-align: center;
     font-size: 2rem;
   }
+
+#publicar_area{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;      
+    width: 40%;
+    height: 200px;
+    border-radius: 7px;
+    position: fixed;
+    top: 60%;
+    left:60%;
+    background-color: rgba(204, 204, 204, 0.493);
+    
+}
 
   @media (max-width:770px){
     .popup-img img{

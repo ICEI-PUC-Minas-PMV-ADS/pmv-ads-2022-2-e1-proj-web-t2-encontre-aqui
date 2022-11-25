@@ -17,10 +17,13 @@
     <nav class="nav-menu">
       <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
       <form action="./search.html" method="GET" class="search" autocomplete="off">
-        <input name="search" type="text" placeholder="Produtos, Serviços, Empresas">
+        <div class="place-area">
+          <input name="search" id="search_input" type="text" placeholder="Produtos, Serviços, Empresas">
+          <ul class="list1"></ul>
+        </div>
         <div class="place-area">
           <input name="place" id="place" type="text" placeholder="Cidade">
-          <ul class="list"></ul>
+          <ul class="list2"></ul>
         </div>
         <button class="btn-search" type="submit">Pesquisar</button>
       </form>
@@ -39,6 +42,7 @@
       <div class="caixa">
 
         <img src="./assets/images/logo-site/logo1.png" alt="">
+
         <h1>Login</h1>
 
         <div class="email">
@@ -56,9 +60,11 @@
         <br>
         <p> Ainda não tem uma conta?&nbsp;&nbsp;<a href="cadastro.html">Criar conta</a> </p>
         <p> Esqueceu a senha?&nbsp;&nbsp;<a href="./newpassword.html">Recuperar Senha</a> </p>
+        <div class="msg_error"></div>
       </div>
 
     </div>
+
   </main>
   <footer id="footer">
 
@@ -109,7 +115,9 @@
     </div>
   </footer>
 
+  <script src="./assets/scripts/database/database.js"></script>
   <script src="./assets/scripts/autocomplete.js"></script>
+  <script src="./assets/scripts/search/getLocalSearch.js"></script>
   <script src="./assets/scripts/LoginCadastro/login.js"></script>
 </body>
 

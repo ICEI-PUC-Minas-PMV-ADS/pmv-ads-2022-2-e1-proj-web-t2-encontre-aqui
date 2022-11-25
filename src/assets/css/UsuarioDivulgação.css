@@ -88,6 +88,11 @@ h3 {
     margin: 1 1%;
     padding: 14px;    
 }
+
+.card .img_product_added{
+    width: 200px;
+    border-radius: 7px;
+}
 .cards{
     width: 90%;
 }
@@ -140,7 +145,7 @@ h3 {
 
 .btn-publicar {
     display: block;
-    width: 50%;
+    width: 250px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;

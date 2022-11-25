@@ -3,12 +3,15 @@ window.addEventListener('load', loadPersons)
 
 function loadPersons(){
    var galeria = document.querySelector('.galeria')
+   var nEmpresas = 12, j=0;
    Object.keys(Empresas).forEach(empresa =>{
-    
-        var selected = Empresas[empresa]
-        for(var i = 0; i < selected.length; i++){
-            updateCards(selected[i])
-        }
+        if(j < nEmpresas ){
+            var selected = Empresas[empresa]
+            for(var i = 0; i < selected.length; i++){
+                updateCards(selected[i])
+                j++;
+            }
+      }
    })
    galeria.innerHTML = data;
    data = ''

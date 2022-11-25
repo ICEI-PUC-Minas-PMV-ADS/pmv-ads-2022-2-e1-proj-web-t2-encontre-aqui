@@ -76,10 +76,13 @@ input:focus{
   padding: 5px;
   width: 100%;
   height: 50px;
-  background-color: #e25959;
-  color: #343434;
+  background-color: #275988;
+  color: #e3e3e3;
   border-radius:5px;
   visibility: hidden;
 
   transition: all 0.3 ease;
+  -webkit-box-shadow: 2px 4px 20px 1px rgb(88, 172, 240);
+  -moz-box-shadow: 2px 4px 20px 1px rgb(88, 172, 240);
+  box-shadow: 2px 4px 20px 1px rgb(88, 172, 240);
 }

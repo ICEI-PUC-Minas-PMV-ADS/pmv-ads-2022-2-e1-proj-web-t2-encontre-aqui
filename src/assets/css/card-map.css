@@ -2,7 +2,7 @@
 /*-------------card map-----------------------*/
 .card-map{
     width: 100px;
-    height: 125px;
+    height: 135px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
