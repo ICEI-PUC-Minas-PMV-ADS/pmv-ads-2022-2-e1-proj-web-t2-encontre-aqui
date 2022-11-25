@@ -303,7 +303,7 @@ function findByLocal(){
         }
 
             for(var i = 0; i < localProdutos.length; i++){
-                console.log(localProdutos)
+                console.log(localProdutos[i])
                 if(localProdutos[i].nome.includes(search) || localProdutos.descricao.includes(search))
                 updateCard(localProdutos[i], empresa)
             }
