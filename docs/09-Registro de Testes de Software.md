@@ -35,5 +35,5 @@
 <p> O sistema direcionou o cliente para a página de Perfil de Usuário </p>
 
 <p align="center"> 
-  <img src="img/testes/RegistroTesteSucesso2.JPG" width="600">
+  <img src="img/testes/RegistroTeste_Sucesso2.JPG" width="600">
 </p>
