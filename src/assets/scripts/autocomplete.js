@@ -2,6 +2,7 @@
 function displayNames(value, input_v){
     let auto_place = document.getElementById(input_v);
     auto_place.value = value;
+
     removeElements();
 }
 
@@ -5603,7 +5604,7 @@ auto_place.addEventListener("keyup", (e)=>{
             listItem.classList.add("list-items");
             listItem.style.cursor = "pointer";
             listItem.setAttribute("onclick", "displayNames('" + i + "', 'place')");
-            
+            localStorage.setItem('cityStored', i) 
             let word = "<b>" + i.substr(0, auto_place.value.length)
             + "</b>";
 

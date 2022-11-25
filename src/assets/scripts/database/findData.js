@@ -24,13 +24,15 @@ if(url_categoria != null && url_categoria != undefined  && id!=null && id!=undef
     findCategory()
    // updateWantedLocal("Produtos")
 }else if(search ==null || search == undefined || search == ""){
+   
     findAllCompanies()
     updateWantedLocal("Principais Empresas")
 }else{    
+  
     startSearch();
+    findByLocal()
     updateWantedLocal(place)
 }
-
 
 
 updateMap();
@@ -118,11 +120,21 @@ function searchPlace(categoria){
         if(produto!==null){     
             temp = produto     
             prodserv =  empresa.id
-        }else{
-           
+        }else{           
             produto = empresa
             prodserv = 22464654;
         }
+        let linkPage;
+        if(produto.view){
+            console.log(produto)
+            if(empresa.id){
+                linkPage = `<a href="produtoVisualizacao.html?id=${empresa.id}" class="btn btn-primary">Visitar</a>`
+            }else{
+                linkPage = `<a href=empresaVisualizacao.html?view=true" class="btn btn-primary">Visitar</a>`
+            }          
+           }else{
+            linkPage = `<a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${produto.id}&prodserv=${prodserv}" class="btn btn-primary">Visitar</a>`
+           }    
         var marked = checkFavorites(empresa)    
  
                         data += `<div class="card ">
@@ -152,9 +164,7 @@ function searchPlace(categoria){
                                             </svg>
                                             <span>Favoritar</span>                                            
                                         </div>
-
-
-                                            <a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${produto.id}&prodserv=${prodserv}" class="btn btn-primary">Visitar</a>
+                                            ${linkPage}                                 
                                         </div>
                                       
                                     </div>
@@ -282,4 +292,58 @@ function findProducts(empresa){
     updateCard(produto, empresa)
   })        
        
+}
+
+function findByLocal(){
+
+    localProdutos = JSON.parse(localStorage.getItem('pages_data'))
+    localEmpresa = JSON.parse(localStorage.getItem('company_data'))
+    
+    if(localEmpresa  && localProdutos){ 
+       
+        var empresa = findLocalEmpresa(localEmpresa, localProdutos)  
+        console.log(empresa) 
+        if((empresa.nome.toLowerCase()).includes(search.toLowerCase()) || (empresa.descricao.toLowerCase()).includes(search.toLowerCase())){
+            cardsData.push(empresa) 
+            isOpened = isOpen(empresa.hfunc)
+            updateWantedLocal(empresa.cidade)
+            updateCard(empresa, null)
+        }
+
+            for(var i = 0; i < localProdutos.length; i++){
+                console.log(localProdutos[i])
+                updateCard(localProdutos[i], empresa)
+            }
+        }
+    }
+    
+
+function findLocalEmpresa(localEmpresa, localProdutos){
+    var domicilio = false, agendamento = false;
+    var imgBanner;
+
+    for(var i = 0; i < localProdutos.length; i++){
+        if(localProdutos[i].agendamento)
+            agendamento = true
+        if(localProdutos[i].domicilio)
+            domicilio = true
+
+        imgBanner = localProdutos[i].banner
+    }
+    var empresa = {
+        nome: localEmpresa.razao_social,
+        descricao: localEmpresa.descricao,
+        imgBanner: imgBanner,
+        imagens: [localEmpresa.url_img],
+        hfunc: localEmpresa.hfunc,
+        logradouro : localEmpresa.logradouro,
+        cidade: localEmpresa.cidade,
+        tel: localEmpresa.tel,
+        estado: localEmpresa.uf,
+        domicilio: domicilio,
+        agendamento:agendamento,
+        view:true
+    };
+  
+    return empresa;
 }
