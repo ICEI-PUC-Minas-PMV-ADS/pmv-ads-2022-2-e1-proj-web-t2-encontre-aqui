@@ -35,7 +35,7 @@ body{
 #description-ps .description-text {
     display:flex ;
     flex-direction: column;
-    max-width: 700px;
+    max-width: 650px;
     width: 70%;
     height: 100%;
     padding-top: 20px;
