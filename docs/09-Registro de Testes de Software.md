@@ -39,4 +39,4 @@
 </p>
 
 
-##### _Figura 4- Registro de Teste direcionou a pessoa jurídica para a página de publicar página_
+##### _Figura 4- Registro de Teste sistema redirecionou a pessoa jurídica para a página de publicar página_
