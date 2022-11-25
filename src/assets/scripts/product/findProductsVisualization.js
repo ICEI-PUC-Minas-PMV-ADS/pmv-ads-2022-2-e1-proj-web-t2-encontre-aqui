@@ -2,7 +2,7 @@ var url = window.location.href;
 var urlObj = new URL(url);
 
 
-var id = Number(urlObj.searchParams.get("id"))
+
 //var prodserv = Number(urlObj.searchParams.get("prodserv"))
 /*
 var id = 12;
@@ -87,14 +87,20 @@ function updatePage(empresa){
     var pages_data = JSON.parse(localStorage.getItem('pages_data'))
     var atual_page = JSON.parse(localStorage.getItem('atual_page'))
     var publicar_area = document.getElementById("publicar_area");
-    if(id!=null && id!= undefined){
+    var id_produto = urlObj.searchParams.get("id")
+
+    if(id_produto && id_produto!=null && id_produto!= undefined){
+        
         pages_data.forEach(page => {
-            if(page.id === id){
+            if(page.id == parseInt(id_produto)){
                 atual_page =  page
             }
         });
-    }else{
-       publicar_area.innerHTML =  ` <div class="btn-publ">
+    }    
+    else{    
+        publicar_area.innerHTML =  `
+        <h2 class="title">Se estiver tudo certo, publique sua página agora...</h2>
+            <div class="btn-publ">          
              <a href="./usuarioDivulgacao.html" class="btn-publicar">PUBLICAR AGORA</a>
           </div>`
     }
