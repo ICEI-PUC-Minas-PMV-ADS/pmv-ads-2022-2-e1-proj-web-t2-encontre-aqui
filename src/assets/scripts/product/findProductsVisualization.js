@@ -2,7 +2,7 @@ var url = window.location.href;
 var urlObj = new URL(url);
 
 
-//var id = Number(urlObj.searchParams.get("id"))
+var id = Number(urlObj.searchParams.get("id"))
 //var prodserv = Number(urlObj.searchParams.get("prodserv"))
 
 var id = 12;
