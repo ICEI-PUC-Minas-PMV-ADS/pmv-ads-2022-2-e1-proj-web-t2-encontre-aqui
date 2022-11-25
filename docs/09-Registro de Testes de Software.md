@@ -19,3 +19,13 @@
 </p>
 
 ##### _Figura 2- Cliente Direcionado para página de Perfil_
+
+## Registro de Teste: Criar Página de divulgação de produto ou serviço pessoa Jurídica
+
+### Caso de Sucesso
+
+<p> O sistema cadastrou o produto/serviço na base de dados(localStorage) </p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroTeste_Sucesso3.JPG" width="800">
+</p>
