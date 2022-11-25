@@ -127,6 +127,7 @@ function searchPlace(categoria){
         let linkPage;
         if(produto.view){
             console.log("produto",produto)
+            console.log("empresa",empresa)
             if(empresa.id){
                 linkPage = `<a href="produtoVisualizacao.html?id=${empresa.id}" class="btn btn-primary">Visitar</a>`
             }else{
