@@ -1,5 +1,6 @@
 window.addEventListener('load', ()=>{
     var img_avatar = document.getElementById('avatar-user')
+    var textPrincipal = document.getElementById('textPrincipal')
     const user = JSON.parse(localStorage.getItem('user')) 
     if(user === null || user === undefined){
         window.location.href = './login.html'
@@ -12,7 +13,8 @@ window.addEventListener('load', ()=>{
     var cards= ''
 
     if(company_data){
-        if(img_avatar){          
+        if(img_avatar){
+          textPrincipal.innerHTML = company_data.descricao          
           img_avatar.setAttribute('src', company_data.url_img)        
         }
            
