@@ -86,13 +86,17 @@ function updatePage(empresa){
   
     var pages_data = JSON.parse(localStorage.getItem('pages_data'))
     var atual_page = JSON.parse(localStorage.getItem('atual_page'))
-
+    var publicar_area = document.getElementById("publicar_area");
     if(id!=null && id!= undefined){
         pages_data.forEach(page => {
             if(page.id === id){
                 atual_page =  page
             }
         });
+    }else{
+       publicar_area.innerHTML =  ` <div class="btn-publ">
+             <a href="./usuarioDivulgacao.html" class="btn-publicar">PUBLICAR AGORA</a>
+          </div>`
     }
 
     var img_products = '';  
