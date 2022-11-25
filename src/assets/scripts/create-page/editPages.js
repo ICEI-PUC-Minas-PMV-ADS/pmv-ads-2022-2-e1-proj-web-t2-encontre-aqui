@@ -39,8 +39,8 @@ function updatePageInputs(){
 
 }
 
-function updateBackground(area){
-    area.style.backgroundImage = `url(${preview.src})` 
+function updateBackground(area, src){
+    area.style.backgroundImage = `url(${src})` 
     area.style.backgroundSize = `cover`                   
     area.style.backgroundRepeat = `no-repeat` 
 }
