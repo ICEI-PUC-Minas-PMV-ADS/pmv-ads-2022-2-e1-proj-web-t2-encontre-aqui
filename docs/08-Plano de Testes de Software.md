@@ -23,4 +23,4 @@
   <img src="img/testes/CriarPaginaJR_.JPG" width="600">
 </p>
 
-##### _Figura 2- Teste Criar página de divulgação_
+##### _Figura 3- Teste Criar página de divulgação_
