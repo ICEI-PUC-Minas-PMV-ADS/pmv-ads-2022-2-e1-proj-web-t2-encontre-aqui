@@ -304,6 +304,7 @@ function findByLocal(){
     if(localEmpresa  && localProdutos){ 
        
         var empresa = findLocalEmpresa(localEmpresa, localProdutos)  
+        console.log(empresa)
         if(empresa.length > 0){
         if((empresa.nome.toLowerCase()).includes(search.toLowerCase()) || (empresa.descricao.toLowerCase()).includes(search.toLowerCase())){
             cardsData.push(empresa) 
