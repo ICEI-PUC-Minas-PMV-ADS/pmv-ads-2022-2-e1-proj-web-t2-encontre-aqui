@@ -15,3 +15,10 @@
 </p>
 
 ##### _Figura 2- Teste Cadastro de Pessoa Jurídica_
+
+
+### Criar Página de divulgação de produto ou serviço
+
+<p align="center"> 
+  <img src="img/testes/CriarPaginaJuridic.JPG" width="600">
+</p>
