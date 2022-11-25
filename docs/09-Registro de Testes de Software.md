@@ -30,7 +30,7 @@
   <img src="img/testes/RegistroTesteSucesso3.JPG" width="800">
 </p>
 
-##### _Figura 3- Registro de Teste dados de armazenamento de produto/serviço cadastrado_
+##### _Figura 3- Registro de Teste, dados de armazenamento de produto/serviço cadastrado_
 
 <p> O sistema direcionou a pessoa jurídica para a página de publicar página </p>
 
@@ -39,4 +39,4 @@
 </p>
 
 
-##### _Figura 4- Registro de Teste sistema redirecionou a pessoa jurídica para a página de publicar página_
+##### _Figura 4- Registro de Teste, sistema redirecionou a pessoa jurídica para a página de publicar página_
