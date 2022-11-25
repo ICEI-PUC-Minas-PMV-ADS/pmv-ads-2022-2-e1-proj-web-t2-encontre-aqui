@@ -37,3 +37,6 @@
 <p align="center"> 
   <img src="img/testes/RegistroTeste_Sucesso2.JPG" width="600">
 </p>
+
+
+##### _Figura 4- Registro de Teste direcionou a pessoa jurídica para a página de publicar página_
