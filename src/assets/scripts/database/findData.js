@@ -120,11 +120,20 @@ function searchPlace(categoria){
         if(produto!==null){     
             temp = produto     
             prodserv =  empresa.id
-        }else{
-           
+        }else{           
             produto = empresa
             prodserv = 22464654;
         }
+        let linkPage;
+        if(produto.view){
+            if(empresa.id){
+                linkPage = `<a href="produtoVisualizacao.html?id=${empresa.id}" class="btn btn-primary">Visitar</a>`
+            }else{
+                linkPage = `<a href=empresaVisualizacao.html?view=true" class="btn btn-primary">Visitar</a>`
+            }          
+           }else{
+            linkPage = `<a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${produto.id}&prodserv=${prodserv}" class="btn btn-primary">Visitar</a>`
+           }    
         var marked = checkFavorites(empresa)    
  
                         data += `<div class="card ">
@@ -154,9 +163,7 @@ function searchPlace(categoria){
                                             </svg>
                                             <span>Favoritar</span>                                            
                                         </div>
-
-
-                                            <a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${produto.id}&prodserv=${prodserv}" class="btn btn-primary">Visitar</a>
+                                            ${linkPage}                                 
                                         </div>
                                       
                                     </div>
@@ -334,6 +341,7 @@ function findLocalEmpresa(localEmpresa, localProdutos){
         estado: localEmpresa.uf,
         domicilio: domicilio,
         agendamento:agendamento,
+        view:true
     };
   
     return empresa;
