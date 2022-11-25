@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./assets/css/avatar.css">
+    <link rel="stylesheet" href="./assets/css/search.css">
+    <link rel="shortcut icon" href="./assets/images/icons/favority-icon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/card-map.css">
+    <title>Encontre-Aqui</title>
+</head>
+
+<body>
+    <header id="toggleUserLogged" class="mb-10">
+
+    </header>
+
+    <div class="container mt-100">
+
+        <aside class="left-menu">
+
+            <div class="filter-area mb-20 mt-20">
+                <div>
+                    <span class="title">Filtrar</span>
+                    <span><img src="./assets/images/icons/indicador_menu.svg"> </span>
+                </div>
+                <div class="filter mb-50">
+                    <span class="subtitle sm">Somente abertos agora</span>
+                    <input type="checkbox" id="switch" class="checkbox" onclick="filterOpen()" />
+                    <label for="switch" class="toggle"> </label>
+                </div>
+            </div>
+
+            <div class="subtitle mm mb-20">Sugestões:</div>
+
+            <div class="mb-20 ml-5">
+                <div>
+                    <span class="title mm">Serviços Residênciais</span>
+                    <span><img src="./assets/images/icons/indicador_menu.svg"> </span>
+                </div>
+
+                <ul class="ml-10">
+                    <a href="./search.html?search=eletricista&place=Juiz de Fora">Eletricista</li></a>
+                    <a href="./search.html?search=Mecanico&place=Juiz de Fora">
+                        <li>Mecânico</li>
+                    </a>
+                    <a href="./search.html?search=Pedreiro&place=Juiz de Fora">
+                        <li>Pedreiro</li>
+                    </a>
+                    <a href="./search.html?search=Jardineiro&place=Juiz de Fora">
+                        <li>Jardineiro</li>
+                    </a>
+                    <a href="./search.html?search=Carpinteiro&place=Juiz de Fora">
+                        <li>Carpinteiro</li>
+                    </a>
+                    <a href="./search.html?search=Pintor&place=Juiz de Fora">
+                        <li>Pintor</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="mb-20">
+                <div class="title mm ml-5">
+                    <span class="title mm">Alimentação</span>
+                    <span><img src="./assets/images/icons/indicador_menu.svg"> </span>
+                </div>
+
+                <ul class="ml-10">
+                    <li>Restaurante</li>
+                    <li>Padaria</li>
+                    <li>Mercado</li>
+                    <li>Açougue</li>
+                    <li>Hortifrúti</li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <div class="body-container">
+            <div class="open-menu">
+                <img class="btn-burguer" src="./assets/images/icons/hamburguer.png">
+            </div>
+            <section class="mt-10">
+
+                <span class="title">Resultado(s) para a pesquisa: </span>
+                <h2 class="title">Lugares Encontrados Para <span class="title" id="wanted-place">Juiz de Fora</span>
+                </h2>
+
+                <div class="related-tags">
+                    <span class="title">Tags Relacionadas</span>
+                    <div class="tags">
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="card-container">
+
+
+            </section>
+
+        </div>
+        <aside class="right-menu">
+            <div id="places-in-maps">
+
+            </div>
+        </aside>
+    </div>
+
+
+    <footer id="footer" class="mt-50">
+
+        <div class="footer-about">
+            <div class="logo"><img src="./assets/images/logo-site/logo2.png"></div>
+            <span>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Eveniet ipsam </span>
+        </div>
+
+        <div class="footer-categories-links">
+            <h1>Categorias</h1>
+            <div class="categories">
+                <div>
+                    <ul>
+                        <li>Barbearia</li>
+                        <li>Petshop</li>
+                        <li>Restaurante</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Bebidas</li>
+                        <li>Construção</li>
+                        <li>Festas</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Vestuários</li>
+                        <li>Veículos</li>
+                        <li>Educação</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-about-links">
+            <h1>Sobre</h1>
+            <div>
+                <ul>
+                    <li>Sobre o Encontre-aqui</li>
+                    <li>Termos de Serviço</li>
+                    <li>Política de privacidade</li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./assets/scripts/search/responsive.js"></script>
+    <script src="./assets/scripts/database/database.js"></script>
+    <script src="./assets/scripts/search/isOpen.js"></script>
+    <script src="./assets/scripts/search/openFilter.js"></script>
+    <script src="./assets/scripts/checkFavorites.js"></script>
+    <script src="./assets/scripts/favorite.js"></script>
+    <script src="./assets/scripts/database/findData.js"></script>
+    <script src="./assets/scripts/userIsLogged.js"></script>
+    <script src="./assets/scripts/userDetails.js"></script>
+    <script src="./assets/scripts/autocomplete.js"></script>
+    <script src="./assets/scripts/search/getLocalSearch.js"></script>
+
+
+
+    <script type='text/javascript'
+        src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Aj30kitBtzqfccLqDP_RXQYks09ie-CQ5gvx0dnWFyyQImim-GDuVIVUl0VUwjQr'
+        async defer></script>
+    <script src="./assets/scripts/mapas/mapa-v1.js"></script>
+
+</body>
+
+
+</html>

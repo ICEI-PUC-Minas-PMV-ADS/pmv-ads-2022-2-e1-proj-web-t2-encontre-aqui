@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/assets/img/IconeSite.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/avatar.css">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/UsuarioDivulgação.css">
+    <title>Divulgue aqui</title>
+
+</head>
+
+<body>
+    <header id="userLogged" class="container-cabecalho">
+
+    </header>
+
+
+    <main class="box">
+        <div>
+            <section class="container-nav">
+                <div>
+                    <h1 id="company_name"></h1>
+                </div>
+
+                <div class="seletor">
+                    <img class="avatar img_avatar" src="./assets/images/site/userprofile/avatar.png" alt="Avatar">
+
+                    <div class="selecao">
+                        <h3>Ramo/Profissão</h3>
+                        <select onchange="addCategoria(this)" class="opcao">
+                            <option selected disabled>Eletricista</option>
+                            <option>Marcenaria</option>
+                            <option>Advogado</option>
+                            <option>Dentista</option>
+                            <option>Pedreiro</option>
+                        </select>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <div class="add-pages">
+
+            <section class="card-container">
+                <div class="subtitulo">
+                    <h2>
+                        Adicione páginas descrevendo seus Produto(s) ou serviço(s).
+                    </h2>
+                </div>
+                <div class="cards">
+
+                </div>
+            </section>
+
+
+            <section>
+                <div class="horarios">
+                    <h1>Adicione Horários de Atendimento</h1>
+                    <table>
+                        <tr>
+                            <td>Domingo</td>
+                            <td><input type="text" placeholder="08:00" value="08:00"></td>
+                            <td> às </td>
+                            <td><input type="text" placeholder="12:00" value="12:00"> </td>
+                        </tr>
+                        <tr>
+                            <td>Segunda</td>
+                            <td><input type="text" placeholder="08:00" value="08:00"></td>
+                            <td> às </td>
+                            <td><input type="text" placeholder="20:00" value="20:00"> </td>
+                        </tr>
+                        <tr>
+                            <td>Terça</td>
+                            <td><input type="text" placeholder="08:00" value="08:00"></td>
+                            <td> às </td>
+                            <td><input type="text" placeholder="20:00" value="20:00"> </td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td><input type="text" placeholder="08:00" value="08:00"></td>
+                            <td> às </td>
+                            <td><input type="text" placeholder="20:00" value="20:00"> </td>
+                        </tr>
+                        <tr>
+                            <td>Quinta</td>
+                            <td><input type="text" placeholder="08:00" value="08:00"></td>
+                            <td> às </td>
+                            <td><input type="text" placeholder="20:00" value="20:00"> </td>
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
+                            <td><input type="text" placeholder="08:00" value="08:00"></td>
+                            <td> às </td>
+                            <td><input type="text" placeholder="20:00" value="20:00"> </td>
+                        </tr>
+                        <tr>
+                            <td>Sabado</td>
+                            <td><input type="text" placeholder="08:00" value="08:00"></td>
+                            <td> às </td>
+                            <td><input type="text" placeholder="20:00" value="20:00"> </td>
+                        </tr>
+                    </table>
+
+            </section>
+        </div>
+        <div class="btn-publ">
+            <a href="./empresaVisualizacao.html" onclick="addHorarios()" class="btn-publicar">PUBLICAR AGORA</a>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="mt-10">
+
+        <div class="footer-about">
+            <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
+            <span>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Eveniet ipsam </span>
+        </div>
+
+        <div class="footer-categories-links-color-w">
+            <h1>Categorias</h1>
+            <div class="categories">
+                <div>
+                    <ul>
+                        <li>Barbearia</li>
+                        <li>Petshop</li>
+                        <li>Restaurante</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Bebidas</li>
+                        <li>Construção</li>
+                        <li>Festas</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Vestuários</li>
+                        <li>Veículos</li>
+                        <li>Educação</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-about-links">
+            <h1>Sobre</h1>
+            <div>
+                <ul>
+                    <li>Sobre o Encontre-aqui</li>
+                    <li>Termos de Serviço</li>
+                    <li>Política de privacidade</li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/scripts/userIsLogged.js"></script>
+    <script src="./assets/scripts/usuarioDivulgacao/findData.js"></script>
+    <script src="./assets/scripts/usuarioDivulgacao/usuarioDivulgacao.js"></script>
+
+    <script src="./assets/scripts/logout.js"></script>
+</body>
+
+</html>

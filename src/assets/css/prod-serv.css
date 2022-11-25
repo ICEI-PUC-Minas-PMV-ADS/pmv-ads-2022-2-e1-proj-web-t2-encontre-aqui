@@ -1,0 +1,355 @@
+:root{
+     --border-input: #ccc;
+     --title-color: #2e2c2c;
+}
+
+body{
+    width: 99vw;
+    height: 100vh;
+    margin: 0 auto;
+    overflow-x: hidden;
+  
+}
+
+.header-product-page{
+    height: 300px;    
+   
+}
+
+#description-ps{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #e9e6e640 0%, rgba(239, 233, 233, 0) 100%);
+    width: 100%;
+    height: 400px;    
+    padding-left: 15%; 
+    padding-right: 10%; 
+}
+#description-ps .descr-images {
+    width: 100%;
+    height: 100%;
+    display:flex ;   
+}
+#description-ps .description-text {
+    display:flex ;
+    flex-direction: column;
+    max-width: 650px;
+    width: 70%;
+    height: 100%;
+    padding-top: 20px;
+    padding-left:  20px;
+    padding-right: 20px;
+}
+
+#description-ps .description-text .input-data{
+    height: 50px;
+    margin-bottom:5px;
+}
+
+#description-ps .description-text input{
+    border:0;
+    border-bottom: 1px solid var(--border-input);
+}
+#description-ps .descr-images .principal-image{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#description-ps .descr-images .principal-image img{
+    width:95%;
+    height: 90%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#description-ps .descr-images .other-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#description-ps .descr-images .other-images img{
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+    cursor: pointer;  
+}
+
+#description-ps .descr-images .other-images div{
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+     
+}
+
+.popup-img{
+       
+    display: none;
+       
+}
+
+.popup-img-large{
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    display: block;
+    transition: all 0.5s ease;
+}
+.popup-img span{
+    position:absolute;
+    top:0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor:pointer;
+    z-index: 9999;
+}
+.popup-img img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:5px solid #fff;
+    border-radius: 5px;
+    width: 650px ;
+    height: 500px;
+    object-fit: cover;
+
+   
+}
+.check-info-area{
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(180deg, #e9e6e6 0%, rgba(239, 233, 233, 0) 100%);
+}
+.check-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top:20px; ;
+    width: 80%;
+}
+
+.check-info .place-options{
+    display: flex;
+}
+ 
+.check-info .place-options  *{
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.check-info .favorite-area {
+    display: flex;
+    flex-direction: rows;
+    align-items: center;
+    justify-content: center;
+
+}
+.check-info .favorite-area span{
+    margin-right: 16px;
+}
+.logo-area{
+    position:absolute;
+    top: 130px;
+    left:10%;
+}
+
+.logo-area a{
+    display:flex;
+    flex-direction: column;
+  
+}
+
+.logo-area img{
+    width: 110px;
+    border-radius: 7px;    
+    transition: all 0.2s;
+}
+
+.logo-area img:hover{
+    -webkit-box-shadow:0px 0px 5px 0px rgba(156, 156, 156, 0.411);
+    -moz-box-shadow:0px 0px 5px 0px rgba(156, 156, 156, 0.411);
+    box-shadow: 0px 0px 5px 0px rgba(156, 156, 156, 0.411);
+}
+.logo-area .client-name{
+    color:rgb(254, 254, 254);
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 0.8px rgb(0, 0, 0); 
+}
+
+.area-map{
+    margin: 50px auto;
+    width: 84%;
+    height: 34%;   
+}
+
+
+#other-products{
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+#other-products .other-imgs{
+    width: 120px;
+    height: 130px;
+    margin-top:10px;
+    margin-left: 20px;
+    border-radius: 8px;
+    transition:all 0.2s ease;
+  }
+
+
+#other-products .other-imgs:hover{
+   
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(156,156,156,1);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(156,156,156,1);
+    box-shadow: 1px 1px 5px 1px rgba(156,156,156,1);
+     
+  }
+
+
+.other-products{
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    width: 95%;
+    height: 200px;
+}
+
+.header-product-page .imgEmpresa{
+  width: 100%; 
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.description {
+    width: 100%;
+    height:250px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid var(--border-input);
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+
+  #info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10%;
+    width: 100%;
+  }
+
+  #info h1{
+    color: var(--title-color)
+  }
+  #info .horarios input{
+    width:60px;
+    margin:0 5px;
+  }
+
+  #info .horarios .table div{
+    display: flex;    
+    width: 250px;
+    border: 1px solid var(--title-color);
+   }
+
+   #info .horarios .table div span{
+    display: flex;
+     
+    width: 150px;
+  
+   }
+   #info .horarios .week{
+    display: flex;
+    justify-content: flex-start;    
+    width: 200px;
+    
+   }
+
+ 
+  #info .contato{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #info .contato .local{
+    display: flex;
+    justify-content: space-between;
+    margin:0 5%;
+  }
+
+  #info .redes{
+    display: flex;
+    flex-direction: column;
+    
+    width: 200px;
+    
+  }
+
+  #info .redes .social a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    height: 30px;     
+  }
+
+  #title_product{
+    text-align: center;
+    font-size: 2rem;
+  }
+
+#publicar_area{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;      
+    width: 40%;
+    height: 200px;
+    border-radius: 7px;
+    position: fixed;
+    top: 60%;
+    left:60%;
+    background-color: rgba(204, 204, 204, 0.493);
+    
+}
+
+  @media (max-width:770px){
+    .popup-img img{
+        width: 95%;
+    }
+  }
