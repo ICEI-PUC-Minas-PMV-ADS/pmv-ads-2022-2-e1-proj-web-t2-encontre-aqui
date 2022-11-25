@@ -122,16 +122,17 @@ function searchPlace(categoria){
             prodserv =  empresa.id
         }else{           
             produto = empresa
-            prodserv = null;
+            prodserv = 22464654;
         }
       
-        let  linkPage = `<a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${produto.id}&prodserv=${prodserv}" class="btn btn-primary">Visitar</a>`;
-        if(produto.view){           
+        let linkPage;
+        if(produto.view !== null && produto.view !== undefined){
+            linkPage = `<a href=empresaVisualizacao.html?view=true" class="btn btn-primary">Visitar</a>`
             if(prodserv !== null && prodserv !== undefined){
                 linkPage = `<a href="produtoVisualizacao.html?id=${prodserv}" class="btn btn-primary">Visitar</a>`
             }         
            }else{
-            linkPage = `<a href=empresaVisualizacao.html?view=true" class="btn btn-primary">Visitar</a>`
+            linkPage = `<a href="${empresa.isEmpresa}.html?categoria=${empresa.categoria}&id=${produto.id}&prodserv=${prodserv}" class="btn btn-primary">Visitar</a>`
            }    
         var marked = checkFavorites(empresa)    
  
