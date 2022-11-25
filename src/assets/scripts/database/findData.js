@@ -124,7 +124,8 @@ function searchPlace(categoria){
             produto = empresa
             prodserv = 22464654;
         }
-        console.log("produto",empresa)
+        console.log("empresa",empresa)
+        console.log("produto",produto)
         let linkPage;
         if(produto.view){
           
