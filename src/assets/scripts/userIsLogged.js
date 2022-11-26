@@ -52,23 +52,18 @@ window.addEventListener('load', ()=>{
 </nav>`;
 
 var homeLogged = ` <div class="account">
-        <div class="avatar-1">
-            <a href="./userProfile.html" class="avatar-1"><img class="img_avatar"
-                    src="./assets/images/site/userprofile/avatar.png"></a>
-        </div>
-        <div>
-            <h1 class="texto" id="user_name"></h1>
-            </h1>
-            <a class="btn btn-light" id="logout" href="#">Sair</a>
-        </div>
-        </div>`;
+                    <div class="avatar-1">
+                        <a href="./userProfile.html" class="avatar-1"><img class="img_avatar"
+                                src="./assets/images/site/userprofile/avatar.png"></a>
+                    </div>
+                    <div>
+                        <h1 class="texto" id="user_name"></h1>
+                        </h1>
+                        <a class="btn btn-light" id="logout" href="#">Sair</a>
+                    </div>
+                  </div>`;
 
-var homeNotLogged = `
-                    <div class=""><a href="./paraEmpresas.html" class="btn btn-light">Para Empresas</a></div>
-                    <div class="account">
-                        <a class="btn btn-light" href="./cadastro.html">Cadastrar-se</a>
-                        <a class="btn btn-light" href="./login.html">Login</a>
-                    </div>`
+ 
     
     if(user){
         if(userLogged != null && userLogged != undefined){
@@ -88,7 +83,7 @@ var homeNotLogged = `
             toggleUserLogged.innerHTML = notLogged
         }
         if(homeLoginLogout){
-            homeLogged.innerHTML = homeNotLogged
+          //  homeLoginLogout.innerHTML = homeNotLogged
         }
     }
 
