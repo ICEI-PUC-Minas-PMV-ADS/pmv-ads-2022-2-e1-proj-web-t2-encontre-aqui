@@ -165,9 +165,9 @@ restaurantes : [
     },
     {
         id: 10,
-        nome: "Picanha, Steaks Prime beef (300g)",
+        nome: "Entradas Onion rings",
         descricao: `
-        Ancho angus, Brasador da parte mais nobre do contra-filé. Macio e extremamente saboroso. Mais 2 acompanhamentos. `,
+        Áneis de cebola empanados, estilo homemade + molho a escolha. Mais 2 acompanhamentos. `,
         imagens:['./../src/assets/images/companies/products/restaurantes/12/02/01.jpg','./../src/assets/images/companies/products/restaurantes/12/02/02.jpg','./../src/assets/images/companies/products/restaurantes/12/02/03.jpg','./../src/assets/images/companies/products/restaurantes/12/02/04.jpg'],
         preco: "20.00",
         domicilio:true,
