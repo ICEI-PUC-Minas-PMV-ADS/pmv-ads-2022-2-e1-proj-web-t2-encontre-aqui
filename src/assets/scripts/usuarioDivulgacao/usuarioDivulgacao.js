@@ -33,6 +33,7 @@ window.addEventListener('load', ()=>{
     var horarios = document.querySelectorAll('.horarios input')
     const user = JSON.parse(localStorage.getItem('user')) 
 
+    
     for(var i = 0; i < horarios.length; i++){
         horarios[i].addEventListener("change", ()=>{
             addHorarios()
@@ -45,6 +46,9 @@ window.addEventListener('load', ()=>{
    // var categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value
  
     if(company_data){
+        for(var i =0 ; i < horarios.length; i++){
+            horarios = splitHorarios(company_data.hfunc)
+        }
         var img_avatar = document.querySelectorAll(".img_avatar")
         var user_name = document.getElementById("user_name")
         if(user_name != null && user_name != undefined){
@@ -57,3 +61,13 @@ window.addEventListener('load', ()=>{
    
     }
 })
+
+function splitHorarios(horariosLocal){
+    horarios = []
+    for(var i = 0; i < horariosLocal.length; i++){
+       let h = horariosLocal[i].split('-');
+       horarios.push(h[0])
+       horarios.push(h[1])
+    }
+    return horarios
+}
