@@ -2,6 +2,7 @@ window.addEventListener('load', ()=>{
     const user = localStorage.getItem('user');
     const userLogged = document.getElementById('userLogged');
     const toggleUserLogged = document.getElementById('toggleUserLogged');
+    const homeLoginLogout = document.getElementById('homeLoginLogout');
 
     var logged =  `            
     <nav class="nav-menu">
@@ -50,6 +51,24 @@ window.addEventListener('load', ()=>{
     </div>
 </nav>`;
 
+var homeLogged = ` <div class="account">
+        <div class="avatar-1">
+            <a href="./userProfile.html" class="avatar-1"><img class="img_avatar"
+                    src="./assets/images/site/userprofile/avatar.png"></a>
+        </div>
+        <div>
+            <h1 class="texto" id="user_name"></h1>
+            </h1>
+            <a class="btn btn-light" id="logout" href="#">Sair</a>
+        </div>
+        </div>`;
+
+var homeNotLogged = `
+                    <div class=""><a href="./paraEmpresas.html" class="btn btn-light">Para Empresas</a></div>
+                    <div class="account">
+                        <a class="btn btn-light" href="./cadastro.html">Cadastrar-se</a>
+                        <a class="btn btn-light" href="./login.html">Login</a>
+                    </div>`
     
     if(user){
         if(userLogged != null && userLogged != undefined){
@@ -61,10 +80,15 @@ window.addEventListener('load', ()=>{
         if(toggleUserLogged){            
             toggleUserLogged.innerHTML = logged
         }
-
+        if(homeLoginLogout){
+            homeLoginLogout.innerHTML = homeLogged
+        }
     }else{
         if(toggleUserLogged){            
             toggleUserLogged.innerHTML = notLogged
+        }
+        if(homeLoginLogout){
+            homeLogged.innerHTML = homeNotLogged
         }
     }
 
