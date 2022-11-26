@@ -46,8 +46,9 @@ window.addEventListener('load', ()=>{
    // var categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value
  
     if(company_data){
+        var h = splitHorarios(company_data.hfunc)
         for(var i =0 ; i < horarios.length; i++){
-            horarios = splitHorarios(company_data.hfunc)
+            horarios[i].value = h[i]
         }
         var img_avatar = document.querySelectorAll(".img_avatar")
         var user_name = document.getElementById("user_name")
