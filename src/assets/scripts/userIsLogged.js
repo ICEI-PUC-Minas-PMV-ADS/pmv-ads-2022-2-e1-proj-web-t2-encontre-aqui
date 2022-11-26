@@ -63,7 +63,11 @@ var homeLogged = ` <div class="account">
                     </div>
                   </div>`;
 
- 
+var homeNotLogged = `<a href="./paraEmpresas.html" class="btn btn-light">Para Empresas</a></div>
+                        <div class="account">
+                            <a class="btn btn-light" href="./cadastro.html">Cadastrar-se</a>
+                            <a class="btn btn-light" href="./login.html">Login</a>
+                        `
     
     if(user){
         if(userLogged != null && userLogged != undefined){
@@ -83,7 +87,7 @@ var homeLogged = ` <div class="account">
             toggleUserLogged.innerHTML = notLogged
         }
         if(homeLoginLogout){
-          //  homeLoginLogout.innerHTML = homeNotLogged
+            homeLoginLogout.innerHTML = homeNotLogged
         }
     }
 
