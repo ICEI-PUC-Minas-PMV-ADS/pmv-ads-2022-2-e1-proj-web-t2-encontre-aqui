@@ -27,7 +27,7 @@ var place_options = document.querySelector(".place-options");
 
 addEventListener('load', ()=>{
     var empresa = {}
-    if(viewPageSearch==='true'){
+    if(viewPageSearch==='false'){
 
     }else{
    
