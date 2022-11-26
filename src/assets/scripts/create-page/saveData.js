@@ -1,6 +1,11 @@
 var btn_visualization = document.getElementById("btn_visualization");
+const url = window.location.href;
+const urlObj = new URL(url);
+const id_produto = urlObj.searchParams.get("id")
 
 btn_visualization.addEventListener('click', () =>{
+
+        
     var page_id = 0;
     var isDeliveries = document.getElementById("isDeliveries")
     var isReservation = document.getElementById("isReservation")
@@ -17,12 +22,15 @@ btn_visualization.addEventListener('click', () =>{
     var product_price = document.getElementById("product_price");
     var product_description = document.getElementById("product_description");
     
-    var company_data = JSON.parse(localStorage.getItem('company_data'))
     var pages = JSON.parse(localStorage.getItem('pages_data'))
     
+   
+
+
     if(pages){
         page_id = pages.length
     }
+
     var page_data = {
         id:page_id,
         imagens:[url_img1.value, url_img2.value, url_img3.value, url_img4.value],
@@ -38,6 +46,22 @@ btn_visualization.addEventListener('click', () =>{
 
     localStorage.setItem('atual_page', JSON.stringify(page_data))
     
+    if(id_produto != null && id_produto!= undefined){
+        var edit_page = []
+        
+        if(pages){
+            for(var i = 0; i < pages.length; i++){
+                if(pages[i].id == parseInt(id_produto)){
+                    edit_page.push(page_data)
+                    page_id = pages[i].id
+                }else{
+                    edit_page.push(pages[i])
+                }
+            }
+            pages = edit_page
+        }
+    }
+    
    
     if(pages!=null && pages!= undefined && pages.length > 0){
         pages.push(page_data)
@@ -45,6 +69,8 @@ btn_visualization.addEventListener('click', () =>{
       var pages = [];
       pages.push(page_data);      
     }
+
+   
     localStorage.setItem('pages_data', JSON.stringify(pages))
     document.location.href='./produtoVisualizacao.html'
 })
