@@ -1,5 +1,7 @@
+const user = localStorage.getItem('user');
+
 window.addEventListener('load', ()=>{
-    const user = localStorage.getItem('user');
+   
     const userLogged = document.getElementById('userLogged');
     const toggleUserLogged = document.getElementById('toggleUserLogged');
     const homeLoginLogout = document.getElementById('homeLoginLogout');
