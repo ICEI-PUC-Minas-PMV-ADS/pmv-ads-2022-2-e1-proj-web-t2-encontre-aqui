@@ -31,7 +31,7 @@ function updatePageInputs(){
                 isDeliveries.checked = pages_data[i].domicilio;
                 isReservation.checked = pages_data[i].agendamento;
 
-                    updateBackground(principal, pages_data[0])
+                    updateBackground(principal, pages_data[0].imagens[0])
                     updateBackground(imgPreview, pages_data[i].banner)
                     updateBackground(photo1, pages_data[i].imagens[1])
                     updateBackground(photo2,pages_data[i].imagens[2])
@@ -39,10 +39,10 @@ function updatePageInputs(){
 
                 product_name.value = pages_data[i].nome;
                 product_price.value = pages_data[i].preco;
-                product_description.value = pages_data.descricao
+                product_description.value = pages_data[i].descricao
 
-                rsocial[0].value = pages_data.rsocial[0]
-                rsocial[1].value = pages_data.rsocial[1]
+                rsocial[0].value = pages_data[0].rsocial[0]
+                rsocial[1].value = pages_data[0].rsocial[1]
             }
             }
         }
