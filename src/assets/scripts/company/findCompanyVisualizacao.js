@@ -107,7 +107,7 @@ function updatePage(empresa){
                 if(pages_data[p].agendamento){
                     reservas = true
                 }
-                img_products += ` <a href="produtoVisualizacao.html?id=${pages_data[i].id}">
+                img_products += ` <a href="produtoVisualizacao.html?id=${pages_data[p].id}">
                 <div><img class ="other-imgs" src='${pages_data[p].imagens[0]}' >
                     </div><div style="width:150px" class="opened">${pages_data[p].nome}</div></a>`
             }
