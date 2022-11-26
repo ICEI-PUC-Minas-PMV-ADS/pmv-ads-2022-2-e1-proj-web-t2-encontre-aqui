@@ -24,6 +24,7 @@ window.addEventListener('load', ()=>{
        
         for(var i = 0 ; i < pages_data.length; i++){
              cards += ` <div class="featured-product-item">
+             <a href="produtoVisualizacao.html?id=${pages_data[i].id}">
                 <div style="background-image: url('${pages_data[i].imagens[0]}');"
                     class="featured-product-item-image"></div>
                 <p class="title">
@@ -32,6 +33,7 @@ window.addEventListener('load', ()=>{
                 <p class="description">
                     ${pages_data[i].descricao.substr(0,150)} ...
                 </p>
+                </a>
                 <a href="./paginaCriacao.html?id=${pages_data[i].id}">
                  <button class="button-bl"> Editar  </button>  </a>
                  <button id="removePage" onclick='removePages("${pages_data[i].id}")' class="button-bl"> Remover  </button>

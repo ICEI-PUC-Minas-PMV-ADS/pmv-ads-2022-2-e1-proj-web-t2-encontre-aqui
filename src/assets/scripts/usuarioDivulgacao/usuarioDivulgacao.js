@@ -46,9 +46,10 @@ window.addEventListener('load', ()=>{
    // var categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value
  
     if(company_data){
-        var h = splitHorarios(company_data.hfunc)
+        var h = splitHor(company_data.hfunc)
         for(var i =0 ; i < horarios.length; i++){
             horarios[i].value = h[i]
+            console.log(horarios[i])
         }
         var img_avatar = document.querySelectorAll(".img_avatar")
         var user_name = document.getElementById("user_name")
@@ -63,7 +64,7 @@ window.addEventListener('load', ()=>{
     }
 })
 
-function splitHorarios(horariosLocal){
+function splitHor(horariosLocal){
     horarios = []
     for(var i = 0; i < horariosLocal.length; i++){
        let h = horariosLocal[i].split('-');
