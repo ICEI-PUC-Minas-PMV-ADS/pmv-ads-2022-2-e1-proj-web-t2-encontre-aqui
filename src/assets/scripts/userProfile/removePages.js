@@ -1,12 +1,12 @@
 function removePages(page){
-    var pages = document.getElementById('pages')
-    const pages_data = JSON.parse(localStorage.getItem('pages_data')) 
+    
+    var pages_data = JSON.parse(localStorage.getItem('pages_data')) 
     var temp = []
-  
+    alert(page)
     if(confirm("Tem certeza que deseja REMOVER está página") == true){
     for(var i = 0 ; i < pages_data.length; i++){
         if(pages_data[i].id != page){
-            temp.push(page)
+            temp.push(pages_data[i])
         }
     }
     pages_data = temp

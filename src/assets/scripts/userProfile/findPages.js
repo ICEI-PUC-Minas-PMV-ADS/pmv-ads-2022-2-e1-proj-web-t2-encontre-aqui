@@ -34,7 +34,7 @@ window.addEventListener('load', ()=>{
                 </p>
                 <a href="./paginaCriacao.html?id=${pages_data[i].id}">
                  <button class="button-bl"> Editar  </button>  </a>
-                 <button id="removePage" onclick='removePages("${pages_data[i]}")' class="button-bl"> Remover  </button>
+                 <button id="removePage" onclick='removePages("${pages_data[i].id}")' class="button-bl"> Remover  </button>
                
             </div>`
         }
