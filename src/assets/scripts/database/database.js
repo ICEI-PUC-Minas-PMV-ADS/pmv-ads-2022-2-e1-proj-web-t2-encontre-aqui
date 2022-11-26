@@ -178,9 +178,10 @@ restaurantes : [
     },
     {
         id: 11,
-        nome: "Picanha, Steaks Prime beef (300g)",
+        nome: "Mix de legumes",
         descricao: `
-        Ancho angus, da parte mais nobre do contra-filé. Macio e extremamente saboroso. Mais 2 acompanhamentos. `,
+        Alface, tomate seco, azeite de ervas, croûtons e molho house mayo. 
+        Salteados na manteiga de ervas. Aspargos, abobrinha, batata baroa, vagem, brócolis, couve-flor e cenoura.`,
         imagens:['./../src/assets/images/companies/products/restaurantes/12/04/01.jpg','./../src/assets/images/companies/products/restaurantes/12/04/02.jpg','./../src/assets/images/companies/products/restaurantes/12/04/03.jpg','./../src/assets/images/companies/products/restaurantes/12/04/04.jpg'],
         preco: "20.00",
         domicilio:true,
