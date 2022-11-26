@@ -97,7 +97,7 @@
 ##### _Figura 10- Registro de Teste, adição de empresas, produtos e serviços a lista de favoritos._
 
 <p align="center"> 
-  <img src="img/testes/RegistroRemocaoFavoritosLocal.PNG" width="800">
+  <img src="img/testes/RegistroRemocaoFavoritos.PNG" width="800">
 </p>
 
 ##### _Figura 11- Registro de Teste, remoção de empresas, produtos e serviços a lista de favoritos_
