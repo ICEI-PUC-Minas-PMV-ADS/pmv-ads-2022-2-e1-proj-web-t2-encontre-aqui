@@ -38,5 +38,66 @@
   <img src="img/testes/RegistroTeste_Sucesso2.JPG" width="600">
 </p>
 
-
 ##### _Figura 4- Registro de Teste, sistema redirecionou a pessoa jurídica para a página de publicar página_
+
+## Registro de Teste: Login de Cliente(Pessoa Física e Jurídica)
+
+### Caso de Sucesso
+
+<p> O sistema realizou o login do cliente com a base de dados salvos (localStorage)  </p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroTesteLogin.PNG" width="800">
+</p>
+
+##### _Figura 5- Registro de Teste, dados de armazenamento realizado no login._
+
+<p> O Sistema informou mensagens de indicação de e-mail e senha inválidos. </p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroLoginPassword.PNG" width="800">
+</p>
+
+##### _Figura 6- Registro de Teste, mensagem de indicação de senha inválida._
+
+<p>  Registro de Teste, mensagem de indicação de e-mail inválido. </p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroLoginEmailInvalido.PNG" width="800">
+</p>
+
+##### _Figura 7- Registro de Teste, mensagem de indicação de e-mail inválido._
+
+<p> Registro de Teste, mensagem de indicação de e-mail inválido. </p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroLoginEmailSenhaVaz.PNG" width="800">
+</p>
+
+##### _Figura 8- Registro de Teste, mensagem de indicação de e-mail e senha inválidos._
+
+## Registro de Teste: Adicionar e Remover aos favoritos
+
+### Caso de Sucesso
+
+<p> O sistema realizou a adição e remoção de empresas, serviços e produtos da lista de favoritos com a base de dados salvos (localStorage)  </p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroFavoritosLocalstorage.PNG" width="800">
+</p>
+
+##### _Figura 9- Registro de Teste, adição de empresas, produtos e serviços a lista de favoritos._
+
+<p> Sistema mostra a adição e remoção de empresas, produtos e serviços a lista de favoritos na página de pefil do cliente. </p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroFavoritoUserProf.PNG" width="800">
+</p>
+
+##### _Figura 10- Registro de Teste, adição de empresas, produtos e serviços a lista de favoritos._
+
+<p align="center"> 
+  <img src="img/testes/RegistroRemocaoFavoritos.PNG" width="800">
+</p>
+
+##### _Figura 11- Registro de Teste, remoção de empresas, produtos e serviços a lista de favoritos_
