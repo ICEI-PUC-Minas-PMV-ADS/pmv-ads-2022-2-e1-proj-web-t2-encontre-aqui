@@ -46,25 +46,27 @@ btn_visualization.addEventListener('click', () =>{
 
     localStorage.setItem('atual_page', JSON.stringify(page_data))
     
-    if(id_produto != null && id_produto!= undefined){
-        var edit_page = []
-        
-        if(pages){
-            for(var i = 0; i < pages.length; i++){
-                if(pages[i].id == parseInt(id_produto)){
-                    edit_page.push(page_data)
-                    page_id = pages[i].id
-                }else{
-                    edit_page.push(pages[i])
-                }
-            }
-            pages = edit_page
-        }
-    }
     
    
     if(pages!=null && pages!= undefined && pages.length > 0){
-        pages.push(page_data)
+        
+        if(id_produto != null && id_produto!= undefined){
+            var edit_page = []
+        
+                for(var i = 0; i < pages.length; i++){
+                    if(pages[i].id == parseInt(id_produto)){
+                        edit_page.push(page_data)
+                        page_id = pages[i].id
+                    }else{
+                        edit_page.push(pages[i])
+                    }
+                }
+                pages = edit_page
+                
+         }else{
+                pages.push(page_data);      
+         }
+        
     }else{
       var pages = [];
       pages.push(page_data);      
