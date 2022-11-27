@@ -420,7 +420,7 @@ Empresas = {
     advogados:[
         {
             id: 8,
-            produtos: [Produtos.moveis[1]],
+            produtos: [],
             nome: 'Dra. Brenda Porto',
             descricao: `mais de 20 anos de Advocacia, prima pela excelência na prestação de serviços, objetivando o melhor resultado para seus clientes.
 
@@ -442,7 +442,7 @@ Empresas = {
 
         {
             id: 9,
-            produtos: [Produtos.moveis[1]],
+            produtos: [],
             nome: 'Dr. Davi Lucas Viana',
             descricao: `mais de 20 anos de Advocacia, prima pela excelência na prestação de serviços, objetivando o melhor resultado para seus clientes.
 
@@ -482,7 +482,7 @@ Empresas = {
         },
         {
             id: 11,
-            produtos: [Produtos.moveis[1]],
+            produtos: [],
             nome: 'Kaique Farias',
             descricao: ` Barbearia criada com paixão pela arte, aqui fazemos barba, cabelo, negócios e o mais importante, fazemos amigos. Mais que uma barbearia, um local para estar e relaxar. Valorizamos cada personalidade e perfil, seja o homem tradicional ou moderno.`,
             cidade: 'Juiz de Fora',
@@ -501,7 +501,7 @@ Empresas = {
     eletricistas:[
         {
             id: 7,
-            produtos: [Produtos.moveis[1]],
+            produtos: [],
             nome: 'Enrico Gonçalves',
             descricao: `Eletricista Atua na cidade de Juiz de Fora.  Montar, manter e reparar equipamentos mecânicos, bem como executar a manutenção preventiva e corretiva de maquinário. Auxiliar em trabalhos de pesquisa e aperfeiçoamento. Executar esboços e desenhos de sua especialidade.`,
             cidade: 'Juiz de Fora',
@@ -518,7 +518,7 @@ Empresas = {
         },
         {
             id: 8,
-            produtos: [Produtos.moveis[1]],
+            produtos: [],
             nome: 'Jhon Herbert',
             descricao: `Eletricista Atua na cidade de Juiz de Fora.  Montar, manter e reparar equipamentos eletricos, bem como executar a manutenção preventiva e corretiva de maquinário eletrico. Instrutor de instalações eletricas em alturas. Executar esboços e desenhos técnicos.`,
             cidade: 'Juiz de Fora',
