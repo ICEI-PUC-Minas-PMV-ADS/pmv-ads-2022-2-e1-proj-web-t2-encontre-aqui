@@ -20,6 +20,14 @@
 
 ##### _Figura 2- Cliente Direcionado para página de Perfil_
 
+<p> O sistema não permitiu o cadastro do cliente na base de dados(localStorage), pois os dados informados pelo cliente, não atendem os requisitos para o cadastro.  </p>
+
+<p align="center"> 
+  <img src="img/testes/CadastroSenhasNc.PNG" width="600">
+</p>
+
+##### _Figura 3- Registro de Teste, Dados Invalidos Para Cadastro_
+
 ## Registro de Teste: Criar Página de divulgação de produto ou serviço pessoa Jurídica
 
 ### Caso de Sucesso
@@ -30,7 +38,7 @@
   <img src="img/testes/RegistroTesteSucesso3.JPG" width="800">
 </p>
 
-##### _Figura 3- Registro de Teste, dados de armazenamento de produto/serviço cadastrado_
+##### _Figura 4- Registro de Teste, dados de armazenamento de produto/serviço cadastrado_
 
 <p> O sistema direcionou a pessoa jurídica para a página de publicar página </p>
 
@@ -38,7 +46,7 @@
   <img src="img/testes/RegistroTeste_Sucesso2.JPG" width="600">
 </p>
 
-##### _Figura 4- Registro de Teste, sistema redirecionou a pessoa jurídica para a página de publicar página_
+##### _Figura 5- Registro de Teste, sistema redirecionou a pessoa jurídica para a página de publicar página_
 
 ## Registro de Teste: Login de Cliente(Pessoa Física e Jurídica)
 
@@ -50,7 +58,7 @@
   <img src="img/testes/RegistroTesteLogin.PNG" width="800">
 </p>
 
-##### _Figura 5- Registro de Teste, dados de armazenamento realizado no login._
+##### _Figura 6- Registro de Teste, dados de armazenamento realizado no login._
 
 <p> O Sistema informou mensagens de indicação de e-mail e senha inválidos. </p>
 
@@ -58,7 +66,7 @@
   <img src="img/testes/RegistroLoginPassword.PNG" width="800">
 </p>
 
-##### _Figura 6- Registro de Teste, mensagem de indicação de senha inválida._
+##### _Figura 7- Registro de Teste, mensagem de indicação de senha inválida._
 
 <p>  Registro de Teste, mensagem de indicação de e-mail inválido. </p>
 
@@ -66,7 +74,7 @@
   <img src="img/testes/RegistroLoginEmailInvalido.PNG" width="800">
 </p>
 
-##### _Figura 7- Registro de Teste, mensagem de indicação de e-mail inválido._
+##### _Figura 8- Registro de Teste, mensagem de indicação de e-mail inválido._
 
 <p> Registro de Teste, mensagem de indicação de e-mail inválido. </p>
 
@@ -74,7 +82,7 @@
   <img src="img/testes/RegistroLoginEmailSenhaVaz.PNG" width="800">
 </p>
 
-##### _Figura 8- Registro de Teste, mensagem de indicação de e-mail e senha inválidos._
+##### _Figura 9- Registro de Teste, mensagem de indicação de e-mail e senha inválidos._
 
 ## Registro de Teste: Adicionar e Remover aos favoritos
 
@@ -86,7 +94,7 @@
   <img src="img/testes/RegistroFavoritosLocalstorage.PNG" width="800">
 </p>
 
-##### _Figura 9- Registro de Teste, adição de empresas, produtos e serviços a lista de favoritos._
+##### _Figura 10- Registro de Teste, adição de empresas, produtos e serviços a lista de favoritos._
 
 <p> Sistema mostra a adição e remoção de empresas, produtos e serviços a lista de favoritos na página de pefil do cliente. </p>
 
@@ -94,10 +102,86 @@
   <img src="img/testes/RegistroFavoritoUserProf.PNG" width="800">
 </p>
 
-##### _Figura 10- Registro de Teste, adição de empresas, produtos e serviços a lista de favoritos._
+##### _Figura 11- Registro de Teste, adição de empresas, produtos e serviços a lista de favoritos._
 
 <p align="center"> 
   <img src="img/testes/RegistroRemocaoFavoritos.PNG" width="800">
 </p>
 
-##### _Figura 11- Registro de Teste, remoção de empresas, produtos e serviços a lista de favoritos_
+##### _Figura 12- Registro de Teste, remoção de empresas, produtos e serviços a lista de favoritos_
+
+## Registro de Teste: Editar Página de Divulgação de Produto ou Serviço.
+
+### Caso de Sucesso
+
+<p> O sistema carregou as informações já cadastradas anteriormente pelo cliente, na página de edição.  </p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroEdPagCarrega.PNG" width="800">
+</p>
+
+##### _Figura 13- Registro de Teste, Página de Edição._
+
+<p> O sistema fez alterações na base de dados(localStorage), de acordo com os dados informados na página de edição, pelo cliente </p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroSemEdLocal.PNG" width="800">
+</p>
+
+##### _Figura 14- Registro de Teste, localStorage, Página sem Edição._
+
+<p align="center"> 
+  <img src="img/testes/RegistroEditarPagSemEd.PNG" width="800">
+</p>
+
+##### _Figura 15- Registro de Teste,Página sem Edição._
+
+<p align="center"> 
+  <img src="img/testes/RegistroEdLocal.PNG" width="800">
+</p>
+
+##### _Figura 16- Registro de Teste, localStorage, Página Editada._
+
+<p align="center"> 
+  <img src="img/testes/RegistroEdPagCarrega.PNG" width="800">
+</p>
+
+##### _Figura 17- Registro de Teste,Página Editada._
+
+## Registro de Teste: Remover Página de Divulgação de Produto ou Serviço.
+
+### Caso de Sucesso
+
+<p>O sistema removeu corretamente a página criada pelo cliente, para divulgação de produtos ou serviços.  </p>
+
+<p>locaStorage antes da remoção</p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroEdLocal.PNG" width="800">
+</p>
+
+##### _Figura 18- Registro de Teste, Remover Página(localStorage)._
+
+<p>Página de perfil antes da remoção</p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroEditarPagSemEd.PNG" width="800">
+</p>
+
+##### _Figura 19- Registro de Teste, Remover Página._
+
+<p>locaStorage depois da remoção</p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroLocalRem.PNG" width="800">
+</p>
+
+##### _Figura 20- Registro de Teste, Remover Página(localStorage)._
+
+<p>Página de perfil depois da remoção</p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroDepoisRem.PNG" width="800">
+</p>
+
+##### _Figura 21- Registro de Teste, Remover Página._
