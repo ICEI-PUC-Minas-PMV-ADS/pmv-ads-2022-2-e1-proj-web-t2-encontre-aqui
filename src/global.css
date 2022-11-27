@@ -602,6 +602,19 @@ input[type="file"]{
     display: block;
 
   }
+  .nav-menu{
+    height: 120px;
+    align-items: flex-start;
+  }
+  .searchOthers {    
+    position:absolute;
+    top:65px;
+    left: 20%;
+  }
+  
+  body{
+    margin-top: 150px;
+  }
   ul.menu li{
    
   }
@@ -614,7 +627,14 @@ input[type="file"]{
     height: 430px;
   }
 
+  .searchOthers {
+    
+    position:absolute;
+    top:65px;
+    left: 10%;
+  }
   
+
 #footer .footer-categories-links{  
   width: 600px;
 }

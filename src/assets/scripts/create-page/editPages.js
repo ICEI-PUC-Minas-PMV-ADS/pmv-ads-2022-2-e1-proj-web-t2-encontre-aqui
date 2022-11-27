@@ -15,6 +15,12 @@ function updatePageInputs(){
     var photo2 = document.getElementById("photo2");
     var photo3 = document.getElementById("photo3");
     
+    var url_img1 = document.getElementById("url_img1");
+    var url_img2 = document.getElementById("url_img2");
+    var url_img3 = document.getElementById("url_img3");
+    var url_img4 = document.getElementById("url_img4");
+    var url_img_pr = document.getElementById("url_img_pr");
+
     var rsocial = document.querySelectorAll('.social input');
 
     var product_name = document.getElementById("product_name");
@@ -31,18 +37,24 @@ function updatePageInputs(){
                 isDeliveries.checked = pages_data[i].domicilio;
                 isReservation.checked = pages_data[i].agendamento;
 
-                    updateBackground(principal, pages_data[0])
+                    updateBackground(principal, pages_data[0].imagens[0])
                     updateBackground(imgPreview, pages_data[i].banner)
                     updateBackground(photo1, pages_data[i].imagens[1])
                     updateBackground(photo2,pages_data[i].imagens[2])
                     updateBackground(photo3,pages_data[i].imagens[3])
 
+                    url_img1.value = pages_data[i].imagens[0];
+                    url_img2.value = pages_data[i].imagens[1];
+                    url_img3.value = pages_data[i].imagens[2];
+                    url_img4.value = pages_data[i].imagens[3];
+                    url_img_pr.value = pages_data[i].banner;
+
                 product_name.value = pages_data[i].nome;
                 product_price.value = pages_data[i].preco;
-                product_description.value = pages_data.descricao
+                product_description.value = pages_data[i].descricao
 
-                rsocial[0].value = pages_data.rsocial[0]
-                rsocial[1].value = pages_data.rsocial[1]
+                rsocial[0].value = pages_data[0].rsocial[0]
+                rsocial[1].value = pages_data[0].rsocial[1]
             }
             }
         }

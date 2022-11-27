@@ -18,14 +18,14 @@ function saveUser(evt){
     if(full_name.length > 6 && email.length > 0){
         if(password.length > 6){
             if(password === confirm_pass){
-                user = {
+               var user = {
                     full_name: full_name,
                     email: email,
                     password: password
                 }
         
                 localStorage.setItem('user', JSON.stringify(user))
-                alert("Novo usuário criado!")
+               
                 if(client.value === 'company'){
                     document.location.href='./edicaodeDados.html?cliente=empresa'
                 }else{

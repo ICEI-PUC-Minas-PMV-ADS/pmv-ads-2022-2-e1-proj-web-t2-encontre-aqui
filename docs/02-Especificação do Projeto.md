@@ -71,7 +71,7 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 | RF-008 | O sistema deve permitir ao cliente fazer login com nome de usúario ou email e senha.                                                                                                                            | MÉDIA       |
 | RF-009 | O sistema deve permitir ao cliente editar seus dados cadastrais.                                                                                                           | BAIXA       |
 | RF-010 | O sistema deve permitir ao cliente criar uma nova senha, caso não saiba sua senha de login.                                                                                | BAIXA      |
-| RF-011 | O sistema deve permitir que pessoa jurídica previamente cadastrada, crie página(s) na plataforma, para divulgação de sua empresa, produto(s) ou serviço(s).                              | ALTA       |
+| RF-011 | O sistema deve permitir que pessoa jurídica, previamente cadastrada, crie página(s) na plataforma para divulgação de sua empresa, produto(s) ou serviço(s).                              | ALTA       |
 | RF-012 | Antes de criar a primeia página, a empresa deverá preencher um formulario, contendo os campos: RAZÃO SOCIAL, CNPJ, LOGRADOURO, BAIRRO, MUNICÍPIO, ESTADO, CEP, TELEFONE, EMAIL para contato. Poderá também, fazer o upload de uma foto pessoal ou de sua logomarca, caso tenha uma.| ALTA       |
 | RF-013 | O sistema deve permitir a edição da página criada para a divulgação de produto ou serviço, pela pessoa jurídica que a criou                                                | MÉDIA      |
 | RF-014 | O sistema deve permitir ao usuário adicionar empresas, produtos ou serviços, em sua lista de favoritos, que está disponível em seu perfil.                                 | ALTA       |
@@ -80,6 +80,7 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 | RF-017 | Nos campos destinados ao envio de imagens, o sistema deve permitir o upload de imagens JPEG/JPG, GIF, PNG, TIFF e SVG.                                                                                                | MÉDIA      |
 | RF-018 | O sistema disponibilizará o endereço da página na web para a empresa que a criou.                                                                                                      | MÉDIA      |
 | RF-019 | O sistema disponibilizará na(s) página(s) da pessoa jurídica, através da API de mapas do Microsoft Bing, um mapa informando sua localização comercial.                             | BAIXA      |
+| RF-020 | O sistema deve permitir que pessoa jurídica, previamente cadastrada, remova página(s) por ela criada(s), na plataforma.                              | ALTA       |
 
 ### 3.2 Requisitos não Funcionais
 
