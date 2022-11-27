@@ -34,7 +34,6 @@ btn_visualization.addEventListener('click', () =>{
             }
         }
         page_id = page_id+1;
-        alert(page_id)
     }
 
     var page_data = {
