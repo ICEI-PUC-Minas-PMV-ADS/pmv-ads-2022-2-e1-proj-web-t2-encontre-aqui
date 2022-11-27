@@ -129,7 +129,8 @@ function updatePage(empresa){
     
    if(atual_page){
    for(var i = 1 ; i < atual_page.imagens.length; i++){
-    other_images += `<div> <img src="${atual_page.imagens[i]}"></div>`
+    if(atual_page.imagens[i] != "" && atual_page.imagens[i] != null)
+     other_images += `<div> <img src="${atual_page.imagens[i]}"></div>`
    }
 
                 var content = ` <div class="popup-img">
