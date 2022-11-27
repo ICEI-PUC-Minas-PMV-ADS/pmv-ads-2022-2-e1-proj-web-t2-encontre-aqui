@@ -139,3 +139,41 @@
 </p>
 
 ##### _Figura 16- Registro de Teste,Página Editada._
+
+## Registro de Teste: Remover Página de Divulgação de Produto ou Serviço.
+
+### Caso de Sucesso
+
+<p>O sistema removeu corretamente a página criada pelo cliente, para divulgação de produtos ou serviços.  </p>
+
+<p>locaStorage antes da remoção</p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroEdLocal.PNG" width="800">
+</p>
+
+##### _Figura 17- Registro de Teste, Remover Página(localStorage)._
+
+<p>Página de perfil antes da remoção</p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroEditarPagSemEd.PNG" width="800">
+</p>
+
+##### _Figura 17- Registro de Teste, Remover Página._
+
+<p>locaStorage depois da remoção</p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroLocalRem.PNG" width="800">
+</p>
+
+##### _Figura 17- Registro de Teste, Remover Página(localStorage)._
+
+<p>Página de perfil depois da remoção</p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroDepoisRem.PNG" width="800">
+</p>
+
+##### _Figura 17- Registro de Teste, Remover Página._
