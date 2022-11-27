@@ -157,17 +157,21 @@ color: var(--white);
   #homeLoginLogout{
     display: flex;
     justify-content: space-between;
-    width: 32%;
+    align-items: center;
+    width: 35%;
+    margin: 0 30px;
+    
   }
   .account{
     margin-left: 35%;
   } 
-  @media screen and (max-width:850px) {
+  @media screen and (max-width:900px) {
       .nav-menu .menu{      
         display: none;
       }
 
       #homeLoginLogout{
         width: 50%;
+        margin: 0 30px;
       }
   }

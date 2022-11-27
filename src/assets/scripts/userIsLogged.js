@@ -9,7 +9,7 @@ window.addEventListener('load', ()=>{
     var logged =  `            
     <nav class="nav-menu">
     <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
-    <form action="./search.html" method="GET" class="search" autocomplete="off">
+    <form action="./search.html" method="GET" class="search searchOthers" autocomplete="off">
                 <div class="place-area">
                 <input name="search" id="search_input" type="text" placeholder="Produtos, Serviços, Empresas">
                 <ul class="list1"></ul>
@@ -35,7 +35,7 @@ window.addEventListener('load', ()=>{
     `;
     var notLogged = ` <nav class="nav-menu">
     <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
-    <form action="./search.html" method="GET" class="search" autocomplete="off">
+    <form action="./search.html" method="GET" class="search searchOthers" autocomplete="off">
     <div class="place-area">
     <input name="search" id="search_input" type="text" placeholder="Produtos, Serviços, Empresas">
                 <ul class="list1"></ul>
@@ -65,7 +65,7 @@ var homeLogged = ` <div class="account">
                     </div>
                   </div>`;
 
-var homeNotLogged = `<a href="./paraEmpresas.html" class="btn btn-light">Para Empresas</a>
+var homeNotLogged = `<div class=""><a href="./paraEmpresas.html" class="btn btn-light">Para Empresas</a></div>
                     <div class="account">
                         <a class="btn btn-light" href="./cadastro.html">Cadastrar-se</a>
                         <a class="btn btn-light" href="./login.html">Login</a>
