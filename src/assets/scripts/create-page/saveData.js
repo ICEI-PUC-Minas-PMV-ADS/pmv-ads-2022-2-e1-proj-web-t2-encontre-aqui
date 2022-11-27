@@ -25,7 +25,7 @@ btn_visualization.addEventListener('click', () =>{
     var pages = JSON.parse(localStorage.getItem('pages_data'))
     
    
-    page_id;
+    page_id = 0;
 
     if(pages){
         for(var i = 0; i < pages.length;i++){
