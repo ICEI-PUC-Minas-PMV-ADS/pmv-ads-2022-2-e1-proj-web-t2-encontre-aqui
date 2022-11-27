@@ -53,3 +53,19 @@
 </p>
 
 ##### _Figura 6- Serviços Residenciais e entregas domiciliar_
+
+### Registro de Teste: Editar Página de Divulgação de Produto ou Serviço.
+
+<p align="center"> 
+  <img src="img/testes/TesteEditarPagina.PNG" width="600">
+</p>
+
+##### _Figura 7- Teste Editar Página_
+
+### Registro de Teste: Remover Página de Divulgação de Produto ou Serviço.
+
+<p align="center"> 
+  <img src="img/testes/TesteRemoverPagina.PNG" width="600">
+</p>
+
+##### _Figura 7- Teste Remover Página de Divulgação_
