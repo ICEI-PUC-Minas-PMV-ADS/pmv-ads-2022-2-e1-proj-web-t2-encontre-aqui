@@ -1,5 +1,5 @@
 :root{
-  --color-header: #1a191989;
+  --color-header: #1a1919e5;
   --description-color: #eae6e6;
 }
 
@@ -159,7 +159,9 @@ color: var(--white);
     justify-content: space-between;
     width: 32%;
   }
-
+  .account{
+    margin-left: 35%;
+  } 
   @media screen and (max-width:850px) {
       .nav-menu .menu{      
         display: none;
