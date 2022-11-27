@@ -10,7 +10,7 @@
 
 .galeria-profissionais {
     overflow-x: auto;
-   
+    z-index: 0;
 }
 
 .galeria {
