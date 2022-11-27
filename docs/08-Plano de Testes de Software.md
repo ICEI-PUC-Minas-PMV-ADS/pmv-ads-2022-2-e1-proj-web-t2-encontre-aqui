@@ -68,4 +68,4 @@
   <img src="img/testes/TesteRemoverPagina.PNG" width="600">
 </p>
 
-##### _Figura 7- Teste Remover Página de Divulgação_
+##### _Figura 8- Teste Remover Página de Divulgação_

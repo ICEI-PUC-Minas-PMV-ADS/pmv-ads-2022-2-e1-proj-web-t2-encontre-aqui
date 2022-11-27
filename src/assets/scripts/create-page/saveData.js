@@ -28,7 +28,7 @@ btn_visualization.addEventListener('click', () =>{
 
 
     if(pages){
-        page_id = pages.length
+        page_id = pages.length+1
     }
 
     var page_data = {
