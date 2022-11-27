@@ -101,3 +101,41 @@
 </p>
 
 ##### _Figura 11- Registro de Teste, remoção de empresas, produtos e serviços a lista de favoritos_
+
+## Registro de Teste: Editar Página de Divulgação de Produto ou Serviço.
+
+### Caso de Sucesso
+
+<p> O sistema carregou as informações já cadastradas anteriormente pelo cliente, na página de edição.  </p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroEdPagCarrega.PNG" width="800">
+</p>
+
+##### _Figura 12- Registro de Teste, Página de Edição._
+
+<p> O sistema fez alterações na base de dados(localStorage), de acordo com os dados informados na página de edição, pelo cliente </p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroSemEdLocal.PNG" width="800">
+</p>
+
+##### _Figura 13- Registro de Teste, localStorage, Página sem Edição._
+
+<p align="center"> 
+  <img src="img/testes/RegistroEditarPagSemEd.PNG" width="800">
+</p>
+
+##### _Figura 14- Registro de Teste,Página sem Edição._
+
+<p align="center"> 
+  <img src="img/testes/RegistroEdLocal.PNG" width="800">
+</p>
+
+##### _Figura 15- Registro de Teste, localStorage, Página Editada._
+
+<p align="center"> 
+  <img src="img/testes/RegistroEdPagCarrega.PNG" width="800">
+</p>
+
+##### _Figura 16- Registro de Teste,Página Editada._
