@@ -45,3 +45,11 @@
 </p>
 
 ##### _Figura 5- Adicionar e Remover Favoritos_
+
+### Registro de Teste: Serviços Residenciais e entregas domiciliar. - Camila
+
+<p align="center"> 
+  <img src="img/testes/TestePesquisaResidencial.PNG" width="600">
+</p>
+
+##### _Figura 6- Serviços Residenciais e entregas domiciliar_
