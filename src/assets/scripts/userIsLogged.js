@@ -65,10 +65,11 @@ var homeLogged = ` <div class="account">
                     </div>
                   </div>`;
 
-var homeNotLogged = `<a href="./paraEmpresas.html" class="btn btn-light">Para Empresas</a></div>
-                        <div class="account">
-                            <a class="btn btn-light" href="./cadastro.html">Cadastrar-se</a>
-                            <a class="btn btn-light" href="./login.html">Login</a>
+var homeNotLogged = `<a href="./paraEmpresas.html" class="btn btn-light">Para Empresas</a>
+                    <div class="account">
+                        <a class="btn btn-light" href="./cadastro.html">Cadastrar-se</a>
+                        <a class="btn btn-light" href="./login.html">Login</a>
+                    </div>
                         `
     
     if(user){

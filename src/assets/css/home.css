@@ -153,3 +153,19 @@ color: var(--white);
     font-weight: 400;
     letter-spacing: 0.1mm;
   }
+
+  #homeLoginLogout{
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+  }
+
+  @media screen and (max-width:850px) {
+      .nav-menu .menu{      
+        display: none;
+      }
+
+      #homeLoginLogout{
+        width: 50%;
+      }
+  }
