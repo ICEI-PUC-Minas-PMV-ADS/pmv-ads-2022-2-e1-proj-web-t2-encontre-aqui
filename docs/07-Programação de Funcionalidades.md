@@ -41,7 +41,7 @@
 ##### _Figura 2- Estrutura de dados_
 
 <h3>Instruções de acesso</h3>
-1. Abra o navegador de internet em seu dispositivo móvel ou desktop e digite a URL: https://pauloosilas.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/
+1. Abra o navegador de internet em seu dispositivo móvel ou desktop e digite a URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/
 
 <h3>Resultados de pesquisas - RF-002, RF-003 e RF-004</h3>
 
@@ -86,7 +86,7 @@
 <h3>Instruções de acesso</h3>
 
 1. Ao pesquisar por empresas, produtos ou serviços em qualquer página do site, o cliente será direcionado para esta página, contendo os resultados da pesquisa efetuada;
-2. A página pode ser acessada pelo endereço https://pauloosilas.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/search.html;
+2. A página pode ser acessada pelo endereço https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/search.html?search=&place=Juiz+de+Fora;
 
 <h3>Página de Login - RF-008</h3>
 
@@ -120,7 +120,7 @@
 <h3>Instruções de acesso</h3>
 
 1. Ao clicar no botão Login, disponivel caso o cliente não esteja logado, localizado no topo das páginas.
-2. A página pode ser acessada pelo endereço https://pauloosilas.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/login.html;
+2. A página pode ser acessada pelo endereçohttps://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/login.html;
 
 <br>
 
@@ -158,7 +158,7 @@
 <h3>Instruções de acesso</h3>
 
 1. Ao clicar no botão cadastre-se, disponivel caso o cliente não esteja logado, localizado no topo das páginas.
-2. A página pode ser acessada pelo endereço https://pauloosilas.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/cadastro.html;
+2. A página pode ser acessada pelo endereço https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/cadastro.html;
 
 <h3>Página de Visualização de Produto ou Serviço </h3>
 
@@ -201,7 +201,7 @@
 <h3>Instruções de acesso</h3>
 
 1. A página pode ser acessada atravez de um clique do botão visualizar, em um dos resultados da pesquisa.
-2. A página pode ser acessada pelo endereço: https://pauloosilas.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/produto.html?categoria=petshop&&id=1
+2. A página pode ser acessada pelo endereço: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/empresa.html?categoria=petshop&id=1&prodserv=22464654
 
 <h3>Página de Perfil do Cliente</h3>
 
@@ -226,4 +226,4 @@
 <h3>Instruções de acesso</h3>
 
 1. A página pode ser acessada após o login ou cadastro do cliente.
-2. A página pode ser acessada pelo endereço:https://pauloosilas.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/UserProfile.html
+2. A página pode ser acessada pelo endereço:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/userProfile.html
