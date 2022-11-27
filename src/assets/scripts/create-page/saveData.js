@@ -29,8 +29,9 @@ btn_visualization.addEventListener('click', () =>{
 
     if(pages){
         for(var i = 0; i < pages.length;i++){
-            if(pages[i].id > page_id)
-            page_id = pages[i].id
+            if(pages[i].id > page_id){
+            page_id = pages[i].id            
+            }
         }
         page_id = page_id+1;
     }
