@@ -10,8 +10,8 @@ window.addEventListener('load', ()=>{
     if(company_data){
             var img_avatar = document.querySelector(".img_avatar")
            
-            
-            user_name.innerHTML =  `Olá, ${company_data.razao_social}`;
+            if(user)
+                 user_name.innerHTML =  `Olá, ${company_data.razao_social}`;
             if(img_avatar){
                 img_avatar.setAttribute('src', company_data.url_img)
             }

@@ -18,7 +18,7 @@ function saveUser(evt){
     if(full_name.length > 6 && email.length > 0){
         if(password.length > 6){
             if(password === confirm_pass){
-                user = {
+               var user = {
                     full_name: full_name,
                     email: email,
                     password: password

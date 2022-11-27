@@ -1,5 +1,5 @@
 :root{
-  --color-header: #1a191989;
+  --color-header: #1a1919e5;
   --description-color: #eae6e6;
 }
 
@@ -152,4 +152,26 @@ color: var(--white);
     font-size: 0.6rem;
     font-weight: 400;
     letter-spacing: 0.1mm;
+  }
+
+  #homeLoginLogout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    margin: 0 30px;
+    
+  }
+  .account{
+    margin-left: 35%;
+  } 
+  @media screen and (max-width:900px) {
+      .nav-menu .menu{      
+        display: none;
+      }
+
+      #homeLoginLogout{
+        width: 50%;
+        margin: 0 30px;
+      }
   }
