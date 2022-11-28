@@ -185,3 +185,30 @@
 </p>
 
 ##### _Figura 21- Registro de Teste, Remover Página._
+
+## Registro de Teste: Pesquisa na Plataforma.
+
+### Caso de Sucesso
+
+<p>O sistema encontrou produtos ou serviços, de acordo com os termos informados nos campos de entrada para pesquisa.</p>
+
+<p align="center"> 
+  <img src="img/testes/RegistroTestePesquisaRes.PNG" width="800">
+</p>
+
+##### _Figura 22- Registro de Teste, Pesquisa._
+
+<p>O cliente clicou em pesquisar, não informando os termos para pesquisa.</p>
+<p>A plataforma expõe uma empresa,um produto ou serviço cadastrado de cada categoria cadastrada no sistema.</p>
+<p align="center"> 
+  <img src="img/testes/RegistroTestePesquisa.PNG" width="800">
+</p>
+
+##### _Figura 23- Registro de Teste, Pesquisa com campos vazios._
+
+<p>O cliente pesquisou por empresas, produtos ou serviços, que ainda não estão cadastrados no sistema</p>
+<p align="center"> 
+  <img src="img/testes/RegistroTestePesquisaNen.PNG" width="800">
+</p>
+
+##### _Figura 24- Registro de Teste, Nenhum Resultado Encontrado._
