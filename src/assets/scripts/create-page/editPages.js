@@ -38,7 +38,7 @@ function updatePageInputs(){
                 isReservation.checked = pages_data[i].agendamento;
 
                     updateBackground(principal, pages_data[i].imagens[0])
-                    updateBackground(imgPreview, pages_data[0].banner)
+                    updateBackground(imgPreview, pages_data[i].banner)
                     updateBackground(photo1, pages_data[i].imagens[1])
                     updateBackground(photo2,pages_data[i].imagens[2])
                     updateBackground(photo3,pages_data[i].imagens[3])
