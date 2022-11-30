@@ -1,5 +1,5 @@
 window.addEventListener('load', ()=>{
-    let user = JSON.parse(localStorage.getItem('user'))        
+    var user = JSON.parse(localStorage.getItem('user'))        
     var company_data = JSON.parse(localStorage.getItem('company_data'))
     var user_name = document.getElementById("user_name")
 
