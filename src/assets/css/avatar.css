@@ -2,13 +2,13 @@
 
 .avatar-1 img {
     width: 60px;
-    height: 60px;
+    height: 55px;
     border-radius: 100%;
     border:4px solid rgb(200, 200, 200);
 }
 .avatar {
-    width:70px;
-    height: 70px;
+    width:60px;
+    height: 65px;
     left: -2.23px;
     top: 0px;
     border-radius: 100%;
@@ -21,4 +21,9 @@
 .account {
     display: flex;
     gap: 10px;
+}
+
+.img_avatar{
+    width:120px;
+    height: 115px;
 }
