@@ -86,7 +86,8 @@ function searchPlace(categoria){
                       }
                 empresa.produtos.forEach(produto => {                    
                   
-                        if(produto.descricao.toLowerCase().includes(search.toLowerCase())){                    
+                        if(produto.descricao.toLowerCase().includes(search.toLowerCase())
+                        || produto.nome.toLowerCase().includes(search.toLowerCase())){                    
                       
                             if(!foundObj){
                               updateTags(categoria)    
