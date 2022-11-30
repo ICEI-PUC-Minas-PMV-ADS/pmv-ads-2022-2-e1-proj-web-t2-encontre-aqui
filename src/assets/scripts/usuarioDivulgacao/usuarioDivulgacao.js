@@ -14,7 +14,7 @@ function addHorarios(){
     var hfunc = [];
     var company_data = JSON.parse(localStorage.getItem('company_data'))
     var horarios = document.querySelectorAll('.horarios input')
-    
+ 
     for(var i = 0; i < (horarios.length); i++){
         if(i % 2 == 0)
              hfunc.push(joinHorarios(horarios[i].value, horarios[i+1].value))
@@ -46,6 +46,7 @@ window.addEventListener('load', ()=>{
    // var categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value
  
     if(company_data){
+        if(company_data.hfunc){
         var h = splitHor(company_data.hfunc)
         for(var i =0 ; i < horarios.length; i++){
             horarios[i].value = h[i]
@@ -60,7 +61,7 @@ window.addEventListener('load', ()=>{
     for(var i = 0; i < img_avatar.length; i++){      
         img_avatar[i].setAttribute('src', company_data.url_img)  
     }
-   
+}
     }
 })
 
