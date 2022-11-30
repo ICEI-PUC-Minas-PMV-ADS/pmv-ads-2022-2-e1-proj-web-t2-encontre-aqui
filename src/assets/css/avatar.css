@@ -2,15 +2,16 @@
 
 .avatar-1 img {
     width: 65px;
-    border-radius: 50%;
+    border-radius: 20%;
+    border:10px solid rgb(166, 166, 166);
 }
 .avatar {
     width: 110.58px;
     height: 112.81px;
     left: -2.23px;
     top: 0px;
-    border-radius: 100px;
-    border:10px solid rgb(166, 166, 166);
+    border-radius: 20%;
+   
 }
 
 .texto {
