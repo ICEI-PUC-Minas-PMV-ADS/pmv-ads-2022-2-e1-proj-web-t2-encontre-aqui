@@ -46,7 +46,7 @@ window.addEventListener('load', ()=>{
    // var categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value
  
     if(company_data){
-       
+       if(company_data.hfunc != null){
         var h = splitHor(company_data.hfunc)
         for(var i =0 ; i < horarios.length; i++){
             horarios[i].value = h[i]
@@ -62,12 +62,13 @@ window.addEventListener('load', ()=>{
         img_avatar[i].setAttribute('src', company_data.url_img)  
     }
 }
+    }
     
 })
 
 function splitHor(horariosLocal){
     horarios = []
-    if(horariosLocal != null && localStorage != ''){
+    if(horariosLocal != null && horariosLocal != ''){
     for(var i = 0; i < horariosLocal.length; i++){
        let h = horariosLocal[i].split('-');
        horarios.push(h[0])
