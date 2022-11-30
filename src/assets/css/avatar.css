@@ -3,15 +3,15 @@
 .avatar-1 img {
     width: 65px;
     border-radius: 20%;
-    border:10px solid rgb(166, 166, 166);
+    border:10px solid rgb(200, 200, 200);
 }
 .avatar {
-    width: 110.58px;
-    height: 112.81px;
+    width:150px;
+    height: 150px;
     left: -2.23px;
     top: 0px;
     border-radius: 20%;
-    border:10px solid rgb(166, 166, 166);
+    border:10px solid rgb(224, 224, 224);
 }
 
 .texto {
