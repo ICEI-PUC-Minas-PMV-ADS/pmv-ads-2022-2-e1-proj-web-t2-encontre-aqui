@@ -52,6 +52,7 @@ window.addEventListener('load', ()=>{
             horarios[i].value = h[i]
             console.log(horarios[i])
         }
+    }
         var img_avatar = document.querySelectorAll(".img_avatar")
         var user_name = document.getElementById("user_name")
         if(user_name != null && user_name != undefined){
@@ -62,7 +63,7 @@ window.addEventListener('load', ()=>{
         img_avatar[i].setAttribute('src', company_data.url_img)  
     }
 }
-    }
+   
     
 })
 
