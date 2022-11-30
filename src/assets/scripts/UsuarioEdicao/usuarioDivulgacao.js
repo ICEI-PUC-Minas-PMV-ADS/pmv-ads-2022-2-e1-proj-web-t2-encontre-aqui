@@ -1,9 +1,9 @@
 
 var user_name = document.getElementById('user_name')
-var user = JSON.parse(localStorage.getItem('user'))
+var user1 = JSON.parse(localStorage.getItem('user'))
 var url_img = document.getElementById('url_img')
  
-    if(user === null || user === undefined){
+    if(user1 === null || user1 === undefined){
         window.location.href = './login.html'
     }
 
