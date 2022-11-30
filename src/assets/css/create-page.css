@@ -66,7 +66,7 @@ body{
 }
 
 #description-ps .descr-images .principal-image img{
-    width:100%;
+    width:95%;
     height: 90%;
     border-radius: 6px;
    
@@ -230,30 +230,18 @@ body{
   #info .redes{
     display: flex;
     flex-direction: column;
-    width: 99%;
   }
 
   #info .redes .social{
     display: flex;
-   
   }
   #info .redes .social div{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin:0 5%;
-    width: 100%;
-  }
-  #info .redes .social input{
-    margin: 0 auto;
-    height: 50px;
-    border-radius: 5px;
-    width: 60%;
   }
 
+
   .imgEmpresa{
-    width: 95%; 
+    width: 80%; 
     height: 400px;
     background-color: rgb(128, 155, 159);
     display: flex;    
@@ -287,25 +275,5 @@ body{
     transform: rotate(180deg);
   }
 
-  .info_box{
-    width: 40%;
-    height: 40px;
-    background-color: rgba(204, 204, 204, 0.464);
-    border-radius:7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-@media screen and (max-width: 700px) {
-    #description-ps{
-        display: flex;
-        flex-direction: column;
-        margin-top: 150px;
-    }
-    .imgEmpresa{
-        width: 50%; 
-        height: 150px;
-    }
-    
-}
+
+   
