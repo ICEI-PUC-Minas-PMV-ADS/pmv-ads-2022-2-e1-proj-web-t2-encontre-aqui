@@ -3,7 +3,7 @@
 .avatar-1 img {
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    border-radius: 100%;
     border:10px solid rgb(200, 200, 200);
 }
 .avatar {
@@ -12,7 +12,6 @@
     left: -2.23px;
     top: 0px;
     border-radius: 50%;
-     
 }
 
 .texto {
