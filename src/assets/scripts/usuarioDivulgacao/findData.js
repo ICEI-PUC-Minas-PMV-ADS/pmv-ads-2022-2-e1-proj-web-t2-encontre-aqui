@@ -10,7 +10,6 @@ function loadData(){
     for(var i = 0; i < pages.length; i++){
         cards += `<div class="card">
                         <img class="img_product_added" src='${pages[i].imagens[0]}'>
-                        <div class="btn-1">${pages[i].nome}</div>
                   </div>
                     `
         }
