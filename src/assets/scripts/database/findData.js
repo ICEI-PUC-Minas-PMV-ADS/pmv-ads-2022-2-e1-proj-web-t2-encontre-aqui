@@ -313,7 +313,7 @@ function findByLocal(){
         if(empresa.view && empresa!== null && empresa !== undefined){
         
         if((empresa.nome.toLowerCase()).includes(search.toLowerCase()) || (empresa.descricao.toLowerCase()).includes(search.toLowerCase())){
-           alert("ok")
+           alert(empresa.nome)
             cardsData.push(empresa) 
             isOpened = isOpen(empresa.hfunc)
             updateWantedLocal(empresa.cidade)
