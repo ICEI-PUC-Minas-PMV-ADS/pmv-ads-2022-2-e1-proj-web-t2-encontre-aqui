@@ -319,7 +319,7 @@ function findByLocal(){
             isOpened = isOpen(empresa.hfunc)
             updateWantedLocal(empresa.cidade)
             updateCard(empresa, null)
-            alert(localProdutos.length)
+           
             for(var i = 0; i < localProdutos.length; i++){                
                 updateCard(localProdutos[i], empresa)
             }
