@@ -847,7 +847,7 @@ Empresas = {
             id: 6,
             produtos: [Produtos.moveis[1]],
             nome: 'Moveis',
-            descricao: `onfira Nossa Linha Completa de Móveis em Madeira e Torne Seu Lar Mais Aconchegante.
+            descricao: `Confira Nossa Linha Completa de Móveis em Madeira e Torne Seu Lar Mais Aconchegante.
              Design e Qualidade em Móveis para sua Casa... Avenida João Pinheiro, 469`,
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
@@ -1001,17 +1001,17 @@ Categorias = [
     },
     {
         id: 11,
-        tags: ['pizzaria','pizzas doces', 'pizzaria'],
+        tags: ['pizzaria','pizzas doces', 'pizza'],
         empresas:[Empresas.pizzaria]
     },
     {
         id: 12,
-        tags: ['pedreiro'],
+        tags: ['pedreiro','pedreiros'],
         empresas:[Empresas.pedreiro]
     },
     {
         id: 13,
-        tags: ['mecanico'],
+        tags: ['mecanico','mecanicos'],
         empresas:[Empresas.mecanico]
     }
     
