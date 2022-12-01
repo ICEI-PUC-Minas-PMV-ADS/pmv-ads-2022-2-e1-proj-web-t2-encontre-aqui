@@ -306,6 +306,7 @@ function getProduct(empresa){
 function imageView(){
     document.querySelectorAll('.descr-images img').forEach(image => {
         image.addEventListener('click', ()=>{
+            alert("teste")
             document.querySelector('.popup-img img').src = image.getAttribute('src');           
             document.querySelector('.popup-img').classList.toggle('popup-img-large');
          //   document.querySelector('.popup-img-large').classList.remove('popup-img');
