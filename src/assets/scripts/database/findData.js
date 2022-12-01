@@ -23,10 +23,12 @@ var i = 0
 if(url_categoria != null && url_categoria != undefined  && id!=null && id!=undefined){
     findCategory()
    // updateWantedLocal("Produtos")
-}else if(search ==null || search == undefined || search == ""){
-   
-    findAllCompanies()
+}else if((search ==null || search == undefined || search == "") && (place ==null || place == undefined || place .length <= 0)){
+   findAllCompanies()
     updateWantedLocal("Principais Empresas")
+}else if((search ==null || search == undefined || search == "") && (place !=null || place.length > 0)){
+  
+    findAllByCity();
 }else{    
   
     startSearch();
@@ -309,8 +311,9 @@ function findByLocal(){
         var empresa = findLocalEmpresa(localEmpresa, localProdutos)  
       
         if(empresa.view && empresa!== null && empresa !== undefined){
-        console.log(empresa)
+        
         if((empresa.nome.toLowerCase()).includes(search.toLowerCase()) || (empresa.descricao.toLowerCase()).includes(search.toLowerCase())){
+           alert("ok")
             cardsData.push(empresa) 
             isOpened = isOpen(empresa.hfunc)
             updateWantedLocal(empresa.cidade)
@@ -353,4 +356,30 @@ function findLocalEmpresa(localEmpresa, localProdutos){
     };
   
     return empresa;
+}
+
+function findAllByCity(){
+   
+    Categorias.forEach(categoria =>{
+
+            let empresas = categoria.empresas
+            let catByCity = []
+            
+            for(var e=0; e < empresas.length; e++){
+                let empresa = empresas[i]
+                empresa.forEach(emp => {
+                    if(emp.cidade.toLowerCase().includes(place.toLowerCase())){
+                        if(!catByCity.includes(categoria.tags[0])){
+                            updateTags(categoria)
+                        }
+                       
+                        cardsData.push(emp) 
+                        isOpened = isOpen(emp.hfunc)
+                        updateWantedLocal(emp.cidade)
+                        updateCard(emp, null)
+                   }              
+                }) 
+            }
+               
+    })
 }
