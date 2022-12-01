@@ -32,7 +32,7 @@ window.addEventListener('load', ()=>{
     var company_data = JSON.parse(localStorage.getItem('company_data'))
     var horarios = document.querySelectorAll('.horarios input')
     const user = JSON.parse(localStorage.getItem('user')) 
-
+    const opcao = doucment.getElementById('opcao');
     
     for(var i = 0; i < horarios.length; i++){
         horarios[i].addEventListener("change", ()=>{
@@ -52,7 +52,11 @@ window.addEventListener('load', ()=>{
             horarios[i].value = h[i]
             console.log(horarios[i])
         }
+        if(company_data.categoria != null){
+            opcao.options[company_data.categoria].value
+        }
     }
+
         var img_avatar = document.querySelectorAll(".img_avatar")
         var user_name = document.getElementById("user_name")
         if(user_name != null && user_name != undefined){
