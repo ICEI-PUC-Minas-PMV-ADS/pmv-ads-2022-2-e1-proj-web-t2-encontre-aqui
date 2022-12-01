@@ -40,7 +40,7 @@ function updatePageInputs(){
                 isDeliveries.checked = pages_data[i].domicilio;
                 isReservation.checked = pages_data[i].agendamento;
 
-                    updateBackground(imgPreview, pages_data[i].banner)
+                    updateBackground(principal, pages_data[i].imagens[0])
                     updateBackground(photo1, pages_data[i].imagens[1])
                     updateBackground(photo2,pages_data[i].imagens[2])
                     updateBackground(photo3,pages_data[i].imagens[3])
