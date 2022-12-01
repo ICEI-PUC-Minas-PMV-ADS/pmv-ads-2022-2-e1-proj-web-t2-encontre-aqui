@@ -553,6 +553,26 @@ Empresas = {
         categoria: 'pedreiro'
     }],
     
+    
+    mecanico:[{
+        id: 24,
+        produtos: [],
+        nome: 'Oficina Mecânica Auto Center Silva',
+        descricao: `Oficina mecânica em Contagem com mais de 20 anos de experiência e com o melhor custo-benefício e atendimento. 
+        Oficina mecânica referência com orçamento... Desde 2001, é referência em toda a região metropolitana pelos serviços de alta qualidade `,
+        cidade: 'Contagem',
+        estado: 'Minas Gerais',
+        logradouro: 'Rua Via Principal 1, 2110, Nova Contagem, Contagem, MG, 32050-602',
+        imagens: ['./../src/assets/images/companies/logos/mecanico.jpg'],
+        imgBanner:'',
+        hfunc:['06:00-12:00','06:00-22:00','06:00-20:00','06:00-20:00','06:00-22:00','06:00-20:00','06:00-14:00'],
+        tel: '99545-4125',
+        nfavoritos: 55,
+        rsocial:['https://www.facebook.com/Auto.center25.2030f0'],
+        isEmpresa:'empresa',          
+        categoria: 'mecanico'
+    }],
+    
     padaria: [
         {
             id: 16,
@@ -987,6 +1007,11 @@ Categorias = [
         id: 12,
         tags: ['pedreiro'],
         empresas:[Empresas.pedreiro]
+    },
+    {
+        id: 13,
+        tags: ['mecanico'],
+        empresas:[Empresas.mecanico]
     }
     
 ]//Fim Catgorias
