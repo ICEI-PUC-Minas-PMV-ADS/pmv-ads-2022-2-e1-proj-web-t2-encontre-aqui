@@ -26,7 +26,7 @@ function saveData(){
         descricao:descricaoArea.value,
         categoria: 'Eletricista'      
     }
-    console.log(company_data)
+    alert(company_data.categoria)
     localStorage.setItem('company_data', JSON.stringify(company_data))
   
 }
