@@ -14,7 +14,7 @@ function addHorarios(){
     var hfunc = [];
     var company_data = JSON.parse(localStorage.getItem('company_data'))
     var horarios = document.querySelectorAll('.horarios input')
-    
+ 
     for(var i = 0; i < (horarios.length); i++){
         if(i % 2 == 0)
              hfunc.push(joinHorarios(horarios[i].value, horarios[i+1].value))
@@ -46,11 +46,13 @@ window.addEventListener('load', ()=>{
    // var categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value
  
     if(company_data){
+       if(company_data.hfunc != null){
         var h = splitHor(company_data.hfunc)
         for(var i =0 ; i < horarios.length; i++){
             horarios[i].value = h[i]
             console.log(horarios[i])
         }
+    }
         var img_avatar = document.querySelectorAll(".img_avatar")
         var user_name = document.getElementById("user_name")
         if(user_name != null && user_name != undefined){
@@ -60,16 +62,19 @@ window.addEventListener('load', ()=>{
     for(var i = 0; i < img_avatar.length; i++){      
         img_avatar[i].setAttribute('src', company_data.url_img)  
     }
+}
    
-    }
+    
 })
 
 function splitHor(horariosLocal){
     horarios = []
+    if(horariosLocal != null && horariosLocal != ''){
     for(var i = 0; i < horariosLocal.length; i++){
        let h = horariosLocal[i].split('-');
        horarios.push(h[0])
        horarios.push(h[1])
     }
+}
     return horarios
 }

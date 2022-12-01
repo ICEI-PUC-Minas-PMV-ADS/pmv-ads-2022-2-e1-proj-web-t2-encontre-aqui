@@ -420,7 +420,7 @@ Empresas = {
     advogados:[
         {
             id: 8,
-            produtos: [Produtos.moveis[1]],
+            produtos: [],
             nome: 'Dra. Brenda Porto',
             descricao: `mais de 20 anos de Advocacia, prima pela excelência na prestação de serviços, objetivando o melhor resultado para seus clientes.
 
@@ -442,7 +442,7 @@ Empresas = {
 
         {
             id: 9,
-            produtos: [Produtos.moveis[1]],
+            produtos: [],
             nome: 'Dr. Davi Lucas Viana',
             descricao: `mais de 20 anos de Advocacia, prima pela excelência na prestação de serviços, objetivando o melhor resultado para seus clientes.
 
@@ -482,7 +482,7 @@ Empresas = {
         },
         {
             id: 11,
-            produtos: [Produtos.moveis[1]],
+            produtos: [],
             nome: 'Kaique Farias',
             descricao: ` Barbearia criada com paixão pela arte, aqui fazemos barba, cabelo, negócios e o mais importante, fazemos amigos. Mais que uma barbearia, um local para estar e relaxar. Valorizamos cada personalidade e perfil, seja o homem tradicional ou moderno.`,
             cidade: 'Juiz de Fora',
@@ -501,7 +501,7 @@ Empresas = {
     eletricistas:[
         {
             id: 7,
-            produtos: [Produtos.moveis[1]],
+            produtos: [],
             nome: 'Enrico Gonçalves',
             descricao: `Eletricista Atua na cidade de Juiz de Fora.  Montar, manter e reparar equipamentos mecânicos, bem como executar a manutenção preventiva e corretiva de maquinário. Auxiliar em trabalhos de pesquisa e aperfeiçoamento. Executar esboços e desenhos de sua especialidade.`,
             cidade: 'Juiz de Fora',
@@ -518,7 +518,7 @@ Empresas = {
         },
         {
             id: 8,
-            produtos: [Produtos.moveis[1]],
+            produtos: [],
             nome: 'Jhon Herbert',
             descricao: `Eletricista Atua na cidade de Juiz de Fora.  Montar, manter e reparar equipamentos eletricos, bem como executar a manutenção preventiva e corretiva de maquinário eletrico. Instrutor de instalações eletricas em alturas. Executar esboços e desenhos técnicos.`,
             cidade: 'Juiz de Fora',
@@ -535,6 +535,43 @@ Empresas = {
         },
     ],//FIM ELETRICISTAS
    
+    pedreiro:[{
+        id: 24,
+        produtos: [],
+        nome: 'Rodrigo Silva',
+        descricao: `Construções, reformas, fundações e acabamentos em geral aceitamos cartoes credito e debito  `,
+        cidade: 'Belo Horizonte',
+        estado: 'Minas Gerais',
+        logradouro: 'R. Luciano Nunes Souza, 58, Maracanã, Ribeirão das Neves, MG, 33902-670',
+        imagens: ['./../src/assets/images/companies/logos/Pedreiro.jpg'],
+        imgBanner:'',
+        hfunc:['06:00-12:00','06:00-20:00','06:00-20:00','06:00-20:00','06:00-20:00','06:00-20:00','06:00-14:00'],
+        tel: '98545-4125',
+        nfavoritos: 55,
+        rsocial:['https://www.facebook.com/rodrigo.silva18.2030f0'],
+        isEmpresa:'empresa',          
+        categoria: 'pedreiro'
+    }],
+    
+    
+    mecanico:[{
+        id: 24,
+        produtos: [],
+        nome: 'Oficina Mecânica Auto Center Silva',
+        descricao: `Oficina mecânica em Contagem com mais de 20 anos de experiência e com o melhor custo-benefício e atendimento. 
+        Oficina mecânica referência com orçamento... Desde 2001, é referência em toda a região metropolitana pelos serviços de alta qualidade `,
+        cidade: 'Contagem',
+        estado: 'Minas Gerais',
+        logradouro: 'Rua Via Principal 1, 2110, Nova Contagem, Contagem, MG, 32050-602',
+        imagens: ['./../src/assets/images/companies/logos/mecanico.jpg'],
+        imgBanner:'',
+        hfunc:['06:00-12:00','06:00-22:00','06:00-20:00','06:00-20:00','06:00-22:00','06:00-20:00','06:00-14:00'],
+        tel: '99545-4125',
+        nfavoritos: 55,
+        rsocial:['https://www.facebook.com/Auto.center25.2030f0'],
+        isEmpresa:'empresa',          
+        categoria: 'mecanico'
+    }],
     
     padaria: [
         {
@@ -797,9 +834,9 @@ Empresas = {
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Avenida João Pinheiro, 469',
-            imagens: ['./../src/assets/images/companies/logos/logo2.PNG'],
+            imagens: ['./../src/assets/images/companies/logos/decoracao.jpg'],
             imgBanner:'./../src/assets/images/companies/banners/06/banner.jpg',
-             hfunc:['08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-12:00'],
+             hfunc:['08:00-14:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-18:00','08:00-14:00'],
             tel: '',
             nfavoritos: 55,
             rsocial:[''],
@@ -810,7 +847,8 @@ Empresas = {
             id: 6,
             produtos: [Produtos.moveis[1]],
             nome: 'Moveis',
-            descricao: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+            descricao: `Confira Nossa Linha Completa de Móveis em Madeira e Torne Seu Lar Mais Aconchegante.
+             Design e Qualidade em Móveis para sua Casa... Avenida João Pinheiro, 469`,
             cidade: 'Juiz de Fora',
             estado: 'Minas Gerais',
             logradouro: 'Avenida João Pinheiro, 469',
@@ -963,9 +1001,19 @@ Categorias = [
     },
     {
         id: 11,
-        tags: ['pizzaria','pizzas doces', 'pizzaria'],
+        tags: ['pizzaria','pizzas doces', 'pizza'],
         empresas:[Empresas.pizzaria]
     },
+    {
+        id: 12,
+        tags: ['pedreiro','pedreiros'],
+        empresas:[Empresas.pedreiro]
+    },
+    {
+        id: 13,
+        tags: ['mecanico','mecanicos'],
+        empresas:[Empresas.mecanico]
+    }
     
 ]//Fim Catgorias
 /*

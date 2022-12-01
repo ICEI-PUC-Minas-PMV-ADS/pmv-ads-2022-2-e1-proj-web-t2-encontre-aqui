@@ -22,7 +22,7 @@ function updateCards(selected){
     <img src="${selected.imagens[0]}">
     <div class="descricao">
         <h4>${selected.nome}</h4>
-        <p>${selected.logradouro.substr(0,30)}</p>
+        <p>${selected.logradouro.substr(0,45)}</p>
         <p class="opened">${selected.categoria}</p>
 
     </div>

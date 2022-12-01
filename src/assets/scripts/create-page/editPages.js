@@ -30,14 +30,16 @@ function updatePageInputs(){
     const pages_data = JSON.parse(localStorage.getItem("pages_data"));
     const company_data = JSON.parse(localStorage.getItem("company_data"));
     
+    
+
     if(company_data){
         if(pages_data){
+            updateBackground(principal, pages_data[pages_data.length-1].imagens[0])
             for(var i = 0; i < pages_data.length; i++){
                 if(pages_data[i].id === parseInt(id_produto)){
                 isDeliveries.checked = pages_data[i].domicilio;
                 isReservation.checked = pages_data[i].agendamento;
 
-                    updateBackground(principal, pages_data[0].imagens[0])
                     updateBackground(imgPreview, pages_data[i].banner)
                     updateBackground(photo1, pages_data[i].imagens[1])
                     updateBackground(photo2,pages_data[i].imagens[2])

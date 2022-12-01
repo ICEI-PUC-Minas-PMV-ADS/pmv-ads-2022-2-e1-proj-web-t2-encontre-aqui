@@ -51,7 +51,7 @@ addEventListener('load', ()=>{
        
        updatePage(empresa)
        GetMap(empresa) 
-  
+       imageView() 
 })
 
 
@@ -129,7 +129,8 @@ function updatePage(empresa){
     
    if(atual_page){
    for(var i = 1 ; i < atual_page.imagens.length; i++){
-    other_images += `<div> <img src="${atual_page.imagens[i]}"></div>`
+    if(atual_page.imagens[i] != "" && atual_page.imagens[i] != null)
+     other_images += `<div> <img src="${atual_page.imagens[i]}"></div>`
    }
 
                 var content = ` <div class="popup-img">
@@ -305,6 +306,7 @@ function getProduct(empresa){
 function imageView(){
     document.querySelectorAll('.descr-images img').forEach(image => {
         image.addEventListener('click', ()=>{
+            
             document.querySelector('.popup-img img').src = image.getAttribute('src');           
             document.querySelector('.popup-img').classList.toggle('popup-img-large');
          //   document.querySelector('.popup-img-large').classList.remove('popup-img');

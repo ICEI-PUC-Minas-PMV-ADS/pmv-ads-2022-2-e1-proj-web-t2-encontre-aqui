@@ -22,11 +22,14 @@ var i = 0
 
 if(url_categoria != null && url_categoria != undefined  && id!=null && id!=undefined){
     findCategory()
+    findByLocal()
    // updateWantedLocal("Produtos")
-}else if(search ==null || search == undefined || search == ""){
-   
+}else if((search ==null || search == undefined || search == "") && (place ==null || place == undefined || place .length <= 0)){
     findAllCompanies()
     updateWantedLocal("Principais Empresas")
+}else if((search ==null || search == undefined || search == "") && (place !=null || place.length > 0)){
+  
+    findAllByCity();
 }else{    
   
     startSearch();
@@ -86,7 +89,8 @@ function searchPlace(categoria){
                       }
                 empresa.produtos.forEach(produto => {                    
                   
-                        if(produto.descricao.toLowerCase().includes(search.toLowerCase())){                    
+                        if(produto.descricao.toLowerCase().includes(search.toLowerCase())
+                        || produto.nome.toLowerCase().includes(search.toLowerCase())){                    
                       
                             if(!foundObj){
                               updateTags(categoria)    
@@ -308,17 +312,20 @@ function findByLocal(){
         var empresa = findLocalEmpresa(localEmpresa, localProdutos)  
       
         if(empresa.view && empresa!== null && empresa !== undefined){
-        console.log(empresa)
+        
         if((empresa.nome.toLowerCase()).includes(search.toLowerCase()) || (empresa.descricao.toLowerCase()).includes(search.toLowerCase())){
+            
             cardsData.push(empresa) 
             isOpened = isOpen(empresa.hfunc)
             updateWantedLocal(empresa.cidade)
             updateCard(empresa, null)
-        }
-
-            for(var i = 0; i < localProdutos.length; i++){
+           
+            for(var i = 0; i < localProdutos.length; i++){                
                 updateCard(localProdutos[i], empresa)
             }
+        }
+
+            
         }
     }
     }
@@ -352,4 +359,30 @@ function findLocalEmpresa(localEmpresa, localProdutos){
     };
   
     return empresa;
+}
+
+function findAllByCity(){
+   
+    Categorias.forEach(categoria =>{
+
+            let empresas = categoria.empresas
+            let catByCity = []
+            
+            for(var e=0; e < empresas.length; e++){
+                let empresa = empresas[i]
+                empresa.forEach(emp => {
+                    if(emp.cidade.toLowerCase().includes(place.toLowerCase())){
+                        if(!catByCity.includes(categoria.tags[0])){
+                            updateTags(categoria)
+                        }
+                       
+                        cardsData.push(emp) 
+                        isOpened = isOpen(emp.hfunc)
+                        updateWantedLocal(emp.cidade)
+                        updateCard(emp, null)
+                   }              
+                }) 
+            }
+               
+    })
 }

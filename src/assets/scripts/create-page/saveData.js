@@ -25,10 +25,15 @@ btn_visualization.addEventListener('click', () =>{
     var pages = JSON.parse(localStorage.getItem('pages_data'))
     
    
-
+    page_id = 0;
 
     if(pages){
-        page_id = pages.length+1
+        for(var i = 0; i < pages.length;i++){
+            if(pages[i].id > page_id){
+            page_id = pages[i].id            
+            }
+        }
+        page_id = page_id+1;
     }
 
     var page_data = {
