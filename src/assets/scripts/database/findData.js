@@ -22,9 +22,10 @@ var i = 0
 
 if(url_categoria != null && url_categoria != undefined  && id!=null && id!=undefined){
     findCategory()
+    findByLocal()
    // updateWantedLocal("Produtos")
 }else if((search ==null || search == undefined || search == "") && (place ==null || place == undefined || place .length <= 0)){
-   findAllCompanies()
+    findAllCompanies()
     updateWantedLocal("Principais Empresas")
 }else if((search ==null || search == undefined || search == "") && (place !=null || place.length > 0)){
   
@@ -313,16 +314,18 @@ function findByLocal(){
         if(empresa.view && empresa!== null && empresa !== undefined){
         
         if((empresa.nome.toLowerCase()).includes(search.toLowerCase()) || (empresa.descricao.toLowerCase()).includes(search.toLowerCase())){
-           alert("ok")
+            
             cardsData.push(empresa) 
             isOpened = isOpen(empresa.hfunc)
             updateWantedLocal(empresa.cidade)
             updateCard(empresa, null)
-        }
-
-            for(var i = 0; i < localProdutos.length; i++){
+            alert(localProdutos.length)
+            for(var i = 0; i < localProdutos.length; i++){                
                 updateCard(localProdutos[i], empresa)
             }
+        }
+
+            
         }
     }
     }
