@@ -535,6 +535,23 @@ Empresas = {
         },
     ],//FIM ELETRICISTAS
    
+    pedreiro:[{
+        id: 24,
+        produtos: [],
+        nome: 'Rodrigo Silva',
+        descricao: `Construções, reformas, fundações e acabamentos em geral aceitamos cartoes credito e debito  `,
+        cidade: 'Belo Horizonte',
+        estado: 'Minas Gerais',
+        logradouro: 'R. Luciano Nunes Souza, 58, Maracanã, Ribeirão das Neves, MG, 33902-670',
+        imagens: ['./../src/assets/images/companies/logos/Pedreiro.jpg'],
+        imgBanner:'',
+        hfunc:['06:00-12:00','06:00-20:00','06:00-20:00','06:00-20:00','06:00-20:00','06:00-20:00','06:00-14:00'],
+        tel: '98545-4125',
+        nfavoritos: 55,
+        rsocial:['https://www.facebook.com/rodrigo.silva18.2030f0'],
+        isEmpresa:'empresa',          
+        categoria: 'pedreiro'
+    }],
     
     padaria: [
         {
@@ -966,6 +983,11 @@ Categorias = [
         tags: ['pizzaria','pizzas doces', 'pizzaria'],
         empresas:[Empresas.pizzaria]
     },
+    {
+        id: 12,
+        tags: ['pedreiro'],
+        empresas:[Empresas.pedreiro]
+    }
     
 ]//Fim Catgorias
 /*
