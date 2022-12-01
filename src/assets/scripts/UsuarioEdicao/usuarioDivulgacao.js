@@ -24,7 +24,7 @@ function saveData(){
         uf: dataForm[8].value,
         telefone: dataForm[9].value,
         descricao:descricaoArea.value,
-        categoria: ''      
+        categoria: 'Eletricista'      
     }
     console.log(company_data)
     localStorage.setItem('company_data', JSON.stringify(company_data))

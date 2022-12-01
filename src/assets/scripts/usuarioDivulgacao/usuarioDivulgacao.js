@@ -32,7 +32,7 @@ window.addEventListener('load', ()=>{
     var company_data = JSON.parse(localStorage.getItem('company_data'))
     var horarios = document.querySelectorAll('.horarios input')
     const user = JSON.parse(localStorage.getItem('user')) 
-    const opcao = doucment.getElementById('opcao');
+    const opcao = document.getElementById('opcao');
     
     for(var i = 0; i < horarios.length; i++){
         horarios[i].addEventListener("change", ()=>{
