@@ -65,7 +65,7 @@ window.addEventListener('load', ()=>{
             horarios[i].value = h[i]
            }
     }
-    opcao.value = company_data.categoria;
+     
     
         var img_avatar = document.querySelectorAll(".img_avatar")
         var user_name = document.getElementById("user_name")
