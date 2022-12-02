@@ -3,8 +3,8 @@
 function addCategoria(opcoes_categoria){    
    var company_data = JSON.parse(localStorage.getItem('company_data'))
    if(company_data){
-   company_data.categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value.toLowerCase
-   localStorage.setItem('company_data', JSON.stringify(company_data))   
+        company_data.categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value.toLowerCase
+        localStorage.setItem('company_data', JSON.stringify(company_data))   
    }else{
     window.location.href = './usuarioDivulgacao.html'
    }
@@ -31,7 +31,6 @@ function joinHorarios(inicio, fim){
 window.addEventListener('load', ()=>{
     var company_data = JSON.parse(localStorage.getItem('company_data'))
     var horarios = document.querySelectorAll('.horarios input')
-    const user = JSON.parse(localStorage.getItem('user')) 
     const opcao = document.getElementById('opcao');
     
     for(var i = 0; i < horarios.length; i++){
@@ -47,9 +46,10 @@ window.addEventListener('load', ()=>{
         for(var i =0 ; i < horarios.length; i++){
             horarios[i].value = h[i]
             console.log(horarios[i])
+            alert(company_data.categoria);
         }
         if(company_data.categoria != null){
-            opcao.options[company_data.categoria].value
+            opcao.value = company_data.categoria.value;
         }
     }
 
