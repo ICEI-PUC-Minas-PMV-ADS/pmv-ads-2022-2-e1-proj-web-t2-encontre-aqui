@@ -3,7 +3,8 @@
 function addCategoria(opcoes_categoria){    
    var company_data = JSON.parse(localStorage.getItem('company_data'))
    if(company_data){
-        company_data.categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value.toLowerCase
+        company_data.categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value.toLowerCase()
+        console.log(opcoes_categoria.options[opcoes_categoria.selectedIndex].value.toLowerCase())
         localStorage.setItem('company_data', JSON.stringify(company_data))   
    }else{
     window.location.href = './usuarioDivulgacao.html'
