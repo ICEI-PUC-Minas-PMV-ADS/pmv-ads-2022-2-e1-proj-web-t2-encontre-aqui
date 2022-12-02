@@ -34,7 +34,7 @@ window.addEventListener('load', ()=>{
     var company_data = JSON.parse(localStorage.getItem('company_data'))
     var ramoProf = document.querySelector('.selecao');
 
-    
+
     ramoProf.innerHTML = `  <select onchange="addCategoria(this)" class="opcao">
                                 <option id="opcao" selected disabled>${company_data.categoria}</option>
                                 <option>Marcenaria</option>
@@ -74,7 +74,12 @@ window.addEventListener('load', ()=>{
         }
         
     for(var i = 0; i < img_avatar.length; i++){      
-        img_avatar[i].setAttribute('src', company_data.url_img)  
+        if(company_data.url_img != '' && company_data.url_img != null){
+            img_avatar[i].setAttribute('src', company_data.url_img)  
+        }else{
+            img_avatar[i].setAttribute('src', './assets/images/site/userprofile/avatar.png')  
+        }
+        
     }
 }
    
