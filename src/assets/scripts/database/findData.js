@@ -9,7 +9,7 @@ var url_categoria = urlObj.searchParams.get("categoria")
 var id =  parseInt(urlObj.searchParams.get("id"))
 var tags = document.querySelector('.tags')
 var wanted_place = document.getElementById('wanted-place')
-
+var atual_cat ='', prox_cat='';
 
 var local = []
 var cardsPag
@@ -249,9 +249,22 @@ function searchPlace(categoria){
   }
 
 function updateTags(categoria){
-    categoria.tags.forEach(tag => {
-        data += `<a href="./search.html?search=${tag}&place=${place}" class="btn btn-primary brad-25">${tag}</a>` 
-    })
+
+    if(place!=null && place!=""){
+        if(search!=null && search != ""){
+            categoria.tags.forEach(tag => {
+                data += `<a href="./search.html?search=${tag}&place=${place}" class="btn btn-primary brad-25">${tag}</a>` 
+            })
+        }else{
+             prox_cat = categoria.tags[0]
+
+             if(atual_cat !== prox_cat)
+               data += `<a href="./search.html?search=${prox_cat}&place=${place}" class="btn btn-primary brad-25">${prox_cat}</a>` 
+                            
+             atual_cat = prox_cat  
+        }
+    }
+   
     
     tags.innerHTML += data;
     data = ''
