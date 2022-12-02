@@ -32,11 +32,15 @@ window.addEventListener('load', ()=>{
    
     var horarios = document.querySelectorAll('.horarios input')
     var company_data = JSON.parse(localStorage.getItem('company_data'))
-    var ramoProf = document.querySelector('.selecao');
-
+     
+    var ramoProf = 'Confeitaria';
+    if(company_data.categoria == null && company_data.categoria == ''){
+        ramoProf = 'Confeitaria';
+    }else
+        ramoProf = company_data.categoria
 
     ramoProf.innerHTML = `  <select onchange="addCategoria(this)" class="opcao">
-                                <option id="opcao" selected disabled>${company_data.categoria}</option>
+                                <option id="opcao" selected disabled>${ramoProf}</option>
                                 <option>Marcenaria</option>
                                 <option>Advogado</option>
                                 <option>Dentista</option>
