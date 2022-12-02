@@ -3,8 +3,9 @@
 function addCategoria(opcoes_categoria){    
    var company_data = JSON.parse(localStorage.getItem('company_data'))
    if(company_data){
-        company_data.categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value.toLowerCase()
+        company_data.categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value
         console.log(opcoes_categoria.options[opcoes_categoria.selectedIndex].value.toLowerCase())
+        console.log(company_data)
         localStorage.setItem('company_data', JSON.stringify(company_data))   
    }else{
     window.location.href = './usuarioDivulgacao.html'
@@ -50,7 +51,7 @@ window.addEventListener('load', ()=>{
             alert(company_data.categoria);
         }
         if(company_data.categoria != null){
-            opcao.value = company_data.categoria.value;
+            opcao.options[0].value = company_data.categoria;
         }
     }
 
