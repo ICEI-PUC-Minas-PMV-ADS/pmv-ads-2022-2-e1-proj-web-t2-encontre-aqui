@@ -3,7 +3,7 @@
 function addCategoria(opcoes_categoria){    
    var company_data = JSON.parse(localStorage.getItem('company_data'))
    if(company_data){
-        company_data.categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value.toLowerCase()
+        company_data.categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value
         localStorage.setItem('company_data', JSON.stringify(company_data))   
    }else{
     window.location.href = './usuarioDivulgacao.html'
@@ -32,15 +32,14 @@ window.addEventListener('load', ()=>{
    
     var horarios = document.querySelectorAll('.horarios input')
     var company_data = JSON.parse(localStorage.getItem('company_data'))
-     
-    var ramoProf = 'Confeitaria';
-    if(company_data.categoria == null && company_data.categoria == ''){
-        ramoProf = 'Confeitaria';
-    }else
-        ramoProf = company_data.categoria
+    var ramoProf = document.querySelector('.opcoes');
+    var ramo = 'Confeitaria'
+    if(company_data.categoria != null && company_data.categoria != ''){
+        ramo = company_data.categoria
+    }
 
     ramoProf.innerHTML = `  <select onchange="addCategoria(this)" class="opcao">
-                                <option id="opcao" selected disabled>${ramoProf}</option>
+                                <option id="opcao" selected disabled>${ramo}</option>
                                 <option>Marcenaria</option>
                                 <option>Advogado</option>
                                 <option>Dentista</option>
