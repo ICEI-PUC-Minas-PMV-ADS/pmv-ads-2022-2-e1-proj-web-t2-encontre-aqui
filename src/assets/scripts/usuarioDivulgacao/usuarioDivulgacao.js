@@ -40,11 +40,7 @@ window.addEventListener('load', ()=>{
         })
     }
 
-    if(user === null || user === undefined){
-        window.location.href = './login.html'
-    }
-   // var categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value
- 
+    
     if(company_data){
        if(company_data.hfunc != null){
         var h = splitHor(company_data.hfunc)
