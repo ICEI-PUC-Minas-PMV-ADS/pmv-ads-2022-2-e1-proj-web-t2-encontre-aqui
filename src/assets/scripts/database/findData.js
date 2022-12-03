@@ -219,7 +219,9 @@ function searchPlace(categoria){
         
         cardsPag = document.querySelectorAll('.card')
         addEventListener('load',()=>{          
-            GetMap(cardsData[0])          
+            GetMap(cardsData[0]) 
+         
+            
             cardsPag[id_current].classList.add('active')
           
             return
