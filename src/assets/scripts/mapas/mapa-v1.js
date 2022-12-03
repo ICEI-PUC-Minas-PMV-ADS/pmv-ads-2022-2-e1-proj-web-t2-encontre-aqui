@@ -32,23 +32,27 @@ function GetMap(empresa) {
             <img src='${empresa.produtos[0].imagens[i]}' width="25"></a>`
             }
 */
-        cardMap = `<a href="produto.html?id=${empresa.id}> "<div class="card-map">
+        if(empresa.razao_social){
+            cardMap += `<a href="empresa.html?categoria=${empresa.categoria}&view=true>`
+        }else{
+            cardMap += `<a href="empresa.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=22464654>`
+        }     
+
+        cardMap += `
+        "<div class="card-map">
         <img id="logo-empresa" src="${empresa.imagens[0]}">
         ${isOpen(empresa.hfunc)}
         <div class="card-body">
-           
-            
-            <br>
+                       
             <div class="logradouro"> ${empresa.logradouro}</div>
             <div> ${empresa.tel}</div>
-                      
-          
-
+                    
         </div>
       
     </div>
     </a>    
     `
+
 
         logo =  empresa.imagens[0]
     }else{
