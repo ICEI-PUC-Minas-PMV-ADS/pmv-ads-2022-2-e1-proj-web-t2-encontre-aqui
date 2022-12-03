@@ -336,8 +336,16 @@ function findByLocal(){
             for(var i = 0; i < localProdutos.length; i++){                
                 updateCard(localProdutos[i], empresa)
             }
-        }
-
+        }else
+             {
+                for(var i = 0; i < localProdutos.length; i++){  
+                    if((localProdutos[i].nome.toLowerCase().includes(search.toLowerCase())) || 
+                        localProdutos[i].descricao.toLowerCase().includes(search.toLocaleLowerCase())){
+                            updateCard(localProdutos[i], empresa)
+                        }          
+                   
+                }
+             }
             
         }
     }

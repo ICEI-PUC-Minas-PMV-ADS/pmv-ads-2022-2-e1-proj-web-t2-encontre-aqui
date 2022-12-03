@@ -38,6 +38,7 @@ window.addEventListener('load', ()=>{
         ramo = company_data.categoria
     }
 
+    if(ramoProf){
     ramoProf.innerHTML = `  <select onchange="addCategoria(this)" class="opcao">
                                 <option id="opcao" selected disabled>${ramo}</option>
                                 <option>Marcenaria</option>
@@ -54,6 +55,7 @@ window.addEventListener('load', ()=>{
                                 <option>Reforma de sofá</option>
                             </select>
                             `;
+    }
 
     for(var i = 0; i < horarios.length; i++){
         horarios[i].addEventListener("change", ()=>{
