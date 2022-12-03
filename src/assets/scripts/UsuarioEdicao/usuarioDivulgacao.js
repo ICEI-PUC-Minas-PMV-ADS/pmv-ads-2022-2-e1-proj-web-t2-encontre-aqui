@@ -22,7 +22,7 @@ function saveData(){
         inscricaoEstadual: dataForm[2].value,
         cidade: dataForm[7].value,
         uf: dataForm[8].value,
-        telefone: dataForm[9].value,
+        tel: dataForm[9].value,
         descricao:descricaoArea.value,
         categoria: 'Eletricista'      
     }
