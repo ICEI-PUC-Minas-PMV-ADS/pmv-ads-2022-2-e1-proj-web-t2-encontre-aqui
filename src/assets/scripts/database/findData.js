@@ -218,10 +218,10 @@ function searchPlace(categoria){
     if(cardsData.length > 0){
         
         cardsPag = document.querySelectorAll('.card')
-        addEventListener('load',()=>{
-
-            GetMap(cardsData[0]) 
+        addEventListener('load',()=>{          
+            GetMap(cardsData[0])          
             cardsPag[id_current].classList.add('active')
+          
             return
         })               
         cardsPag.forEach((cards, index) =>{      
@@ -231,7 +231,8 @@ function searchPlace(categoria){
                id_next = index
                cardsPag[id_current].classList.remove('active')
                cardsPag[id_next].classList.add('active')
-               GetMap(cardsData[index])               
+               GetMap(cardsData[index])    
+                          
                return
                
             })

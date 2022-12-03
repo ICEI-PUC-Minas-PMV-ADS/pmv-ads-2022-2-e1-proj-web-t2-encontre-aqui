@@ -9,8 +9,6 @@ var locations = []
 
 var icon = 'https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/assets/images/icons/map-marker.png?raw=true';
 
-
-
 function GetMap(empresa) {
     var origem
    
@@ -34,27 +32,18 @@ function GetMap(empresa) {
             <img src='${empresa.produtos[0].imagens[i]}' width="25"></a>`
             }
 */
-        if(empresa.email){
-            cardMap = `<a href="empresa.html?categoria=${empresa.categoria}&view=true>`
-        }else{
-            cardMap = `<a href="empresa.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=22464654>`
-        }     
-
-        cardMap += `
-        "<div class="card-map">
+        cardMap = `<a href="produto.html?id=${empresa.id}> "<div class="card-map">
         <img id="logo-empresa" src="${empresa.imagens[0]}">
         ${isOpen(empresa.hfunc)}
         <div class="card-body">
-                       
+            
             <div class="logradouro"> ${empresa.logradouro}</div>
             <div> ${empresa.tel}</div>
-                    
         </div>
       
     </div>
     </a>    
     `
-
 
         logo =  empresa.imagens[0]
     }else{
