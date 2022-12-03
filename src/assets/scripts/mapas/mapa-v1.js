@@ -9,6 +9,8 @@ var locations = []
 
 var icon = 'https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/assets/images/icons/map-marker.png?raw=true';
 
+
+
 function GetMap(empresa) {
     var origem
    
