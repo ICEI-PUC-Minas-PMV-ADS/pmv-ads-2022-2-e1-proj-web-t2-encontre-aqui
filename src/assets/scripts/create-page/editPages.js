@@ -35,7 +35,8 @@ function updatePageInputs(){
     if(company_data){
         if(pages_data){
             updateBackground(imgPreview, pages_data[pages_data.length-1].banner)
-            
+            rsocial[0].value = pages_data[0].rsocial[0]
+            rsocial[1].value = pages_data[0].rsocial[1]
             for(var i = 0; i < pages_data.length; i++){
                 if(pages_data[i].id === parseInt(id_produto)){
                 isDeliveries.checked = pages_data[i].domicilio;

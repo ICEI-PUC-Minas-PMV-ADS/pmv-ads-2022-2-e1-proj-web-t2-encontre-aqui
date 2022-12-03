@@ -45,7 +45,7 @@ addEventListener('load', ()=>{
         empresa.imagens = [`${company_data.url_img}`];
         empresa.hfunc = company_data.hfunc;
         empresa.rsocial = atual_page.rsocial;   
-        empresa.tel = company_data.telefone;
+        empresa.tel = company_data.tel;
     }
 
     updatePage(empresa)
@@ -81,8 +81,7 @@ function findCompany(data){
 
 function updatePage(empresa){
     var pages_data = JSON.parse(localStorage.getItem('pages_data'))
-    var atual_page = JSON.parse(localStorage.getItem('atual_page'))
-
+    
     var img_products = '';  
     var domicilio = false;
     var reservas = false;
@@ -91,7 +90,7 @@ function updatePage(empresa){
     header_product_page.style.backgroundImage = `url(${empresa.imgBanner})`; 
     header_product_page.style.backgroundSize = 'cover'
    
-    logo_area.innerHTML = ` <a href='empresa.html?categoria=${empresa.categoria}&id=${empresa.id}'>
+    logo_area.innerHTML = ` <a href='empresa.html?categoria=${empresa.categoria}&view=true'>
                             <img id="logo-user" src='${empresa.imagens[0]}'>
                             <span id="name-user" class="client-name">${empresa.nome}</span> </a>`;
 

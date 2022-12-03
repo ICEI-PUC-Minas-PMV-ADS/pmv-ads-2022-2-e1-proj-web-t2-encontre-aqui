@@ -46,7 +46,7 @@ addEventListener('load', ()=>{
            empresa.imagens = [`${company_data.url_img}`];
            empresa.hfunc =  company_data.hfunc;
            empresa.rsocial = atual_page.rsocial;   
-           empresa.tel = company_data.telefone;
+           empresa.tel = company_data.tel;
        }
        
        updatePage(empresa)

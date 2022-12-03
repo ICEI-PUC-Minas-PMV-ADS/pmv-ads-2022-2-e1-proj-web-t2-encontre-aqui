@@ -32,10 +32,10 @@ function GetMap(empresa) {
             <img src='${empresa.produtos[0].imagens[i]}' width="25"></a>`
             }
 */
-        if(empresa.razao_social){
-            cardMap += `<a href="empresa.html?categoria=${empresa.categoria}&view=true>`
+        if(empresa.email){
+            cardMap = `<a href="empresa.html?categoria=${empresa.categoria}&view=true>`
         }else{
-            cardMap += `<a href="empresa.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=22464654>`
+            cardMap = `<a href="empresa.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=22464654>`
         }     
 
         cardMap += `
