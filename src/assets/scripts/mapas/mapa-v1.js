@@ -33,9 +33,9 @@ function GetMap(empresa) {
             }
 */
         if(empresa.razao_social){
-            cardMap += `<a href="empresa.html?categoria=${empresa.categoria}&view=true>`
+            cardMap = `<a href="empresa.html?categoria=${empresa.categoria}&view=true>`
         }else{
-            cardMap += `<a href="empresa.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=22464654>`
+            cardMap = `<a href="empresa.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=22464654>`
         }     
 
         cardMap += `
