@@ -344,6 +344,9 @@ function findByLocal(){
                 for(var i = 0; i < localProdutos.length; i++){  
                     if((localProdutos[i].nome.toLowerCase().includes(search.toLowerCase())) || 
                         localProdutos[i].descricao.toLowerCase().includes(search.toLocaleLowerCase())){
+                            cardsData.push(empresa) 
+                            isOpened = isOpen(empresa.hfunc)
+                            updateWantedLocal(empresa.cidade)
                             updateCard(localProdutos[i], empresa)
                         }          
                    
