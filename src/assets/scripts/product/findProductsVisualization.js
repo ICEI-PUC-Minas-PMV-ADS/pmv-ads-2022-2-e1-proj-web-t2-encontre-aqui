@@ -213,6 +213,10 @@ function updatePage(empresa){
                 `
               
                 info.innerHTML = `
+                <br />
+                <br />
+                <br />
+                <br />
                   <div class="horarios">
                       <span class="title">Horários</span>
                       <div class="table">
