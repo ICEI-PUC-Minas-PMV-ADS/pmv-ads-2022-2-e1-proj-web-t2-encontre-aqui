@@ -9,16 +9,15 @@ var msg = document.querySelector('.msg_error');
 function getUser(){
     email = document.getElementById('email').value;
     password = document.getElementById('password').value;
-
-    if(email.length > 0  && email.length > 0 && password.length > 0  && password.length > 0){
-    
-       var user = JSON.parse(localStorage.getItem('user_data'))
-       if(user){
+    var user = JSON.parse(localStorage.getItem('user_data'))
+    if(user){
+    if(email.length > 0  && email.length > 0 && password.length > 0  && password.length > 0){    
+      
         var sessao = {
             full_name: user.full_name,
             email: email,
             }
-        }
+        
        if(email === user.email){
         if(password === user.password){
             sessionStorage.setItem('user', JSON.stringify(sessao));
@@ -37,7 +36,10 @@ function getUser(){
         evt.preventDefault();
     }
  
-
+    }else{
+        updateError("dados invalidos")
+        evt.preventDefault();
+    }
 }
 
 function updateError(msgMessage){
