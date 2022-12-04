@@ -13,9 +13,13 @@ function getUser(){
     if(email.length > 0  && email.length > 0 && password.length > 0  && password.length > 0){
     
        var user = JSON.parse(localStorage.getItem('user_data'))
-       
+       var sessao = {
+        full_name: full_name,
+        email: email,
+       }
        if(email === user.email){
         if(password === user.password){
+            sessionStorage.setItem('user', JSON.stringify(sessao));
             document.location.href = './userProfile.html'
         }else{
             updateError("Password invalido")

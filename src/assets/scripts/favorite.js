@@ -11,8 +11,6 @@
 
 
 
-
-
 function markFavorite(id,nome,categoria, isEmpresa){
    var favorito = {
         id:id,
