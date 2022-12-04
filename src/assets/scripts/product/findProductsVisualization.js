@@ -213,21 +213,8 @@ function updatePage(empresa){
                 `
               
                 info.innerHTML = `
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                
-                  <div class="horarios">
+                              
+                  <div class="horarios" mt-100>
                       <span class="title">Horários</span>
                       <div class="table">
                               <div><span class="week">Domingo </span>

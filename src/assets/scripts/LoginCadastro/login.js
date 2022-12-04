@@ -37,7 +37,7 @@ function getUser(){
     }
  
     }else{
-        updateError("dados invalidos")
+        updateError("O Usuário não está cadastrado!")
         evt.preventDefault();
     }
 }
