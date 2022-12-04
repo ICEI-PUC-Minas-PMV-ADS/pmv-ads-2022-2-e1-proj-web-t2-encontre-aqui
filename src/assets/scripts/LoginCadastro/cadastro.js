@@ -27,7 +27,7 @@ function saveUser(evt){
                     full_name: full_name,
                     email: email,
                 }
-                sessionStorage.setItem('user', JSON.stringify(user))
+                sessionStorage.setItem('user', JSON.stringify(sessao))
                 localStorage.setItem('user_data', JSON.stringify(user))
                
                 if(client.value === 'company'){
