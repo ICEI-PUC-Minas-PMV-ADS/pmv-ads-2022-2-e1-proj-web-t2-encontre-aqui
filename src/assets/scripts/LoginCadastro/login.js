@@ -14,7 +14,7 @@ function getUser(){
     
        var user = JSON.parse(localStorage.getItem('user_data'))
        var sessao = {
-        full_name: full_name,
+        full_name: user.full_name,
         email: email,
        }
        if(email === user.email){
