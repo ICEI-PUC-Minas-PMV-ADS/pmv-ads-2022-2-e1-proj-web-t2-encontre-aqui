@@ -12,7 +12,7 @@ function getUser(){
 
     if(email.length > 0  && email.length > 0 && password.length > 0  && password.length > 0){
     
-       var user = JSON.parse(localStorage.getItem('user'))
+       var user = JSON.parse(localStorage.getItem('user_data'))
        
        if(email === user.email){
         if(password === user.password){
