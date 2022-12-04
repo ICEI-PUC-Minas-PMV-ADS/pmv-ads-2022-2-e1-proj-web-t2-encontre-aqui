@@ -217,6 +217,10 @@ function updatePage(empresa){
                 <br />
                 <br />
                 <br />
+                <br />
+                <br />
+                <br />
+                
                   <div class="horarios">
                       <span class="title">Horários</span>
                       <div class="table">
