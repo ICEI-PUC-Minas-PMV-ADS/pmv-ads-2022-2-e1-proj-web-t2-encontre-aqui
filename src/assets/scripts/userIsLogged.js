@@ -1,4 +1,4 @@
-const user = localStorage.getItem('user');
+const user = sessionStorage.getItem('user');
 
 window.addEventListener('load', ()=>{
    

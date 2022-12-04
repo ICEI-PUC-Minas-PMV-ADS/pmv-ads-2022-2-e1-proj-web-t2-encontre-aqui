@@ -2,7 +2,7 @@ window.addEventListener('load', ()=>{
     var img_avatar = document.getElementById('avatar-user')
     var fav_info = document.querySelector('.fav-info');
     var textPrincipal = document.getElementById('textPrincipal')
-    const user = JSON.parse(localStorage.getItem('user')) 
+    const user = JSON.parse(sessionStorage.getItem('user')) 
 
     if(user === null || user === undefined){
         window.location.href = './login.html'
