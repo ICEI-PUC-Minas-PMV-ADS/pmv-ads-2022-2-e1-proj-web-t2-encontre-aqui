@@ -20,8 +20,10 @@ window.addEventListener('load', ()=>{
        if(pages_data){
             edit_user.innerHTML = ` <a href="./edicaodeDados.html?cliente=empresa" class="button button1">Editar perfil</a>` 
        }
-       fav_info.innerHTML =  `  <a href="./usuarioDivulgacao.html" class="button button1">Divulgar minha Empresa</a>
+       if(company_data.cnpj != null){
+             fav_info.innerHTML =  `  <a href="./usuarioDivulgacao.html" class="button button1">Divulgar minha Empresa</a>
                                  Minhas Páginas :`;
+            }
 
         if(img_avatar){
           textPrincipal.innerHTML = company_data.descricao          
