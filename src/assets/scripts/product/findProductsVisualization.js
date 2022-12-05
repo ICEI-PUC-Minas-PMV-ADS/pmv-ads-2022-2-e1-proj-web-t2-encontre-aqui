@@ -290,7 +290,7 @@ function updatePage(empresa){
       
 function splitHorarios(horario){
           var h = horario.split('-');
-          return `<span> ${h[0]}</span><span>  ${h[1]}</span>`;
+          return `<span>${h[0]}</span> <span>${h[1]}</span>`;
       }
 function getProduct(empresa){
     var p; 
