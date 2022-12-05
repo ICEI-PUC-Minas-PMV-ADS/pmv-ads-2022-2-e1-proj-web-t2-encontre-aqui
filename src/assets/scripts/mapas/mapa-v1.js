@@ -28,11 +28,11 @@ function allCardMapView(empresas){
 }
 
 function cardMapView(empresa){
-                        /*          for(var i =0; i < 1 ; i++){
-                                prod += `<a href="/produtos/produtos.html?id=${empresa.produtos[0].id}" > 
-                                <img src='${empresa.produtos[0].imagens[i]}' width="25"></a>`
-                                }
-                    */
+    var prod ='';
+               for(var i =0; i < empresa.produtos.length ; i++){
+                     prod += `<img src='${empresa.produtos[i].imagens[0]}' width="25">`
+                 }
+                   
                     if(empresa.email){
                         cardMap = `<a href="empresa.html?categoria=${empresa.categoria}&view=true>`
                     }else{
@@ -47,7 +47,9 @@ function cardMapView(empresa){
                                 
                         <div class="logradouro"> ${empresa.logradouro}</div>
                         <div> ${empresa.tel}</div>
-                                
+                            <div class="map-prod">
+                               ${prod}   
+                            </div>
                     </div>
 
                     </div>
@@ -72,13 +74,8 @@ function GetMap(empresa) {
        
       
         geocodeQuery(rota)
-        var prod ='';
- 
- /*          for(var i =0; i < 1 ; i++){
-            prod += `<a href="/produtos/produtos.html?id=${empresa.produtos[0].id}" > 
-            <img src='${empresa.produtos[0].imagens[i]}' width="25"></a>`
-            }
-*/
+        
+
        cardMapView(empresa)    
 
         logo =  empresa.imagens[0]
