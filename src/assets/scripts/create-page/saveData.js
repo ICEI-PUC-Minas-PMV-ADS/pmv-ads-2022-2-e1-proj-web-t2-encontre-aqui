@@ -30,6 +30,7 @@ btn_visualization.addEventListener('click', () =>{
         }
         url_img1.value = img
     }
+    console.log(url_img1.value,url_img2.value,url_img3.value,url_img4.value)
     
     if((product_name.value).length < 10 || (product_description.value).length < 10){
         userWarning("Nome do Produto ou serviço, deve ter mais de 10 caracteres...")
