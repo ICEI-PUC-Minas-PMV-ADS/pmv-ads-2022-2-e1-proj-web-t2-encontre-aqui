@@ -19,9 +19,22 @@ btn_visualization.addEventListener('click', () =>{
     
     var pages = JSON.parse(localStorage.getItem('pages_data'))
 
+    var img =''
+    if(url_img1.value == ''){
+        if(url_img2.value != ''){
+            img = url_img2.value;
+        }else if(url_img3 != ''){
+            img =  url_img3.value;
+        }else if(url_img4 != ''){
+            img =  url_img4.value;
+        }
+        url_img1.value = img
+    }
+    console.log(url_img1.value,url_img2.value,url_img3.value,url_img4.value)
+    
     if((product_name.value).length < 10 || (product_description.value).length < 10){
         userWarning("Nome do Produto ou serviço, deve ter mais de 10 caracteres...")
-    }else if(url_img_pr.value=="" && url_img1.value=="" && url_img2.value=="" && url_img3.value=="" && url_img4.value==""){
+    }else if(url_img1.value=="" && url_img2.value=="" && url_img3.value=="" && url_img4.value==""){
         userWarning("Adicione pelo menos uma imagem ilustrativa, de seu produto ou serviço...")
     }       
     else{
@@ -30,8 +43,7 @@ btn_visualization.addEventListener('click', () =>{
     var isDeliveries = document.getElementById("isDeliveries")
     var isReservation = document.getElementById("isReservation")
 
-  
-    
+   
    
     page_id = 0;
 
@@ -43,6 +55,7 @@ btn_visualization.addEventListener('click', () =>{
         }
         page_id = page_id+1;
     }
+
 
     var page_data = {
         id:page_id,
