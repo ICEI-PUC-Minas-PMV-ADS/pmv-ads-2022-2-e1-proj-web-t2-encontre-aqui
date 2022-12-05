@@ -3,6 +3,7 @@ window.addEventListener('load', ()=>{
     var fav_info = document.querySelector('.fav-info');
     var textPrincipal = document.getElementById('textPrincipal')
     const user = JSON.parse(sessionStorage.getItem('user')) 
+    var edit_user = document.querySelector('.edit_user')
 
     if(user === null || user === undefined){
         window.location.href = './login.html'
@@ -13,8 +14,12 @@ window.addEventListener('load', ()=>{
 
     var pages = document.getElementById('pages')
     var cards= ''
+    edit_user.innerHTML = ` <a href="./edicaodeDados.html?cliente=cliente" class="button button1">Editar perfil</a>` 
 
     if(company_data){
+       if(pages_data){
+            edit_user.innerHTML = ` <a href="./edicaodeDados.html?cliente=empresa" class="button button1">Editar perfil</a>` 
+       }
        fav_info.innerHTML =  `  <a href="./usuarioDivulgacao.html" class="button button1">Divulgar minha Empresa</a>
                                  Minhas Páginas :`;
 
