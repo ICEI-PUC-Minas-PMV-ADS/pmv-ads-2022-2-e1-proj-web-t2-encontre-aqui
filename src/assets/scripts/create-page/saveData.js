@@ -19,17 +19,6 @@ btn_visualization.addEventListener('click', () =>{
     
     var pages = JSON.parse(localStorage.getItem('pages_data'))
 
-    if((product_name.value).length < 10 || (product_description.value).length < 10){
-        userWarning("Nome do Produto ou serviço, deve ter mais de 10 caracteres...")
-    }else if(url_img1.value=="" && url_img2.value=="" && url_img3.value=="" && url_img4.value==""){
-        userWarning("Adicione pelo menos uma imagem ilustrativa, de seu produto ou serviço...")
-    }       
-    else{
-        
-    var page_id = 0;
-    var isDeliveries = document.getElementById("isDeliveries")
-    var isReservation = document.getElementById("isReservation")
-
     var img =''
     if(url_img1.value == ''){
         if(url_img2.value != ''){
@@ -42,6 +31,18 @@ btn_visualization.addEventListener('click', () =>{
         url_img1.value = img
     }
     
+    if((product_name.value).length < 10 || (product_description.value).length < 10){
+        userWarning("Nome do Produto ou serviço, deve ter mais de 10 caracteres...")
+    }else if(url_img1.value=="" && url_img2.value=="" && url_img3.value=="" && url_img4.value==""){
+        userWarning("Adicione pelo menos uma imagem ilustrativa, de seu produto ou serviço...")
+    }       
+    else{
+        
+    var page_id = 0;
+    var isDeliveries = document.getElementById("isDeliveries")
+    var isReservation = document.getElementById("isReservation")
+
+   
    
     page_id = 0;
 
