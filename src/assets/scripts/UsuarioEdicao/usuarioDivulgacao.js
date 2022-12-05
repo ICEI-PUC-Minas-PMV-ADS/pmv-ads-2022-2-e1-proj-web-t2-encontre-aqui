@@ -2,7 +2,8 @@
 var user_name = document.getElementById('user_name')
 var user_auth = JSON.parse(sessionStorage.getItem('user'))
 var url_img = document.getElementById('url_img')
- 
+var old_company_data = JSON.parse(localStorage.getItem('company_data'))
+
     if(user_auth === null || user_auth === undefined){
         window.location.href = './login.html'
     }
@@ -12,6 +13,10 @@ function saveData(){
     var descricaoArea = document.getElementById('descricao') 
     if(url_img.value == "" || url_img.value == null){
         url_img.value = "./assets/images/site/userprofile/avatar.png"
+    }
+    var categoria = 'Eletricista'
+    if(old_company_data){
+        categoria = old_company_data.categoria
     }
 
     var company_data = {}
@@ -29,7 +34,7 @@ function saveData(){
             uf: dataForm[8].value,
             tel: dataForm[9].value,
             descricao:descricaoArea.value,
-            categoria: 'Eletricista'      
+            categoria: categoria   
         }
     }else{
         company_data = {
