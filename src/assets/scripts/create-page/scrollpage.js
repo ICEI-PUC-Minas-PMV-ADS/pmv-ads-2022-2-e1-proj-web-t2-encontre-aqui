@@ -18,7 +18,7 @@ next = document.getElementById('next')
  
 
 upPage.addEventListener('click', ()=>{
-    if(product_name.value.length() < 10 || product_description.value.length() < 10){
+    if(product_name.value.length < 10 || product_description.value.length < 10){
         userWarning("Nome do Produto ou serviço, devem ter mais de 10 caracteres...")
     }else if(url_img_pr.value=="" && url_img1.value=="" && url_img2.value=="" && url_img3.value=="" && url_img4.value==""){
         userWarning("Adicione pelo menos uma imagem ilustrativa, de seu produto ou serviço...")
