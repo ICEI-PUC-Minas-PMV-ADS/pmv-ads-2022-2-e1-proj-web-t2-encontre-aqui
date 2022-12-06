@@ -35,8 +35,8 @@ function cardMapView(empresa){
                  }
                 }
                    
-                    if(empresa.email){
-                        cardMap = `<a href="empresa.html?categoria=${empresa.categoria}&view=true>`
+                    if(empresa.view != undefined || empresa.view != null){
+                        cardMap = `<a href="./empresaVisualizacao.html?categoria=${empresa.categoria}&view=true>`
                     }else{
                         cardMap = `<a href="empresa.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=22464654>`
                     }     
