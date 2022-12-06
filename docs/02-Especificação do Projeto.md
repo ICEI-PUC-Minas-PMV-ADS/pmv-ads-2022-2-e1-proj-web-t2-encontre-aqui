@@ -59,28 +59,28 @@ Para que o usuário possa interagir juntamente com o site é necessária uma lis
 A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade em que os mesmos devem ser entregues.
 </p>
 
-| ID     | Descrição do Requisito                                                                                                                                                     | Prioridade |
-| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| RF-001 | O sistema, em sua página principal na web, deverá apresentar as empresas ou prestadores de serviços mais próximos à localização do cliente(pessoa jurídica ou física) que acessou a página.           | ALTA       |
-| RF-002 | O sistema deve permitir ao cliente pesquisar por empresas, produtos ou serviços cadastrados no sistema.                                                                    | ALTA       |
-| RF-003 | O sistema deverá filtrar as buscas por cidade.                                                                                                                              | MÉDIA      |
-| RF-004 | O sistema deve permitir ao cliente filtrar o resultado de pesquisas por categoria, e por estado de funcionamento (aberto ou fechado), no horário em que a busca for feita. | MÉDIA      |
-| RF-005 | O sistema deve permitir o cadastro de cliente do tipo pessoa física, e cliente do tipo pessoa jurídica.                                                                                                                         | ALTA       |
-|  RF-006 | O formulário de cadastro deverá conter os campos de entrada: NOME DE USUÁRIO, EMAIL e SENHA.                                                               | BAIXA       |
-|  RF-007| O sistema não deve permitir o cadastro de empresas por clientes menores de 18 anos. | BAIXA       |
-| RF-008 | O sistema deve permitir ao cliente fazer login com nome de usúario ou email e senha.                                                                                                                            | MÉDIA       |
-| RF-009 | O sistema deve permitir ao cliente editar seus dados cadastrais.                                                                                                           | BAIXA       |
-| RF-010 | O sistema deve permitir ao cliente criar uma nova senha, caso não saiba sua senha de login.                                                                                | BAIXA      |
-| RF-011 | O sistema deve permitir que pessoa jurídica, previamente cadastrada, crie página(s) na plataforma para divulgação de sua empresa, produto(s) ou serviço(s).                              | ALTA       |
-| RF-012 | Antes de criar a primeia página, a empresa deverá preencher um formulario, contendo os campos: RAZÃO SOCIAL, CNPJ, LOGRADOURO, BAIRRO, MUNICÍPIO, ESTADO, CEP, TELEFONE, EMAIL para contato. Poderá também, fazer o upload de uma foto pessoal ou de sua logomarca, caso tenha uma.| ALTA       |
-| RF-013 | O sistema deve permitir a edição da página criada para a divulgação de produto ou serviço, pela pessoa jurídica que a criou                                                | MÉDIA      |
-| RF-014 | O sistema deve permitir ao usuário adicionar empresas, produtos ou serviços, em sua lista de favoritos, que está disponível em seu perfil.                                 | ALTA       |
-| RF-015 | O sistema deve permitir a pessoa física e jurídica remover empresas, produtos ou serviços da sua lista de favoritos, que estará disponível em seu perfil.                                    | MÉDIA      |
-| RF-016 | O formulario para criação de página possuirá campos editaveis, e com instruções de como a empresa poderá montar sua página.   | ALTA      | 
-| RF-017 | Nos campos destinados ao envio de imagens, o sistema deve permitir o upload de imagens JPEG/JPG, GIF, PNG, TIFF e SVG.                                                                                                | MÉDIA      |
-| RF-018 | O sistema disponibilizará o endereço da página na web para a empresa que a criou.                                                                                                      | MÉDIA      |
-| RF-019 | O sistema disponibilizará na(s) página(s) da pessoa jurídica, através da API de mapas do Microsoft Bing, um mapa informando sua localização comercial.                             | BAIXA      |
-| RF-020 | O sistema deve permitir que pessoa jurídica, previamente cadastrada, remova página(s) por ela criada(s), na plataforma.                              | ALTA       |
+| ID     | Descrição do Requisito                                                                                                                                                                                                                                                              | Prioridade |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| RF-001 | O sistema, em sua página principal na web, deverá apresentar as empresas ou prestadores de serviços mais próximos à localização do cliente(pessoa jurídica ou física) que acessou a página.                                                                                         | ALTA       |
+| RF-002 | O sistema deve permitir ao cliente pesquisar por empresas, produtos ou serviços cadastrados no sistema.                                                                                                                                                                             | ALTA       |
+| RF-003 | O sistema deverá filtrar as buscas por cidade.                                                                                                                                                                                                                                      | MÉDIA      |
+| RF-004 | O sistema deve permitir ao cliente filtrar o resultado de pesquisas por categoria, e por estado de funcionamento (aberto ou fechado), no horário em que a busca for feita.                                                                                                          | MÉDIA      |
+| RF-005 | O sistema deve permitir o cadastro de cliente do tipo pessoa física, e cliente do tipo pessoa jurídica.                                                                                                                                                                             | ALTA       |
+| RF-006 | O formulário de cadastro deverá conter os campos de entrada: NOME DE USUÁRIO, EMAIL e SENHA.                                                                                                                                                                                        | BAIXA      |
+| RF-007 | O sistema não deve permitir o cadastro de empresas por clientes menores de 18 anos.                                                                                                                                                                                                 | BAIXA      |
+| RF-008 | O sistema deve permitir ao cliente fazer login com nome de usúario ou email e senha.                                                                                                                                                                                                | MÉDIA      |
+| RF-009 | O sistema deve permitir ao cliente editar seus dados cadastrais.                                                                                                                                                                                                                    | BAIXA      |
+| RF-010 | O sistema deve permitir ao cliente alterar a senha de acesso.                                                                                                                                                                                                                       | BAIXA      |
+| RF-011 | O sistema deve permitir que pessoa jurídica, previamente cadastrada, crie página(s) na plataforma para divulgação de sua empresa, produto(s) ou serviço(s).                                                                                                                         | ALTA       |
+| RF-012 | Antes de criar a primeia página, a empresa deverá preencher um formulario, contendo os campos: RAZÃO SOCIAL, CNPJ, LOGRADOURO, BAIRRO, MUNICÍPIO, ESTADO, CEP, TELEFONE, EMAIL para contato. Poderá também, fazer o upload de uma foto pessoal ou de sua logomarca, caso tenha uma. | ALTA       |
+| RF-013 | O sistema deve permitir a edição da página criada para a divulgação de produto ou serviço, pela pessoa jurídica que a criou                                                                                                                                                         | MÉDIA      |
+| RF-014 | O sistema deve permitir ao usuário adicionar empresas, produtos ou serviços, em sua lista de favoritos, que está disponível em seu perfil.                                                                                                                                          | ALTA       |
+| RF-015 | O sistema deve permitir a pessoa física e jurídica remover empresas, produtos ou serviços da sua lista de favoritos, que estará disponível em seu perfil.                                                                                                                           | MÉDIA      |
+| RF-016 | O formulario para criação de página possuirá campos editaveis, e com instruções de como a empresa poderá montar sua página.                                                                                                                                                         | ALTA       |
+| RF-017 | Nos campos destinados ao envio de imagens, o sistema deve permitir o upload de imagens JPEG/JPG, GIF, PNG, TIFF e SVG.                                                                                                                                                              | MÉDIA      |
+| RF-018 | O sistema disponibilizará o endereço da página na web para a empresa que a criou.                                                                                                                                                                                                   | MÉDIA      |
+| RF-019 | O sistema disponibilizará na(s) página(s) da pessoa jurídica, através da API de mapas do Microsoft Bing, um mapa informando sua localização comercial.                                                                                                                              | BAIXA      |
+| RF-020 | O sistema deve permitir que pessoa jurídica, previamente cadastrada, remova página(s) por ela criada(s), na plataforma.                                                                                                                                                             | ALTA       |
 
 ### 3.2 Requisitos não Funcionais
 
@@ -88,14 +88,14 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá atender.
 </p>
 
-| ID      | Descrição do Requisito                                                                                                                                                                                                                                                                                 | Prioridade |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
-| RNF-001 | O site deverá ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).                                                                                                                                                                                          | ALTA       |
-| RNF-002 | O site deverá ser responsivo, permitindo a visualização em diferentes tamanhos de tela de forma adequada.                                                                                                                                                                                                                | MÉDIA       |
-| RNF-003 | O site deverá ter interface de usúario de facil entendimento.                                                                                                                                                                                         | MÉDIA       |
-| RNF-004 | A senha para acesso ao perfil do cliente, deve conter pelo menos 7 caracteres.                                                                                                                                                                                          | ALTA       |
-| RNF-005 | O sistema dará status de cliente-empresa ao usuário que divulgar sua empresa, produto ou serviço.                                                                                                                                                                                                      | MÉDIA       |
-| RNF-006 | O sistema deverá estar disponivel 24 horas por dia, todos os dias da semana.                                                                                                                                                                                                      | ALTA       |
+| ID      | Descrição do Requisito                                                                                          | Prioridade |
+| ------- | --------------------------------------------------------------------------------------------------------------- | ---------- |
+| RNF-001 | O site deverá ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). | ALTA       |
+| RNF-002 | O site deverá ser responsivo, permitindo a visualização em diferentes tamanhos de tela de forma adequada.       | MÉDIA      |
+| RNF-003 | O site deverá ter interface de usúario de facil entendimento.                                                   | MÉDIA      |
+| RNF-004 | A senha para acesso ao perfil do cliente, deve conter pelo menos 7 caracteres.                                  | ALTA       |
+| RNF-005 | O sistema dará status de cliente-empresa ao usuário que divulgar sua empresa, produto ou serviço.               | MÉDIA      |
+| RNF-006 | O sistema deverá estar disponivel 24 horas por dia, todos os dias da semana.                                    | ALTA       |
 
 ### 3.3 Restrições
 
@@ -103,7 +103,7 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir.
 </p>
 
-| ID      | Descrição do Requisito                                                                                        |
-| ------- | ------------------------------------------------------------------------------------------------------------- |
-| RE-001 |O sistema deve se restringir às tecnologias básicas da Web no Front-end.                                        |
-| RE-002 | A implementação do sistema deverá ser feita até o dia 11/12/2022, não podendo extrapolar a data.              |
+| ID     | Descrição do Requisito                                                                           |
+| ------ | ------------------------------------------------------------------------------------------------ |
+| RE-001 | O sistema deve se restringir às tecnologias básicas da Web no Front-end.                         |
+| RE-002 | A implementação do sistema deverá ser feita até o dia 11/12/2022, não podendo extrapolar a data. |
