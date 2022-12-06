@@ -331,12 +331,13 @@ function findByLocal(){
         
         if((empresa.nome.toLowerCase()).includes(search.toLowerCase()) || (empresa.descricao.toLowerCase()).includes(search.toLowerCase())){
             
-           // cardsData.push(empresa) 
+            cardsData.push(empresa) 
             isOpened = isOpen(empresa.hfunc)
             updateWantedLocal(empresa.cidade)
             updateCard(empresa, null)
            
-            for(var i = 0; i < localProdutos.length; i++){                
+            for(var i = 0; i < localProdutos.length; i++){    
+                cardsData.push(empresa)             
                 updateCard(localProdutos[i], empresa)
             }
         }else
