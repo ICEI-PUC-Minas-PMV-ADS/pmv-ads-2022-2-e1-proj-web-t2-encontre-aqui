@@ -73,7 +73,7 @@
 ### Registro de Teste: Cliente Altera Senha.
 
 <p align="center"> 
-  <img src="img/testes/AlterarSenha.png" width="600">
+  <img src="img/testes/AlterarSenha.PNG" width="600">
 </p>
 
 ##### _Figura 9- Cliente Altera Senha._
