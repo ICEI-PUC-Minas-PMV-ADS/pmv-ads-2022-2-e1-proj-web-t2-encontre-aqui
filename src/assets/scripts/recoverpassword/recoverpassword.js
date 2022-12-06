@@ -9,6 +9,7 @@ function recoverPassword(e){
             if(password == password_c){
                 user.password = password;              
                 updateError("Senha Alterada com sucesso")
+                localStorage.setItem("user_data", JSON.stringify(user))
                 setTimeout(()=>{
                     window.location.href="./login.html";
                 },2000)
