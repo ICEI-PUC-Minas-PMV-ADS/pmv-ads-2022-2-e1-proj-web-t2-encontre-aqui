@@ -29,9 +29,11 @@ function allCardMapView(empresas){
 
 function cardMapView(empresa){
     var prod ='';
+              if(empresa.produtos != null && empresa.produtos != undefined){
                for(var i =0; i < empresa.produtos.length ; i++){
                      prod += `<img src='${empresa.produtos[i].imagens[0]}' width="25">`
                  }
+                }
                    
                     if(empresa.email){
                         cardMap = `<a href="empresa.html?categoria=${empresa.categoria}&view=true>`
