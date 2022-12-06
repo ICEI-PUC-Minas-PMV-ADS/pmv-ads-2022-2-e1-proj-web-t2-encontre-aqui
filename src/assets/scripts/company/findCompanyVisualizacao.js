@@ -90,7 +90,7 @@ function updatePage(empresa){
     header_product_page.style.backgroundImage = `url(${empresa.imgBanner})`; 
     header_product_page.style.backgroundSize = 'cover'
    
-    logo_area.innerHTML = ` <a href='empresa.html?categoria=${empresa.categoria}&view=true'>
+    logo_area.innerHTML = ` <a href='./empresaVisualizacao.html?view=true'>
                             <img id="logo-user" src='${empresa.imagens[0]}'>
                             <span id="name-user" class="client-name">${empresa.nome}</span> </a>`;
 
