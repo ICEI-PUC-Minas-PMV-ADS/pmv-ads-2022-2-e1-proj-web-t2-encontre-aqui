@@ -5,7 +5,7 @@
 
 `1 SEMESTRE de 2022 - EIXO 01`
 
-Sistema Web de busca de MEI's e ME's com funcionalidades otimizadas e objetivas. Será contemplado com possibilidades de buscar desde um serviço para residência até
+Sistema Web de busca de Microempreendedor individuais e microempresas com funcionalidades otimizadas e objetivas. Será contemplado com possibilidades de buscar desde um serviço para residência até
 produtos para fazer um bolo ou até mesmo construir uma casa com materiais disponíveis, com comodidade e otimizando os gastos tanto para o usuário quanto para os
 fornecedores de materia prima. Possibilitanto assim uma interação de MEI's e ME's com seus clientes e virse versa.
 
