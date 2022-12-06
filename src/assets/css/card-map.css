@@ -25,6 +25,27 @@
     align-items: center;
     justify-content: center;
 }
+.card-map .card-body .map-prod{
+    display: flex;
+}
+
+.card-map:hover .card-body img{
+    visibility: visible;
+    transition: 0.5s ease;
+    width: 55px;
+    height: 55px;
+    opacity: 1;
+    
+}
+
+.card-map .card-body img{
+    visibility: hidden;
+    transition: 0.5s ease;
+    width: 55px;
+    height: 55px;
+    opacity: 0;
+    margin-left: 5px;
+}
 
 .card-map .prod img{
     width: 20px;
