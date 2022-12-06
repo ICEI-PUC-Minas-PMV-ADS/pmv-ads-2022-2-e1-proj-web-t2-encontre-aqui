@@ -71,10 +71,7 @@ var formulario = document.getElementById('form')
                         <div class="inputBox-2">
                             <input type="submit" onclick="saveData()" value="Atualizar">
                         </div>
-                        <br>
-                        <a href="./recoverpassword.html"> alterar senha</a>
-                        <br>
-                        </div>
+                       
                 </form>`
         }else{
             formulario.innerHTML = ` 
