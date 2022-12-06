@@ -69,3 +69,11 @@
 </p>
 
 ##### _Figura 8- Teste Remover Página de Divulgação_
+
+### Registro de Teste: Cliente Altera Senha.
+
+<p align="center"> 
+  <img src="img/testes/AlterarSenha.png" width="600">
+</p>
+
+##### _Figura 9- Cliente Altera Senha._

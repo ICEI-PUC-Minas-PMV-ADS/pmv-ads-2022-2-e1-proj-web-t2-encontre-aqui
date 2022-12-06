@@ -212,3 +212,32 @@
 </p>
 
 ##### _Figura 24- Registro de Teste, Nenhum Resultado Encontrado._
+
+## Registro de Teste: Cliente Altera a Senha.
+
+### Caso de Sucesso
+
+<p>O cliente clicou em alterar senha, foi direcionado para a página recoverpassword.html, preencheu uma os campos solicitados corretamente e clicou no botão Alterar Senha</p>
+
+<p>Registro do localStorage antes da alteração de senha</p>
+<p align="center"> 
+  <img src="img/testes/RegistroSenhaAlte.PNG" width="800">
+</p>
+
+##### _Figura 25- Registro do localStorage._
+
+<p>Registro do localStorage após da alteração de senha</p>
+<p align="center"> 
+  <img src="img/testes/RegistroSenhaNao.PNG" width="800">
+</p>
+
+##### _Figura 26- Registro do localStorage após alteração de senha._
+
+### Caso de Falha
+
+<p>O usuário não está cadastrado no sistema</p>
+<p align="center"> 
+  <img src="img/testes/Usuarioinvalido.PNG" width="800">
+</p>
+
+##### _Figura 27- Cliente não está cadastrado._
