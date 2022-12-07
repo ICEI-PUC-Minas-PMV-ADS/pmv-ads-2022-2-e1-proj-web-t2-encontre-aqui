@@ -110,10 +110,10 @@ function updatePage(empresa){
                            
                             <div id="ps-price">${price}</div>
                             <div id=""></div>
-                            <div id="ps-descr"> ${empresa.produtos[0].descricao.substr(0, 600)}  </div>
+                            <div id="ps-descr"> ${product.descricao.substr(0, 600)}  </div>
                         </div>
                         `
-                document.getElementById('title_product').innerHTML =`<div id="ps-title" class="title">${empresa.produtos[0].nome}</div>`;
+                document.getElementById('title_product').innerHTML =`<div id="ps-title" class="title">${product.nome}</div>`;
                 description_ps.innerHTML = content; 
 
 
