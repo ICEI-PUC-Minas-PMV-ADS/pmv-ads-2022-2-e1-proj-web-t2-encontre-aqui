@@ -128,6 +128,7 @@ function updatePage(empresa){
 */
     
    if(atual_page){
+    price = atual_page.preco;
    for(var i = 1 ; i < atual_page.imagens.length; i++){
     if(atual_page.imagens[i] != "" && atual_page.imagens[i] != null)
      other_images += `<div> <img src="${atual_page.imagens[i]}"></div>`
