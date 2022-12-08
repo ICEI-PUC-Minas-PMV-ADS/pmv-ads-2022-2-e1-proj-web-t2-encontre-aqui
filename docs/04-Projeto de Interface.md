@@ -10,17 +10,48 @@ Você pode encontrar uma versão interativa acessando <a href="https://www.figma
 
 <br/>
 
+<p>Fluxo de usuário, onde o cliente navega pelas páginas: inicial(Home), página de pesquisa, página de produto ou serviço e página de devulgação de empresa.</p>
+
 <p align="center"> 
-  <img src="img/userflow/User-Flow3.JPG" width="800">
+  <img src="img/userflow/User-Flow1.png" width="800">
 </p>
 <h3 align="center">FIGURA 01</h3>
 
 <br/>
 
+<p>Fluxo de usuário, onde o cliente pode efetuar Login, Cadastro e recuperar senha.</p>
+
+<p align="center"> 
+  <img src="img/userflow/UserFlowLogin.png" width="800">
+</p>
+<h3 align="center">FIGURA 02</h3>
+
+<br/>
+
+<p>Fluxo de usuário, onde o cliente pode alterar seus dados cadastrais.</p>
+
+<p align="center"> 
+  <img src="img/userflow/UserFlowEditarUser.png" width="800">
+</p>
+<h3 align="center">FIGURA 03</h3>
+
+<br/>
+
+<p>Fluxo de usuário, onde o cliente pode criar e editar uma página.</p>
+
+<p align="center"> 
+  <img src="img/userflow/UserFlowLoginCriarP.png" width="800">
+</p>
+<h3 align="center">FIGURA 04</h3>
+
+<br/>
+
+<p>Fluxo de usuário completo</p>
+
 <p align="center"> 
   <img src="img/userflow/User-Flow2.png" width="800">
 </p>
-<h3 align="center">FIGURA 02</h3>
+<h3 align="center">FIGURA 05</h3>
 
 ## Template Padrão
 
