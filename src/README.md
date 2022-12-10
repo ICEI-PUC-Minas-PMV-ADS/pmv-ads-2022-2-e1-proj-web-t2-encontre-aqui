@@ -15,4 +15,4 @@ Ao clicar em visitar, em um dos resultados, será direcionado para a pagina da e
 
 ## Histórico de versões
 
-### [1.0.0] - 30/10/2022
+### [2.0.0] - 10/20/2022
