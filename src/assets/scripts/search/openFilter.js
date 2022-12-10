@@ -15,31 +15,44 @@ function filterOpen(){
         }
 
     }
+   
+    
 
     closed.forEach(itemClosed =>{
         if(checkbox.checked){
+          
             itemClosed.closest('.card').style.transition = "all 1s"
             itemClosed.closest('.card').style.transform = "translateX(250px)"
             itemClosed.closest('.card').style.opacity = '0'
-            
-            opened.forEach((itemOpened, index) =>{         
-                if(itemOpened.closest('.card').style != null){      
-                itemOpened.closest('.card').style.transform = `translateY(-${closes[index]}px)`
-                console.log(closes)
-                itemOpened.closest('.card').style.transition = "all 1s"
-            }
+          
+        }if(checkbox.checked){              
+            opened.forEach((itemOpened, index) =>{     
+                if(closes[index] == 0)
+               {                     
+                itemOpened.closest('.card').style.transform = `translateY('0px')}px)`    
+               }else{
+                itemOpened.closest('.card').style.transform = `translateY(-${closes[index]}px)`         
+               }
+               itemOpened.closest('.card').style.transition = "all 1s"
             })
-        }else if(!checkbox.checked){
+        }
+        
+        else{ 
+            if(!checkbox.checked){
             
             itemClosed.closest('.card').style.transition = "all 1s"
             itemClosed.closest('.card').style.transform = "translateX(0px)"
             itemClosed.closest('.card').style.opacity = '1'
 
+        }
+
+        if(!checkbox.checked){
             opened.forEach(itemOpened =>{               
                 itemOpened.closest('.card').style.transform = "translateY(0px)"
                 itemOpened.closest('.card').style.transition = "all 1s"
             })
         }
+    }
         
     })
     
