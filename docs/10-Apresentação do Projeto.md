@@ -33,4 +33,4 @@
 
 </p>
 
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
+[![Watch the video](../docs/img/Apresentacao.PNG)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/4447f5a69dcafd1f03a815c6ab9d421c9c65ccc4/presentation/Sistema-Encontre.mp4)
