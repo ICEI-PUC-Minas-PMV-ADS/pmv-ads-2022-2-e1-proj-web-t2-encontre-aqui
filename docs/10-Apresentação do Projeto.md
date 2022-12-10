@@ -8,16 +8,16 @@
 
 <p>Logos</p>
 <p align="center"> 
-  <img src="../src/assets/images/logo-site/logo2.png" width="300">
+  <img src="../src/assets/images/logo-site/logo2.png" width="400">
 </p>
 
-##### _Figura 21- Logomarca._
+##### _Figura 1- Logomarca._
 
 <p align="center"> 
-  <img src="../src/assets/images/logo-site/logo.png" width="300">
+  <img src="../src/assets/images/logo-site/logo.png" width="400">
 </p>
 
-##### _Figura 21- Logomarca._
+##### _Figura 2- Logomarca._
 
 ## Conjunto de Slides (Estrutura)
 
@@ -29,9 +29,7 @@
 
 <p align="center">
 
-<video width="320" src="../presentation/Sistema-Encontre.mp4" type="video/mp4 height="240" controls>
-
-    Your browser does not support the video tag.
+<video width="320" src="../presentation/Sistema-Encontre.mp4" type="video/mp4 controls>
 
 </video>
 
