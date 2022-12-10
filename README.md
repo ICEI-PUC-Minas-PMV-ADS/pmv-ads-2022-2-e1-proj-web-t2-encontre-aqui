@@ -1,4 +1,5 @@
-# ENCONTRE AQUI 
+# ENCONTRE AQUI
+
 `ANALISE E DESENVOLVIMENTO DE SISTEMA `
 
 `Projeto: Desenvolvimento de Aplicação Web Front-End - Turma 02`
@@ -43,7 +44,9 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 # Hospedagem
 
-- Insira o endereço eletrônico público de acesso ao conteúdo publicado.
+<p>O sistema está hospedado no Github Pages, acessando pela url</p>
+
+<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/">https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/</a>
 
 # Armazenamento do Código-Fonte
 
