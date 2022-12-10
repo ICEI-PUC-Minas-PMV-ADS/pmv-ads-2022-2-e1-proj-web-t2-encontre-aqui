@@ -8,7 +8,7 @@
 
 <p>Logos</p>
 <p align="center"> 
-  <img src="../src/assets/images/logo-site/logo2.png" width="800">
+  <img src="../src/assets/images/logo-site/logo2.png" width="300">
 </p>
 
 ##### _Figura 21- Logomarca._
@@ -23,7 +23,7 @@
 
 <p>Link da apresentação</p>
 
-<a href="../presentation/Apresentação.pdf">
+<a href="../presentation/Apresentação.pdf">Apresentação</a>
 
 ## Vídeo de Apresentação do Projeto.
 
