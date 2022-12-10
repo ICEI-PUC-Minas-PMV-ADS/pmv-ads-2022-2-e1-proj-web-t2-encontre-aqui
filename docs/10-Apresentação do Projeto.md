@@ -6,15 +6,15 @@
 
 ## Identidade Visual (Marca, Design)
 
-<p>Logos</p>
+<p>Logo</p>
 <p align="center"> 
-  <img src="../src/assets/images/logo-site/logo2.png" width="400">
+  <img src="../src/assets/images/logo-site/logo.png" width="400">
 </p>
 
 ##### _Figura 1- Logomarca._
 
 <p align="center"> 
-  <img src="../src/assets/images/logo-site/logo.png" width="400">
+  <img src="../src/assets/images/logo-site/logo2.png" width="400">
 </p>
 
 ##### _Figura 2- Logomarca._
@@ -32,3 +32,5 @@
 [[Video Demonstração do Projeto]](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/4447f5a69dcafd1f03a815c6ab9d421c9c65ccc4/presentation/Sistema-Encontre.mp4)
 
 </p>
+
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
