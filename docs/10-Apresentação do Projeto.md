@@ -29,8 +29,8 @@
 
 <p align="center">
 
-<video width="320" src="../presentation/Sistema-Encontre.mp4" type="video/mp4 controls>
-
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="../presentation/Sistema-Encontre.mp4">
 </video>
 
 </p>
