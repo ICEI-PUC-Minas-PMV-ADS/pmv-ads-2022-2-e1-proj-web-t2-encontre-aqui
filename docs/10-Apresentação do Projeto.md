@@ -23,13 +23,13 @@
 
 <p>Link da apresentação</p>
 
-<a href="./presentation/Apresentação.pdf">
+<a href="../presentation/Apresentação.pdf">
 
 ## Vídeo de Apresentação do Projeto.
 
 <p align="center"> 
   <video width="320" height="240" controls>
-  <source src="./presentation/Sistema-Encontre.mp4" type="video/mp4">
-Your browser does not support the video tag.
+  <source src="../presentation/Sistema-Encontre.mp4" type="video/mp4">
+    Your browser does not support the video tag.
 </video>
 </p>
