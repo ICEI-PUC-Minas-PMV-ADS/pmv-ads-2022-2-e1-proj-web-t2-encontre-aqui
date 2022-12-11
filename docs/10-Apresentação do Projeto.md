@@ -1,12 +1,8 @@
-# Apresentação
-
-## Título do Projeto
-
 # Encontre-Aqui
 
-## Identidade Visual (Marca, Design)
+## Logomarca
 
-<p>Logo</p>
+
 <p align="center"> 
   <img src="../src/assets/images/logo-site/logo.png" width="400">
 </p>
