@@ -9,7 +9,7 @@ var url_categoria = urlObj.searchParams.get("categoria")
 var id =  parseInt(urlObj.searchParams.get("id"))
 var tags = document.querySelector('.tags')
 var wanted_place = document.getElementById('wanted-place')
-
+var atual_cat ='', prox_cat='';
 
 var local = []
 var cardsPag
@@ -218,10 +218,12 @@ function searchPlace(categoria){
     if(cardsData.length > 0){
         
         cardsPag = document.querySelectorAll('.card')
-        addEventListener('load',()=>{
-
+        addEventListener('load',()=>{          
             GetMap(cardsData[0]) 
+         
+            
             cardsPag[id_current].classList.add('active')
+          
             return
         })               
         cardsPag.forEach((cards, index) =>{      
@@ -231,7 +233,8 @@ function searchPlace(categoria){
                id_next = index
                cardsPag[id_current].classList.remove('active')
                cardsPag[id_next].classList.add('active')
-               GetMap(cardsData[index])               
+               GetMap(cardsData[index])    
+                          
                return
                
             })
@@ -249,9 +252,22 @@ function searchPlace(categoria){
   }
 
 function updateTags(categoria){
-    categoria.tags.forEach(tag => {
-        data += `<a href="./search.html?search=${tag}&place=${place}" class="btn btn-primary brad-25">${tag}</a>` 
-    })
+
+    if(place!=null && place!=""){
+        if(search!=null && search != ""){
+            categoria.tags.forEach(tag => {
+                data += `<a href="./search.html?search=${tag}&place=${place}" class="btn btn-primary brad-25">${tag}</a>` 
+            })
+        }else{
+             prox_cat = categoria.tags[0]
+
+             if(atual_cat !== prox_cat)
+               data += `<a href="./search.html?search=${prox_cat}&place=${place}" class="btn btn-primary brad-25">${prox_cat}</a>` 
+                            
+             atual_cat = prox_cat  
+        }
+    }
+   
     
     tags.innerHTML += data;
     data = ''
@@ -320,11 +336,23 @@ function findByLocal(){
             updateWantedLocal(empresa.cidade)
             updateCard(empresa, null)
            
-            for(var i = 0; i < localProdutos.length; i++){                
+            for(var i = 0; i < localProdutos.length; i++){    
+                cardsData.push(empresa)             
                 updateCard(localProdutos[i], empresa)
             }
-        }
-
+        }else
+             {
+                for(var i = 0; i < localProdutos.length; i++){  
+                    if((localProdutos[i].nome.toLowerCase().includes(search.toLowerCase())) || 
+                        localProdutos[i].descricao.toLowerCase().includes(search.toLocaleLowerCase())){
+                            cardsData.push(empresa) 
+                            isOpened = isOpen(empresa.hfunc)
+                            updateWantedLocal(empresa.cidade)
+                            updateCard(localProdutos[i], empresa)
+                        }          
+                   
+                }
+             }
             
         }
     }

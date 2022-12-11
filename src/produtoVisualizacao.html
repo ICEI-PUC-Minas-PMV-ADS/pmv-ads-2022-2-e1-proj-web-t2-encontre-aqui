@@ -17,38 +17,10 @@
 
 <body>
 
-    <header class="header-product-page">
-
-        <nav class="nav-menu">
-            <a href="./index.html" class="logo"><img src="./assets/images/logo-site/logo2.png"></a>
-            <form action="./search.html" method="GET" class="search" autocomplete="off">
-                <div class="place-area">
-                    <input name="search" id="search_input" type="text" placeholder="Produtos, Serviços, Empresas">
-                    <ul class="list1"></ul>
-                </div>
-                <div class="place-area">
-                    <input name="place" id="place" type="text" placeholder="Cidade">
-                    <ul class="list2"></ul>
-                </div>
-                <button class="btn-search" type="submit">Pesquisar</button>
-            </form>
-            <div class="account">
-                <div class="avatar-1">
-                    <a href="./userProfile.html" class="avatar-1"><img class="img_avatar"
-                            src="./assets/images/site/userprofile/avatar.png"></a>
-                </div>
-                <div>
-                    <h1 class="texto" id="user_name"></h1>
-                    </h1>
-                    <a class="btn btn-light" id="logout" href="#">Sair</a>
-                </div>
-            </div>
-        </nav>
-
-        <div class="logo-area">
-        </div>
+    <header id="toggleUserLogged" class="header-product-page">
 
     </header>
+    <div class="logo-area"></div>
     <nav class="check-info-area">
         <div class="check-info">
             <div class="place-options">
@@ -57,6 +29,7 @@
             <div class="favorite-area">
 
             </div>
+
         </div>
     </nav>
     <main>
@@ -72,7 +45,7 @@
         </section>
 
 
-        </div>
+
 
         <section class="other-products">
             <span class="title">Outros produtos ou serviços deste anunciante</span>
@@ -94,9 +67,7 @@
     <br />
     <br />
     <br />
-
-
-
+    <br />
     <div class="area-map">
         <div id="complete-address">Rua</div>
         <div id="places-in-maps"></div>
@@ -162,10 +133,11 @@
     <script src="./assets/scripts/search/isOpen.js"></script>
     <script src="./assets/scripts/product/findProductsVisualization.js"></script>
     <script src="./assets/scripts/usuarioDivulgacao/usuarioDivulgacao.js"></script>
+    <script src="./assets/scripts/userIsLogged.js"></script>
+    <script src="./assets/scripts/userDetails.js"></script>
     <script src="./assets/scripts/autocomplete.js"></script>
     <script src="./assets/scripts/search/getLocalSearch.js"></script>
     <script src="./assets/scripts/logout.js"></script>
-
     <script type='text/javascript'
         src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Aj30kitBtzqfccLqDP_RXQYks09ie-CQ5gvx0dnWFyyQImim-GDuVIVUl0VUwjQr'
         async defer></script>

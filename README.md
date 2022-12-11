@@ -1,11 +1,12 @@
-# ENCONTRE AQUI 
+# ENCONTRE AQUI
+
 `ANALISE E DESENVOLVIMENTO DE SISTEMA `
 
 `Projeto: Desenvolvimento de Aplicação Web Front-End - Turma 02`
 
 `1 SEMESTRE de 2022 - EIXO 01`
 
-Sistema Web de busca de MEI's e ME's com funcionalidades otimizadas e objetivas. Será contemplado com possibilidades de buscar desde um serviço para residência até
+Sistema Web de busca de microempreendedores individuais e microempresas com funcionalidades otimizadas e objetivas. Será contemplado com possibilidades de buscar desde um serviço para residência até
 produtos para fazer um bolo ou até mesmo construir uma casa com materiais disponíveis, com comodidade e otimizando os gastos tanto para o usuário quanto para os
 fornecedores de materia prima. Possibilitanto assim uma interação de MEI's e ME's com seus clientes e virse versa.
 
@@ -43,7 +44,9 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 # Hospedagem
 
-- Insira o endereço eletrônico público de acesso ao conteúdo publicado.
+<p>O sistema está hospedado no Github Pages, acessando pela url</p>
+
+<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/">https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/src/</a>
 
 # Armazenamento do Código-Fonte
 

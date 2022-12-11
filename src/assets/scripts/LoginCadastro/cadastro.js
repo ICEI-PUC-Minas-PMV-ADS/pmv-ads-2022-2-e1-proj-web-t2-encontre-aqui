@@ -23,8 +23,12 @@ function saveUser(evt){
                     email: email,
                     password: password
                 }
-        
-                localStorage.setItem('user', JSON.stringify(user))
+                var sessao = {
+                    full_name: full_name,
+                    email: email,
+                }
+                sessionStorage.setItem('user', JSON.stringify(sessao))
+                localStorage.setItem('user_data', JSON.stringify(user))
                
                 if(client.value === 'company'){
                     document.location.href='./edicaodeDados.html?cliente=empresa'

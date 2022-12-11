@@ -2,13 +2,64 @@ var map, directionsManagers = []
 var rota;
 var origem;
 var cardMap = ''
+var Allcards=''
 var searchManager
 var latitude, longitude
 var pin, infoboxs
 var locations = []
-
+var card_atual = []
 var icon = 'https://github.com/pauloosilas/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/dev/src/assets/images/icons/map-marker.png?raw=true';
 
+  
+
+function GetAllMap(empresas){
+    var query ='';
+    allCardMapView(empresas)  
+    geocodeQuery(rota)  
+          
+}
+function allCardMapView(empresas){
+    for(var e = 0; e < empresas.length; e++){
+     rota = `${empresas[e].logradouro}, ${empresas[e].cidade}, ${empresas[e].estado}`;
+         card_atual.push(cardMapView(empresas[e])) 
+    }
+   
+       
+}
+
+function cardMapView(empresa){
+    var prod ='';
+              if(empresa.produtos != null && empresa.produtos != undefined){
+               for(var i =0; i < empresa.produtos.length ; i++){
+                     prod += `<img src='${empresa.produtos[i].imagens[0]}' width="25">`
+                 }
+                }
+                   
+                    if(empresa.view != undefined || empresa.view != null){
+                        cardMap = `<a href="./empresaVisualizacao.html?categoria=${empresa.categoria}&view=true>`
+                    }else{
+                        cardMap = `<a href="empresa.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=22464654>`
+                    }     
+
+                    cardMap += `
+                    "<div class="card-map">
+                    <img id="logo-empresa" src="${empresa.imagens[0]}">
+                    ${isOpen(empresa.hfunc)}
+                    <div class="card-body">
+                                
+                        <div class="logradouro"> ${empresa.logradouro}</div>
+                        <div> ${empresa.tel}</div>
+                            <div class="map-prod">
+                               ${prod}   
+                            </div>
+                    </div>
+
+                    </div>
+                    </a>    
+                    `
+                    return cardMap
+}
+ 
 function GetMap(empresa) {
     var origem
    
@@ -25,30 +76,9 @@ function GetMap(empresa) {
        
       
         geocodeQuery(rota)
-        var prod ='';
- 
- /*          for(var i =0; i < 1 ; i++){
-            prod += `<a href="/produtos/produtos.html?id=${empresa.produtos[0].id}" > 
-            <img src='${empresa.produtos[0].imagens[i]}' width="25"></a>`
-            }
-*/
-        cardMap = `<a href="produto.html?id=${empresa.id}> "<div class="card-map">
-        <img id="logo-empresa" src="${empresa.imagens[0]}">
-        ${isOpen(empresa.hfunc)}
-        <div class="card-body">
-           
-            
-            <br>
-            <div class="logradouro"> ${empresa.logradouro}</div>
-            <div> ${empresa.tel}</div>
-                      
-          
+        
 
-        </div>
-      
-    </div>
-    </a>    
-    `
+       cardMapView(empresa)    
 
         logo =  empresa.imagens[0]
     }else{
@@ -76,6 +106,7 @@ function GetMap(empresa) {
 
 function geocodeQuery(query) {
         let location;
+        var clusterLayer;
         var searchRequest = {
             where: query,
             callback: function (r) {
@@ -87,15 +118,37 @@ function geocodeQuery(query) {
                      });
                     map.entities.push(pin);
                   
+                    if(card_atual.length > 0){
+                        Microsoft.Maps.loadModule("Microsoft.Maps.Clustering", function () {
+                            clusterLayer = new Microsoft.Maps.ClusterLayer({
+                                clusteredPinCallback: createCustomClusterPushpins,
+                                callback: createPushpinList
+                            });
+                        })
+
+                        for(var c = 0; c < card_atual.length; c++){
+                            cardMap = card_atual[c]
+                            infobox = new Microsoft.Maps.Infobox(r.results[0].location, {
+                                htmlContent: cardMap
+                                
+                            });
+                              map.layers.insert(clusterLayer);
+                            findLocations(location)
+                            infobox.setMap(map);
+                       }
+                       card_atual = []
+                     }else{
                     infobox = new Microsoft.Maps.Infobox(r.results[0].location, {
                         htmlContent: cardMap
                         
                     });
-
+                  
                     findLocations(location)
                     infobox.setMap(map);
-                    map.setView({ bounds: r.results[0].bestView });
+                    
+                   }
                 }
+                map.setView({ bounds: r.results[0].bestView });
             },
             errorCallback: function (e) {
                 //If there is an error, alert the user about it.
@@ -113,4 +166,36 @@ function findLocations(location){
     locations.push(location)
     latitude = location.latitude
     logitude = location.longitude
+}
+
+function createCustomClusterPushpins(cluster) {
+    //Create a title for the cluster.
+    cluster.setOptions({
+        htmlContent: cardMap
+    });
+}
+
+function pushpinClicked(e) {
+    //Show an infobox when a pushpin is clicked.
+    showInfobox(e.target);
+}
+
+function createPushpinList() {
+    //Create a list of displayed pushpins each time clustering layer updates.
+
+    if (clusterLayer != null) {
+        infobox.setOptions({ visible: false });
+
+        //Get all pushpins that are currently displayed.
+        var data = clusterLayer.getDisplayedPushpins();
+        var output = [];
+
+        //Create a list of links for each pushpin that opens up the infobox for it.
+        for (var i = 0; i < data.length; i++) {
+            output.push("<a href='javascript:void(0);' onclick='showInfoboxByGridKey(", data[i].gridKey, ");'>");
+            output.push(data[i].getTitle(), "</a><br/>");
+        }
+
+        document.getElementById('listOfPins').innerHTML = output.join('');
+    }
 }

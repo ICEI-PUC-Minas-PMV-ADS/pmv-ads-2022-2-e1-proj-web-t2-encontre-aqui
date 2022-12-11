@@ -3,8 +3,8 @@
 function addCategoria(opcoes_categoria){    
    var company_data = JSON.parse(localStorage.getItem('company_data'))
    if(company_data){
-   company_data.categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value.toLowerCase
-   localStorage.setItem('company_data', JSON.stringify(company_data))   
+        company_data.categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value
+        localStorage.setItem('company_data', JSON.stringify(company_data))   
    }else{
     window.location.href = './usuarioDivulgacao.html'
    }
@@ -29,30 +29,49 @@ function joinHorarios(inicio, fim){
 }
 
 window.addEventListener('load', ()=>{
-    var company_data = JSON.parse(localStorage.getItem('company_data'))
+   
     var horarios = document.querySelectorAll('.horarios input')
-    const user = JSON.parse(localStorage.getItem('user')) 
+    var company_data = JSON.parse(localStorage.getItem('company_data'))
+    var ramoProf = document.querySelector('.opcoes');
+    var ramo = 'Confeitaria'
+    if(company_data.categoria != null && company_data.categoria != ''){
+        ramo = company_data.categoria
+    }
 
-    
+    if(ramoProf){
+    ramoProf.innerHTML = `  <select onchange="addCategoria(this)" class="opcao">
+                                <option id="opcao" selected disabled>${ramo}</option>
+                                <option>Marcenaria</option>
+                                <option>Advogado</option>
+                                <option>Dentista</option>
+                                <option>Pedreiro</option>
+                                <option>Restaurante</option>
+                                <option>Churrascaria</option>
+                                <option>Padaria</option>
+                                <option>Pizzaria</option>
+                                <option>Petshop</option>
+                                <option>Confeitaria</option>
+                                <option>Professor Particular</option>
+                                <option>Reforma de sofá</option>
+                            </select>
+                            `;
+    }
+
     for(var i = 0; i < horarios.length; i++){
         horarios[i].addEventListener("change", ()=>{
             addHorarios()
         })
     }
 
-    if(user === null || user === undefined){
-        window.location.href = './login.html'
-    }
-   // var categoria = opcoes_categoria.options[opcoes_categoria.selectedIndex].value
- 
     if(company_data){
        if(company_data.hfunc != null){
         var h = splitHor(company_data.hfunc)
         for(var i =0 ; i < horarios.length; i++){
             horarios[i].value = h[i]
-            console.log(horarios[i])
-        }
+           }
     }
+     
+    
         var img_avatar = document.querySelectorAll(".img_avatar")
         var user_name = document.getElementById("user_name")
         if(user_name != null && user_name != undefined){
@@ -60,7 +79,12 @@ window.addEventListener('load', ()=>{
         }
         
     for(var i = 0; i < img_avatar.length; i++){      
-        img_avatar[i].setAttribute('src', company_data.url_img)  
+        if(company_data.url_img != '' && company_data.url_img != null){
+            img_avatar[i].setAttribute('src', company_data.url_img)  
+        }else{
+            img_avatar[i].setAttribute('src', './assets/images/site/userprofile/avatar.png')  
+        }
+        
     }
 }
    

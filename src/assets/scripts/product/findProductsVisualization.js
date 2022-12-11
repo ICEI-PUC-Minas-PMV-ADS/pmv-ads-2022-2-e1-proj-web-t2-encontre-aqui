@@ -46,7 +46,7 @@ addEventListener('load', ()=>{
            empresa.imagens = [`${company_data.url_img}`];
            empresa.hfunc =  company_data.hfunc;
            empresa.rsocial = atual_page.rsocial;   
-           empresa.tel = company_data.telefone;
+           empresa.tel = company_data.tel;
        }
        
        updatePage(empresa)
@@ -128,6 +128,10 @@ function updatePage(empresa){
 */
     
    if(atual_page){
+    if(atual_page.preco != null){
+        price = atual_page.preco;
+    }
+        
    for(var i = 1 ; i < atual_page.imagens.length; i++){
     if(atual_page.imagens[i] != "" && atual_page.imagens[i] != null)
      other_images += `<div> <img src="${atual_page.imagens[i]}"></div>`
@@ -161,8 +165,8 @@ function updatePage(empresa){
                 description_ps.innerHTML = content; 
 
             if(pages_data){
-               for(var p = 0; p <pages_data.length; p++){
-                    img_products += `<a href="produto.html?categoria=${empresa.categoria}&id=${empresa.id}&prodserv=${pages_data[p].id}">
+               for(var p = 0; p < pages_data.length; p++){
+                    img_products += `<a href="produtoVisualizacao.html?id=${pages_data[p].id}">
                     <div><img class ="other-imgs" src='${pages_data[p].imagens[0]}' >
                         </div><div style="width:150px" class="opened">${pages_data[p].nome}</div></a>`
 
@@ -213,7 +217,8 @@ function updatePage(empresa){
                 `
               
                 info.innerHTML = `
-                  <div class="horarios">
+                              
+                  <div class="horarios" mt-100>
                       <span class="title">Horários</span>
                       <div class="table">
                               <div><span class="week">Domingo </span>
@@ -289,7 +294,7 @@ function updatePage(empresa){
       
 function splitHorarios(horario){
           var h = horario.split('-');
-          return `<span> ${h[0]}</span><span>  ${h[1]}</span>`;
+          return `<span>${h[0]}</span> <span>${h[1]}</span>`;
       }
 function getProduct(empresa){
     var p; 

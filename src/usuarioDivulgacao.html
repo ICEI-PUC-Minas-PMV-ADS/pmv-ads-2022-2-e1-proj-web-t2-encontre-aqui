@@ -32,21 +32,7 @@
 
                     <div class="selecao">
                         <h3>Ramo/Profissão</h3>
-                        <select onchange="addCategoria(this)" id="opcao" class="opcao">
-                            <option selected disabled>Eletricista</option>
-                            <option>Marcenaria</option>
-                            <option>Advogado</option>
-                            <option>Dentista</option>
-                            <option>Pedreiro</option>
-                            <option>Restaurante</option>
-                            <option>Churrascaria</option>
-                            <option>Padaria</option>
-                            <option>Pizzaria</option>
-                            <option>Petshop</option>
-                            <option>Confeitaria</option>
-                            <option>Professor Particular</option>
-                            <option>Reforma de sofá</option>
-                        </select>
+                        <div class="opcoes"></div>
                     </div>
                 </div>
 
@@ -171,10 +157,13 @@
             </div>
         </div>
     </footer>
+    <script src="./assets/scripts/database/database.js"></script>
     <script src="./assets/scripts/userIsLogged.js"></script>
     <script src="./assets/scripts/usuarioDivulgacao/findData.js"></script>
     <script src="./assets/scripts/usuarioDivulgacao/usuarioDivulgacao.js"></script>
 
+    <script src="./assets/scripts/autocomplete.js"></script>
+    <script src="./assets/scripts/search/getLocalSearch.js"></script>
     <script src="./assets/scripts/logout.js"></script>
 </body>
 

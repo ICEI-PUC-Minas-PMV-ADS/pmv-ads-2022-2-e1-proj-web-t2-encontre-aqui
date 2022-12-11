@@ -10,36 +10,41 @@ next = document.getElementById('next')
  
 
 upPage.addEventListener('click', ()=>{
-    if(selected > 0){ 
-        previous = document.getElementById('previous') 
-        next = document.getElementById('next')    
+        if(selected > 0){ 
+            previous = document.getElementById('previous') 
+            next = document.getElementById('next')    
+            
+            previous.removeAttribute('id')
+            next.removeAttribute('id')       
         
-        previous.removeAttribute('id')
-        next.removeAttribute('id')       
-       
-        console.log(selected)
-        sections[selected].setAttribute('id','next')
-        selected--
-        sections[selected].setAttribute('id', 'previous')
-        
-       
-       }
+            console.log(selected)
+            sections[selected].setAttribute('id','next')
+            selected--
+            sections[selected].setAttribute('id', 'previous')           
+
+        }
 })
 
 downPage.addEventListener('click', ()=>{
-   if(selected < 2){
-    next = document.getElementById('next')     
-    previous = document.getElementById('previous') 
   
-    next.removeAttribute('id')
-    previous.removeAttribute('id')
-     
-     
-        console.log(selected)
-        sections[selected].setAttribute('id','previous')
-            selected++        
-            sections[selected].setAttribute('id', 'next')
+        if(selected < 2){
+            next = document.getElementById('next')     
+            previous = document.getElementById('previous') 
         
-   
-   }
+            next.removeAttribute('id')
+            previous.removeAttribute('id')
+            
+            
+                console.log(selected)
+                sections[selected].setAttribute('id','previous')
+                    selected++        
+                    sections[selected].setAttribute('id', 'next')
+                
+        
+        }
+ 
 })
+
+function userWarning(mensagem){
+    alert(mensagem)
+}

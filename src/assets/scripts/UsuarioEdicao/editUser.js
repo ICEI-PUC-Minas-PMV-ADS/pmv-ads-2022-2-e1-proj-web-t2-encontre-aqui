@@ -9,7 +9,7 @@ var formulario = document.getElementById('form')
               formulario.innerHTML = ` 
               <form action="./usuarioDivulgacao.html">
                 <div class="inputBox-1">
-                            <input type="text" value="PREMIUM DOG PETSHOP" required="required">
+                            <input type="text" value="" required="required">
                             <span class="spans">Seu Nome ou do Seu Negócio</span>
                         </div>
 
@@ -25,7 +25,7 @@ var formulario = document.getElementById('form')
 
 
                         <div class="inputBox-1">
-                            <input type="email" value="paulo@eu.com" required="required">
+                            <input type="email" value="" required="required">
                             <span class="spans">E-mail</span>
                         </div>
 
@@ -61,7 +61,7 @@ var formulario = document.getElementById('form')
                         </div>
                         <div class="inputBox-1">
                             <label for="descricao" class="spans">Faça uma breve descrição do seu negócio</label><br>
-                            <textarea id="descricao" required="required"> Compre Online e Receba em Horas, ração Frete Grátis Brasil* 
+                            <textarea id="descricao" required="required"> Compre Online e Receba em Horas, Frete Grátis Brasil* 
                         e Parcele em até 3x Sem Juros. Cobasi Já: Compre Online e Receba 
                         em Horas.
 
@@ -71,19 +71,20 @@ var formulario = document.getElementById('form')
                         <div class="inputBox-2">
                             <input type="submit" onclick="saveData()" value="Atualizar">
                         </div>
-                        </div>
+                       
                 </form>`
         }else{
             formulario.innerHTML = ` 
+           
             <form action="./userProfile.html">
                 <div class="inputBox-1">
-                    <input type="text" value="PREMIUM DOG PETSHOP">
+                    <input type="text" value="">
                     <span class="spans">Nome</span>
                 </div>
 
                
                 <div class="inputBox-1">
-                    <input type="email" value="paulo@eu.com">
+                    <input type="email" value="">
                     <span class="spans">E-mail</span>
                 </div>
 
@@ -115,7 +116,7 @@ var formulario = document.getElementById('form')
 
                 <div class="inputBox-1">
                     <label for="descricao" class="spans">Faça uma breve descrição do seu negócio</label><br>
-                    <textarea id="descricao"> Compre Online e Receba em Horas, ração Frete Grátis Brasil* 
+                    <textarea id="descricao"> Compre Online e Receba em Horas, Frete Grátis Brasil* 
                 e Parcele em até 3x Sem Juros. Cobasi Já: Compre Online e Receba 
                 em Horas.
 
@@ -125,7 +126,11 @@ var formulario = document.getElementById('form')
                 <div class="inputBox-2">
                     <input type="submit" onclick="saveData()" value="Atualizar">
                 </div>
+                <br>
+                <a href="./recoverpassword.html"> alterar senha</a>
+                <br>
                 </div>
+
                 </form>`
                 
           }

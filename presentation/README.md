@@ -1,7 +1,17 @@
 # Apresentação da Solução
 
-<a href="../docs/10-Apresentação do Projeto.md"> Orientações sobre os artefatos de apresentação do projeto</a>
+## Conjunto de Slides (Estrutura)
 
-Faça uma apresentação resumida de todo o projeto, desde a contextualização até a solução final desenvolvida, usando um pequeno vídeo.
+<p>Link da apresentação</p>
 
-Faça o upload do arquivo de vídeo e dos slides usados na apresentação no formato PDF (caso tenha feito uso de slides).
+<a href="./Apresentação.pdf">Apresentação</a>
+
+## Vídeo de Apresentação do Projeto.
+
+<p align="center">
+
+[Video Demonstração do Projeto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/presentation/Sistema-Encontre.mp4)
+
+</p>
+
+[![Watch the video](../docs/img/Apresentacao.PNG)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/presentation/Sistema-Encontre.mp4)

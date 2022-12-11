@@ -34,13 +34,17 @@ function updatePageInputs(){
 
     if(company_data){
         if(pages_data){
-            updateBackground(principal, pages_data[pages_data.length-1].imagens[0])
+            updateBackground(imgPreview, pages_data[pages_data.length-1].banner)
+            url_img_pr.value = pages_data[0].banner;
+            rsocial[0].value = pages_data[0].rsocial[0]
+            rsocial[1].value = pages_data[0].rsocial[1]
             for(var i = 0; i < pages_data.length; i++){
                 if(pages_data[i].id === parseInt(id_produto)){
                 isDeliveries.checked = pages_data[i].domicilio;
                 isReservation.checked = pages_data[i].agendamento;
 
-                    updateBackground(imgPreview, pages_data[i].banner)
+                    updateBackground(imgPreview, pages_data[pages_data.length-1].banner)
+                    updateBackground(principal, pages_data[i].imagens[0])
                     updateBackground(photo1, pages_data[i].imagens[1])
                     updateBackground(photo2,pages_data[i].imagens[2])
                     updateBackground(photo3,pages_data[i].imagens[3])

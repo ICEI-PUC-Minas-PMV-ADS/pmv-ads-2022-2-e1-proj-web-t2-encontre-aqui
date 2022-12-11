@@ -9,13 +9,18 @@ var msg = document.querySelector('.msg_error');
 function getUser(){
     email = document.getElementById('email').value;
     password = document.getElementById('password').value;
-
-    if(email.length > 0  && email.length > 0 && password.length > 0  && password.length > 0){
-    
-       var user = JSON.parse(localStorage.getItem('user'))
-       
+    var user = JSON.parse(localStorage.getItem('user_data'))
+    if(user){
+    if(email.length > 0  && email.length > 0 && password.length > 0  && password.length > 0){    
+      
+        var sessao = {
+            full_name: user.full_name,
+            email: email,
+            }
+        
        if(email === user.email){
         if(password === user.password){
+            sessionStorage.setItem('user', JSON.stringify(sessao));
             document.location.href = './userProfile.html'
         }else{
             updateError("Password invalido")
@@ -31,7 +36,10 @@ function getUser(){
         evt.preventDefault();
     }
  
-
+    }else{
+        updateError("O Usuário não está cadastrado!")
+        evt.preventDefault();
+    }
 }
 
 function updateError(msgMessage){
