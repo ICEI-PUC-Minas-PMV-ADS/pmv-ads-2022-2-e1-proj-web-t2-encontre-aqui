@@ -2,7 +2,7 @@
 
 ## Conjunto de Slides (Estrutura)
 
-<p>Link da apresentação</p>
+<p>Link da apresentação em PDF</p>
 
 <a href="./Apresentação.pdf">Apresentação</a>
 
@@ -14,4 +14,5 @@
 
 </p>
 
-[![Watch the video](../docs/img/Apresentacao.PNG)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/presentation/Sistema-Encontre.mp4)
+https://user-images.githubusercontent.com/11765315/206882738-b5807520-7ecf-4ed1-915b-f5d0d8ff1d7c.mp4
+
