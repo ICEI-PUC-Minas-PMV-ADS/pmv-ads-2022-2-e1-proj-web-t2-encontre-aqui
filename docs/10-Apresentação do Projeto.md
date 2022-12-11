@@ -27,10 +27,12 @@
 
 ## Vídeo de Apresentação do Projeto.
 
+
 <p align="center">
 
-[Video Demonstração do Projeto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/4447f5a69dcafd1f03a815c6ab9d421c9c65ccc4/presentation/Sistema-Encontre.mp4)
+[Video Demonstração do Projeto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/main/presentation/Sistema-Encontre.mp4)
 
 </p>
 
-[![Watch the video](../docs/img/Apresentacao.PNG)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t2-encontre-aqui/blob/4447f5a69dcafd1f03a815c6ab9d421c9c65ccc4/presentation/Sistema-Encontre.mp4)
+https://user-images.githubusercontent.com/11765315/206882738-b5807520-7ecf-4ed1-915b-f5d0d8ff1d7c.mp4
+
